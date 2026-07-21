@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKAT-70C / 100C Digital Dielectric Testers | Smart HV Testing</title>
+    <meta name="description" content="Digital AC/DC dielectric testers with microcontroller control. Up to 101 kV DC output. Portable and 19" rack-mount options.">
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Основные стили SKAT -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="prod_style.css"> 
+    <link rel="stylesheet" href="megamenu.css"> 
+    
+    <!-- Модуль стилей для таблицы -->
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <!-- Контейнер для динамической шапки -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- ===== HERO СЕКЦИЯ ===== -->
+        <section class="product-hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Левая колонка: Карусель -->
+                    <div class="product-carousel">
+                        <div class="gallery-main">
+                            <a href="#img-main" class="lightbox-link">
+                                <img id="mainImage" src="images/70c-1.png" alt="SKAT-70C Full View">
+                            </a>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <button class="active" onclick="changeImage('images/70c-1.png', this)"><img src="images/70c-1.png" alt="Thumbnail 1"></button>
+                            <button onclick="changeImage('images/70c-2.png', this)"><img src="images/70c-2.png" alt="Thumbnail 2"></button>
+                            <button onclick="changeImage('images/70c-3.png', this)"><img src="images/70c-3.png" alt="Thumbnail 3"></button>
+                        </div>
+                    </div>
+
+                    <!-- Правая колонка: Информация -->
+                    <div class="hero-content">
+                        <p class="category">AC/DC High-Voltage Test Sets</p>
+                        <h1>SKAT-70C / 100C Digital Dielectric Testers</h1>
+                        <p class="subtitle">Microcontroller-controlled AC/DC test sets for cable, transformer, and insulation testing.</p>
+                        <p class="description">The SKAT-70C and SKAT-100C are advanced digital dielectric testers featuring a high-contrast LCD interface and precise microcontroller-driven regulation. Available in portable and 19" rack-mount configurations, these units deliver reliable high-voltage AC and DC outputs for demanding insulation testing applications.</p>
+                        <div class="hero-actions">
+                            <a href="contact.html" class="btn-primary">Request a Quote</a>
+                        </div>
+                        <!-- Аккордеон -->
+                        <div class="accordion-container">
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Microcontroller-Based Digital Control</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Advanced microcontroller-driven regulation ensures precise voltage control and accurate measurements with a resolution of 0.1 kV.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> High-Contrast LCD Display</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Clear, high-contrast 6" LCD screen provides real-time monitoring of all test parameters.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Automatic Breakdown Detection</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Instantly detects insulation breakdown and safely terminates the test with overcurrent protection.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> External Safety Lamp Output</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Connect external warning lamps for enhanced laboratory safety. Interlock circuit for door detection.</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СЕКЦИЯ ВКЛАДОК (TABS) ===== -->
+        <section class="container product-tabs-wrapper">
+            <div class="product-tabs-nav">
+                <div class="product-tabs">
+                    <button class="active" onclick="openTab(event, 'tab-info')">Product information</button>
+                    <button onclick="openTab(event, 'tab-specs')">Technical specifications</button>
+                    <button onclick="openTab(event, 'tab-support')">Product support</button>
+                </div>
+                <a href="contact.html" class="product-tabs-support-link"><i class="fa-solid fa-headset"></i> Technical support</a>
+            </div>
+
+            <!-- ===== ВКЛАДКА 1: ИНФОРМАЦИЯ О ПРОДУКТЕ ===== -->
+            <div id="tab-info" class="tab-pane active">
+                <div class="product-content-block">
+                    <h2>About the product</h2>
+                    <p>The SKAT-70C and SKAT-100C series represent the next generation of digital dielectric testers. Featuring a user-friendly LCD interface and microcontroller-driven control, these units offer precise regulation and measurement of high-voltage AC and DC outputs for demanding insulation testing applications.</p>
+                    <p>With automatic breakdown detection, overcurrent protection, and a dedicated external safety lamp output, these testers are designed with both performance and operator safety in mind. Multiple form factors are available, including portable and 19" rack-mount configurations, making them suitable for laboratory and field use.</p>
+
+                    <!-- Вертикальная видео-галерея -->
+                    <div class="product-video-wrapper">
+                        <div class="video-main"><video id="mainVideo" controls poster="images/70c-main-poster.jpg"><source src="video/70c-main.mp4" type="video/mp4"></video></div>
+                        <div class="video-thumbnails-vertical">
+                            <div class="thumb-item active" data-video="video/70c-main.mp4"><img src="images/70c-thumb1.jpg" alt="Video 1"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/70c-extra-1.mp4"><img src="images/70c-thumb2.jpg" alt="Video 2"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/70c-extra-2.mp4"><img src="images/70c-thumb3.jpg" alt="Video 3"><div class="play-icon">▶</div></div>
+                        </div>
+                    </div>
+
+                    <h2>Product documents</h2>
+                    <div class="documents-list">
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/70C_DS_en.pdf" target="_blank">Data sheet</a><span>PDF | 1.4 MB</span></div>
+                        </div>
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/70C_UG_en.pdf" target="_blank">User guide</a><span>PDF | 4.2 MB</span></div>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-top: 40px;">Related products</h2>
+                    <div class="related-products-grid">
+                        <a href="product-70m.html" class="related-product-card">
+                            <img src="images/70m-1.png" alt="SKAT-70M"><h4>SKAT-70M / 70MA Analog Testers</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Robust analog AC/DC test sets for field and laboratory use.</p>
+                        </a>
+                        <a href="product-avn70.html" class="related-product-card">
+                            <img src="images/avn70-1.png" alt="SKAT-AVN-70"><h4>SKAT-AVN-70 Active HV Load</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Precision HV load bank for calibration of dielectric testers.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 2: ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ===== -->
+            <div id="tab-specs" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Technical specifications</h2>
+                    
+                    <!-- Контейнер для динамической таблицы -->
+                    <div id="specs-container"></div>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                        <em>Note: Specifications are subject to change without notice. For custom ranges and configurations, please contact our sales team.</em>
+                    </p>
+                </div>
+
+                <div class="product-content-block">
+                    <h2>FAQ</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What is the difference between the SKAT-70C and SKAT-100C?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The SKAT-100C offers higher voltage output capability (up to 101 kV DC and 71 kV AC) compared to the SKAT-70C (up to 71 kV DC and 51 kV AC).</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Are these compatible with 19" racks?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">Yes, both models are available in a 19" rack-mountable form factor for integration into existing test systems.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What safety features are included?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The devices include automatic breakdown detection, overcurrent protection, and an external safety lamp output for laboratory warning systems.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 3: ПОДДЕРЖКА ПРОДУКТА ===== -->
+            <div id="tab-support" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Interpreting test results</h2>
+                    <p>For detailed guidance on cable and insulation testing, refer to your equipment's user manual and the following:</p>
+                    <ul>
+                        <li>IEC 60060 - High-voltage test techniques</li>
+                        <li>IEC 60243 - Electrical strength of insulating materials</li>
+                        <li>IEEE 400 - Guide for field testing of shielded power cable systems</li>
+                    </ul>
+                </div>
+                <div class="product-content-block">
+                    <h2>Troubleshooting &amp; Software updates</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Common troubleshooting steps</button>
+                            <div class="accordion-body"><div class="accordion-body-inner"><ul><li><strong>Test does not start:</strong> Check if the high-voltage block is properly connected and the safety interlock is closed.</li><li><strong>Display not responding:</strong> Verify power supply and internal connections.</li><li><strong>Error during test:</strong> Refer to the user manual for error code explanations.</li></ul></div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Software &amp; firmware updates</button>
+                            <div class="accordion-body"><div class="accordion-body-inner"><p>To update the instrument's firmware or for software-related inquiries, please contact our technical support team.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-block">
+                    <h2>Application and academic support</h2>
+                    <p>For detailed application notes and technical resources, please contact our support team.</p>
+                    <a href="contact.html" class="btn-outline-dark" style="margin-top: 15px;">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для футера -->
+    <div id="footer-container"></div>
+
+    <!-- ===== ЛАЙТБОКС ===== -->
+    <div id="img-main" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <div style="position: relative; max-width: 80%; max-height: 85%; display: flex; align-items: center; justify-content: center;">
+            <a href="#" class="lightbox-nav prev" onclick="lightboxNav(event, -1)"><i class="fa-solid fa-chevron-left"></i></a>
+            <img class="lightbox-content" src="images/70c-1.png" alt="SKAT-70C Full View Large">
+            <a href="#" class="lightbox-nav next" onclick="lightboxNav(event, 1)"><i class="fa-solid fa-chevron-right"></i></a>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 3</div>
+        </div>
+    </div>
+
+    <!-- Подключение библиотеки ресурсов -->
+    <script src="assets.js"></script>
+
+    <!-- Основной скрипт для страниц продуктов -->
+    <script src="product.js"></script>
+    
+    <!-- Скрипт мега-меню -->
+    <script src="megamenu.js"></script>
+
+    <!-- Инициализация галереи -->
+    <script>
+        initProductGallery('70c');
+    </script>
+
+    <!-- Инициализация таблицы характеристик -->
+    <script src="table_style.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initSpecsTable('specs-container', 'skat-70c', 'table_style.json');
+        });
+    </script>
+</body>
+</html>

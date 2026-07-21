@@ -1,0 +1,935 @@
+{
+  "kvc-b": {
+    "models": [
+      { "id": "KVC-10B", "name": "KVC-10B-0.5" },
+      { "id": "KVC-70B", "name": "KVC-70B-1.0" },
+      { "id": "KVC-100B", "name": "KVC-100B-1.0" },
+      { "id": "KVC-120B", "name": "KVC-120B-1.0" }
+    ],
+    "groups": [
+      {
+        "title": "Metrological Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Range (50 Hz)",
+            "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"]
+          },
+          {
+            "label": "DC Voltage Range",
+            "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"]
+          },
+          {
+            "label": "AC Voltage Accuracy",
+            "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"]
+          },
+          {
+            "label": "DC Voltage Accuracy",
+            "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "DC Input Resistance",
+            "values": ["50 MΩ ±10%", "300 MΩ ±10%", "500 MΩ ±10%", "500 MΩ ±10%"]
+          },
+          {
+            "label": "Power Supply",
+            "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Power Consumption",
+            "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (Indication Unit)",
+            "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (HV Divider Unit)",
+            "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 650 mm"],
+            "notes": {
+              "KVC-10B": "Integrated into the indication unit"
+            }
+          },
+          {
+            "label": "Weight (Indication Unit)",
+            "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"],
+            "merge": true
+          },
+          {
+            "label": "Weight (HV Divider Unit)",
+            "values": ["—", "5.5 kg", "5.5 kg", "5.5 kg"],
+            "notes": {
+              "KVC-10B": "Integrated into the indication unit"
+            }
+          },
+          {
+            "label": "Operating Temperature",
+            "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"],
+            "merge": true
+          },
+          {
+            "label": "Service Life",
+            "values": ["5 years", "5 years", "5 years", "5 years"],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      { "id": "KVC-10C", "name": "KVC-10C-0.25" },
+      { "id": "KVC-70C", "name": "KVC-70C-0.25" },
+      { "id": "KVC-100C", "name": "KVC-100C-0.25" },
+      { "id": "KVC-120C", "name": "KVC-120C-0.25" }
+    ],
+    "groups": [
+      {
+        "title": "Metrological Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Range (50 Hz)",
+            "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"]
+          },
+          {
+            "label": "AC Voltage Range (40 – 65 Hz)",
+            "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"]
+          },
+          {
+            "label": "AC Voltage Range (390 – 410 Hz)",
+            "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"]
+          },
+          {
+            "label": "DC Voltage Range",
+            "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"]
+          },
+          {
+            "label": "Voltage Measurement Accuracy",
+            "values": ["±0.25%", "±0.25%", "±0.25%", "±0.25%"],
+            "merge": true
+          },
+          {
+            "label": "Frequency Accuracy (40 – 65 Hz)",
+            "values": ["±0.015 Hz", "±0.015 Hz", "±0.015 Hz", "±0.015 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Frequency Accuracy (390 – 410 Hz)",
+            "values": ["±0.2 Hz", "±0.2 Hz", "±0.2 Hz", "±0.2 Hz"],
+            "merge": true
+          },
+          {
+            "label": "THD Measurement Range (Ku)",
+            "values": ["0.5 – 30%", "0.5 – 30%", "0.5 – 30%", "0.5 – 30%"],
+            "merge": true
+          },
+          {
+            "label": "THD Accuracy (Ku < 3%)",
+            "values": ["±0.15%", "±0.15%", "±0.15%", "±0.15%"],
+            "merge": true
+          },
+          {
+            "label": "THD Accuracy (Ku ≥ 3%)",
+            "values": ["±5%", "±5%", "±5%", "±5%"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "DC Input Resistance",
+            "values": ["50 MΩ ±10%", "300 MΩ ±10%", "420 MΩ ±10%", "500 MΩ ±10%"]
+          },
+          {
+            "label": "Power Supply",
+            "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Power Consumption",
+            "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (Indication Unit)",
+            "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (HV Divider Unit)",
+            "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 800 mm"],
+            "notes": {
+              "KVC-10C": "Integrated into the indication unit"
+            }
+          },
+          {
+            "label": "Weight (Indication Unit)",
+            "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"],
+            "merge": true
+          },
+          {
+            "label": "Weight (HV Divider Unit)",
+            "values": ["—", "5.5 kg", "5.5 kg", "6.4 kg"],
+            "notes": {
+              "KVC-10C": "Integrated into the indication unit"
+            }
+          },
+          {
+            "label": "Operating Temperature",
+            "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"],
+            "merge": true
+          },
+          {
+            "label": "Relative Humidity (at +25 °C)",
+            "values": ["≤ 80%", "≤ 80%", "≤ 80%", "≤ 80%"],
+            "merge": true
+          },
+          {
+            "label": "Service Life",
+            "values": ["5 years", "5 years", "5 years", "5 years"],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      { "id": "SKAT-70C", "name": "SKAT-70C" },
+      { "id": "SKAT-100C", "name": "SKAT-100C" }
+    ],
+    "groups": [
+      {
+        "title": "Output Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Regulation Range",
+            "values": ["1 – 51 kV", "1 – 71 kV"]
+          },
+          {
+            "label": "DC Voltage Regulation Range",
+            "values": ["1 – 71 kV", "1 – 101 kV"]
+          },
+          {
+            "label": "Max. AC Output Current",
+            "values": ["≥ 50 mA", "≥ 35 mA"]
+          },
+          {
+            "label": "Max. DC Output Current",
+            "values": ["≥ 20 mA", "≥ 15 mA"]
+          },
+          {
+            "label": "DC Ripple Amplitude",
+            "values": ["≤ 3%", "≤ 3%"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Measurement Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Measurement Range",
+            "values": ["2 – 50 kV", "3 – 70 kV"]
+          },
+          {
+            "label": "DC Voltage Measurement Range (Amplitude)",
+            "values": ["3 – 70 kV", "5 – 100 kV"]
+          },
+          {
+            "label": "AC Sinusoidal Distortion Factor",
+            "values": ["≤ 5%", "≤ 5%"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Display",
+            "values": ["6\" LCD", "6\" LCD"],
+            "merge": true
+          },
+          {
+            "label": "Power Supply",
+            "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months", "18 months"],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      { "id": "SKAT-70M", "name": "SKAT-70M" },
+      { "id": "SKAT-70MA", "name": "SKAT-70MA" }
+    ],
+    "groups": [
+      {
+        "title": "Output Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Regulation Range",
+            "values": ["1 – 51 kV", "1 – 51 kV"],
+            "merge": true
+          },
+          {
+            "label": "DC Voltage Regulation Range",
+            "values": ["1 – 71 kV", "1 – 71 kV"],
+            "merge": true
+          },
+          {
+            "label": "DC Polarity",
+            "values": ["Negative", "Positive"]
+          },
+          {
+            "label": "Max. AC Output Current",
+            "values": ["≥ 50 mA", "≥ 50 mA"],
+            "merge": true
+          },
+          {
+            "label": "Max. DC Output Current",
+            "values": ["≥ 20 mA", "≥ 20 mA"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Measurement Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Measurement Range",
+            "values": ["2 – 50 kV", "2 – 50 kV"],
+            "merge": true
+          },
+          {
+            "label": "DC Voltage Measurement Range (Amplitude)",
+            "values": ["3 – 70 kV", "3 – 70 kV"],
+            "merge": true
+          },
+          {
+            "label": "DC Ripple Amplitude",
+            "values": ["≤ 3%", "≤ 3%"],
+            "merge": true
+          },
+          {
+            "label": "AC Sinusoidal Distortion Factor",
+            "values": ["≤ 5%", "≤ 5%"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Power Supply",
+            "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (Control Unit)",
+            "values": ["420 × 340 × 220 mm", "420 × 340 × 220 mm"],
+            "merge": true
+          },
+          {
+            "label": "Dimensions (HV Unit)",
+            "values": ["650 × 375 × 360 mm", "650 × 375 × 360 mm"],
+            "merge": true
+          },
+          {
+            "label": "Weight (Control Unit)",
+            "values": ["14 kg", "14 kg"],
+            "merge": true
+          },
+          {
+            "label": "Weight (HV Unit)",
+            "values": ["29 kg", "29 kg"],
+            "merge": true
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months", "18 months"],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      { "id": "M100V", "name": "SKAT-M100V" }
+    ],
+    "groups": [
+      {
+        "title": "Metrological Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Measurement Range",
+            "values": ["10.0 – 100.0 kV"]
+          },
+          {
+            "label": "Measurement Accuracy",
+            "values": ["±2.5%"]
+          },
+          {
+            "label": "Voltage Resolution",
+            "values": ["0.1 kV"]
+          },
+          {
+            "label": "Number of Automatic Tests",
+            "values": ["1 – 6"]
+          },
+          {
+            "label": "Trip Time at Breakdown",
+            "values": ["≤ 100 µs"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Voltage Rise Rate",
+            "values": ["0.5, 1, 2, 5 kV/s"]
+          },
+          {
+            "label": "Voltage Limits",
+            "values": ["60, 70, 80, 90, 100 kV"]
+          },
+          {
+            "label": "Power Supply",
+            "values": ["220 V AC, 50 Hz"]
+          },
+          {
+            "label": "Dimensions (W×D×H)",
+            "values": ["470 × 315 × 370 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["41 ±1 kg"]
+          },
+          {
+            "label": "Protection Class",
+            "values": ["IP53"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months"]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      { "id": "TANGENS", "name": "SKAT-TANGENS-M" }
+    ],
+    "groups": [
+      {
+        "title": "Metrological Specifications",
+        "parameters": [
+          {
+            "label": "Tan δ Measurement Range",
+            "values": ["1·10⁻⁴ – 1.000"]
+          },
+          {
+            "label": "Capacitance Measurement Range",
+            "values": ["28 – 1000 pF"]
+          },
+          {
+            "label": "Test Voltage (AC, 40-62 Hz)",
+            "values": ["500 – 2000 V"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Cell Temperature Range",
+            "values": ["40 – 110 °C"]
+          },
+          {
+            "label": "Heating Time to Set Temp.",
+            "values": ["≤ 50 min"]
+          },
+          {
+            "label": "Display",
+            "values": ["7\" IPS Touchscreen"]
+          },
+          {
+            "label": "Internal Memory",
+            "values": ["Up to 250 Test Results"]
+          },
+          {
+            "label": "Dimensions (W×D×H)",
+            "values": ["540 × 330 × 360 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["≤ 24 kg"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months"]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      { "id": "70P", "name": "SKAT-70P" }
+    ],
+    "groups": [
+      {
+        "title": "Metrological Specifications",
+        "parameters": [
+          {
+            "label": "AC Voltage Measurement Range",
+            "values": ["0.3 – 20 kV"]
+          },
+          {
+            "label": "AC Current Measurement Range (per channel)",
+            "values": ["0.5 – 22 mA"]
+          },
+          {
+            "label": "Voltage Measurement Accuracy",
+            "values": ["±2.5%"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Number of Current Channels",
+            "values": ["4"]
+          },
+          {
+            "label": "Programmable Test Time",
+            "values": ["1 – 8 min"]
+          },
+          {
+            "label": "Dimensions (Control Box)",
+            "values": ["310 × 280 × 120 mm"]
+          },
+          {
+            "label": "Dimensions (Test Bath)",
+            "values": ["825 × 270 × 765 mm"]
+          },
+          {
+            "label": "Weight (Control Box)",
+            "values": ["5.8 kg"]
+          },
+          {
+            "label": "Weight (Test Bath)",
+            "values": ["19.0 kg"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months"]
+          }
+        ]
+      }
+    ]
+  },
+    "skat-svs": {
+    "models": [
+      { "id": "SVS-50C", "name": "SKAT-SVS-50C" },
+      { "id": "SVS-100C", "name": "SKAT-SVS-100C" },
+      { "id": "SVS-100-20C", "name": "SKAT-SVS-100-20C" }
+    ],
+    "groups": [
+      {
+        "title": "Measurement Ranges",
+        "parameters": [
+          {
+            "label": "Built-in Source: Voltage Range",
+            "values": ["20 – 1000 V", "20 – 1000 V", "20 – 1000 V"],
+            "merge": true
+          },
+          {
+            "label": "Built-in Source: Current Range",
+            "values": ["0.5 – 10 mA", "0.5 – 10 mA", "0.5 – 10 mA"],
+            "merge": true
+          },
+          {
+            "label": "50 kV Block: Voltage Range",
+            "values": ["1 – 50 kV", "1 – 50 kV", "—"]
+          },
+          {
+            "label": "50 kV Block: Current Range",
+            "values": ["1 – 40 mA", "1 – 40 mA", "—"]
+          },
+          {
+            "label": "100 kV Block: Voltage Range",
+            "values": ["—", "5 – 100 kV", "5 – 100 kV"]
+          },
+          {
+            "label": "100 kV Block: Current Range",
+            "values": ["—", "1 – 20 mA", "1 – 20 mA"]
+          },
+          {
+            "label": "20 kV Block: Voltage Range",
+            "values": ["—", "—", "1 – 20 kV"]
+          },
+          {
+            "label": "20 kV Block: Current Range",
+            "values": ["—", "—", "1 – 40 mA"]
+          },
+          {
+            "label": "Voltage Measurement Accuracy",
+            "values": ["±3%", "±3%", "±3%"],
+            "merge": true
+          },
+          {
+            "label": "Current Measurement Accuracy",
+            "values": ["±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%"],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Number of External HV Sources",
+            "values": ["1", "2", "2"]
+          },
+          {
+            "label": "Number of Current Channels (Test Bath)",
+            "values": ["4", "4", "4"],
+            "merge": true
+          },
+          {
+            "label": "Power Supply",
+            "values": ["230 V AC, 50 Hz", "230 V AC, 50 Hz", "230 V AC, 50 Hz"],
+            "merge": true
+          },
+          {
+            "label": "Control Unit Dimensions (W×D×H)",
+            "values": ["490 × 370 × 200 mm", "490 × 370 × 200 mm", "490 × 370 × 200 mm"],
+            "merge": true
+          },
+          {
+            "label": "20 kV Block Dimensions (W×D×H)",
+            "values": ["—", "—", "350 × 375 × 650 mm"]
+          },
+          {
+            "label": "50 kV Block Dimensions (W×D×H)",
+            "values": ["350 × 375 × 650 mm", "350 × 375 × 650 mm", "—"]
+          },
+          {
+            "label": "100 kV Block Dimensions (W×D×H)",
+            "values": ["—", "—", "415 × 580 × 940 mm"]
+          },
+          {
+            "label": "Test Bath Dimensions (W×D×H)",
+            "values": ["820 × 270 × 765 mm", "820 × 270 × 765 mm", "820 × 270 × 765 mm"],
+            "merge": true
+          },
+          {
+            "label": "Control Unit Weight",
+            "values": ["23 kg", "23 kg", "23 kg"],
+            "merge": true
+          },
+          {
+            "label": "20 kV Block Weight",
+            "values": ["—", "—", "33.8 kg"]
+          },
+          {
+            "label": "50 kV Block Weight",
+            "values": ["35.4 kg", "35.4 kg", "—"]
+          },
+          {
+            "label": "100 kV Block Weight",
+            "values": ["—", "—", "64 kg"]
+          },
+          {
+            "label": "Test Bath Weight",
+            "values": ["18.7 kg", "18.7 kg", "18.7 kg"],
+            "merge": true
+          },
+          {
+            "label": "Operating Temperature",
+            "values": ["+10 … +40 °C", "+10 … +40 °C", "+10 … +40 °C"],
+            "merge": true
+          },
+          {
+            "label": "Relative Humidity (at +25 °C)",
+            "values": ["≤ 80%", "≤ 80%", "≤ 80%"],
+            "merge": true
+          },
+          {
+            "label": "Atmospheric Pressure",
+            "values": ["84.0 – 106.7 kPa", "84.0 – 106.7 kPa", "84.0 – 106.7 kPa"],
+            "merge": true
+          },
+          {
+            "label": "Service Life",
+            "values": ["10 years", "10 years", "10 years"],
+            "merge": true
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months", "18 months", "18 months"],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+   "skat-avn70": {
+    "models": [
+      { "id": "AVN70", "name": "SKAT-AVN-70" }
+    ],
+    "groups": [
+      {
+        "title": "Load Specifications",
+        "parameters": [
+          {
+            "label": "Max. DC Operating Voltage",
+            "values": ["70 kV"]
+          },
+          {
+            "label": "Max. AC Peak Voltage (50 Hz)",
+            "values": ["70 kV"]
+          },
+          {
+            "label": "Number of Load Steps",
+            "values": ["6"]
+          },
+          {
+            "label": "Number of Load Combinations",
+            "values": ["40"]
+          },
+          {
+            "label": "Total Max. Dissipated Power",
+            "values": ["3750 W"]
+          },
+          {
+            "label": "Continuous Operation at Max. Power",
+            "values": ["1 hour"]
+          }
+        ]
+      },
+      {
+        "title": "Step Details (Nominal Resistance / Max. Power)",
+        "parameters": [
+          {
+            "label": "Step 1",
+            "values": ["68 MΩ ±5% / 80 W"]
+          },
+          {
+            "label": "Step 2",
+            "values": ["22.4 MΩ ±5% / 250 W"]
+          },
+          {
+            "label": "Step 3",
+            "values": ["14.1 MΩ ±5% / 350 W"]
+          },
+          {
+            "label": "Step 4",
+            "values": ["6.6 MΩ ±5% / 750 W"]
+          },
+          {
+            "label": "Step 5",
+            "values": ["2.4 MΩ ±5% / 1500 W"]
+          },
+          {
+            "label": "Step 6",
+            "values": ["1.35 MΩ ±5% / 2000 W"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Dimensions (W×D×H)",
+            "values": ["550 × 440 × 1620 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["50 kg"]
+          },
+          {
+            "label": "Cooling System Power Supply",
+            "values": ["220 V AC, 50 Hz"]
+          },
+          {
+            "label": "Cooling System Power Consumption",
+            "values": ["≤ 200 W"]
+          },
+          {
+            "label": "Ambient Temperature",
+            "values": ["+5 … +40 °C"]
+          },
+          {
+            "label": "Relative Humidity (at +25 °C)",
+            "values": ["≤ 80%"]
+          },
+          {
+            "label": "Service Life",
+            "values": ["10 years"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months"]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      { "id": "STEND50", "name": "SKAT-STEND-50" }
+    ],
+    "groups": [
+      {
+        "title": "Test Specifications",
+        "parameters": [
+          {
+            "label": "Max. Test Voltage",
+            "values": ["50 kV AC"]
+          },
+          {
+            "label": "Max. Simultaneous Test Objects",
+            "values": ["2"]
+          },
+          {
+            "label": "Dimensions (Height with poles)",
+            "values": ["1830 mm"]
+          },
+          {
+            "label": "Table Dimensions (W×D)",
+            "values": ["530 × 1220 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["≤ 31 kg"]
+          },
+          {
+            "label": "Operating Temperature",
+            "values": ["+10 … +40 °C"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["18 months"]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      { "id": "UBSVN", "name": "UBSVN-LM" }
+    ],
+    "groups": [
+      {
+        "title": "Electrical Specifications",
+        "parameters": [
+          {
+            "label": "Supply Voltage",
+            "values": ["220 V AC"]
+          },
+          {
+            "label": "Nominal Current",
+            "values": ["60 mA"]
+          },
+          {
+            "label": "Sound Level (at 1 m)",
+            "values": ["≥ 95 dB"]
+          },
+          {
+            "label": "Contrast Light Perception",
+            "values": ["≥ 500 lux"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Dimensions",
+            "values": ["140 × 140 × 90 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["≤ 0.32 kg"]
+          },
+          {
+            "label": "Operating Temperature",
+            "values": ["-30 … +55 °C"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["12 months"]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      { "id": "IK100", "name": "IK 100-0.4" }
+    ],
+    "groups": [
+      {
+        "title": "Electrical Specifications",
+        "parameters": [
+          {
+            "label": "Rated Voltage",
+            "values": ["100 kV"]
+          },
+          {
+            "label": "Rated Capacitance",
+            "values": ["0.4 µF"]
+          },
+          {
+            "label": "Test Voltage",
+            "values": ["125 kV"]
+          }
+        ]
+      },
+      {
+        "title": "General Specifications",
+        "parameters": [
+          {
+            "label": "Dimensions (W×D×H)",
+            "values": ["500 × 155 × 345 mm"]
+          },
+          {
+            "label": "Weight",
+            "values": ["≤ 32 kg"]
+          },
+          {
+            "label": "Ambient Temperature",
+            "values": ["-1 … +35 °C"]
+          },
+          {
+            "label": "Warranty",
+            "values": ["6 months"]
+          }
+        ]
+      }
+    ]
+  }
+}

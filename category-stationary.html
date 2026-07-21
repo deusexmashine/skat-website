@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stationary Test Benches & PPE | SKAT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cardstyle.css">
+</head>
+<body>
+    <!-- Контейнер для шапки -->
+    <div id="header-container"></div>
+
+    <!-- HERO БЛОК -->
+    <section class="category-hero">
+        <div class="container hero-content">
+            <h1>Stationary Test Benches & PPE</h1>
+            <p>High-voltage test systems for dielectric gloves, boots, insulators, and personal protective equipment (PPE).<br>
+               Compliant with IEC 60903, IEC 61112.</p>
+        </div>
+    </section>
+
+    <!-- КАТАЛОГ -->
+    <section class="container" id="catalog">
+        <div class="product-grid">
+            
+            <!-- Карточка 1: SKAT-SVS -->
+            <article class="tech-card">
+                <div class="tech-card__image-wrap">
+                    <img src="images/svs-1.png" alt="SKAT-SVS" class="tech-card__img">
+                    <div class="tech-card__badge green">IEC 60060</div>
+                </div>
+                <div class="tech-card__content">
+                    <h3 class="tech-card__title">SKAT-SVS Series</h3>
+                    <p class="tech-card__desc">
+                        Complete stationary HV test systems for cables, PPE, and insulators. 20 kV to 100 kV modules.
+                    </p>
+                    <a href="product-svs.html" class="tech-card__btn">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Карточка 2: SKAT-70P -->
+            <article class="tech-card">
+                <div class="tech-card__image-wrap">
+                    <img src="images/70p-1.png" alt="SKAT-70P" class="tech-card__img">
+                </div>
+                <div class="tech-card__content">
+                    <h3 class="tech-card__title">SKAT-70P Measuring Attachment</h3>
+                    <p class="tech-card__desc">
+                        4-channel leakage current measuring attachment for comprehensive PPE testing.
+                    </p>
+                    <a href="product-70p.html" class="tech-card__btn">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+            <!-- Карточка 3: UBSVN-LM -->
+            <article class="tech-card">
+                <div class="tech-card__image-wrap">
+                    <img src="images/ubsvn-1.png" alt="UBSVN-LM" class="tech-card__img">
+                </div>
+                <div class="tech-card__content">
+                    <h3 class="tech-card__title">UBSVN-LM Safety Interlock</h3>
+                    <p class="tech-card__desc">
+                        Audio-visual alarm and safety interlock for HV laboratories. Up to 95 dB sound level.
+                    </p>
+                    <a href="product-ubsvn.html" class="tech-card__btn">
+                        Learn More <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </article>
+
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="index.html#products" class="btn-outline-dark">Back to Products</a>
+        </div>
+    </section>
+
+    <!-- ФУТЕР -->
+    <div id="footer-container"></div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- СКРИПТЫ -->
+    <script src="assets.js"></script>
+    <script src="category.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initCategoryPage('stationary');
+        });
+    </script>
+</body>
+</html>

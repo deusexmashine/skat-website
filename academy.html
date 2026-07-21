@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKAT Academy | Training & Courses</title>
+    <meta name="description" content="Professional training and courses on the operation, maintenance, and safety of SKAT high-voltage testing equipment.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .academy-hero-text h1 {
+            font-size: 3rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        .academy-hero-text h2 {
+            font-size: 1.4rem;
+            color: var(--primary-dark);
+            margin-bottom: 20px;
+        }
+        .academy-hero-text p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .academy-cta-block {
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--accent-yellow);
+            border-radius: 12px;
+            padding: 40px 30px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .academy-cta-block h3 {
+            font-size: 1.8rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        .academy-cta-block p {
+            color: var(--text-light);
+            margin-bottom: 25px;
+        }
+        @media (max-width: 768px) {
+            .academy-hero-text h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Контейнер для динамической шапки (загружается через main.js) -->
+    <div id="header-container"></div>
+
+    <main>
+        <section class="container" style="padding-top: 40px;">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div class="academy-hero-text">
+                    <h1>SKAT Academy</h1>
+                    <h2>Expert training in high-voltage testing and diagnostics</h2>
+                    <p>We offer high-quality training courses specially tailored to your individual needs. Whether you are a dealer, a maintenance engineer, or a lab technician — our programs cover the operation, maintenance, and safety of SKAT equipment.</p>
+                    <p style="margin-top: 15px;">Our course portfolio is constantly expanding. If you have special requirements or suggestions, please let us know — your feedback helps us customise our offer even better.</p>
+                    <a href="contact.html" class="btn-primary" style="margin-top: 20px;">Contact Us About Training</a>
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="images/academy-hero.jpg" alt="SKAT Academy Training" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-bottom: 60px;">
+            <div class="academy-cta-block">
+                <h3>Are you interested?</h3>
+                <p>Tell us what topics and formats interest you — we will tailor a training program for your team.</p>
+                <a href="contact.html" class="btn-primary">Tell us what interests you</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для динамического футера (загружается через main.js) -->
+    <div id="footer-container"></div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Подключаем общий JS-файл -->
+    <script src="main.js"></script>
+</body>
+</html>

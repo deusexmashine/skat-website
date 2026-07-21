@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About IEF SKAT | High-Voltage Test Equipment Manufacturer</title>
+    <meta name="description" content="IEF SKAT is a full-cycle manufacturer of high-voltage test and measurement equipment. Engineering excellence since 2006.">
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Контейнер для динамической шапки -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="page-hero-about">
+            <div class="container">
+                <div class="hero-about-content">
+                    <h1>About IEF SKAT</h1>
+                    <p>Built on engineering integrity. Committed to safety, precision, and the reliability of high-voltage diagnostics.</p>
+                    <p>From our accredited metrology lab in Volgograd to power grids worldwide, we deliver the testing solutions that industries trust.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- VIDEO BLOCK -->
+        <section class="container video-block-section" style="padding: 60px 0;">
+            <div class="video-block-wrapper" style="text-align: center; max-width: 900px; margin: 0 auto;">
+                <div id="videoPreviewContainer" style="position: relative; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="images/video-preview-about.jpg" alt="SKAT Production Facility" style="width: 100%; display: block;">
+                    <a href="#" class="play-btn-overlay" onclick="playVideo(); return false;">
+                        <i class="fa-solid fa-circle-play" style="font-size: 5rem; color: var(--accent-yellow); filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));"></i>
+                    </a>
+                </div>
+                <div id="videoPlayerContainer" style="display: none; width: 100%; border-radius: 12px; margin-top: 0;">
+                    <video id="aboutVideo" style="width: 100%; border-radius: 12px;" controls>
+                        <source src="video/about-skat.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <h3 style="margin-top: 30px; font-size: 1.8rem; color: var(--primary-dark);">Engineering Excellence Since 2006</h3>
+                <p style="color: var(--text-light); max-width: 700px; margin: 10px auto 0;">From our own R&D bureau to a 700 m² production hall, we control every step of the process to ensure uncompromising quality.</p>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION -->
+        <section style="background-color: var(--bg-secondary); padding: 60px 0;">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: 50px;">
+                    <div>
+                        <h2 style="color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 20px;">Confidence in every connection.</h2>
+                        <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.7; margin-bottom: 20px;">
+                            At IEF SKAT, we don't just build testing equipment—we build confidence. From the high-voltage lab to the substation, from oil analysis to metrological verification, our instruments provide the critical data engineers need to keep power flowing safely and reliably.
+                        </p>
+                        <p style="color: var(--text-light); font-size: 1.1rem; line-height: 1.7;">
+                            Our journey began in 2006 with a mission to create high-voltage test solutions that meet the rigorous demands of the energy sector. Today, we are a full-cycle manufacturer with our own accredited metrology laboratory, serving clients across the EAEU, Europe, Asia, and the Middle East.
+                        </p>
+                        <a href="contact.html" class="btn-primary" style="margin-top: 30px;">Contact Our Team</a>
+                    </div>
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <img src="images/factory-floor.jpg" alt="SKAT Production Hall" style="width: 100%; display: block;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- KEY DIFFERENTIATORS -->
+        <section style="background-color: var(--bg-white); padding: 60px 0;">
+            <div class="container">
+                <div class="grid-2" style="align-items: center; gap: 50px;">
+                    <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                        <img src="images/metrology-lab.jpg" alt="SKAT Accredited Metrology Lab" style="width: 100%; display: block;">
+                    </div>
+                    <div>
+                        <h2 style="color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 20px;">What Sets IEF SKAT Apart</h2>
+                        <ul style="list-style: none; padding: 0; color: var(--text-light); font-size: 1.05rem; line-height: 1.8;">
+                            <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="fa-solid fa-microchip" style="color: var(--accent-yellow); font-size: 1.5rem; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--primary-dark);">100% In-House Engineering</strong>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.95rem;">We design and manufacture our own hardware, software, and firmware, ensuring complete control over quality and innovation.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="fa-solid fa-certificate" style="color: var(--accent-yellow); font-size: 1.5rem; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--primary-dark);">Accredited Metrology Laboratory</strong>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.95rem;">We maintain our own accredited metrology lab, ensuring every unit is rigorously calibrated and verified before shipment.</p>
+                                </div>
+                            </li>
+                            <li style="margin-bottom: 20px; display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="fa-solid fa-helmet-safety" style="color: var(--accent-yellow); font-size: 1.5rem; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--primary-dark);">Safety-First Design Philosophy</strong>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.95rem;">Built-in safety interlocks, automatic earthing, and robust overcurrent protection are standard across our product line.</p>
+                                </div>
+                            </li>
+                            <li style="display: flex; gap: 15px; align-items: flex-start;">
+                                <i class="fa-solid fa-globe" style="color: var(--accent-yellow); font-size: 1.5rem; margin-top: 2px;"></i>
+                                <div>
+                                    <strong style="color: var(--primary-dark);">Global Compliance & Service</strong>
+                                    <p style="margin: 5px 0 0 0; font-size: 0.95rem;">Listed in state registers of Russia, Belarus, and Kazakhstan. Backed by an 18-month warranty and dedicated service centers.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GLOBAL REACH -->
+        <section style="background-color: var(--bg-secondary); padding: 60px 0;">
+            <div class="container" style="text-align: center;">
+                <h2 style="color: var(--primary-dark); font-size: 2.2rem; margin-bottom: 15px;">Serving the Global Power Industry</h2>
+                <p style="color: var(--text-light); max-width: 800px; margin: 0 auto 40px;">From our production base in Volgograd to our distributors in Europe, Asia, and the Middle East, we deliver high-voltage testing solutions where they are needed most.</p>
+                <div class="grid-3" style="text-align: left;">
+                    <div class="feature-card" style="text-align: left; padding: 30px;">
+                        <i class="fa-solid fa-tower-cell" style="color: var(--accent-yellow); font-size: 2rem;"></i>
+                        <h4 style="margin-top: 15px;">Power Utilities & Substations</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem;">Testing and diagnostics for transformers, cable lines, and switchgear.</p>
+                    </div>
+                    <div class="feature-card" style="text-align: left; padding: 30px;">
+                        <i class="fa-solid fa-flask" style="color: var(--accent-yellow); font-size: 2rem;"></i>
+                        <h4 style="margin-top: 15px;">Metrology & Calibration Labs</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem;">Precision kilovoltmeters and active loads for metrological verification.</p>
+                    </div>
+                    <div class="feature-card" style="text-align: left; padding: 30px;">
+                        <i class="fa-solid fa-hard-hat" style="color: var(--accent-yellow); font-size: 2rem;"></i>
+                        <h4 style="margin-top: 15px;">Industrial & Plant Safety</h4>
+                        <p style="color: var(--text-light); font-size: 0.95rem;">PPE testing equipment for dielectric gloves, boots, and live-line tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для динамического футера -->
+    <div id="footer-container"></div>
+
+    <!-- Кнопка "Вверх" -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Видео-функция (остаётся только на страницах с видео) -->
+    <script>
+        function playVideo() {
+            var previewContainer = document.getElementById('videoPreviewContainer');
+            var videoContainer = document.getElementById('videoPlayerContainer');
+            var videoElement = document.getElementById('aboutVideo');
+
+            previewContainer.style.display = 'none';
+            videoContainer.style.display = 'block';
+            setTimeout(function() {
+                videoElement.play();
+            }, 100);
+        }
+    </script>
+
+    <!-- ========================================================== -->
+    <!-- Подключаем общий файл main.js, который содержит:            -->
+    <!-- - Кнопку "Вверх"                                           -->
+    <!-- - initMegaMenu()                                           -->
+    <!-- - Загрузку шапки и футера                                  -->
+    <!-- ========================================================== -->
+    <script src="main.js"></script>
+</body>
+</html>

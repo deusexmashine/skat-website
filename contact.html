@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact SKAT | High-Voltage Test Equipment Manufacturer</title>
+    <meta name="description" content="Contact IEF SKAT for quotes, technical support, and sales information. Worldwide shipping from Volgograd, Russia.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Наши модульные стили для карты -->
+    <link rel="stylesheet" href="map.css">
+    
+    <!-- Leaflet JS с async и defer -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" async defer></script>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <section class="page-header" style="background: var(--bg-secondary);">
+            <div class="container">
+                <h1>Where to Buy & Contact Us</h1>
+                <p style="color: var(--text-light);">You can buy from us directly, through our headquarters, or via our authorized distributors worldwide.</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="contact-page-layout">
+                
+                <div>
+                    <div id="contactMap"></div>
+                    <div style="margin-top: 15px; font-size: 0.9rem; color: var(--text-light);">
+                        <i class="fa-solid fa-location-dot" style="color: var(--accent-yellow);"></i> 
+                        Headquarters: Volgograd, Russia
+                    </div>
+                </div>
+
+                <div>
+                    <div class="contact-search-wrap">
+                        <input type="text" id="searchInput" placeholder="Search for a location..." onkeyup="filterLocations()">
+                        <button class="btn-primary" style="padding: 12px 20px;"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+
+                    <div class="contact-list-wrapper" id="contactList">
+    <!-- ===== РОССИЯ ===== -->
+    <!-- Штаб-квартира: точные координаты 48.781564, 44.549117 -->
+    <div class="contact-item" data-lat="48.781564" data-lng="44.549117" data-name="Headquarters">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> IEF SKAT — Volgograd (HQ)</h3>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--accent-yellow);"></i> 400040, Poddubny st., 37, of. 202</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--accent-yellow);"></i> +7 (8442) 26-99-94</p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> st@skat-v.com</p>
+        <button onclick="openModal('IEF SKAT — Volgograd')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ООО Электронприбор — Москва (точные координаты офиса) --> 
+    <div class="contact-item" data-lat="55.946986" data-lng="38.07141" data-name="Electronpribor Moscow">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Electronpribor — Moscow</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://www.electronpribor.ru" target="_blank">electronpribor.ru</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:order@terra-kip.ru">order@terra-kip.ru</a></p>
+        <button onclick="openModal('OOO Electronpribor — Moscow')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ООО Терра Импэкс — Новосибирск (точные координаты офиса) -->
+    <div class="contact-item" data-lat="55.030199" data-lng="82.920430" data-name="Terra Impex">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Terra Impex — Novosibirsk</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://www.terra-kip.ru" target="_blank">terra-kip.ru</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:order@terra-kip.ru">order@terra-kip.ru</a></p>
+        <button onclick="openModal('OOO Terra Impex — Novosibirsk')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ООО Союз-Прибор — Казань (точные координаты офиса) -->
+    <div class="contact-item" data-lat="55.768105" data-lng="49.136728" data-name="Soyuz-Pribor">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Soyuz-Pribor — Kazan</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://www.souz-pribor.ru" target="_blank">souz-pribor.ru</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:info@souz-pribor.ru">info@souz-pribor.ru</a></p>
+        <button onclick="openModal('OOO Soyuz-Pribor — Kazan')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ООО Элиз — Череповец (точные координаты офиса) -->
+    <div class="contact-item" data-lat="59.126640" data-lng="37.900320" data-name="Eliz Cherepovets">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Eliz — Cherepovets</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="http://www.elpriz.ru" target="_blank">elpriz.ru</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:chp@elizpribor.ru">chp@elizpribor.ru</a></p>
+        <button onclick="openModal('OOO Eliz — Cherepovets')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- Филиал ООО "Электронприбор" в Иркутске (точные координаты офиса) -->
+    <div class="contact-item" data-lat="52.286270" data-lng="104.280600" data-name="Electronpribor Irkutsk">
+        <h3><img src="flags/ru.png" alt="Russia" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Electronpribor — Irkutsk</h3>
+        <p><i class="fa-solid fa-location-dot" style="color: var(--accent-yellow);"></i> Irkutsk, Russia</p>
+        <p><i class="fa-solid fa-phone" style="color: var(--accent-yellow);"></i> +7 (3952) 19-91-61</p>
+        <button onclick="openModal('OOO Electronpribor — Irkutsk')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== БЕЛАРУСЬ ===== -->
+    <!-- Профтим — Минск (точные координаты офиса) -->
+    <div class="contact-item" data-lat="53.893009" data-lng="27.567444" data-name="Profteam">
+        <h3><img src="flags/by.png" alt="Belarus" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> Profteam — Minsk</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://profteam.by" target="_blank">profteam.by</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:info@profteam.by">info@profteam.by</a></p>
+        <button onclick="openModal('Profteam — Minsk')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ТП Консалт — Минск (точные координаты офиса) --> 
+    <div class="contact-item" data-lat="53.916171" data-lng="27.471086" data-name="TP Consult">
+        <h3><img src="flags/by.png" alt="Belarus" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> TP Consult — Minsk</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://tpconsult.by" target="_blank">tpconsult.by</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:info@tpconsult.by">info@tpconsult.by</a></p>
+        <button onclick="openModal('TP Consult — Minsk')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== КАЗАХСТАН ===== -->
+    <!-- TESSA INTER GROUP — Алматы (точные координаты офиса) -->
+    <div class="contact-item" data-lat="43.235650" data-lng="76.922190" data-name="TESSA INTER GROUP">
+        <h3><img src="flags/kz.png" alt="Kazakhstan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> TESSA INTER GROUP — Almaty</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="http://www.tessagroup.kz" target="_blank">tessagroup.kz</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:info@tessagroup.kz">info@tessagroup.kz</a></p>
+        <button onclick="openModal('TESSA INTER GROUP — Almaty')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- KBS Group — Алматы (точные координаты офиса) -->
+    <div class="contact-item" data-lat="43.235650" data-lng="76.922190" data-name="KBS Group">
+        <h3><img src="flags/kz.png" alt="Kazakhstan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> KBS Group — Almaty</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://www.kbsgroup.biz" target="_blank">kbsgroup.biz</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:kojomuratovt@kbsgroup.biz">kojomuratovt@kbsgroup.biz</a></p>
+        <button onclick="openModal('KBS Group — Almaty')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- Филиал ООО "Электронприбор" в Казахстане (1ep.kz) — Петропавловск (точные координаты офиса) -->
+    <div class="contact-item" data-lat="54.876370" data-lng="69.142880" data-name="Electronpribor KZ">
+        <h3><img src="flags/kz.png" alt="Kazakhstan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO Electronpribor KZ — Petropavlovsk</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://1ep.kz" target="_blank">1ep.kz</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:kz@1ep.kz">kz@1ep.kz</a></p>
+        <button onclick="openModal('OOO Electronpribor KZ — Petropavlovsk')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== БОЛГАРИЯ ===== -->
+    <!-- Lokator-K — София (точные координаты офиса) -->
+    <div class="contact-item" data-lat="42.697510" data-lng="23.324150" data-name="Lokator-K">
+        <h3><img src="flags/bg.png" alt="Bulgaria" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> Lokator-K — Sofia</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="http://www.lokatork.com" target="_blank">lokatork.com</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:office@lokatork.com">office@lokatork.com</a></p>
+        <button onclick="openModal('Lokator-K — Sofia')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== КЫРГЫЗСТАН ===== -->
+    <!-- ОсОО Тоошкан — Бишкек (центр города) -->
+    <div class="contact-item" data-lat="42.874620" data-lng="74.569760" data-name="Tooshkan">
+        <h3><img src="flags/kg.png" alt="Kyrgyzstan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OsOO Tooshkan — Bishkek</h3>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:555734000@mail.ru">555734000@mail.ru</a></p>
+        <button onclick="openModal('OsOO Tooshkan — Bishkek')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ОсОО ТехИнженирс — Бишкек (центр города) -->
+    <div class="contact-item" data-lat="42.874620" data-lng="74.569760" data-name="TechEngineers">
+        <h3><img src="flags/kg.png" alt="Kyrgyzstan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OsOO TechEngineers — Bishkek</h3>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:u.sharshenbaev@gmail.com">u.sharshenbaev@gmail.com</a></p>
+        <button onclick="openModal('OsOO TechEngineers — Bishkek')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== АЗЕРБАЙДЖАН ===== -->
+    <!-- Maybo LLC — Баку (точные координаты офиса) -->
+    <div class="contact-item" data-lat="40.409260" data-lng="49.867080" data-name="Maybo LLC">
+        <h3><img src="flags/az.png" alt="Azerbaijan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> Maybo LLC — Baku</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://www.maybo.az" target="_blank">maybo.az</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:contact@maybo.az">contact@maybo.az</a></p>
+        <button onclick="openModal('Maybo LLC — Baku')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- Alten Group — Баку (центр города) -->
+    <div class="contact-item" data-lat="40.409260" data-lng="49.867080" data-name="Alten Group">
+        <h3><img src="flags/az.png" alt="Azerbaijan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> Alten Group — Baku</h3>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:ilkin.novruzzade@alten-group.com">ilkin.novruzzade@alten-group.com</a></p>
+        <button onclick="openModal('Alten Group — Baku')" class="btn-outline-dark">Contact</button>
+    </div>
+
+    <!-- ===== УЗБЕКИСТАН ===== -->
+    <!-- NVK Management — Ташкент (центр города) -->
+    <div class="contact-item" data-lat="41.299500" data-lng="69.240070" data-name="NVK Management">
+        <h3><img src="flags/uz.png" alt="Uzbekistan" style="width: 24px; height: 18px; vertical-align: middle; margin-right: 8px;"> OOO NVK Management — Tashkent</h3>
+        <p><i class="fa-solid fa-link" style="color: var(--accent-yellow);"></i> <a href="https://sp-kip.uz" target="_blank">sp-kip.uz</a></p>
+        <p><i class="fa-solid fa-envelope" style="color: var(--accent-yellow);"></i> <a href="mailto:info@sp-kip.uz">info@sp-kip.uz</a></p>
+        <button onclick="openModal('OOO NVK Management — Tashkent')" class="btn-outline-dark">Contact</button>
+    </div>
+</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <div class="contact-modal" id="contactModal">
+        <div class="contact-modal-content">
+            <span class="contact-modal-close" onclick="closeModal()">&times;</span>
+            <h3>Contact <span id="modalCompanyName">SKAT</span></h3>
+            <form onsubmit="event.preventDefault(); alert('Thank you! Your inquiry has been sent. We will get back to you shortly.'); closeModal();">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Company Name">
+                <textarea rows="4" placeholder="Your Inquiry..." required></textarea>
+                <button type="submit" class="btn-primary" style="width: 100%;">Send Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script>
+        // Кнопка "Вверх"
+        window.addEventListener('scroll', function() {
+            const btn = document.getElementById('scrollTopBtn');
+            if (window.scrollY > 300) {
+                btn.classList.add('show');
+            } else {
+                btn.classList.remove('show');
+            }
+        });
+        document.getElementById('scrollTopBtn').addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ===== ЗАГРУЗКА ШАПКИ И ФУТЕРА =====
+        function loadHeader() {
+            return fetch('main_head.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('header-container').innerHTML = data;
+                    return true;
+                })
+                .catch(error => {
+                    console.error('Ошибка загрузки шапки:', error);
+                    return false;
+                });
+        }
+
+        function loadFooter() {
+            fetch('main_footer.html')
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById('footer-container').innerHTML = data;
+                })
+                .catch(error => console.error('Ошибка загрузки футера:', error));
+        }
+
+        // ===== ИНИЦИАЛИЗАЦИЯ МЕГА-МЕНЮ =====
+        function initMegaMenu() {
+            const toggleBtn = document.getElementById('megaMenuToggle');
+            const overlay = document.getElementById('megaOverlay');
+            const closeBtn = document.querySelector('.mega-close-btn');
+            const cards = document.querySelectorAll('.mega-card-item');
+            const groups = document.querySelectorAll('.mega-links-group');
+
+            if (!toggleBtn || !overlay) return;
+
+            toggleBtn.addEventListener('click', function(e) {
+                e.preventDefault();
+                if (overlay.classList.contains('active')) {
+                    overlay.classList.remove('active');
+                    cards.forEach(c => c.classList.remove('active'));
+                    groups.forEach(g => g.classList.remove('active'));
+                    return;
+                }
+                overlay.classList.add('active');
+                if (cards.length > 0 && groups.length > 0) {
+                    cards[0].classList.add('active');
+                    const firstCategory = cards[0].getAttribute('data-category');
+                    const targetGroup = document.querySelector(`.mega-links-group[data-category="${firstCategory}"]`);
+                    if (targetGroup) targetGroup.classList.add('active');
+                }
+            });
+
+            if (closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    overlay.classList.remove('active');
+                    cards.forEach(c => c.classList.remove('active'));
+                    groups.forEach(g => g.classList.remove('active'));
+                });
+            }
+
+            overlay.addEventListener('click', function(e) {
+                if (e.target === overlay) {
+                    overlay.classList.remove('active');
+                    cards.forEach(c => c.classList.remove('active'));
+                    groups.forEach(g => g.classList.remove('active'));
+                }
+            });
+
+            cards.forEach(card => {
+                card.addEventListener('click', function() {
+                    cards.forEach(c => c.classList.remove('active'));
+                    groups.forEach(g => g.classList.remove('active'));
+                    this.classList.add('active');
+                    const category = this.getAttribute('data-category');
+                    const targetGroup = document.querySelector(`.mega-links-group[data-category="${category}"]`);
+                    if (targetGroup) targetGroup.classList.add('active');
+                });
+            });
+        }
+
+        // ===== ГЛАВНЫЙ ЦИКЛ ЗАГРУЗКИ =====
+        document.addEventListener('DOMContentLoaded', function() {
+            loadHeader().then((headerLoaded) => {
+                if (headerLoaded) {
+                    setTimeout(() => {
+                        initMegaMenu();
+                    }, 100);
+
+                    loadFooter();
+
+                    // Загружаем и инициализируем карту только после того, как DOM готов
+                    setTimeout(() => {
+                        initLeafletMap();
+                    }, 300);
+                }
+            });
+        });
+    </script>
+    
+    <!-- Подключаем модуль карты -->
+    <script src="map.js"></script>
+</body>
+</html>

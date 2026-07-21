@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Support & Service | SKAT HV Equipment</title>
+    <meta name="description" content="We stand behind our equipment with comprehensive service and support. Technical support, calibration, training, and warranty.">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .service-hero-text h1 {
+            font-size: 3rem;
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        .service-hero-text p {
+            font-size: 1.15rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .service-section-title {
+            font-size: 2.2rem;
+            text-align: center;
+            color: var(--primary-dark);
+            margin-bottom: 40px;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .service-card {
+            position: relative;
+            border-radius: 12px;
+            overflow: hidden;
+            height: 350px;
+            display: block;
+            text-decoration: none;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+        .service-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+        .service-card:hover img {
+            transform: scale(1.05);
+        }
+        .service-card-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(28, 29, 38, 0.65);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+            transition: background 0.3s ease;
+        }
+        .service-card:hover .service-card-overlay {
+            background: rgba(28, 29, 38, 0.80);
+        }
+        .service-card h3 {
+            color: #fff;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .service-card p {
+            color: #e0e0e0;
+            font-size: 1rem;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+        .service-card .btn-outline-light {
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 8px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .service-card .btn-outline-light:hover {
+            background: #fff;
+            color: var(--primary-dark);
+        }
+        .support-info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding-top: 20px;
+            border-top: 3px solid var(--accent-yellow);
+        }
+        .support-info-grid h3 {
+            color: var(--primary-dark);
+            margin-bottom: 15px;
+        }
+        .support-info-grid ul {
+            list-style: none;
+            padding: 0;
+        }
+        .support-info-grid ul li {
+            margin-bottom: 10px;
+            color: var(--text-light);
+            font-size: 1rem;
+        }
+        .support-info-grid ul li i {
+            color: var(--accent-yellow);
+            margin-right: 10px;
+            width: 20px;
+        }
+        @media (max-width: 992px) {
+            .service-grid { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 768px) {
+            .service-hero-text h1 { font-size: 2.2rem; }
+            .service-grid { grid-template-columns: 1fr; }
+            .service-card { height: 280px; }
+            .support-info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Контейнер для динамической шапки (загружается через main.js) -->
+    <div id="header-container"></div>
+
+    <main>
+        <section class="container" style="padding-top: 40px;">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div class="service-hero-text">
+                    <h1>Professional Service for Our Customers</h1>
+                    <h2 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 20px;">Your equipment's reliability is our highest priority</h2>
+                    <p>We offer a comprehensive range of services worldwide, performed by highly qualified specialists. This includes technical support, delivery of spare parts, regular maintenance, annual calibrations, and repair in the event of faults, as well as training on the use of our devices.</p>
+                    <p style="margin-top: 15px;">Our objective is to provide you with first-class customer service tailored to your individual needs. Contact us to book a service appointment.</p>
+                    <a href="contact.html" class="btn-primary" style="margin-top: 20px;">Contact Support</a>
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="images/service-hero.jpg" alt="SKAT Service & Calibration" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <section class="container" style="padding-top: 40px;">
+            <h2 class="service-section-title">Our Services</h2>
+            <div class="service-grid">
+                <a href="contact.html" class="service-card">
+                    <img src="images/support-tech.jpg" alt="Technical Support">
+                    <div class="service-card-overlay">
+                        <h3>Technical Support</h3>
+                        <p>Direct access to our engineering team for troubleshooting, operation guidance, and technical inquiries.</p>
+                        <span class="btn-outline-light">Contact Support</span>
+                    </div>
+                </a>
+                <a href="contact.html" class="service-card">
+                    <img src="images/support-calibration.jpg" alt="Calibration & Adjustment">
+                    <div class="service-card-overlay">
+                        <h3>Calibration & Adjustment</h3>
+                        <p>Certified calibration and metrological verification of your equipment to ensure accuracy and compliance with standards.</p>
+                        <span class="btn-outline-light">Request Calibration</span>
+                    </div>
+                </a>
+                <a href="academy.html" class="service-card">
+                    <img src="images/support-training.jpg" alt="Training & Courses">
+                    <div class="service-card-overlay">
+                        <h3>Training & Courses</h3>
+                        <p>Professional training for dealer personnel and end‑users on the operation, maintenance, and safety of SKAT equipment.</p>
+                        <span class="btn-outline-light">Inquire About Training</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section style="background-color: var(--bg-secondary); padding: 60px 0;">
+            <div class="container">
+                <div class="support-info-grid">
+                    <div>
+                        <h3><i class="fa-solid fa-shield-halved" style="color: var(--accent-yellow);"></i> Warranty</h3>
+                        <ul>
+                            <li><strong>Main Equipment:</strong> 18-month warranty covering all manufacturing defects.</li>
+                            <li><strong>Accessories:</strong> UBSVN-LM — 12 months / IK 100-0.4 — 6 months.</li>
+                            <li>Free repair during the warranty period, provided operating instructions are followed.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3><i class="fa-solid fa-location-dot" style="color: var(--accent-yellow);"></i> Service Centers</h3>
+                        <ul>
+                            <li><strong>Main Center:</strong> Volgograd, Russia</li>
+                            <li><strong>Regional Center:</strong> Minsk, Belarus</li>
+                            <li><strong>Authorized Partners:</strong> Kazakhstan</li>
+                            <li>Multilingual support available in Russian and English.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для динамического футера (загружается через main.js) -->
+    <div id="footer-container"></div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Подключаем общий JS-файл -->
+    <script src="main.js"></script>
+</body>
+</html>

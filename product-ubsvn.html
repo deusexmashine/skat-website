@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBSVN-LM HV Laboratory Safety Interlock | Warning System</title>
+    <meta name="description" content="Safety interlock and audio-visual alarm for HV laboratories. Triggers when door opens. Up to 95 dB sound level.">
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Основные стили SKAT -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="prod_style.css"> 
+    <link rel="stylesheet" href="megamenu.css"> 
+    
+    <!-- Модуль стилей для таблицы -->
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <!-- Контейнер для динамической шапки -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- ===== HERO СЕКЦИЯ ===== -->
+        <section class="product-hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Левая колонка: Карусель -->
+                    <div class="product-carousel">
+                        <div class="gallery-main">
+                            <a href="#img-main" class="lightbox-link">
+                                <img id="mainImage" src="images/ubsvn-1.png" alt="UBSVN-LM Full View">
+                            </a>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <button class="active" onclick="changeImage('images/ubsvn-1.png', this)"><img src="images/ubsvn-1.png" alt="Thumbnail 1"></button>
+                            <button onclick="changeImage('images/ubsvn-2.png', this)"><img src="images/ubsvn-2.png" alt="Thumbnail 2"></button>
+                            <button onclick="changeImage('images/ubsvn-3.png', this)"><img src="images/ubsvn-3.png" alt="Thumbnail 3"></button>
+                        </div>
+                    </div>
+
+                    <!-- Правая колонка: Информация -->
+                    <div class="hero-content">
+                        <p class="category">Safety Accessories</p>
+                        <h1>UBSVN-LM Safety Interlock &amp; Audio-Visual Alarm</h1>
+                        <p class="subtitle">Safety interlock and audio-visual alarm for HV laboratories.</p>
+                        <p class="description">The UBSVN-LM is a critical safety device designed for high-voltage testing laboratories. It provides a clear audio-visual warning when high voltage is active and physically blocks power to the HV source if the laboratory door is opened, protecting personnel from accidental exposure.</p>
+                        <div class="hero-actions">
+                            <a href="contact.html" class="btn-primary">Request a Quote</a>
+                        </div>
+                        <!-- Аккордеон -->
+                        <div class="accordion-container">
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> High-Intensity Warning Light</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">≥500 lux contrast perception for clear visibility even in bright environments.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Loud Audible Alarm</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">≥95 dB sound level at 1 meter distance.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Safety Interlock for Door Detection</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Open door detection via a normally open limit switch.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Wide Temperature Tolerance</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Operates reliably from -30 °C to +55 °C.</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СЕКЦИЯ ВКЛАДОК (TABS) ===== -->
+        <section class="container product-tabs-wrapper">
+            <div class="product-tabs-nav">
+                <div class="product-tabs">
+                    <button class="active" onclick="openTab(event, 'tab-info')">Product information</button>
+                    <button onclick="openTab(event, 'tab-specs')">Technical specifications</button>
+                    <button onclick="openTab(event, 'tab-support')">Product support</button>
+                </div>
+                <a href="contact.html" class="product-tabs-support-link"><i class="fa-solid fa-headset"></i> Technical support</a>
+            </div>
+
+            <!-- ===== ВКЛАДКА 1: ИНФОРМАЦИЯ О ПРОДУКТЕ ===== -->
+            <div id="tab-info" class="tab-pane active">
+                <div class="product-content-block">
+                    <h2>About the product</h2>
+                    <p>The UBSVN-LM is a critical safety device designed for high-voltage testing laboratories. It provides a clear audio-visual warning when high voltage is active and physically blocks power to the HV source if the laboratory door is opened, protecting personnel from accidental exposure.</p>
+                    <p>The device is compatible with SKAT-70M, SKAT-70C, SKAT-70C/100C, SKAT-SVS series, and other HV test equipment with a normally open dry contact interlock circuit. Installation is straightforward, with clear connection diagrams provided in the user manual.</p>
+
+                    <!-- Вертикальная видео-галерея -->
+                    <div class="product-video-wrapper">
+                        <div class="video-main"><video id="mainVideo" controls poster="images/ubsvn-main-poster.jpg"><source src="video/ubsvn-main.mp4" type="video/mp4"></video></div>
+                        <div class="video-thumbnails-vertical">
+                            <div class="thumb-item active" data-video="video/ubsvn-main.mp4"><img src="images/ubsvn-thumb1.jpg" alt="Video 1"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/ubsvn-extra-1.mp4"><img src="images/ubsvn-thumb2.jpg" alt="Video 2"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/ubsvn-extra-2.mp4"><img src="images/ubsvn-thumb3.jpg" alt="Video 3"><div class="play-icon">▶</div></div>
+                        </div>
+                    </div>
+
+                    <h2>Product documents</h2>
+                    <div class="documents-list">
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/UBSVN-LM_DS_en.pdf" target="_blank">Data sheet</a><span>PDF | 0.6 MB</span></div>
+                        </div>
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/UBSVN-LM_UG_en.pdf" target="_blank">User guide</a><span>PDF | 1.8 MB</span></div>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-top: 40px;">Related products</h2>
+                    <div class="related-products-grid">
+                        <a href="product-70c.html" class="related-product-card">
+                            <img src="images/70c-1.png" alt="SKAT-70C"><h4>SKAT-70C Digital Dielectric Tester</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Digital AC/DC dielectric tester with microcontroller control.</p>
+                        </a>
+                        <a href="product-svs.html" class="related-product-card">
+                            <img src="images/svs-1.png" alt="SKAT-SVS"><h4>SKAT-SVS Stationary Test Benches</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Complete stationary HV test systems for cables and PPE.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 2: ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ===== -->
+            <div id="tab-specs" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Technical specifications</h2>
+                    
+                    <!-- Контейнер для динамической таблицы -->
+                    <div id="specs-container"></div>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                        <em>Note: Specifications are subject to change without notice. For custom ranges and configurations, please contact our sales team.</em>
+                    </p>
+                </div>
+
+                <div class="product-content-block">
+                    <h2>FAQ</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Which devices is this interlock compatible with?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">It is compatible with SKAT-70M/70MA, SKAT-70C/100C series, SKAT-SVS series, and other HV sources with a normally open dry contact interlock circuit.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> How loud is the alarm?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The sound pressure level is at least 95 dB at 1 meter distance.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What is the operating temperature range?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The device operates reliably from -30 °C to +55 °C.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 3: ПОДДЕРЖКА ПРОДУКТА ===== -->
+            <div id="tab-support" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Interpreting test results</h2>
+                    <p>For detailed guidance on installation and troubleshooting, refer to your equipment's user manual.</p>
+                </div>
+                <div class="product-content-block">
+                    <h2>Troubleshooting &amp; Software updates</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Common troubleshooting steps</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">Ensure proper wiring according to the connection diagram. Verify the limit switch is correctly installed on the door. Check the power supply.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Software &amp; firmware updates</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">This device does not require software or firmware updates. Contact technical support for any inquiries.</div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-block">
+                    <h2>Application and academic support</h2>
+                    <p>For detailed application notes, contact our support team.</p>
+                    <a href="contact.html" class="btn-outline-dark" style="margin-top: 15px;">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для футера -->
+    <div id="footer-container"></div>
+
+    <!-- ===== ЛАЙТБОКС ===== -->
+    <div id="img-main" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <div style="position: relative; max-width: 80%; max-height: 85%; display: flex; align-items: center; justify-content: center;">
+            <a href="#" class="lightbox-nav prev" onclick="lightboxNav(event, -1)"><i class="fa-solid fa-chevron-left"></i></a>
+            <img class="lightbox-content" src="images/ubsvn-1.png" alt="UBSVN-LM Full View Large">
+            <a href="#" class="lightbox-nav next" onclick="lightboxNav(event, 1)"><i class="fa-solid fa-chevron-right"></i></a>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 3</div>
+        </div>
+    </div>
+
+    <!-- Подключение библиотеки ресурсов -->
+    <script src="assets.js"></script>
+
+    <!-- Основной скрипт для страниц продуктов -->
+    <script src="product.js"></script>
+    
+    <!-- Скрипт мега-меню -->
+    <script src="megamenu.js"></script>
+
+    <!-- Инициализация галереи -->
+    <script>
+        initProductGallery('ubsvn');
+    </script>
+
+    <!-- Инициализация таблицы характеристик -->
+    <script src="table_style.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initSpecsTable('specs-container', 'ubsvn-lm', 'table_style.json');
+        });
+    </script>
+</body>
+</html>

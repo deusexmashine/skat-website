@@ -1,0 +1,56 @@
+{
+  "site": {
+    "title": "SKAT — High-Voltage Test & Measurement Equipment",
+    "description": "Industrial-grade high-voltage testing equipment for power cables, transformer oil, and PPE. IEC-compliant, 18-month warranty, worldwide shipping from Volgograd, Russia."
+  },
+  "pages": {
+    "product-avn70": {
+      "title": "SKAT-AVN-70 Active HV Load for Dielectric Tester Calibration",
+      "keywords": "active load, HV load bank, calibration load, dielectric tester calibration, 70kV load, SKAT-AVN-70"
+    },
+    "product-70m": {
+      "title": "SKAT-70M / 70MA AC/DC Dielectric Testers | HV Cable Testing",
+      "keywords": "dielectric tester, AC/DC test set, cable testing, insulation testing, high voltage tester, SKAT-70M, IEC 60060"
+    },
+    "product-70c": {
+      "title": "SKAT-70C / 100C Digital Dielectric Testers | Smart HV Testing",
+      "keywords": "digital dielectric tester, AC/DC high voltage, microcontroller tester, rack mount tester, SKAT-70C, SKAT-100C"
+    },
+    "product-m100v": {
+      "title": "SKAT-M100V Transformer Oil Breakdown Tester | IEC 60156",
+      "keywords": "oil breakdown tester, transformer oil tester, dielectric strength, IEC 60156, GOST 6581-75, SKAT-M100V"
+    },
+    "product-70p": {
+      "title": "SKAT-70P Measuring Attachment | 4-Channel Leakage Current Tester",
+      "keywords": "leakage current tester, PPE testing, dielectric gloves, SKAT-70P, 4-channel measurement"
+    },
+    "product-tangens": {
+      "title": "SKAT-TANGENS-M Liquid Dielectric Tester | Tan δ & Permittivity",
+      "keywords": "tan delta tester, dielectric loss factor, liquid dielectric, insulating oil tester, IEC 60247, SKAT-TANGENS-M"
+    },
+    "product-kvc": {
+      "title": "KVC Series Digital Kilovoltmeters | Precision HV Measurement",
+      "keywords": "digital kilovoltmeter, precision voltmeter, HV measurement, harmonic distortion, THD, KVC series"
+    },
+    "product-svs": {
+      "title": "SKAT-SVS High-Voltage Test Benches | Stationary HV Test Systems",
+      "keywords": "HV test bench, stationary HV tester, cable testing, PPE testing, SKAT-SVS-50C, SKAT-SVS-100C"
+    },
+    "product-stend50": {
+      "title": "SKAT-STEND-50 Insulating Rod & HV Indicator Test Stand",
+      "keywords": "insulating rod test stand, HV indicator testing, live-line tool test, SKAT-STEND-50"
+    },
+    "product-ubsvn": {
+      "title": "UBSVN-LM HV Laboratory Safety Interlock | Warning System",
+      "keywords": "laboratory safety, HV interlock, audio visual alarm, door interlock, UBSVN-LM"
+    },
+    "product-ik100": {
+      "title": "IK 100-0.4 High-Voltage Pulse Capacitor | 100 kV, 0.4 µF",
+      "keywords": "pulse capacitor, impulse capacitor, high voltage capacitor, 100kV, impulse generator"
+    },
+    "about": {
+      "title": "About IEF SKAT | High-Voltage Test Equipment Manufacturer",
+      "keywords": "SKAT factory, HV equipment manufacturer, Volgograd, Russian HV engineering, high voltage test equipment"
+    }
+  }
+}

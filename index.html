@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKAT — High-Voltage Test & Measurement Equipment | IEF SKAT</title>
+    <meta name="description" content="Industrial-grade high-voltage testing equipment for power cables, transformer oil, and PPE.">
+    
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home">
+    <!-- Контейнер для динамической шапки (загружается через main.js) -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero hero-video">
+            <div class="hero-video-bg-wrapper">
+                <video autoplay loop muted playsinline class="hero-video-bg">
+                    <source src="video/TAN.mp4" type="video/mp4">
+                    <img src="img/hero-bg-fallback.jpg" alt="SKAT Lab Background" class="hero-video-bg" style="object-fit: cover; width: 100%; height: 100%;">
+                </video>
+
+                <div class="hero-text-overlay">
+                    <div class="hero-text-card">
+                        <h1>Measure. Verify. Protect.</h1>
+                        <p>From accredited metrology labs calibrating digital kilovoltmeters to power substations testing transformer oil and PPE — SKAT delivers the precision, safety, and reliability that high-voltage engineers trust worldwide.</p>
+                        <div class="hero-actions" style="margin-top: 30px;">
+                            <a href="#products" class="btn-primary">View Catalog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY SKAT -->
+        <section id="about" style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Built on Engineering Integrity</h2>
+                <p class="section-subtitle">IEF SKAT — a full-cycle manufacturer of high-voltage test equipment since 2006.</p>
+                <div class="grid-4">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-microchip" style="color: var(--accent-yellow);"></i>
+                        <h3>In-House R&D & Production</h3>
+                        <p>IEF SKAT operates a 700 m² production facility in Volgograd. All hardware and firmware is engineered in-house, ensuring complete control over quality and innovation.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-certificate" style="color: var(--accent-yellow);"></i>
+                        <h3>Accredited Metrology Lab</h3>
+                        <p>We maintain our own accredited metrology laboratory. Every unit is rigorously calibrated and verified before shipment, complying with international and EAEU standards.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-helmet-safety" style="color: var(--accent-yellow);"></i>
+                        <h3>Safety-First Design</h3>
+                        <p>Our equipment is engineered with built-in safety interlocks, automatic earthing, and robust overcurrent protection — prioritizing operator safety in high-voltage environments.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-globe" style="color: var(--accent-yellow);"></i>
+                        <h3>Global Compliance & Service</h3>
+                        <p>Listed in state registers of Russia, Belarus, and Kazakhstan. With an 18-month warranty and service centers in Volgograd and Minsk, we support you worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATS BLOCK -->
+        <section style="background-color: var(--primary-dark); color: white; padding: 60px 0;">
+            <div class="container">
+                <div class="grid-3" style="text-align: center;">
+                    <div>
+                        <h2 style="font-size: 3rem; color: var(--accent-yellow);">20+</h2>
+                        <p style="font-size: 1.1rem; color: #ccc;">Years of Engineering Excellence (Since 2006)</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size: 3rem; color: var(--accent-yellow);">10+</h2>
+                        <p style="font-size: 1.1rem; color: #ccc;">Countries Served Worldwide</p>
+                    </div>
+                    <div>
+                        <h2 style="font-size: 3rem; color: var(--accent-yellow);">100%</h2>
+                        <p style="font-size: 1.1rem; color: #ccc;">Technology. Precision. Quality.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRODUCTS OVERVIEW -->
+        <section id="products">
+            <div class="container">
+                <h2 class="section-title">Products Overview</h2>
+                <p class="section-subtitle">Complete solutions for high-voltage testing and diagnostics.</p>
+                
+                <div class="grid-3">
+                    <!-- Категория 1 -->
+                    <div class="product-card">
+                        <img src="icons/flask.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="Dielectric tester icon">
+                        <span style="position: absolute; top: 15px; right: 15px; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600;">IEC 60247</span>
+                        <h3>Dielectric Liquids Testers</h3>
+                        <p>Oil breakdown testers and tan δ meters for liquid dielectrics (IEC 60247, IEC 60156).</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Fully automatic cycles</li>
+                                <li><i class="fa-solid fa-check"></i> Built-in thermal printer</li>
+                                <li><i class="fa-solid fa-check"></i> 7" IPS touchscreen</li>
+                            </ul>
+                        </div>
+                        <a href="category-dielectric.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Категория 2 -->
+                    <div class="product-card">
+                        <img src="icons/damaged-wire.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="AC/DC icon">
+                        <span style="position: absolute; top: 15px; right: 15px; background: #e3f2fd; color: #0d47a1; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600;">IEC 60060</span>
+                        <h3>AC/DC Test Sets</h3>
+                        <p>High-voltage power supplies (analog and digital) for cables, surge arresters, and insulation.</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Up to 101 kV DC output</li>
+                                <li><i class="fa-solid fa-check"></i> Digital LCD display</li>
+                                <li><i class="fa-solid fa-check"></i> Automatic breakdown detection</li>
+                            </ul>
+                        </div>
+                        <a href="category-acdc.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Категория 3 -->
+                    <div class="product-card">
+                        <img src="icons/ppe.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="PPE icon">
+                        <h3>Stationary Test Benches & PPE</h3>
+                        <p>High-voltage test systems for dielectric gloves, boots, insulators, and personal protective equipment (PPE).</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> 4-channel leakage</li>
+                                <li><i class="fa-solid fa-check"></i> 10 test profiles</li>
+                                <li><i class="fa-solid fa-check"></i> Door interlock & alarm</li>
+                            </ul>
+                        </div>
+                        <a href="category-stationary.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Категория 4 -->
+                    <div class="product-card">
+                        <img src="icons/KVC.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="KVC icon">
+                        <span style="position: absolute; top: 15px; right: 15px; background: #e8f5e9; color: #2e7d32; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; font-weight: 600;">Class 0.25</span>
+                        <h3>Precision Measurement</h3>
+                        <p>Digital kilovoltmeters for AC/DC voltage, harmonic analysis, and calibration.</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Accuracy up to 0.25%</li>
+                                <li><i class="fa-solid fa-check"></i> THD analysis (50 harmonics)</li>
+                                <li><i class="fa-solid fa-check"></i> USB-C power bank</li>
+                            </ul>
+                        </div>
+                        <a href="category-precision.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Категория 5 -->
+                    <div class="product-card">
+                        <img src="icons/AVN.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="AVN icon">
+                        <h3>Calibration & Safety</h3>
+                        <p>Active HV loads for metrological verification and high-voltage pulse capacitors.</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Up to 3750 W dissipation</li>
+                                <li><i class="fa-solid fa-check"></i> Forced-air cooling system</li>
+                                <li><i class="fa-solid fa-check"></i> 100 kV pulse capacitor</li>
+                            </ul>
+                        </div>
+                        <a href="category-calibration.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Категория 6 -->
+                    <div class="product-card">
+                        <img src="icons/rod.png" class="icon-watermark" style="position: absolute; right: -40px; bottom: -30px; width: 160px; height: auto; opacity: 0.08; pointer-events: none; z-index: 1;" alt="Rod icon">
+                        <h3>Test Stands</h3>
+                        <p>Portable stands for insulating rods, live-line tools, and high-voltage indicators.</p>
+                        <div class="hover-features">
+                            <ul>
+                                <li><i class="fa-solid fa-check"></i> Supports up to 50 kV</li>
+                                <li><i class="fa-solid fa-check"></i> Segmented testing (5 parts)</li>
+                                <li><i class="fa-solid fa-check"></i> Dielectric bases included</li>
+                            </ul>
+                        </div>
+                        <a href="product-stend50.html" class="btn-outline-dark" style="margin-top: auto;">View Series <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- APPLICATIONS -->
+        <section style="background-color: var(--bg-secondary);">
+            <div class="container">
+                <h2 class="section-title">Applications & Industry Solutions</h2>
+                <p class="section-subtitle">Trusted by leading energy and industrial companies worldwide.</p>
+                <div class="grid-4">
+                    <div class="feature-card">
+                        <i class="fa-solid fa-bolt"></i>
+                        <h4>Power Cable Diagnostics</h4>
+                        <p>Withstand testing and fault localization for medium and high-voltage cable lines, including insulation burning and solid dielectric testing.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-oil-can"></i>
+                        <h4>Transformer Oil Analysis</h4>
+                        <p>Precision measurements of dielectric breakdown voltage (up to 100 kV) and dissipation factor (tan δ) for oil-filled power equipment.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-hard-hat"></i>
+                        <h4>PPE & Substation Safety</h4>
+                        <p>Testing of dielectric gloves, boots, insulating rods, voltage indicators, and live-line tools to ensure personnel safety in HV installations.</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fa-solid fa-flask"></i>
+                        <h4>Metrology & Calibration</h4>
+                        <p>High-precision digital kilovoltmeters and active HV loads for the metrological verification and calibration of dielectric testers and HV sources.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWS & EVENTS -->
+        <section>
+            <div class="container">
+                <h2 class="section-title">News & Events</h2>
+                <p class="section-subtitle">Stay updated with SKAT's latest developments.</p>
+                <div class="grid-3">
+                    <div class="feature-card" style="text-align: left;">
+                        <h4 style="color: var(--accent-yellow);">June 2026</h4>
+                        <h3>New Software Update for KVC Series</h3>
+                        <p>We have released a new firmware update for the KVC Series, enhancing VLF measurement accuracy and stability.</p>
+                        <a href="support.html" class="product-link" style="margin-top: 10px;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card" style="text-align: left;">
+                        <h4 style="color: var(--accent-yellow);">May 2026</h4>
+                        <h3>SKAT at Power Grid Conference</h3>
+                        <p>Our team will be presenting new HV testing solutions at the International Power Grid Conference in Moscow.</p>
+                        <a href="#" class="product-link" style="margin-top: 10px;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    <div class="feature-card" style="text-align: left;">
+                        <h4 style="color: var(--accent-yellow);">April 2026</h4>
+                        <h3>Expanding to Southeast Asia</h3>
+                        <p>We are proud to announce new distribution partnerships in Vietnam and Thailand.</p>
+                        <a href="#" class="product-link" style="margin-top: 10px;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЕГУЩАЯ СТРОКА (MARQUEE) -->
+        <div class="marquee">
+            <div class="marquee-track">
+                SKAT | High-Voltage Test Equipment | Cable Diagnostics | Transformer Oil Analysis | PPE Testing | Laboratory Solutions | Calibration | 
+                SKAT | High-Voltage Test Equipment | Cable Diagnostics | Transformer Oil Analysis | PPE Testing | Laboratory Solutions | Calibration
+            </div>
+        </div>
+    </main>
+
+    <!-- Контейнер для динамического футера (загружается через main.js) -->
+    <div id="footer-container"></div>
+
+    <!-- Кнопка "Вверх" -->
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- Подключаем общий JS-файл -->
+    <script src="main.js"></script>
+</body>
+</html>

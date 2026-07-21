@@ -1,0 +1,29 @@
+/* ==========================================================
+   map.css
+   Стили для карты Leaflet и интерактивных карточек на странице контактов.
+   ========================================================== */
+
+/* --- Контейнер карты --- */
+#contactMap {
+    height: 600px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
+    background-color: #f0f0f0;
+}
+
+/* --- Активная карточка (подсветка при клике на маркер) --- */
+.contact-item.active-card {
+    border-left-color: var(--accent-yellow) !important;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+    background-color: #fff;
+}
+
+/* --- Адаптивность для мобильных --- */
+@media (max-width: 768px) {
+    #contactMap {
+        height: 400px;
+    }
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KVC B-Series Digital Kilovoltmeters | Class 0.25–1.0 Precision HV Measurement</title>
+    <meta name="description" content="High-precision oil-insulated kilovoltmeters for AC (50 Hz) and DC voltage. Accuracy classes 0.25, 0.5, and 1.0. Up to 120 kV.">
+    
+    <!-- Шрифты и иконки -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Основные стили SKAT -->
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="prod_style.css"> 
+    <link rel="stylesheet" href="megamenu.css"> 
+    
+    <!-- Модуль стилей для таблицы -->
+    <link rel="stylesheet" href="table_style.css">
+</head>
+<body>
+    <!-- Контейнер для динамической шапки -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- ===== HERO СЕКЦИЯ ===== -->
+        <section class="product-hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <!-- Левая колонка: Карусель -->
+                    <div class="product-carousel">
+                        <div class="gallery-main">
+                            <a href="#img-main" class="lightbox-link">
+                                <img id="mainImage" src="images/kvc-b-1.png" alt="KVC B-Series Full View">
+                            </a>
+                        </div>
+                        <div class="carousel-thumbnails">
+                            <button class="active" onclick="changeImage('images/kvc-b-1.png', this)"><img src="images/kvc-b-1.png" alt="Thumbnail 1"></button>
+                            <button onclick="changeImage('images/kvc-b-2.png', this)"><img src="images/kvc-b-2.png" alt="Thumbnail 2"></button>
+                            <button onclick="changeImage('images/kvc-b-3.png', this)"><img src="images/kvc-b-3.png" alt="Thumbnail 3"></button>
+                        </div>
+                    </div>
+
+                    <!-- Правая колонка: Информация -->
+                    <div class="hero-content">
+                        <p class="category">Precision Measurement</p>
+                        <h1>KVC B-Series Digital Kilovoltmeters (Oil-Insulated)</h1>
+                        <p class="subtitle">High-precision meters for AC (50 Hz) and DC voltage measurement.</p>
+                        <p class="description">Featuring an oil-insulated resistive high-voltage divider, the KVC B-Series delivers exceptional stability and low ratio error for standard industrial frequency measurements. Available in accuracy classes of 0.25%, 0.5%, and 1.0%, these instruments serve as a primary standard for calibrating high-voltage test equipment.</p>
+                        <div class="hero-actions">
+                            <a href="contact.html" class="btn-primary">Request a Quote</a>
+                        </div>
+                        <!-- Аккордеон -->
+                        <div class="accordion-container">
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Oil-Insulated Resistive Divider</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Ensures high stability and low ratio error for accurate measurements in standard industrial frequency applications.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Multiple Accuracy Classes</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Available in 0.25%, 0.5%, and 1.0% accuracy classes to suit various calibration and measurement requirements.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> USB Interface for PC Connectivity</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Enables real-time oscilloscope functionality, waveform analysis, and data archiving via dedicated PC software.</div></div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Built-in Waveform Recorder (32 Channels)</button>
+                                <div class="accordion-body"><div class="accordion-body-inner">Stores up to 32 oscillograms for later analysis and review. Adjustable measurement window from 0.2 to 5 seconds.</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== СЕКЦИЯ ВКЛАДОК (TABS) ===== -->
+        <section class="container product-tabs-wrapper">
+            <div class="product-tabs-nav">
+                <div class="product-tabs">
+                    <button class="active" onclick="openTab(event, 'tab-info')">Product information</button>
+                    <button onclick="openTab(event, 'tab-specs')">Technical specifications</button>
+                    <button onclick="openTab(event, 'tab-support')">Product support</button>
+                </div>
+                <a href="contact.html" class="product-tabs-support-link"><i class="fa-solid fa-headset"></i> Technical support</a>
+            </div>
+
+            <!-- ===== ВКЛАДКА 1: ИНФОРМАЦИЯ О ПРОДУКТЕ ===== -->
+            <div id="tab-info" class="tab-pane active">
+                <div class="product-content-block">
+                    <h2>About the product</h2>
+                    <p>The KVC B-Series represents a new generation of precision digital kilovoltmeters featuring an oil-insulated resistive high-voltage divider. Designed for high-accuracy measurements of DC voltage and RMS AC voltage at 50 Hz, these instruments serve as a critical standard for calibrating high-voltage test equipment.</p>
+                    <p>With accuracy classes ranging from 0.25% to 1.0%, the KVC B-Series provides reliable and repeatable results. The USB interface allows for easy connection to a PC, enabling real-time oscilloscope functionality, waveform analysis, and data archiving via dedicated software. Built-in memory stores up to 32 oscillograms with a duration of 3 seconds each.</p>
+
+                    <!-- Вертикальная видео-галерея -->
+                    <div class="product-video-wrapper">
+                        <div class="video-main"><video id="mainVideo" controls poster="images/kvc-b-main-poster.jpg"><source src="video/kvc-b-main.mp4" type="video/mp4"></video></div>
+                        <div class="video-thumbnails-vertical">
+                            <div class="thumb-item active" data-video="video/kvc-b-main.mp4"><img src="images/kvc-b-thumb1.jpg" alt="Video 1"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/kvc-b-extra-1.mp4"><img src="images/kvc-b-thumb2.jpg" alt="Video 2"><div class="play-icon">▶</div></div>
+                            <div class="thumb-item" data-video="video/kvc-b-extra-2.mp4"><img src="images/kvc-b-thumb3.jpg" alt="Video 3"><div class="play-icon">▶</div></div>
+                        </div>
+                    </div>
+
+                    <h2>Product documents</h2>
+                    <div class="documents-list">
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/KVC-B_DS_en.pdf" target="_blank">Data sheet</a><span>PDF | 1.5 MB</span></div>
+                        </div>
+                        <div class="document-item">
+                            <i class="fa-solid fa-file-pdf"></i>
+                            <div class="doc-info"><a href="docs/KVC-B_UG_en.pdf" target="_blank">User guide</a><span>PDF | 5.2 MB</span></div>
+                        </div>
+                    </div>
+
+                    <h2 style="margin-top: 40px;">Related products</h2>
+                    <div class="related-products-grid">
+                        <a href="product-kvc-c.html" class="related-product-card">
+                            <img src="images/kvc-c-1.png" alt="KVC C-Series"><h4>KVC C-Series (Air-Insulated)</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Class 0.25 accuracy with THD analysis and VLF mode for advanced applications.</p>
+                        </a>
+                        <a href="product-70c.html" class="related-product-card">
+                            <img src="images/70c-1.png" alt="SKAT-70C"><h4>SKAT-70C Digital Dielectric Tester</h4>
+                            <p style="color: var(--text-light); font-size: 0.9rem;">Digital AC/DC dielectric tester with microcontroller control.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 2: ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ===== -->
+            <div id="tab-specs" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Technical specifications</h2>
+                    
+                    <!-- Контейнер для динамической таблицы -->
+                    <div id="specs-container"></div>
+
+                    <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
+                        <em>Note: Specifications are subject to change without notice. For custom ranges and configurations, please contact our sales team.</em>
+                    </p>
+                </div>
+
+                <div class="product-content-block">
+                    <h2>FAQ</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What is the difference between the B-Series and C-Series?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The B-Series uses an oil-insulated resistive divider, optimized for standard industrial frequency (50/60 Hz) measurements. The C-Series features an air-insulated frequency-compensated divider for advanced applications like THD analysis and VLF measurements.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What accuracy classes are available?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">The B-Series is available in 0.25%, 0.5%, and 1.0% accuracy classes to suit various calibration and measurement needs.</div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Can I connect this meter to a PC?</button>
+                            <div class="accordion-body"><div class="accordion-body-inner">Yes. The USB interface allows for easy connection to a PC, enabling real-time oscilloscope functionality, waveform analysis, and data archiving via the included software.</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ===== ВКЛАДКА 3: ПОДДЕРЖКА ПРОДУКТА ===== -->
+            <div id="tab-support" class="tab-pane">
+                <div class="product-content-block">
+                    <h2>Interpreting test results</h2>
+                    <p>For detailed guidance on calibration procedures, measurement uncertainty, and compliance with international standards, refer to your equipment's user manual and the following:</p>
+                    <ul>
+                        <li>IEC 60060 - High-voltage test techniques</li>
+                        <li>IEEE Std 4 - Standard for High-Voltage Testing</li>
+                        <li>ISO/IEC 17025 - General requirements for the competence of testing and calibration laboratories</li>
+                    </ul>
+                </div>
+                <div class="product-content-block">
+                    <h2>Troubleshooting &amp; Software updates</h2>
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Common troubleshooting steps</button>
+                            <div class="accordion-body"><div class="accordion-body-inner"><ul><li><strong>No display or power:</strong> Check the AC power connection or USB-C external power supply.</li><li><strong>Incorrect readings:</strong> Ensure all connections are secure and the high-voltage divider is properly grounded.</li><li><strong>USB communication error:</strong> Verify the USB cable connection and restart the PC software.</li></ul></div></div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Software &amp; firmware updates</button>
+                            <div class="accordion-body"><div class="accordion-body-inner"><p>To update the instrument's firmware or to download the latest PC software for waveform analysis and data management, please contact our technical support team.</p></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-content-block">
+                    <h2>Application and academic support</h2>
+                    <p>For detailed application notes, technical guides, and academic resources on precision high-voltage measurement, please refer to the knowledge base on our website or contact our technical support team.</p>
+                    <a href="contact.html" class="btn-outline-dark" style="margin-top: 15px;">Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Контейнер для футера -->
+    <div id="footer-container"></div>
+
+    <!-- ===== ЛАЙТБОКС ===== -->
+    <div id="img-main" class="lightbox">
+        <a href="#" class="lightbox-close">&times;</a>
+        <div style="position: relative; max-width: 80%; max-height: 85%; display: flex; align-items: center; justify-content: center;">
+            <a href="#" class="lightbox-nav prev" onclick="lightboxNav(event, -1)"><i class="fa-solid fa-chevron-left"></i></a>
+            <img class="lightbox-content" src="images/kvc-b-1.png" alt="KVC B-Series Full View Large">
+            <a href="#" class="lightbox-nav next" onclick="lightboxNav(event, 1)"><i class="fa-solid fa-chevron-right"></i></a>
+            <div class="lightbox-counter" id="lightboxCounter">1 / 3</div>
+        </div>
+    </div>
+    <!-- Подключение библиотеки ресурсов -->
+    <script src="assets.js"></script>
+
+    <!-- Основной скрипт для страниц продуктов -->
+    <script src="product.js"></script>
+    
+    <!-- Скрипт мега-меню -->
+    <script src="megamenu.js"></script>
+
+    <!-- Инициализация галереи -->
+    <script>
+        initProductGallery('kvc-b');
+    </script>
+
+    <!-- Инициализация таблицы характеристик -->
+    <script src="table_style.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Проверяем, что контейнер существует
+            const container = document.getElementById('specs-container');
+            if (!container) {
+                console.error('Контейнер #specs-container не найден в DOM.');
+                return;
+            }
+
+            // Запускаем инициализацию
+            console.log('Запуск initSpecsTable для продукта kvc-b');
+            initSpecsTable('specs-container', 'kvc-b', 'table_style.json');
+        });
+    </script>
+</body>
+</html>
