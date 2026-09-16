@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Tensão CC",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Limites de Erro Admissível de Tensão CA",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          },
+          {
+            "label": "Limites de Erro Admissível de Tensão CC",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Técnicas Gerais",
+        "parameters": [
+          {
+            "label": "Resistência de Entrada em CC",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "500 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Tensão de Alimentação",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Potência Consumida",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões da Unidade de Indicação",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões do Medidor de Alta Tensão",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Integrado à Unidade de Indicação"
+            }
+          },
+          {
+            "label": "Massa da Unidade de Indicação",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa do Medidor de Alta Tensão",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "5,5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Integrado à Unidade de Indicação"
+            }
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Vida Útil",
+            "values": [
+              "5 anos",
+              "5 anos",
+              "5 anos",
+              "5 anos"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Tensão CA (40–65 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Tensão CA (390–410 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Tensão CC",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Limites de Erro Admissível de Medição de Tensão",
+            "values": [
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Limites de Erro Absoluto Admissível de Medição de Frequência (40–65 Hz)",
+            "values": [
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Limites de Erro Absoluto Admissível de Medição de Frequência (390–410 Hz)",
+            "values": [
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Faixa de Medição da Taxa de Distorção Harmônica Total (Ku)",
+            "values": [
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Limites de Erro de Medição de Ku (Ku < 3 %)",
+            "values": [
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Limites de Erro de Medição de Ku (Ku ≥ 3 %)",
+            "values": [
+              "±5 %",
+              "±5 %",
+              "±5 %",
+              "±5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Técnicas Gerais",
+        "parameters": [
+          {
+            "label": "Resistência de Entrada em CC",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "420 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Tensão de Alimentação",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Potência Consumida",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões da Unidade de Indicação",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões do Medidor de Alta Tensão",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Integrado à Unidade de Indicação"
+            }
+          },
+          {
+            "label": "Massa da Unidade de Indicação",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa do Medidor de Alta Tensão",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "6,4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Integrado à Unidade de Indicação"
+            }
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Umidade Relativa (a +25 °C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Vida Útil",
+            "values": [
+              "5 anos",
+              "5 anos",
+              "5 anos",
+              "5 anos"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros de Saída",
+        "parameters": [
+          {
+            "label": "Faixa de Regulação de Tensão CA",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Regulação de Tensão CC",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Corrente Máxima de Saída CA",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Corrente Máxima de Saída CC",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "Amplitude de Ondulação da Tensão CC",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Tensão CC (Valor de Amplitude)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Fator de Distorção da Senoide de Tensão CA",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Display",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Alimentação",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses",
+              "18 meses"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros de Saída",
+        "parameters": [
+          {
+            "label": "Faixa de Regulação de Tensão CA",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Faixa de Regulação de Tensão CC",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Polaridade CC",
+            "values": [
+              "Negativa",
+              "Positiva"
+            ]
+          },
+          {
+            "label": "Corrente Máxima de Saída CA",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Corrente Máxima de Saída CC",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Faixa de Medição de Tensão CC (Valor de Amplitude)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Amplitude de Ondulação da Tensão CC",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Fator de Distorção da Senoide de Tensão CA",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Alimentação",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões da Unidade de Controle",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões da Unidade de Alta Tensão",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa da Unidade de Controle",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa da Unidade de Alta Tensão",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses",
+              "18 meses"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA",
+            "values": [
+              "10,0 – 100,0 kV"
+            ]
+          },
+          {
+            "label": "Limites de Erro Admissível de Medição",
+            "values": [
+              "±2,5 %"
+            ]
+          },
+          {
+            "label": "Resolução de Medição de Tensão",
+            "values": [
+              "0,1 kV"
+            ]
+          },
+          {
+            "label": "Número de Medições Automáticas",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Tempo de Desligamento na Ruptura Dielétrica",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Taxa de Elevação de Tensão",
+            "values": [
+              "0,5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Limite de Tensão Máxima",
+            "values": [
+              "60; 70; 80; 90; 100 kV"
+            ]
+          },
+          {
+            "label": "Alimentação",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Dimensões (C×L×A)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Grau de Proteção",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição da Tangente do Ângulo de Perdas Dielétricas (tan δ)",
+            "values": [
+              "1·10⁻⁴ – 1,000"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Capacitância Elétrica",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Tensão de Ensaio (CA, 40-62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Faixa de Temperatura de Aquecimento da Célula",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Tempo de Aquecimento até a Temperatura Ajustada",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Display",
+            "values": [
+              "7\" IPS touchscreen"
+            ]
+          },
+          {
+            "label": "Memória Interna",
+            "values": [
+              "Até 250 resultados de ensaio"
+            ]
+          },
+          {
+            "label": "Dimensões (C×L×A)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Características Metrológicas",
+        "parameters": [
+          {
+            "label": "Faixa de Medição de Tensão CA",
+            "values": [
+              "0,3 – 20 kV"
+            ]
+          },
+          {
+            "label": "Faixa de Medição de Corrente CA (por Canal)",
+            "values": [
+              "0,5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Limites de Erro de Medição de Tensão",
+            "values": [
+              "±2,5 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Número de Canais de Medição de Corrente",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Tempo de Ensaio Programável",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Dimensões da Unidade de Medição",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Dimensões da Cuba de Ensaio",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Massa da Unidade de Medição",
+            "values": [
+              "5,8 kg"
+            ]
+          },
+          {
+            "label": "Massa da Cuba de Ensaio",
+            "values": [
+              "19,0 kg"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Faixas de Medição",
+        "parameters": [
+          {
+            "label": "Fonte Integrada: Faixa de Tensão",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Fonte Integrada: Faixa de Corrente",
+            "values": [
+              "0,5 – 10 mA",
+              "0,5 – 10 mA",
+              "0,5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Bloco de 50 kV: Faixa de Tensão",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "Bloco de 50 kV: Faixa de Corrente",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "Bloco de 100 kV: Faixa de Tensão",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Bloco de 100 kV: Faixa de Corrente",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "Bloco de 20 kV: Faixa de Tensão",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "Bloco de 20 kV: Faixa de Corrente",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Limites de Erro de Medição de Tensão",
+            "values": [
+              "±3 %",
+              "±3 %",
+              "±3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Limites de Erro de Medição de Corrente",
+            "values": [
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Número de Blocos Externos de Alta Tensão",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Número de Canais de Corrente (Cuba de Ensaio)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Alimentação",
+            "values": [
+              "230 V, 50 Hz",
+              "230 V, 50 Hz",
+              "230 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões da Unidade de Controle (C×L×A)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensões do Bloco de 20 kV (C×L×A)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "Dimensões do Bloco de 50 kV (C×L×A)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "Dimensões do Bloco de 100 kV (C×L×A)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Dimensões da Cuba de Ensaio (C×L×A)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa da Unidade de Controle",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Massa do Bloco de 20 kV",
+            "values": [
+              "—",
+              "—",
+              "33,8 kg"
+            ]
+          },
+          {
+            "label": "Massa do Bloco de 50 kV",
+            "values": [
+              "35,4 kg",
+              "35,4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "Massa do Bloco de 100 kV",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Massa da Cuba de Ensaio",
+            "values": [
+              "18,7 kg",
+              "18,7 kg",
+              "18,7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "+10 – +40 °C",
+              "+10 – +40 °C",
+              "+10 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Umidade Relativa (a +25 °C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Pressão Atmosférica",
+            "values": [
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Vida Útil",
+            "values": [
+              "10 anos",
+              "10 anos",
+              "10 anos"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses",
+              "18 meses",
+              "18 meses"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros de Carga",
+        "parameters": [
+          {
+            "label": "Tensão Máxima de Operação CC",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Tensão CA de Pico Máxima (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Número de Estágios de Carga",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Número de Combinações de Carga",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Potência Dissipada Total Máxima",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Tempo de Operação Contínua em Potência Máxima",
+            "values": [
+              "1 hora"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Parâmetros dos Estágios (Resistência Nominal / Potência Máxima)",
+        "parameters": [
+          {
+            "label": "Estágio 1",
+            "values": [
+              "68 MΩ ±5 % / 80 W"
+            ]
+          },
+          {
+            "label": "Estágio 2",
+            "values": [
+              "22,4 MΩ ±5 % / 250 W"
+            ]
+          },
+          {
+            "label": "Estágio 3",
+            "values": [
+              "14,1 MΩ ±5 % / 350 W"
+            ]
+          },
+          {
+            "label": "Estágio 4",
+            "values": [
+              "6,6 MΩ ±5 % / 750 W"
+            ]
+          },
+          {
+            "label": "Estágio 5",
+            "values": [
+              "2,4 MΩ ±5 % / 1500 W"
+            ]
+          },
+          {
+            "label": "Estágio 6",
+            "values": [
+              "1,35 MΩ ±5 % / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Dimensões (L×P×A)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Alimentação do Sistema de Refrigeração",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Potência Consumida pelo Sistema de Refrigeração",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "+5 – +40 °C"
+            ]
+          },
+          {
+            "label": "Umidade Relativa (a +25 °C)",
+            "values": [
+              "≤ 80 %"
+            ]
+          },
+          {
+            "label": "Vida Útil",
+            "values": [
+              "10 anos"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros de Ensaio",
+        "parameters": [
+          {
+            "label": "Tensão de Ensaio Máxima",
+            "values": [
+              "50 kV CA"
+            ]
+          },
+          {
+            "label": "Número Máximo de Objetos Testados Simultaneamente",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Dimensões (Altura com Postes)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Dimensões da Mesa (L×P)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "+10 – +40 °C"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "18 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros Elétricos",
+        "parameters": [
+          {
+            "label": "Tensão de Alimentação",
+            "values": [
+              "220 V CA"
+            ]
+          },
+          {
+            "label": "Corrente Nominal de Consumo",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Nível de Pressão Sonora (a 1 m)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Percepção de Contraste da Iluminação",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Dimensões",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "≤ 0,32 kg"
+            ]
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "-30 – +55 °C"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "12 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parâmetros Elétricos",
+        "parameters": [
+          {
+            "label": "Tensão Nominal",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Capacitância Nominal",
+            "values": [
+              "0,4 µF"
+            ]
+          },
+          {
+            "label": "Tensão de Ensaio",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Características Gerais",
+        "parameters": [
+          {
+            "label": "Dimensões (C×L×A)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Massa",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Temperatura de Operação",
+            "values": [
+              "-1 – +35 °C"
+            ]
+          },
+          {
+            "label": "Garantia",
+            "values": [
+              "6 meses"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,458 @@
+<!-- ==========================================================
+   МОДАЛКА 1: ЗАПРОС КОММЕРЧЕСКОГО ПРЕДЛОЖЕНИЯ (#quoteModal)
+   ========================================================== -->
+<div class="modal-overlay" id="quoteModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="quoteModalTitle">
+    <div class="modal-box modal-box--quote">
+        <button class="modal-close" data-close="quoteModal" aria-label="Close">&times;</button>
+        <h3 class="modal-title" id="quoteModalTitle" data-i18n="quote_title">Request a Quote</h3>
+
+        <form class="modal-form" id="quoteForm" data-form="quote" novalidate>
+            <!-- Honeypot (анти-спам) -->
+            <div class="form-honeypot" style="display:none;">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Скрытые технические поля -->
+            <input type="hidden" name="page" value="">
+            <input type="hidden" name="lang" value="">
+            <input type="hidden" name="utm_source" value="">
+            <input type="hidden" name="utm_medium" value="">
+            <input type="hidden" name="utm_campaign" value="">
+            <input type="hidden" name="referrer" value="">
+            <input type="hidden" name="timestamp" value="">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="quoteName" data-i18n="quote_name">Your Name *</label>
+                    <input type="text" id="quoteName" name="name" required autocomplete="name" placeholder="Your Name *" data-i18n-placeholder="quote_name">
+                    <p class="form-error" data-error-for="name" role="alert"></p>
+                </div>
+                <div class="form-group">
+                    <label for="quoteEmail" data-i18n="quote_email">Your Email *</label>
+                    <input type="email" id="quoteEmail" name="email" required autocomplete="email" placeholder="Your Email *" data-i18n-placeholder="quote_email">
+                    <p class="form-error" data-error-for="email" role="alert"></p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label data-i18n="quote_phone">Phone</label>
+                    <div class="phone-input-wrap" data-dial="+7">
+                        <button type="button" class="phone-code-btn" id="quotePhoneCodeBtn">
+                            <img src="flags/ru.png" class="phone-flag" alt="">
+                            <span class="phone-code">+7</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="phone-dropdown" id="quotePhoneDropdown"></div>
+                        <input type="tel" id="quotePhone" name="phone" autocomplete="tel" placeholder="(8442) 00-00-00">
+                    </div>
+                    <p class="form-error" data-error-for="phone"></p>
+                </div>
+                <div class="form-group">
+                    <label for="quoteCompany" data-i18n="quote_company">Company</label>
+                    <input type="text" id="quoteCompany" name="company" autocomplete="organization" placeholder="Company" data-i18n-placeholder="quote_company">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="quoteCountry" data-i18n="quote_country">Country</label>
+                    <select id="quoteCountry" name="country">
+                        <option value="">—</option>
+                        <option value="RU" data-i18n="country_russia">Russia</option>
+                        <option value="BY" data-i18n="country_belarus">Belarus</option>
+                        <option value="KZ" data-i18n="country_kazakhstan">Kazakhstan</option>
+                        <option value="AZ" data-i18n="country_azerbaijan">Azerbaijan</option>
+                        <option value="UZ" data-i18n="country_uzbekistan">Uzbekistan</option>
+                        <option value="DE" data-i18n="country_germany">Germany</option>
+                        <option value="ES" data-i18n="country_spain">Spain</option>
+                        <option value="FR" data-i18n="country_france">France</option>
+                        <option value="IT" data-i18n="country_italy">Italy</option>
+                        <option value="TR" data-i18n="country_turkey">Turkey</option>
+                        <option value="PL" data-i18n="country_poland">Poland</option>
+                        <option value="SV" data-i18n="country_sweden">Sweden</option>
+                        <option value="CS" data-i18n="country_czechia">Czechia</option>
+                        <option value="BG" data-i18n="country_bulgaria">Bulgaria</option>
+                        <option value="SR" data-i18n="country_serbia">Serbia</option>
+                        <option value="PT" data-i18n="country_portugal">Portugal</option>
+                        <option value="AR" data-i18n="country_middle_east">Middle East</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quoteProduct" data-i18n="quote_product">Product *</label>
+                    <select id="quoteProduct" name="product" required>
+                        <option value="" data-i18n="quote_product_select">Select Product *</option>
+                        <option value="SKAT-M100V">SKAT-M100V</option>
+                        <option value="SKAT-TANGENS-M">SKAT-TANGENS-M</option>
+                        <option value="SKAT-70C">SKAT-70C</option>
+                        <option value="SKAT-70M">SKAT-70M</option>
+                        <option value="SKAT-70P">SKAT-70P</option>
+                        <option value="SKAT-SVS">SKAT-SVS</option>
+                        <option value="SKAT-STEND-50">SKAT-STEND-50</option>
+                        <option value="UBSVN-LM">UBSVN-LM</option>
+                        <option value="SKAT-AVN-70">SKAT-AVN-70</option>
+                        <option value="IK 100-0.4">IK 100-0.4</option>
+                        <option value="KVC-B">KVC-B</option>
+                        <option value="KVC-C">KVC-C</option>
+                        <option value="Other" data-i18n="quote_product_other">Other</option>
+                    </select>
+                    <p class="form-error" data-error-for="product" role="alert"></p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="quoteQuantity" data-i18n="quote_quantity">Quantity</label>
+                    <input type="number" id="quoteQuantity" name="quantity" min="1" max="999" step="1" placeholder="1">
+                </div>
+                <div class="form-group">
+                    <label for="quoteDeliveryDate" data-i18n="quote_delivery_date">Desired Delivery Date</label>
+                    <input type="date" id="quoteDeliveryDate" name="delivery_date">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="quoteMessage" data-i18n="quote_comment">Comment</label>
+                <textarea id="quoteMessage" name="message" rows="4" maxlength="1000" placeholder="Comment" data-i18n-placeholder="quote_comment"></textarea>
+                <div class="form-counter" id="messageCounter">0 / 1000</div>
+            </div>
+
+            <div class="form-group">
+                <label for="quoteAttachment" data-i18n="quote_attachment">Attachment (Tender / Technical Specs)</label>
+                <label class="file-input-wrap" for="quoteAttachment">
+                    <span class="file-input-btn" data-i18n="ui_choose_file">Choose File</span>
+                    <span class="file-input-status" data-i18n="ui_no_file_chosen">No file chosen</span>
+                    <span class="file-input-filename" hidden></span>
+                </label>
+                <input type="file" id="quoteAttachment" name="attachment" accept=".pdf,.doc,.docx,.xls,.xlsx,.zip,.png,.jpg,.jpeg" class="file-input-native">
+                <div class="file-preview" id="filePreview"></div>
+                <p class="form-error" data-error-for="attachment" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" id="quoteConsent">
+                    <span data-i18n="quote_agree">I agree to the privacy policy *</span>
+                </label>
+                <p class="form-error" data-error-for="consent" role="alert"></p>
+            </div>
+
+            <div class="form-submit-row">
+                <button type="submit" class="btn-primary modal-submit" id="quoteSubmit">
+                    <span data-i18n="quote_submit">Send Request</span>
+                    <i class="fa-solid fa-circle-notch fa-spin" style="display:none;"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Экран успеха -->
+        <div class="modal-success" id="quoteSuccess" style="display:none;">
+            <i class="fa-solid fa-check-circle"></i>
+            <h4 data-i18n="quote_success_title">Thank you!</h4>
+            <p data-i18n="quote_success_text">Your request has been sent. We will contact you within 1 business day.</p>
+            <p class="modal-ticket" id="quoteTicket"></p>
+            <button class="btn-outline-dark" data-close="quoteModal" data-i18n="quote_close">Close</button>
+        </div>
+
+        <!-- Экран ошибки -->
+        <div class="modal-error" id="quoteError" style="display:none;">
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <p data-i18n="quote_error">Failed to send. Try again or email st@skat-v.com</p>
+            <button class="btn-outline-dark" id="quoteRetryBtn" data-i18n="quote_retry">Try Again</button>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================================================
+   МОДАЛКА 2: ТЕХНИЧЕСКАЯ ПОДДЕРЖКА (#supportModal)
+   ========================================================== -->
+<div class="modal-overlay" id="supportModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="supportModalTitle">
+    <div class="modal-box modal-box--support">
+        <button class="modal-close" data-close="supportModal" aria-label="Close">&times;</button>
+        <h3 class="modal-title" id="supportModalTitle" data-i18n="support_title">Technical Support</h3>
+
+        <form class="modal-form" id="supportForm" data-form="support" novalidate>
+            <!-- Honeypot (анти-спам) -->
+            <div class="form-honeypot" style="display:none;">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Скрытые технические поля -->
+            <input type="hidden" name="page" value="">
+            <input type="hidden" name="lang" value="">
+            <input type="hidden" name="timestamp" value="">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="supportName" data-i18n="support_name">Your Name *</label>
+                    <input type="text" id="supportName" name="name" required autocomplete="name" placeholder="Your Name *" data-i18n-placeholder="support_name">
+                    <p class="form-error" data-error-for="name" role="alert"></p>
+                </div>
+                <div class="form-group">
+                    <label for="supportEmail" data-i18n="support_email">Your Email *</label>
+                    <input type="email" id="supportEmail" name="email" required autocomplete="email" placeholder="Your Email *" data-i18n-placeholder="support_email">
+                    <p class="form-error" data-error-for="email" role="alert"></p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label data-i18n="support_phone">Phone</label>
+                    <div class="phone-input-wrap" id="phoneWrap" data-dial="+7">
+                        <button type="button" class="phone-code-btn" id="phoneCodeBtn">
+                            <img src="flags/ru.png" class="phone-flag" alt="">
+                            <span class="phone-code">+7</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="phone-dropdown" id="phoneDropdown"></div>
+                        <input type="tel" id="supportPhone" name="phone" placeholder="(8442) 00-00-00">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="supportSerial" data-i18n="support_serial">Serial Number</label>
+                    <input type="text" id="supportSerial" name="serial" maxlength="5" inputmode="numeric" pattern="\d{5}" placeholder="10007">
+                    <small class="form-hint" data-i18n="support_serial_hint">5 digits — see the nameplate</small>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="supportModel" data-i18n="support_model">Model *</label>
+                    <select id="supportModel" name="model" required>
+                        <option value="" data-i18n="support_model_select">Select Model *</option>
+                        <option value="SKAT-M100V">SKAT-M100V</option>
+                        <option value="SKAT-TANGENS-M">SKAT-TANGENS-M</option>
+                        <option value="SKAT-70C">SKAT-70C</option>
+                        <option value="SKAT-70M">SKAT-70M</option>
+                        <option value="SKAT-70P">SKAT-70P</option>
+                        <option value="SKAT-SVS">SKAT-SVS</option>
+                        <option value="SKAT-STEND-50">SKAT-STEND-50</option>
+                        <option value="UBSVN-LM">UBSVN-LM</option>
+                        <option value="SKAT-AVN-70">SKAT-AVN-70</option>
+                        <option value="IK 100-0.4">IK 100-0.4</option>
+                        <option value="KVC-B">KVC-B</option>
+                        <option value="KVC-C">KVC-C</option>
+                    </select>
+                    <p class="form-error" data-error-for="model" role="alert"></p>
+                </div>
+                <div class="form-group">
+                    <label for="supportCategory" data-i18n="support_category">Request Type</label>
+                    <select id="supportCategory" name="category">
+                        <option value="breakdown" data-i18n="support_category_breakdown">Breakdown</option>
+                        <option value="calibration" data-i18n="support_category_calibration">Calibration</option>
+                        <option value="software" data-i18n="support_category_software">Software</option>
+                        <option value="consult" data-i18n="support_category_consult">Consultation</option>
+                        <option value="other" data-i18n="support_category_other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="supportProblem" data-i18n="support_problem">Problem Description *</label>
+                <textarea id="supportProblem" name="problem" rows="4" maxlength="1000" required placeholder="Describe the problem *" data-i18n-placeholder="support_problem"></textarea>
+                <div class="form-counter" id="supportCounter">0 / 1000</div>
+                <p class="form-error" data-error-for="problem" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+                <label data-i18n="support_photo">Photos (up to 5)</label>
+                <label class="file-input-wrap" for="supportPhotos">
+                    <span class="file-input-btn" data-i18n="ui_choose_photos">Choose Photos</span>
+                    <span class="file-input-status" data-i18n="ui_no_files_chosen">No files chosen</span>
+                    <span class="file-input-filename" hidden></span>
+                </label>
+                <input type="file" id="supportPhotos" name="photos" accept="image/jpeg,image/png,image/webp" multiple class="file-input-native">
+                <div class="photo-preview" id="supportPhotoPreview"></div>
+                <p class="form-error" data-error-for="photo" role="alert"></p>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" id="supportConsent">
+                    <span data-i18n="support_consent">I agree to the privacy policy *</span>
+                </label>
+                <p class="form-error" data-error-for="consent" role="alert"></p>
+            </div>
+
+            <div class="form-submit-row">
+                <button type="submit" class="btn-primary modal-submit" id="supportSubmit">
+                    <span data-i18n="support_submit">Send Request</span>
+                    <i class="fa-solid fa-circle-notch fa-spin" style="display:none;"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Экран успеха -->
+        <div class="modal-success" id="supportSuccess" style="display:none;">
+            <i class="fa-solid fa-check-circle"></i>
+            <h4 data-i18n="support_success_title">Thank you!</h4>
+            <p data-i18n="support_success_text">Your support request has been sent. We will contact you within 1 business day.</p>
+            <p class="modal-ticket" id="supportTicket"></p>
+            <button class="btn-outline-dark" data-close="supportModal" data-i18n="support_close">Close</button>
+        </div>
+
+        <!-- Экран ошибки -->
+        <div class="modal-error" id="supportError" style="display:none;">
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <p data-i18n="support_error">Failed to send. Try again or email st@skat-v.com</p>
+            <button class="btn-outline-dark" id="supportRetryBtn" data-i18n="support_retry">Try Again</button>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================================================
+   МОДАЛКА 3: БАЗА ЗНАНИЙ (#knowledgeModal)
+   ========================================================== -->
+<div class="modal-overlay" id="knowledgeModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="knowledgeTitle">
+    <div class="modal-box modal-box--knowledge">
+        <button class="modal-close" data-close="knowledgeModal" aria-label="Close">&times;</button>
+        <h3 class="modal-title" id="knowledgeTitle"><span data-i18n="knowledge_title">Knowledge Base</span>: <span class="modal-product-name">—</span></h3>
+
+        <div class="kb-section">
+            <h4 data-i18n="knowledge_docs">Product Documentation</h4>
+            <div class="modal-docs">
+                <a href="#" class="modal-doc-link" data-doc="ds" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span><strong data-i18n="data_sheet">Data sheet</strong> <small class="doc-meta">PDF</small></span>
+                </a>
+                <a href="#" class="modal-doc-link" data-doc="ug" target="_blank">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span><strong data-i18n="user_guide">User guide</strong> <small class="doc-meta">PDF</small></span>
+                </a>
+            </div>
+        </div>
+
+        <div class="kb-section">
+            <h4 data-i18n="knowledge_notes">Application Notes</h4>
+            <div class="kb-list" data-kb="notes"></div>
+        </div>
+
+        <div class="kb-section">
+            <h4 data-i18n="knowledge_standards">Standards & Compliance</h4>
+            <div class="kb-standards" data-kb="standards"></div>
+        </div>
+
+        <div class="kb-section">
+            <h4 data-i18n="knowledge_academic">Academic Resources</h4>
+            <p class="kb-text" data-i18n="knowledge_academic_text">Research papers, case studies and university cooperation programs.</p>
+            <a href="#" class="modal-support-link" data-open-support data-i18n="knowledge_request_academic">Request academic materials</a>
+        </div>
+
+        <div class="modal-repair">
+            <p data-i18n="knowledge_contact">Need help? Technical support is one click away.</p>
+            <button class="btn-outline-dark" data-open-support data-i18n="write_to_support">Write to support</button>
+        </div>
+    </div>
+</div>
+
+<!-- ==========================================================
+   МОДАЛКА 4: ЗАЯВКА НА ОБУЧЕНИЕ (#trainingModal)
+   Открывается по [data-open-training] с академии (academy.html).
+   Та же механика open/close/focus-trap/ESC, что у остальных модалок
+   (см. openModal/closeModal в modals.js) — своя логика нужна только
+   для валидации и отправки формы (см. секцию "ОБУЧЕНИЕ" в modals.js).
+   ========================================================== -->
+<div class="modal-overlay" id="trainingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="trainingModalTitle">
+    <div class="modal-box">
+        <button class="modal-close" data-close="trainingModal" aria-label="Close">&times;</button>
+        <h3 class="modal-title" id="trainingModalTitle" data-i18n="training_title">Training Inquiry</h3>
+        <!-- Два варианта подзаголовка: общий (кнопка "Request a Custom Program"/"Contact Us About Training")
+             и с указанием курса (кнопки "Register Interest" на карточках курсов) — переключаются в modals.js,
+             чтобы модалка не выглядела ОДИНАКОВО независимо от того, откуда её открыли. -->
+        <p class="modal-subtitle" id="trainingSubtitleGeneric" data-i18n="training_subtitle_generic">Tell us which topics and format interest you, and we'll get back to you with a proposal.</p>
+        <p class="modal-subtitle" id="trainingSubtitleCourse" style="display:none;">
+            <span data-i18n="training_subtitle_course_prefix">You're registering interest in:</span> <strong id="trainingSubtitleCourseName"></strong>
+        </p>
+
+        <form class="modal-form" id="trainingForm" data-form="training" novalidate>
+            <!-- Honeypot (анти-спам) -->
+            <div class="form-honeypot" style="display:none;">
+                <input type="text" name="website" tabindex="-1" autocomplete="off">
+            </div>
+
+            <!-- Скрытые технические поля -->
+            <input type="hidden" name="page" value="">
+            <input type="hidden" name="lang" value="">
+            <input type="hidden" name="timestamp" value="">
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="trainingName" data-i18n="training_name">Your Name *</label>
+                    <input type="text" id="trainingName" name="name" required autocomplete="name" placeholder="Your Name *" data-i18n-placeholder="training_name">
+                    <p class="form-error" data-error-for="name" role="alert"></p>
+                </div>
+                <div class="form-group">
+                    <label for="trainingEmail" data-i18n="training_email">Your Email *</label>
+                    <input type="email" id="trainingEmail" name="email" required autocomplete="email" placeholder="Your Email *" data-i18n-placeholder="training_email">
+                    <p class="form-error" data-error-for="email" role="alert"></p>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label data-i18n="training_phone">Phone</label>
+                    <div class="phone-input-wrap" data-dial="+7">
+                        <button type="button" class="phone-code-btn" id="trainingPhoneCodeBtn">
+                            <img src="flags/ru.png" class="phone-flag" alt="">
+                            <span class="phone-code">+7</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <div class="phone-dropdown" id="trainingPhoneDropdown"></div>
+                        <input type="tel" id="trainingPhone" name="phone" autocomplete="tel" placeholder="(8442) 00-00-00">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="trainingCompany" data-i18n="training_company">Company</label>
+                    <input type="text" id="trainingCompany" name="company" autocomplete="organization" placeholder="Company" data-i18n-placeholder="training_company">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="trainingCourse" data-i18n="training_course">Course of Interest</label>
+                <select id="trainingCourse" name="course">
+                    <option value="" data-i18n="training_course_select">Not sure yet</option>
+                    <option value="oil-diagnostics" data-i18n="training_course_oil">Insulating Fluids & Transformer Oil Diagnostics</option>
+                    <option value="hv-testing" data-i18n="training_course_hv">HV Acceptance & Routine Testing</option>
+                    <option value="distributor-sales" data-i18n="training_course_distributor">Product & Sales Expertise for Distributor Managers</option>
+                    <option value="other" data-i18n="training_course_other">Other / Custom Program</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="trainingMessage" data-i18n="training_message">Comment</label>
+                <textarea id="trainingMessage" name="message" rows="4" maxlength="1000" placeholder=""></textarea>
+                <div class="form-counter" id="trainingCounter">0 / 1000</div>
+            </div>
+
+            <div class="form-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="consent" id="trainingConsent">
+                    <span data-i18n="training_consent">I agree to the privacy policy *</span>
+                </label>
+                <p class="form-error" data-error-for="consent" role="alert"></p>
+            </div>
+
+            <div class="form-submit-row">
+                <button type="submit" class="btn-primary modal-submit" id="trainingSubmit">
+                    <span data-i18n="training_submit">Send Inquiry</span>
+                    <i class="fa-solid fa-circle-notch fa-spin" style="display:none;"></i>
+                </button>
+            </div>
+        </form>
+
+        <!-- Экран успеха -->
+        <div class="modal-success" id="trainingSuccess" style="display:none;">
+            <i class="fa-solid fa-check-circle"></i>
+            <h4 data-i18n="training_success_title">Thank you!</h4>
+            <p data-i18n="training_success_text">Your training inquiry has been sent. We will contact you within 1 business day.</p>
+            <button class="btn-outline-dark" data-close="trainingModal" data-i18n="training_close">Close</button>
+        </div>
+
+        <!-- Экран ошибки -->
+        <div class="modal-error" id="trainingError" style="display:none;">
+            <i class="fa-solid fa-exclamation-circle"></i>
+            <p data-i18n="training_error">Failed to send. Try again or email st@skat-v.com</p>
+            <button class="btn-outline-dark" id="trainingRetryBtn" data-i18n="training_retry">Try Again</button>
+        </div>
+    </div>
+</div>

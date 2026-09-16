@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="main_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Support & Service | SKAT HV Equipment</title>
+    <title data-i18n="page_title">Technical Support & Service | SKAT HV Equipment</title>
     <meta name="description" content="We stand behind our equipment with comprehensive service and support. Technical support, calibration, training, and warranty.">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,211 +14,239 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-        .service-hero-text h1 {
-            font-size: 3rem;
-            color: var(--primary-dark);
-            margin-bottom: 15px;
-        }
-        .service-hero-text p {
-            font-size: 1.15rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-        .service-section-title {
-            font-size: 2.2rem;
-            text-align: center;
-            color: var(--primary-dark);
-            margin-bottom: 40px;
-        }
-        .service-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-bottom: 60px;
-        }
-        .service-card {
-            position: relative;
-            border-radius: 12px;
-            overflow: hidden;
-            height: 350px;
-            display: block;
-            text-decoration: none;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
-        }
-        .service-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-            transition: transform 0.4s ease;
-        }
-        .service-card:hover img {
-            transform: scale(1.05);
-        }
-        .service-card-overlay {
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: rgba(28, 29, 38, 0.65);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 30px;
-            transition: background 0.3s ease;
-        }
-        .service-card:hover .service-card-overlay {
-            background: rgba(28, 29, 38, 0.80);
-        }
-        .service-card h3 {
-            color: #fff;
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-        .service-card p {
-            color: #e0e0e0;
-            font-size: 1rem;
-            margin-bottom: 20px;
-            line-height: 1.5;
-        }
-        .service-card .btn-outline-light {
-            border: 2px solid #fff;
-            color: #fff;
-            padding: 8px 24px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        .service-card .btn-outline-light:hover {
-            background: #fff;
-            color: var(--primary-dark);
-        }
-        .support-info-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            padding-top: 20px;
-            border-top: 3px solid var(--accent-yellow);
-        }
-        .support-info-grid h3 {
-            color: var(--primary-dark);
-            margin-bottom: 15px;
-        }
-        .support-info-grid ul {
-            list-style: none;
-            padding: 0;
-        }
-        .support-info-grid ul li {
-            margin-bottom: 10px;
-            color: var(--text-light);
-            font-size: 1rem;
-        }
-        .support-info-grid ul li i {
-            color: var(--accent-yellow);
-            margin-right: 10px;
-            width: 20px;
-        }
-        @media (max-width: 992px) {
-            .service-grid { grid-template-columns: 1fr 1fr; }
-        }
-        @media (max-width: 768px) {
-            .service-hero-text h1 { font-size: 2.2rem; }
-            .service-grid { grid-template-columns: 1fr; }
-            .service-card { height: 280px; }
-            .support-info-grid { grid-template-columns: 1fr; }
-        }
-    </style>
+        <link rel="stylesheet" href="megamenu.css">
+<link rel="stylesheet" href="modals.css">
+    <link rel="stylesheet" href="support.css">
 </head>
 <body>
-    <!-- Контейнер для динамической шапки (загружается через main.js) -->
     <div id="header-container"></div>
 
     <main>
-        <section class="container" style="padding-top: 40px;">
-            <div class="grid-2" style="align-items: center; gap: 50px;">
-                <div class="service-hero-text">
-                    <h1>Professional Service for Our Customers</h1>
-                    <h2 style="color: var(--primary-dark); font-size: 1.4rem; margin-bottom: 20px;">Your equipment's reliability is our highest priority</h2>
-                    <p>We offer a comprehensive range of services worldwide, performed by highly qualified specialists. This includes technical support, delivery of spare parts, regular maintenance, annual calibrations, and repair in the event of faults, as well as training on the use of our devices.</p>
-                    <p style="margin-top: 15px;">Our objective is to provide you with first-class customer service tailored to your individual needs. Contact us to book a service appointment.</p>
-                    <a href="contact.html" class="btn-primary" style="margin-top: 20px;">Contact Support</a>
-                </div>
-                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-                    <img src="images/service-hero.jpg" alt="SKAT Service & Calibration" style="width: 100%; display: block;">
-                </div>
-            </div>
-        </section>
-
-        <section class="container" style="padding-top: 40px;">
-            <h2 class="service-section-title">Our Services</h2>
-            <div class="service-grid">
-                <a href="contact.html" class="service-card">
-                    <img src="images/support-tech.jpg" alt="Technical Support">
-                    <div class="service-card-overlay">
-                        <h3>Technical Support</h3>
-                        <p>Direct access to our engineering team for troubleshooting, operation guidance, and technical inquiries.</p>
-                        <span class="btn-outline-light">Contact Support</span>
-                    </div>
-                </a>
-                <a href="contact.html" class="service-card">
-                    <img src="images/support-calibration.jpg" alt="Calibration & Adjustment">
-                    <div class="service-card-overlay">
-                        <h3>Calibration & Adjustment</h3>
-                        <p>Certified calibration and metrological verification of your equipment to ensure accuracy and compliance with standards.</p>
-                        <span class="btn-outline-light">Request Calibration</span>
-                    </div>
-                </a>
-                <a href="academy.html" class="service-card">
-                    <img src="images/support-training.jpg" alt="Training & Courses">
-                    <div class="service-card-overlay">
-                        <h3>Training & Courses</h3>
-                        <p>Professional training for dealer personnel and end‑users on the operation, maintenance, and safety of SKAT equipment.</p>
-                        <span class="btn-outline-light">Inquire About Training</span>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section style="background-color: var(--bg-secondary); padding: 60px 0;">
+        <!-- HERO -->
+        <section class="page-header" style="background: var(--bg-secondary);">
             <div class="container">
-                <div class="support-info-grid">
+                <h1 data-i18n="support_hero_title">Professional Service for Our Customers</h1>
+                <h2 class="support-hero-subtitle" data-i18n="support_hero_subtitle">Your equipment's reliability is our highest priority</h2>
+                <p data-i18n="support_hero_text">We offer a comprehensive range of services worldwide, performed by highly qualified specialists. This includes technical support, delivery of spare parts, regular maintenance, annual calibrations, and repair in the event of faults, as well as training on the use of our devices.</p>
+                <p class="support-hero-text-2" data-i18n="support_hero_text2">Our objective is to provide you with first-class customer service tailored to your individual needs. Contact us to book a service appointment.</p>
+            </div>
+        </section>
+
+        <!-- FAQ TEASER -->
+        <section class="container" style="padding: 30px 0;">
+            <div class="academy-cta-block" style="background-color: var(--bg-secondary); border: 2px solid var(--accent-yellow); border-radius: 12px; padding: 30px; text-align: center;">
+                <h3 style="font-size: 1.4rem; color: var(--primary-dark); margin-bottom: 10px;" data-i18n="support_faq_title">Frequently Asked Questions</h3>
+                <p style="color: var(--text-light); margin-bottom: 20px;" data-i18n="support_faq_text">Common questions about our testers, test benches, and calibration equipment — organized by product category.</p>
+                <a href="faq.html" class="btn-outline-dark" data-i18n="support_faq_btn">Browse the FAQ</a>
+            </div>
+        </section>
+
+        <!-- ФОРМА ОБРАТНОЙ СВЯЗИ -->
+        <section class="container support-form-section">
+            <div class="support-form-wrapper">
+                <h2 class="support-form-title" data-i18n="support_form_title">Contact Technical Support</h2>
+                <p class="support-form-subtitle" data-i18n="support_form_subtitle">Describe your issue and we will get back to you within 1 business day.</p>
+
+                <form class="support-form" id="supportContactForm" novalidate>
+                    <!-- Honeypot -->
+                    <div class="form-honeypot" style="display:none;">
+                        <input type="text" name="website" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <!-- Скрытые поля -->
+                    <input type="hidden" name="page" value="">
+                    <input type="hidden" name="lang" value="">
+                    <input type="hidden" name="timestamp" value="">
+
+                    <div class="support-form-row">
+                        <div class="form-group">
+                            <label for="supportName" data-i18n="support_name">Your Name *</label>
+                            <input type="text" id="supportName" name="name" required autocomplete="name" placeholder="Your Name *" data-i18n-placeholder="support_name">
+                            <p class="form-error" data-error-for="name" role="alert"></p>
+                        </div>
+                        <div class="form-group">
+                            <label for="supportEmail" data-i18n="support_email">Your Email *</label>
+                            <input type="email" id="supportEmail" name="email" required autocomplete="email" placeholder="Your Email *" data-i18n-placeholder="support_email">
+                            <p class="form-error" data-error-for="email" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="support-form-row">
+                        <div class="form-group">
+                            <label data-i18n="support_phone">Phone</label>
+                            <div class="phone-input-wrap" data-dial="+7">
+                                <button type="button" class="phone-code-btn" id="supportPagePhoneCodeBtn">
+                                    <img src="flags/ru.png" class="phone-flag" alt="">
+                                    <span class="phone-code">+7</span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </button>
+                                <div class="phone-dropdown" id="supportPagePhoneDropdown"></div>
+                                <input type="tel" id="supportPhone" name="phone" autocomplete="tel" placeholder="(8442) 00-00-00">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="supportCompany" data-i18n="support_company">Company</label>
+                            <input type="text" id="supportCompany" name="company" autocomplete="organization" placeholder="Company" data-i18n-placeholder="support_company">
+                        </div>
+                    </div>
+
+                    <div class="support-form-row">
+                        <div class="form-group">
+                            <label for="supportCountry" data-i18n="support_country">Country</label>
+                            <select id="supportCountry" name="country">
+                                <option value="">—</option>
+                                <option value="RU" data-i18n="country_russia">Russia</option>
+                                <option value="BY" data-i18n="country_belarus">Belarus</option>
+                                <option value="KZ" data-i18n="country_kazakhstan">Kazakhstan</option>
+                                <option value="AZ" data-i18n="country_azerbaijan">Azerbaijan</option>
+                                <option value="UZ" data-i18n="country_uzbekistan">Uzbekistan</option>
+                                <option value="DE" data-i18n="country_germany">Germany</option>
+                                <option value="ES" data-i18n="country_spain">Spain</option>
+                                <option value="FR" data-i18n="country_france">France</option>
+                                <option value="IT" data-i18n="country_italy">Italy</option>
+                                <option value="TR" data-i18n="country_turkey">Turkey</option>
+                                <option value="PL" data-i18n="country_poland">Poland</option>
+                                <option value="SV" data-i18n="country_sweden">Sweden</option>
+                                <option value="CS" data-i18n="country_czechia">Czechia</option>
+                                <option value="BG" data-i18n="country_bulgaria">Bulgaria</option>
+                                <option value="SR" data-i18n="country_serbia">Serbia</option>
+                                <option value="PT" data-i18n="country_portugal">Portugal</option>
+                                <option value="AR" data-i18n="country_middle_east">Middle East</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="supportProduct" data-i18n="support_product">Product *</label>
+                            <select id="supportProduct" name="product" required>
+                                <option value="" data-i18n="support_product_select">Select Product *</option>
+                                <option value="SKAT-M100V">SKAT-M100V</option>
+                                <option value="SKAT-TANGENS-M">SKAT-TANGENS-M</option>
+                                <option value="SKAT-70C">SKAT-70C</option>
+                                <option value="SKAT-70M">SKAT-70M</option>
+                                <option value="SKAT-70P">SKAT-70P</option>
+                                <option value="SKAT-SVS">SKAT-SVS</option>
+                                <option value="SKAT-STEND-50">SKAT-STEND-50</option>
+                                <option value="UBSVN-LM">UBSVN-LM</option>
+                                <option value="SKAT-AVN-70">SKAT-AVN-70</option>
+                                <option value="IK 100-0.4">IK 100-0.4</option>
+                                <option value="KVC-B">KVC-B</option>
+                                <option value="KVC-C">KVC-C</option>
+                                <option value="Other" data-i18n="support_product_other">Other</option>
+                            </select>
+                            <p class="form-error" data-error-for="product" role="alert"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group support-full-width">
+                        <label for="supportProblem" data-i18n="support_problem">Problem Description *</label>
+                        <textarea id="supportProblem" name="problem" rows="5" maxlength="2000" required placeholder="Describe the problem *" data-i18n-placeholder="support_problem"></textarea>
+                        <div class="form-counter" id="supportCounter">0 / 2000</div>
+                        <p class="form-error" data-error-for="problem" role="alert"></p>
+                    </div>
+
+                    <div class="form-group support-full-width">
+                        <label for="supportAttachment" data-i18n="support_attachment">Attachment (Photo / Video)</label>
+                        <label class="file-input-wrap" for="supportAttachment">
+                            <span class="file-input-btn" data-i18n="ui_choose_file">Choose File</span>
+                            <span class="file-input-status" data-i18n="ui_no_file_chosen">No file chosen</span>
+                            <span class="file-input-filename" hidden></span>
+                        </label>
+                        <input type="file" id="supportAttachment" name="attachment" accept=".jpeg,.jpg,.png,.pdf,.mp4" class="file-input-native">
+                        <div class="file-preview" id="filePreview"></div>
+                        <p class="form-error" data-error-for="attachment" role="alert"></p>
+                    </div>
+
+                    <div class="form-group support-full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" id="supportConsent">
+                            <span data-i18n="support_consent">I agree to the privacy policy *</span>
+                        </label>
+                        <p class="form-error" data-error-for="consent" role="alert"></p>
+                    </div>
+
+                    <div class="form-group support-full-width">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" id="supportNewsletter">
+                            <span data-i18n="support_newsletter">Subscribe to our newsletter</span>
+                        </label>
+                    </div>
+
+                    <div class="support-form-submit-row">
+                        <button type="submit" class="btn-primary" id="supportContactSubmit">
+                            <span data-i18n="support_submit">Send Request</span>
+                            <i class="fa-solid fa-circle-notch fa-spin" style="display:none;"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- ГАРАНТИЯ -->
+        <section class="support-warranty-section">
+            <div class="container">
+                <div class="grid-2">
                     <div>
-                        <h3><i class="fa-solid fa-shield-halved" style="color: var(--accent-yellow);"></i> Warranty</h3>
+                        <h3><i class="fa-solid fa-shield-halved"></i> <span data-i18n="support_warranty_title">Warranty</span></h3>
                         <ul>
-                            <li><strong>Main Equipment:</strong> 18-month warranty covering all manufacturing defects.</li>
-                            <li><strong>Accessories:</strong> UBSVN-LM — 12 months / IK 100-0.4 — 6 months.</li>
-                            <li>Free repair during the warranty period, provided operating instructions are followed.</li>
+                            <li><strong data-i18n="support_warranty_main">Main Equipment:</strong> <span data-i18n="support_warranty_main_desc">18-month warranty covering all manufacturing defects.</span></li>
+                            <li><strong data-i18n="support_warranty_accessories">Accessories:</strong> <span data-i18n="support_warranty_accessories_desc">UBSVN-LM — 12 months / IK 100-0.4 — 6 months.</span></li>
+                            <li><span data-i18n="support_warranty_note">Free repair during the warranty period, provided operating instructions are followed.</span></li>
                         </ul>
                     </div>
                     <div>
-                        <h3><i class="fa-solid fa-location-dot" style="color: var(--accent-yellow);"></i> Service Centers</h3>
+                        <h3><i class="fa-solid fa-location-dot"></i> <span data-i18n="support_centers_title">Service Centers</span></h3>
                         <ul>
-                            <li><strong>Main Center:</strong> Volgograd, Russia</li>
-                            <li><strong>Regional Center:</strong> Minsk, Belarus</li>
-                            <li><strong>Authorized Partners:</strong> Kazakhstan</li>
-                            <li>Multilingual support available in Russian and English.</li>
+                            <li><strong data-i18n="support_center1">Main Center:</strong> <span data-i18n="support_center1_val">Volgograd, Russia</span></li>
+                            <li><strong data-i18n="support_center2">Regional Center:</strong> <span data-i18n="support_center2_val">Minsk, Belarus</span></li>
+                            <li><strong data-i18n="support_center3">Authorized Partners:</strong> <span data-i18n="support_center3_val">Kazakhstan</span></li>
+                            <li><span data-i18n="support_centers_note">Multilingual support available in Russian and English.</span></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- СЕРВИСНЫЕ КАРТОЧКИ -->
+        <section class="container support-services-section">
+            <h2 class="support-services-title" data-i18n="support_services_title">Our Services</h2>
+            <div class="grid-3">
+                <a href="#supportContactForm" class="support-card">
+                    <img src="images/service-hero.jpg" alt="Technical Support">
+                    <div class="support-card-overlay">
+                        <h3 data-i18n="support_service1_title">Technical Support</h3>
+                        <p data-i18n="support_service1_desc">Direct access to our engineering team for troubleshooting, operation guidance, and technical inquiries.</p>
+                        <span class="btn-outline-light" data-i18n="support_service1_cta">Contact Support</span>
+                    </div>
+                </a>
+                <a href="calibration.html" class="support-card">
+                    <img src="images/metrology-lab.jpg" alt="Calibration & Adjustment">
+                    <div class="support-card-overlay">
+                        <h3 data-i18n="support_service2_title">Calibration & Adjustment</h3>
+                        <p data-i18n="support_service2_desc">Certified calibration and metrological verification of your equipment to ensure accuracy and compliance with standards.</p>
+                        <span class="btn-outline-light" data-i18n="support_service2_cta">View Calibration Service</span>
+                    </div>
+                </a>
+                <a href="academy.html" class="support-card">
+                    <img src="images/support-training.jpg" alt="Training & Courses">
+                    <div class="support-card-overlay">
+                        <h3 data-i18n="support_service3_title">Training & Courses</h3>
+                        <p data-i18n="support_service3_desc">Professional training for dealer personnel and end-users on the operation, maintenance, and safety of SKAT equipment.</p>
+                        <span class="btn-outline-light" data-i18n="support_service3_cta">Explore Academy</span>
+                    </div>
+                </a>
             </div>
         </section>
     </main>
 
-    <!-- Контейнер для динамического футера (загружается через main.js) -->
     <div id="footer-container"></div>
 
     <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <!-- Подключаем общий JS-файл -->
+    <!-- Подключаем скрипты -->
     <script src="main.js"></script>
+        <script src="megamenu.js"></script>
+<script src="assets.js"></script>
+    <script src="lang.js"></script>
+    <script src="modals.js"></script>
+    <script src="support.js"></script>
 </body>
 </html>

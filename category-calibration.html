@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="prod_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calibration & Safety | SKAT</title>
+    <title data-i18n="page_title">Calibration & Safety | SKAT</title>
+    <meta name="description" data-i18n="page_description" content="Tools for metrological verification, high-energy pulse generation, and high-voltage laboratory safety. Precision you can trust.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,9 +23,8 @@
     <!-- HERO БЛОК -->
     <section class="category-hero">
         <div class="container hero-content">
-            <h1>Calibration & Safety</h1>
-            <p>Tools for metrological verification, high-energy pulse generation, and high-voltage laboratory safety.<br>
-               Precision you can trust.</p>
+            <h1 data-i18n="cat_hero_title_calibration">Calibration & Safety</h1>
+            <p data-i18n="cat_hero_subtitle_calibration">Tools for metrological verification, high-energy pulse generation, and high-voltage laboratory safety.<br>Precision you can trust.</p>
         </div>
     </section>
 
@@ -34,13 +38,9 @@
                     <img src="images/avn70-1.png" alt="SKAT-AVN-70" class="tech-card__img">
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">SKAT-AVN-70 Active HV Load</h3>
-                    <p class="tech-card__desc">
-                        Precision high-voltage load bank (70 kV) for calibrating dielectric testers. 6 steps, up to 3750 W dissipation.
-                    </p>
-                    <a href="product-avn70.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_avn70_title">SKAT-AVN-70 Active HV Load</h3>
+                    <p data-i18n="cat_avn70_desc">Precision high-voltage load bank (70 kV) for calibrating dielectric testers. 6 steps, up to 3750 W dissipation.</p>
+                    <a href="product-avn70.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
@@ -50,19 +50,15 @@
                     <img src="images/ik100-1.png" alt="IK 100-0.4" class="tech-card__img">
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">IK 100-0.4 HV Pulse Capacitor</h3>
-                    <p class="tech-card__desc">
-                        High-voltage pulse capacitor for impulse current generators. 100 kV, 0.4 µF. Polypropylene housing.
-                    </p>
-                    <a href="product-ik100.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_ik100_title">IK 100-0.4 HV Pulse Capacitor</h3>
+                    <p data-i18n="cat_ik100_desc">High-voltage pulse capacitor for impulse current generators. 100 kV, 0.4 µF. Polypropylene housing.</p>
+                    <a href="product-ik100.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html#products" class="btn-outline-dark">Back to Products</a>
+            <a href="index.html#products" class="btn-outline-dark" data-i18n="back_to_products">Back to Products</a>
         </div>
     </section>
 
@@ -73,6 +69,7 @@
 
     <!-- СКРИПТЫ -->
     <script src="assets.js"></script>
+    <script src="lang.js"></script>
     <script src="category.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

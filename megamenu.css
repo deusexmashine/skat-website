@@ -1,8 +1,11 @@
 /* ============================================= */
 /* MEGA-MENU STYLES (megamenu.css)               */
+/* Единственный источник стилей мега-меню.        */
+/* Ширина берётся из тех же переменных, что и     */
+/* header (--header-outer-width/-max-width,       */
+/* объявлены в :root в style.css).                */
 /* ============================================= */
 
-/* --- Основной оверлей --- */
 .mega-overlay {
     display: none;
     position: fixed;
@@ -12,9 +15,10 @@
     height: calc(100% - 120px);
     background: #FFFFFF;
     z-index: 9999;
-    justify-content: center;
-    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
     padding: 20px 20px 40px 20px;
+    overflow-y: auto;
     animation: fadeInOverlay 0.3s ease forwards;
 }
 
@@ -27,11 +31,13 @@
     to { opacity: 1; }
 }
 
-/* --- Кнопка закрытия --- */
+/* --- Кнопка закрытия — той же ширины, что и header, прижата вправо --- */
 .mega-overlay-close {
-    position: absolute;
-    top: 20px;
-    right: 40px;
+    width: var(--header-outer-width);
+    max-width: var(--header-outer-max-width);
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 auto 14px;
 }
 
 .mega-close-btn {
@@ -54,27 +60,29 @@
     color: var(--primary-dark);
 }
 
-/* --- Контейнер --- */
+/* --- Контейнер — той же ширины, что и header --- */
 .mega-overlay-container {
     display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
+    gap: 48px;
+    width: var(--header-outer-width);
+    max-width: var(--header-outer-max-width);
 }
 
-/* --- Левая колонка (Категории) --- */
+/* --- Левая колонка (Категории) ---
+   Раньше 230px — текст переносился в 2-3 строки и "зажимался".
+   Теперь 380px + больше воздуха внутри карточки. */
 .mega-cards-column {
-    flex: 0 0 230px;
+    flex: 0 0 380px;
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
 }
 
 .mega-card-item {
     display: flex;
     align-items: center;
-    gap: 15px;
-    padding: 10px 14px;
+    gap: 18px;
+    padding: 14px 18px;
     border-radius: 12px;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -89,8 +97,9 @@
 }
 
 .mega-card-item .mega-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
     object-fit: contain;
     filter: invert(11%) sepia(8%) saturate(748%) hue-rotate(204deg) brightness(95%) contrast(90%);
     transition: filter 0.3s ease, transform 0.3s ease;
@@ -102,16 +111,25 @@
     transform: scale(1.05);
 }
 
+.mega-card-item .mega-text {
+    min-width: 0;
+}
+
 .mega-card-item .mega-text h4 {
     margin: 0;
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: 600;
+    line-height: 1.3;
     color: var(--primary-dark);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .mega-card-item .mega-text p {
-    margin: 0;
-    font-size: 0.75rem;
+    margin: 4px 0 0;
+    font-size: 0.82rem;
+    line-height: 1.4;
     color: var(--text-light);
 }
 
@@ -175,21 +193,32 @@
 }
 
 .mega-view-all {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     font-weight: 600;
     color: var(--primary-dark);
     text-decoration: none;
-    padding: 6px 14px;
-    border: 2px solid var(--primary-dark);
-    border-radius: 6px;
+    padding: 8px 18px;
     font-size: 0.85rem;
-    transition: all 0.3s ease;
+    border-radius: 50px;
+    border: 2px solid var(--accent-yellow);
+    background: transparent;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(0);
 }
 
 .mega-view-all:hover {
-    background: var(--primary-dark);
-    color: #fff;
+    background: var(--accent-yellow);
+    color: var(--primary-dark);
+    border-color: var(--accent-yellow);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
 }
+
+.mega-view-all i { transition: transform 0.3s ease; }
+.mega-view-all:hover i { transform: translateX(4px); }
 
 /* --- Адаптивность --- */
 @media (max-width: 992px) {
@@ -206,7 +235,10 @@
         flex: 1;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        gap: 10px;
+    }
+    .mega-card-item .mega-text h4 {
+        white-space: normal;
     }
     .mega-links-column {
         padding-left: 0;
@@ -216,10 +248,15 @@
         min-height: auto;
     }
     .mega-card-item {
-        padding: 8px 12px;
+        padding: 10px 14px;
     }
     .mega-overlay-close {
-        top: 15px;
-        right: 20px;
+        margin-bottom: 8px;
+    }
+}
+
+@media (max-width: 575px) {
+    .mega-cards-column {
+        grid-template-columns: 1fr;
     }
 }

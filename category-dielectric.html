@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="prod_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dielectric Liquids Testers | SKAT</title>
+    <title data-i18n="page_title">Dielectric Liquids Testers | SKAT</title>
+    <meta name="description" data-i18n="page_description" content="Precision analysis of insulating oils and liquid dielectrics. Compliant with IEC 60156, ASTM D1816, and GOST 6581-75.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,11 +23,8 @@
     <!-- HERO БЛОК -->
     <section class="category-hero">
         <div class="container hero-content">
-            <h1>Dielectric Liquids Testers</h1>
-            <p>
-                Precision analysis of insulating oils and liquid dielectrics.<br>
-                Compliant with IEC 60156, ASTM D1816, and GOST 6581-75.
-            </p>
+            <h1 data-i18n="cat_hero_title">Dielectric Liquids Testers</h1>
+            <p data-i18n="cat_hero_subtitle">Precision analysis of insulating oils and liquid dielectrics.<br>Compliant with IEC 60156, ASTM D1816, and GOST 6581-75.</p>
         </div>
     </section>
 
@@ -34,17 +36,12 @@
             <article class="tech-card">
                 <div class="tech-card__image-wrap">
                     <img src="images/m100v-1.png" alt="SKAT-M100V" class="tech-card__img">
-                    <div class="tech-card__badge green">IEC 60156</div>
+                    <div class="tech-card__badge green" data-i18n="badge_iec60156">IEC 60156</div>
                 </div>
                 <div class="tech-card__content">
-                    <h3>SKAT-M100V Oil Breakdown Tester</h3>
-                    <p>
-                        Fully automatic breakdown voltage tester for transformer oil and insulating liquids.<br>
-                        Up to 100 kV, 6 test sequences, built-in thermal printer.
-                    </p>
-                    <a href="product-m100v.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_m100v_title">SKAT-M100V Oil Breakdown Tester</h3>
+                    <p data-i18n="cat_m100v_desc">Fully automatic breakdown voltage tester for transformer oil and insulating liquids.<br>Up to 100 kV, 6 test sequences, built-in thermal printer.</p>
+                    <a href="product-m100v.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
@@ -52,23 +49,18 @@
             <article class="tech-card">
                 <div class="tech-card__image-wrap">
                     <img src="images/tangens-1.png" alt="SKAT-TANGENS-M" class="tech-card__img">
-                    <div class="tech-card__badge blue">IEC 60247</div>
+                    <div class="tech-card__badge blue" data-i18n="badge_iec60247">IEC 60247</div>
                 </div>
                 <div class="tech-card__content">
-                    <h3>SKAT-TANGENS-M Liquid Dielectric Tester</h3>
-                    <p>
-                        Precision measurement of dielectric loss factor (tan δ) and relative permittivity.<br>
-                        7" touchscreen, fully automatic cycle, IEC 60247 compliant.
-                    </p>
-                    <a href="product-tangens.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_tangens_title">SKAT-TANGENS-M Liquid Dielectric Tester</h3>
+                    <p data-i18n="cat_tangens_desc">Precision measurement of dielectric loss factor (tan δ) and relative permittivity.<br>7" touchscreen, fully automatic cycle, IEC 60247 compliant.</p>
+                    <a href="product-tangens.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html#products" class="btn-outline-dark">Back to Products</a>
+            <a href="index.html#products" class="btn-outline-dark" data-i18n="back_to_products">Back to Products</a>
         </div>
     </section>
 
@@ -79,6 +71,7 @@
 
     <!-- СКРИПТЫ -->
     <script src="assets.js"></script>
+    <script src="lang.js"></script>
     <script src="category.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

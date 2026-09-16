@@ -2,67 +2,118 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="main_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKAT Academy | Training & Courses</title>
+    <title data-i18n="page_title">SKAT Academy | Training & Courses</title>
     <meta name="description" content="Professional training and courses on the operation, maintenance, and safety of SKAT high-voltage testing equipment.">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="megamenu.css">
     <style>
-        .academy-hero-text h1 {
-            font-size: 3rem;
-            color: var(--primary-dark);
-            margin-bottom: 15px;
-        }
-        .academy-hero-text h2 {
-            font-size: 1.4rem;
-            color: var(--primary-dark);
-            margin-bottom: 20px;
-        }
-        .academy-hero-text p {
-            font-size: 1.15rem;
-            color: var(--text-light);
-            line-height: 1.7;
-        }
-        .academy-cta-block {
-            background-color: var(--bg-secondary);
-            border: 2px solid var(--accent-yellow);
+        .academy-hero-text h1 { font-size: 3rem; color: var(--primary-dark); margin-bottom: 15px; }
+        .academy-hero-text h2 { font-size: 1.4rem; color: var(--primary-dark); margin-bottom: 20px; }
+        .academy-hero-text p { font-size: 1.15rem; color: var(--text-light); line-height: 1.7; }
+        .academy-cta-block { background-color: var(--bg-secondary); border: 2px solid var(--accent-yellow); border-radius: 12px; padding: 40px 30px; text-align: center; margin-top: 20px; }
+        .academy-cta-block h3 { font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 15px; }
+        .academy-cta-block p { color: var(--text-light); margin-bottom: 25px; }
+        @media (max-width: 768px) { .academy-hero-text h1 { font-size: 2.2rem; } }
+
+        /* ===== Секция "Наши курсы" ===== */
+        .academy-section-head { text-align: center; max-width: 700px; margin: 0 auto 40px; }
+        .academy-section-head h2 { font-size: 2rem; color: var(--primary-dark); margin-bottom: 12px; }
+        .academy-section-head p { color: var(--text-light); }
+
+        .course-card {
+            background: var(--bg-white);
+            border: 1px solid #eaeaea;
+            border-top: 4px solid var(--accent-yellow);
             border-radius: 12px;
-            padding: 40px 30px;
-            text-align: center;
-            margin-top: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
         }
-        .academy-cta-block h3 {
-            font-size: 1.8rem;
+        .course-card h3 {
+            font-size: 1.3rem;
             color: var(--primary-dark);
-            margin-bottom: 15px;
+            margin-bottom: 14px;
         }
-        .academy-cta-block p {
+        .course-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 18px;
+            margin-bottom: 16px;
+            font-size: 0.85rem;
             color: var(--text-light);
-            margin-bottom: 25px;
         }
-        @media (max-width: 768px) {
-            .academy-hero-text h1 { font-size: 2.2rem; }
+        .course-meta span { display: inline-flex; align-items: center; gap: 6px; }
+        .course-meta i { color: var(--accent-yellow); }
+        .course-card > p.course-desc { color: var(--text-light); margin-bottom: 16px; line-height: 1.6; }
+        .course-topics {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
         }
+        .course-topics li {
+            padding-left: 24px;
+            position: relative;
+            font-size: 0.92rem;
+            color: var(--text-dark);
+            line-height: 1.5;
+        }
+        .course-topics li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: var(--accent-yellow);
+            position: absolute;
+            left: 0;
+            top: 2px;
+            font-size: 0.8rem;
+        }
+        .course-card .btn-outline-dark { margin-top: auto; align-self: stretch; width: 100%; }
+
+        /* ===== Секция "Где проходит обучение" ===== */
+        .academy-location-block {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 30px;
+        }
+        .academy-location-block i {
+            font-size: 1.8rem;
+            color: var(--accent-yellow);
+            margin-top: 4px;
+        }
+        .academy-location-block h3 { color: var(--primary-dark); margin-bottom: 8px; font-size: 1.2rem; }
+        .academy-location-block p { color: var(--text-light); line-height: 1.6; margin: 0; }
+        .academy-location-block p + p { margin-top: 8px; }
     </style>
 </head>
 <body>
-    <!-- Контейнер для динамической шапки (загружается через main.js) -->
     <div id="header-container"></div>
 
     <main>
+        <!-- HERO -->
         <section class="container" style="padding-top: 40px;">
             <div class="grid-2" style="align-items: center; gap: 50px;">
                 <div class="academy-hero-text">
-                    <h1>SKAT Academy</h1>
-                    <h2>Expert training in high-voltage testing and diagnostics</h2>
-                    <p>We offer high-quality training courses specially tailored to your individual needs. Whether you are a dealer, a maintenance engineer, or a lab technician — our programs cover the operation, maintenance, and safety of SKAT equipment.</p>
-                    <p style="margin-top: 15px;">Our course portfolio is constantly expanding. If you have special requirements or suggestions, please let us know — your feedback helps us customise our offer even better.</p>
-                    <a href="contact.html" class="btn-primary" style="margin-top: 20px;">Contact Us About Training</a>
+                    <h1 data-i18n="academy_hero_title">SKAT Academy</h1>
+                    <h2 data-i18n="academy_hero_subtitle">Expert training in high-voltage testing and diagnostics</h2>
+                    <p data-i18n="academy_hero_text">We offer high-quality training courses specially tailored to your individual needs. Whether you are a dealer, a maintenance engineer, or a lab technician — our programs cover the operation, maintenance, and safety of SKAT equipment.</p>
+                    <p style="margin-top: 15px;" data-i18n="academy_hero_text2">Our course portfolio is constantly expanding. If you have special requirements or suggestions, please let us know — your feedback helps us customise our offer even better.</p>
+                    <button type="button" class="btn-primary" style="margin-top: 20px;" data-open-training data-i18n="academy_cta">Contact Us About Training</button>
                 </div>
                 <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
                     <img src="images/academy-hero.jpg" alt="SKAT Academy Training" style="width: 100%; display: block;">
@@ -70,21 +121,101 @@
             </div>
         </section>
 
+        <!-- НАШИ КУРСЫ -->
+        <section class="container" style="padding: 60px 20px;">
+            <div class="academy-section-head">
+                <h2 data-i18n="academy_courses_title">Our Courses</h2>
+                <p data-i18n="academy_courses_subtitle">Hands-on training built around the SKAT equipment you actually use — not generic theory.</p>
+            </div>
+            <div class="grid-3">
+                <!-- Курс 1: Диагностика жидких диэлектриков -->
+                <div class="course-card">
+                    <h3 data-i18n="academy_course1_title">Insulating Fluids & Transformer Oil Diagnostics</h3>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> <span data-i18n="academy_course1_duration">1 day</span></span>
+                        <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="academy_course1_format">In person, SKAT facility (Volgograd)</span></span>
+                        <span><i class="fa-solid fa-users"></i> <span data-i18n="academy_course1_audience">Lab & substation engineers</span></span>
+                    </div>
+                    <p class="course-desc" data-i18n="academy_course1_desc">A practical, equipment-focused course on testing transformer oil and other insulating fluids — from sampling to interpreting the result.</p>
+                    <ul class="course-topics">
+                        <li data-i18n="academy_course1_topic1">Oil sampling procedure and safety precautions</li>
+                        <li data-i18n="academy_course1_topic2">Breakdown voltage testing with SKAT-M100V (IEC 60156 / GOST 6581)</li>
+                        <li data-i18n="academy_course1_topic3">Dielectric loss (tan δ) measurement with SKAT-TANGENS-M (IEC 60247)</li>
+                        <li data-i18n="academy_course1_topic4">Interpreting results against acceptance standards</li>
+                        <li data-i18n="academy_course1_topic5">Hands-on practice and review of real test reports</li>
+                    </ul>
+                    <button type="button" class="btn-outline-dark" data-open-training data-course="oil-diagnostics" data-i18n="academy_course1_btn">Register Interest</button>
+                </div>
+
+                <!-- Курс 2: Приёмо-сдаточные испытания ВВ оборудования -->
+                <div class="course-card">
+                    <h3 data-i18n="academy_course2_title">HV Acceptance & Routine Testing</h3>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> <span data-i18n="academy_course2_duration">2 days</span></span>
+                        <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="academy_course2_format">In person, hands-on with demo equipment</span></span>
+                        <span><i class="fa-solid fa-users"></i> <span data-i18n="academy_course2_audience">Maintenance engineers & service dealers</span></span>
+                    </div>
+                    <p class="course-desc" data-i18n="academy_course2_desc">A practical course on acceptance and routine testing of high-voltage equipment, working directly with SKAT test sets and benches.</p>
+                    <ul class="course-topics">
+                        <li data-i18n="academy_course2_topic1">Scope and standards for HV acceptance testing</li>
+                        <li data-i18n="academy_course2_topic2">AC/DC withstand voltage testing with SKAT-70C/70M/70P</li>
+                        <li data-i18n="academy_course2_topic3">Working with stationary test benches (SKAT-SVS, SKAT-STEND-50)</li>
+                        <li data-i18n="academy_course2_topic4">Safety procedures during high-voltage testing</li>
+                        <li data-i18n="academy_course2_topic5">Preparing test protocols and documentation</li>
+                    </ul>
+                    <button type="button" class="btn-outline-dark" data-open-training data-course="hv-testing" data-i18n="academy_course2_btn">Register Interest</button>
+                </div>
+
+                <!-- Курс 3: Для менеджеров дистрибьюторов -->
+                <div class="course-card">
+                    <h3 data-i18n="academy_course3_title">Product & Sales Expertise for Distributor Managers</h3>
+                    <div class="course-meta">
+                        <span><i class="fa-regular fa-clock"></i> <span data-i18n="academy_course3_duration">3 days</span></span>
+                        <span><i class="fa-solid fa-location-dot"></i> <span data-i18n="academy_course3_format">In person, SKAT facility, incl. a plant floor tour</span></span>
+                        <span><i class="fa-solid fa-users"></i> <span data-i18n="academy_course3_audience">Distributor company managers</span></span>
+                    </div>
+                    <p class="course-desc" data-i18n="academy_course3_desc">An intensive, hands-on program for distributor sales teams — covering the full SKAT product line, competitive positioning, and tender procedures.</p>
+                    <ul class="course-topics">
+                        <li data-i18n="academy_course3_topic1">Hands-on walkthrough of the full SKAT line: SKAT-M100V, SKAT-TANGENS-M, SKAT-SVS, SKAT-AVN-70, KVC kilovoltmeters</li>
+                        <li data-i18n="academy_course3_topic2">Turning a customer's technical requirements into an accurate equipment specification</li>
+                        <li data-i18n="academy_course3_topic3">Russian tender procurement rules (Government Decree No. 719, the "second extra bid" rule, import-substitution preferences)</li>
+                        <li data-i18n="academy_course3_topic4">Competitive positioning against other test equipment brands</li>
+                        <li data-i18n="academy_course3_topic5">Negotiating with technical and procurement stakeholders; ROI/TCO argumentation</li>
+                    </ul>
+                    <button type="button" class="btn-outline-dark" data-open-training data-course="distributor-sales" data-i18n="academy_course3_btn">Register Interest</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ГДЕ ПРОХОДИТ ОБУЧЕНИЕ -->
+        <section class="container" style="padding-bottom: 60px;">
+            <div class="academy-location-block">
+                <i class="fa-solid fa-map-location-dot"></i>
+                <div>
+                    <h3 data-i18n="academy_location_title">Where Training Takes Place</h3>
+                    <p data-i18n="academy_location_text">Training is held in the conference room of the administrative building at the ZPO SKAT LLC plant: 37 Poddubny St., office 202, Volgograd, Russia.</p>
+                    <p data-i18n="academy_location_note">Course content can be adapted to your team's needs — let us know when you register.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ЗАИНТЕРЕСОВАНЫ? -->
         <section class="container" style="padding-bottom: 60px;">
             <div class="academy-cta-block">
-                <h3>Are you interested?</h3>
-                <p>Tell us what topics and formats interest you — we will tailor a training program for your team.</p>
-                <a href="contact.html" class="btn-primary">Tell us what interests you</a>
+                <h3 data-i18n="academy_cta_title">Don't see what you need?</h3>
+                <p data-i18n="academy_cta_text">Tell us about your team and what you're looking for — we'll put together a custom program.</p>
+                <button type="button" class="btn-primary" data-open-training data-course="other" data-i18n="academy_cta_btn">Request a Custom Program</button>
             </div>
         </section>
     </main>
 
-    <!-- Контейнер для динамического футера (загружается через main.js) -->
     <div id="footer-container"></div>
 
     <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
 
-    <!-- Подключаем общий JS-файл -->
     <script src="main.js"></script>
+    <script src="megamenu.js"></script>
+    <script src="assets.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="main_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="calibration_page_title">Calibration & Adjustment | SKAT HV Equipment</title>
+    <meta name="description" content="Calibration and adjustment of SKAT high-voltage testing equipment — factory calibration and accredited calibration through our metrology lab partner.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="megamenu.css">
+    <link rel="stylesheet" href="calibration.css">
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <main>
+        <!-- HERO -->
+        <section class="container" style="padding-top: 40px;">
+            <div class="grid-2" style="align-items: center; gap: 50px;">
+                <div class="calibration-hero-text">
+                    <h1 data-i18n="calibration_hero_title">Calibration & Adjustment</h1>
+                    <h2 class="calibration-hero-subtitle" data-i18n="calibration_hero_subtitle">Measurement accuracy is the foundation of safe, trustworthy diagnostics</h2>
+                    <p data-i18n="calibration_hero_text">Over time, any measuring instrument's readings can drift from reference values. Regular calibration confirms the accuracy of your SKAT equipment and keeps it metrologically reliable throughout its service life.</p>
+                </div>
+                <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="images/metrology-lab.jpg" alt="Metrology & calibration lab" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </section>
+
+        <!-- КАК ПРОХОДИТ КАЛИБРОВКА -->
+        <section class="container" style="padding: 60px 20px;">
+            <div class="calibration-section-head">
+                <h2 data-i18n="calibration_process_title">How Calibration Works</h2>
+                <p data-i18n="calibration_process_subtitle">Four steps — from initial check to a document confirming your instrument's accuracy.</p>
+            </div>
+            <div class="grid-4">
+                <div class="calibration-step">
+                    <div class="calibration-step-num">1</div>
+                    <h3 data-i18n="calibration_step1_title">Initial Calibration</h3>
+                    <p data-i18n="calibration_step1_desc">The instrument's readings are compared against reference values to assess its current condition and identify any deviation.</p>
+                </div>
+                <div class="calibration-step">
+                    <div class="calibration-step-num">2</div>
+                    <h3 data-i18n="calibration_step2_title">Adjustment (if needed)</h3>
+                    <p data-i18n="calibration_step2_desc">If the deviation exceeds the allowed tolerance, the instrument is adjusted to bring it back in line with the reference.</p>
+                </div>
+                <div class="calibration-step">
+                    <div class="calibration-step-num">3</div>
+                    <h3 data-i18n="calibration_step3_title">Re-Calibration</h3>
+                    <p data-i18n="calibration_step3_desc">A follow-up measurement confirms that the deviation has been corrected.</p>
+                </div>
+                <div class="calibration-step">
+                    <div class="calibration-step-num">4</div>
+                    <h3 data-i18n="calibration_step4_title">Certificate / Report</h3>
+                    <p data-i18n="calibration_step4_desc">Results are documented, including the method, reference standards used, and the values obtained.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ДВА ВАРИАНТА КАЛИБРОВКИ -->
+        <section class="container" style="padding-bottom: 60px;">
+            <div class="calibration-section-head">
+                <h2 data-i18n="calibration_tiers_title">Two Calibration Options</h2>
+            </div>
+            <div class="grid-2">
+                <div class="calibration-tier-card">
+                    <i class="fa-solid fa-industry"></i>
+                    <h3 data-i18n="calibration_tier1_title">SKAT Factory Calibration</h3>
+                    <p data-i18n="calibration_tier1_desc">Checked against the manufacturer's own reference methods — for routine accuracy checks between formal verifications.</p>
+                </div>
+                <div class="calibration-tier-card">
+                    <i class="fa-solid fa-certificate"></i>
+                    <h3 data-i18n="calibration_tier2_title">Accredited Calibration</h3>
+                    <p data-i18n="calibration_tier2_desc">Performed by an independent, accredited metrology laboratory — where officially traceable measurement results are required.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ИНТЕРВАЛ ПОВЕРКИ -->
+        <section class="container" style="padding-bottom: 60px;">
+            <div class="calibration-stat-block">
+                <div class="calibration-stat-number" data-i18n="calibration_interval_number">2 years</div>
+                <p data-i18n="calibration_interval_label">Recommended calibration interval for SKAT testing equipment.</p>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container" style="padding-bottom: 60px;">
+            <div class="calibration-cta-block">
+                <h3 data-i18n="calibration_cta_title">Order a Calibration</h3>
+                <p data-i18n="calibration_cta_text">Accredited calibration and verification of SKAT equipment is carried out by our partner — an independent metrology laboratory.</p>
+                <a href="https://vcs-volga.ru" target="_blank" rel="noopener noreferrer" class="btn-primary" data-i18n="calibration_cta_btn">Visit the Laboratory's Website</a>
+                <p class="calibration-cta-secondary">
+                    <span data-i18n="calibration_cta_secondary_text">Question about factory calibration or warranty?</span>
+                    <a href="support.html#supportContactForm" data-i18n="calibration_cta_secondary_link">Contact our support team</a>
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-container"></div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+    <script src="megamenu.js"></script>
+    <script src="assets.js"></script>
+    <script src="lang.js"></script>
+</body>
+</html>

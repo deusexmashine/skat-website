@@ -1,0 +1,98 @@
+/* ==========================================================
+   CALIBRATION.CSS — Стили страницы калибровки (по аналогии
+   с https://www.baur.eu/en/calibration, адаптировано под SKAT)
+   ========================================================== */
+
+.calibration-hero-text { max-width: 640px; }
+.calibration-hero-subtitle {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+/* --- Секция "Как проходит калибровка" --- */
+.calibration-section-head {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+.calibration-section-head h2 {
+    font-size: 2rem;
+    color: var(--primary-dark);
+    margin-bottom: 12px;
+}
+.calibration-section-head p { color: var(--text-light); }
+
+.calibration-step {
+    text-align: center;
+    padding: 25px 15px;
+    position: relative;
+}
+.calibration-step .calibration-step-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--accent-yellow);
+    color: var(--primary-dark);
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+.calibration-step h3 { font-size: 1.05rem; color: var(--primary-dark); margin-bottom: 8px; }
+.calibration-step p { font-size: 0.9rem; color: var(--text-light); line-height: 1.5; }
+
+/* --- Секция "Два варианта калибровки" --- */
+.calibration-tier-card {
+    background: var(--bg-white);
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+.calibration-tier-card i {
+    font-size: 1.8rem;
+    color: var(--accent-yellow);
+    margin-bottom: 12px;
+}
+.calibration-tier-card h3 { color: var(--primary-dark); margin-bottom: 10px; font-size: 1.2rem; }
+.calibration-tier-card p { color: var(--text-light); line-height: 1.6; }
+
+/* --- Плашка с интервалом поверки --- */
+.calibration-stat-block {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    padding: 30px;
+}
+.calibration-stat-number {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    white-space: nowrap;
+}
+.calibration-stat-block p { color: var(--text-light); margin: 0; }
+
+/* --- CTA --- */
+.calibration-cta-block {
+    background-color: var(--bg-secondary);
+    border: 2px solid var(--accent-yellow);
+    border-radius: 12px;
+    padding: 40px 30px;
+    text-align: center;
+}
+.calibration-cta-block h3 { font-size: 1.8rem; color: var(--primary-dark); margin-bottom: 15px; }
+.calibration-cta-block p { color: var(--text-light); margin-bottom: 20px; }
+.calibration-cta-secondary {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.calibration-cta-secondary a { color: var(--primary-dark); font-weight: 600; }
+
+@media (max-width: 768px) {
+    .calibration-stat-block { flex-direction: column; text-align: center; gap: 10px; }
+}

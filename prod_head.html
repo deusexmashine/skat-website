@@ -1,33 +1,69 @@
 <header>
     <div class="container header-content">
-        <!-- Логотип (слева) -->
         <a href="index.html" class="logo-container" style="text-decoration: none; color: inherit;">
             <img src="logo.png" alt="SKAT Logo" class="site-logo">
-            <div class="tagline">High-Voltage Test & Measurement Equipment</div>
+            
         </a>
 
-        <!-- Навигация (центр) -->
-        <nav>
+        <nav class="desktop-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <!-- ПРЯМАЯ ССЫЛКА НА КАТАЛОГ НА ГЛАВНОЙ -->
-                    <a href="index.html#products" class="nav-link">Products</a>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html#products" data-i18n="nav_products">Products</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Правая часть: Иконки + Кнопка -->
         <div class="nav-icons">
-            <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#" class="nav-icon globe">
-                <i class="fa-solid fa-globe"></i>
-                <span>EN</span>
+            <a href="#" class="nav-icon" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            <!-- КНОПКА ВЫБОРА ЯЗЫКА (триггер) -->
+            <div class="language-selector" id="languageSelector" data-language-code="en">
+                <div class="language-selector__content language-icon">
+                    <img src="flags/intl.png" alt="Intl. English" class="language-flag">
+                    <span class="language-text">Intl. English</span>
+                    <span class="language-code">EN</span>
+                    <span class="language-chevron"></span>
+                </div>
+            </div>
+
+            <a href="catalog.pdf" class="btn-catalog-header">
+                <i class="fa-solid fa-file-pdf"></i> <span data-i18n="header_catalog">Catalog</span>
             </a>
-            <a href="catalog.pdf" target="_blank" class="btn-catalog-header"><i class="fa-solid fa-file-pdf"></i> Catalog</a>
+        </div>
+
+        <button id="burgerToggleProd" class="burger-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <div id="mobileNav" class="mobile-nav">
+        <ul>
+            <li><a href="#" data-search-open class="mobile-nav-search"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="nav_search">Search</span></a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="category-dielectric.html" data-i18n="menu_cat1">Dielectric Liquids</a></li>
+            <li><a href="category-acdc.html" data-i18n="menu_cat2">AC/DC Test Sets</a></li>
+            <li><a href="category-stationary.html" data-i18n="menu_cat3">Stationary Benches</a></li>
+            <li><a href="category-precision.html" data-i18n="menu_cat4">Precision Measure</a></li>
+            <li><a href="category-calibration.html" data-i18n="menu_cat5">Calibration & Safety</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+            <a href="catalog.pdf" class="btn-primary" style="width: 100%; justify-content: center;" data-i18n="menu_download">Download Catalog</a>
         </div>
     </div>
 </header>
+<!-- МОДАЛЬНОЕ ОКНО ПОИСКА -->
+<div class="search-modal" id="searchModal">
+    <div class="search-modal__overlay"></div>
+    <div class="search-modal__content">
+        <button class="search-modal__close" onclick="document.getElementById('searchModal').classList.remove('active')">&times;</button>
+        <h3 class="search-modal__title">Поиск по сайту</h3>
+        <input type="text" class="search-modal__input" id="searchInput" placeholder="Введите запрос..." autocomplete="off" data-i18n-placeholder="search_modal_placeholder">
+        <div class="search-modal__results" id="searchResults"></div>
+    </div>
+</div>
+

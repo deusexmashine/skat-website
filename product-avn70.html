@@ -2,73 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="prod_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SKAT-AVN-70 Active HV Load | High-Power Calibration Load Bank</title>
+    <title data-i18n="page_title">SKAT-AVN-70 Active HV Load | High-Power Calibration Load Bank</title>
     <meta name="description" content="Precision high-voltage load bank (70 kV) for calibrating dielectric testers. 6 steps, up to 3750 W dissipation, forced-air cooling.">
     
-    <!-- Шрифты и иконки -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    <!-- Основные стили SKAT -->
-    <link rel="stylesheet" href="style.css"> 
-    <link rel="stylesheet" href="prod_style.css"> 
-    <link rel="stylesheet" href="megamenu.css"> 
-    
-    <!-- Модуль стилей для таблицы -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prod_common.css">
+    <link rel="stylesheet" href="prod_img.css">
+    <link rel="stylesheet" href="prod_vid.css">
     <link rel="stylesheet" href="table_style.css">
 </head>
 <body>
-    <!-- Контейнер для динамической шапки -->
     <div id="header-container"></div>
 
     <main>
-        <!-- ===== HERO СЕКЦИЯ ===== -->
         <section class="product-hero">
             <div class="container">
                 <div class="hero-grid">
-                    <!-- Левая колонка: Карусель -->
                     <div class="product-carousel">
-                        <div class="gallery-main">
-                            <a href="#img-main" class="lightbox-link">
-                                <img id="mainImage" src="images/avn70-1.png" alt="SKAT-AVN-70 Full View">
-                            </a>
+                        <div class="carousel-main gallery-main">
+                            <img id="mainImage" src="images/avn70-1.webp" alt="SKAT-AVN-70 Active HV Load">
+                            <div id="mainCaption" class="main-image-caption-overlay"></div>
                         </div>
                         <div class="carousel-thumbnails">
-                            <button class="active" onclick="changeImage('images/avn70-1.png', this)"><img src="images/avn70-1.png" alt="Thumbnail 1"></button>
-                            <button onclick="changeImage('images/avn70-2.png', this)"><img src="images/avn70-2.png" alt="Thumbnail 2"></button>
-                            <button onclick="changeImage('images/avn70-3.png', this)"><img src="images/avn70-3.png" alt="Thumbnail 3"></button>
+                            <button class="active" onclick="changeImage('images/avn70-1.webp', this)">
+                                <img src="images/avn70-1.webp" alt="Thumb 1">
+                            </button>
+                            <button onclick="changeImage('images/avn70-2.webp', this)">
+                                <img src="images/avn70-2.webp" alt="Thumb 2">
+                            </button>
+                            <button onclick="changeImage('images/avn70-3.webp', this)">
+                                <img src="images/avn70-3.webp" alt="Thumb 3">
+                            </button>
                         </div>
                     </div>
 
-                    <!-- Правая колонка: Информация -->
                     <div class="hero-content">
-                        <p class="category">Calibration &amp; Testing Accessories</p>
-                        <h1>SKAT-AVN-70 Active High-Voltage Load</h1>
-                        <p class="subtitle">Precision high-voltage load bank (70 kV) for calibrating dielectric testers.</p>
-                        <p class="description">Designed specifically for the metrological verification and calibration of dielectric testers, the SKAT-AVN-70 active load bank allows technicians to perform accurate validation of voltage and current measurements under load conditions. With 6 independent resistor steps, 40 load combinations, and forced-air cooling, it ensures reliable operation during extended testing.</p>
+                        <p class="category" data-i18n="cat_calibration">Calibration &amp; Testing Accessories</p>
+                        <h1 data-i18n="prod_avn70_title">SKAT-AVN-70 Active High-Voltage Load</h1>
+                        <p class="subtitle" data-i18n="prod_avn70_subtitle">Precision high-voltage load bank (70 kV) for calibrating dielectric testers.</p>
+                        <p class="description" data-i18n="prod_avn70_desc">Designed specifically for the metrological verification and calibration of dielectric testers, the SKAT-AVN-70 active load bank allows technicians to perform accurate validation of voltage and current measurements under load conditions. With 6 independent resistor steps, 40 load combinations, and forced-air cooling, it ensures reliable operation during extended testing.</p>
                         <div class="hero-actions">
-                            <a href="contact.html" class="btn-primary">Request a Quote</a>
+                            <a href="contact.html" class="btn-primary" data-i18n="request_quote">Request a Quote</a>
                         </div>
-                        <!-- Аккордеон -->
                         <div class="accordion-container">
                             <div class="accordion-item">
-                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> 40 Unique Load Combinations</button>
-                                <div class="accordion-body"><div class="accordion-body-inner">Six independent resistor steps allow for precise simulation of various load conditions, with up to 40 different combinations.</div></div>
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_feat1_title">40 Unique Load Combinations</span></button>
+                                <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_feat1_desc">Six independent resistor steps allow for precise simulation of various load conditions, with up to 40 different combinations.</div></div>
                             </div>
                             <div class="accordion-item">
-                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Automatic Forced-Air Cooling System</button>
-                                <div class="accordion-body"><div class="accordion-body-inner">Ensures reliable operation and efficient heat dissipation during prolonged testing at high power levels. Turns on automatically at 30 °C.</div></div>
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_feat2_title">Automatic Forced-Air Cooling System</span></button>
+                                <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_feat2_desc">Ensures reliable operation and efficient heat dissipation during prolonged testing at high power levels. Turns on automatically at 30 °C.</div></div>
                             </div>
                             <div class="accordion-item">
-                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Mobile Dielectric Cabinet Design</button>
-                                <div class="accordion-body"><div class="accordion-body-inner">Lightweight and durable construction allows for easy placement in the laboratory or on the test site.</div></div>
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_feat3_title">Mobile Dielectric Cabinet Design</span></button>
+                                <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_feat3_desc">Lightweight and durable construction allows for easy placement in the laboratory or on the test site.</div></div>
                             </div>
                             <div class="accordion-item">
-                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> High-Voltage Silicone-Insulated Cables</button>
-                                <div class="accordion-body"><div class="accordion-body-inner">All connections are made with special high-voltage wire with high-temperature silicone insulation for safety and reliability.</div></div>
+                                <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_feat4_title">High-Voltage Silicone-Insulated Cables</span></button>
+                                <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_feat4_desc">All connections are made with special high-voltage wire with high-temperature silicone insulation for safety and reliability.</div></div>
                             </div>
                         </div>
                     </div>
@@ -76,149 +76,155 @@
             </div>
         </section>
 
-        <!-- ===== СЕКЦИЯ ВКЛАДОК (TABS) ===== -->
         <section class="container product-tabs-wrapper">
             <div class="product-tabs-nav">
                 <div class="product-tabs">
-                    <button class="active" onclick="openTab(event, 'tab-info')">Product information</button>
-                    <button onclick="openTab(event, 'tab-specs')">Technical specifications</button>
-                    <button onclick="openTab(event, 'tab-support')">Product support</button>
+                    <button class="active" onclick="openTab(event, 'tab-info')" data-i18n="tab_info">Product information</button>
+                    <button onclick="openTab(event, 'tab-specs')" data-i18n="tab_specs">Technical specifications</button>
+                    <button onclick="openTab(event, 'tab-support')" data-i18n="tab_support">Product support</button>
                 </div>
-                <a href="contact.html" class="product-tabs-support-link"><i class="fa-solid fa-headset"></i> Technical support</a>
+                <a href="contact.html" class="product-tabs-support-link"><i class="fa-solid fa-headset"></i> <span data-i18n="tech_support">Technical support</span></a>
             </div>
 
-            <!-- ===== ВКЛАДКА 1: ИНФОРМАЦИЯ О ПРОДУКТЕ ===== -->
             <div id="tab-info" class="tab-pane active">
                 <div class="product-content-block">
-                    <h2>About the product</h2>
-                    <p>The SKAT-AVN-70 is a professional active high-voltage load designed specifically for the metrological verification and calibration of dielectric testers (such as SKAT-70, AVID-70, and AID-70 series). This high-power load bank allows technicians to perform accurate validation of voltage and current measurements under load conditions.</p>
-                    <p>Its mobile dielectric cabinet design ensures strength and lightness, while the automatic forced air cooling system efficiently removes heat generated at the resistor assemblies. All connections between modules are made with special high-voltage wire with high-temperature silicone insulation.</p>
+                    <h2 data-i18n="about_product">About the product</h2>
+                    <p data-i18n="prod_avn70_about1">The SKAT-AVN-70 is a professional active high-voltage load designed specifically for the metrological verification and calibration of dielectric testers (such as SKAT-70, AVID-70, and AID-70 series). This high-power load bank allows technicians to perform accurate validation of voltage and current measurements under load conditions.</p>
+                    <p data-i18n="prod_avn70_about2">Its mobile dielectric cabinet design ensures strength and lightness, while the automatic forced air cooling system efficiently removes heat generated at the resistor assemblies. All connections between modules are made with special high-voltage wire with high-temperature silicone insulation.</p>
 
-                    <!-- Вертикальная видео-галерея -->
-                    <div class="product-video-wrapper">
-                        <div class="video-main"><video id="mainVideo" controls poster="images/avn70-main-poster.jpg"><source src="video/avn70-main.mp4" type="video/mp4"></video></div>
-                        <div class="video-thumbnails-vertical">
-                            <div class="thumb-item active" data-video="video/avn70-main.mp4"><img src="images/avn70-thumb1.jpg" alt="Video 1"><div class="play-icon">▶</div></div>
-                            <div class="thumb-item" data-video="video/avn70-extra-1.mp4"><img src="images/avn70-thumb2.jpg" alt="Video 2"><div class="play-icon">▶</div></div>
-                            <div class="thumb-item" data-video="video/avn70-extra-2.mp4"><img src="images/avn70-thumb3.jpg" alt="Video 3"><div class="play-icon">▶</div></div>
+                    <div class="video-gallery-wrapper">
+                        <div class="video-main-stage">
+                            <div class="video-player-container">
+                                <video id="mainProductVideo" controls poster="images/avn70-main-poster.webp">
+                                    <source src="" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                                <button class="video-audio-control" aria-label="Включить звук">
+                                    <i class="fa-solid fa-volume-xmark"></i>
+                                </button>
+                            </div>
+                            <div class="video-info">
+                                <h3 id="currentVideoTitle">SKAT-AVN-70: Product Overview</h3>
+                                <p id="currentVideoDesc">A general overview of the instrument's key features and capabilities.</p>
+                            </div>
+                        </div>
+                        <div class="video-playlist" id="videoPlaylist">
+                            <!-- Плейлист генерируется динамически через initVideoGallery() -->
                         </div>
                     </div>
 
-                    <h2>Product documents</h2>
+                    <h2 data-i18n="product_docs">Product documents</h2>
                     <div class="documents-list">
                         <div class="document-item">
                             <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/AVN70_DS_en.pdf" target="_blank">Data sheet</a><span>PDF | 1.2 MB</span></div>
+                            <div class="doc-info"><a href="docs/AVN70_DS_en.pdf" target="_blank"><span data-i18n="data_sheet">Data sheet</span></a><span>PDF | 1.2 MB</span></div>
                         </div>
                         <div class="document-item">
                             <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/AVN70_UG_en.pdf" target="_blank">User guide</a><span>PDF | 4.5 MB</span></div>
+                            <div class="doc-info"><a href="docs/AVN70_UG_en.pdf" target="_blank"><span data-i18n="user_guide">User guide</span></a><span>PDF | 4.5 MB</span></div>
                         </div>
                     </div>
 
-                    <h2 style="margin-top: 40px;">Related products</h2>
+                    <h2 style="margin-top: 40px;" data-i18n="related_products">Related products</h2>
                     <div class="related-products-grid">
                         <a href="product-70c.html" class="related-product-card">
-                            <img src="images/70c-1.png" alt="SKAT-70C"><h4>SKAT-70C Digital Dielectric Tester</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Digital AC/DC dielectric tester with microcontroller control.</p>
+                            <img src="images/70c-1.webp" alt="SKAT-70C">
+                            <h4 data-i18n="related_70c_title">SKAT-70C Digital Dielectric Tester</h4>
+                            <p data-i18n="related_70c_desc">Digital AC/DC dielectric tester with microcontroller control.</p>
                         </a>
                         <a href="product-70m.html" class="related-product-card">
-                            <img src="images/70m-1.png" alt="SKAT-70M"><h4>SKAT-70M / 70MA Analog Testers</h4>
-                            <p style="color: var(--text-light); font-size: 0.9rem;">Robust analog AC/DC test sets for field and laboratory use.</p>
+                            <img src="images/70m-1.webp" alt="SKAT-70M">
+                            <h4 data-i18n="related_70m_title">SKAT-70M / 70MA Analog Testers</h4>
+                            <p data-i18n="related_70m_desc">Robust analog AC/DC test sets for field and laboratory use.</p>
                         </a>
                     </div>
                 </div>
             </div>
 
-            <!-- ===== ВКЛАДКА 2: ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ ===== -->
             <div id="tab-specs" class="tab-pane">
                 <div class="product-content-block">
-                    <h2>Technical specifications</h2>
-                    
-                    <!-- Контейнер для динамической таблицы -->
+                    <h2 data-i18n="tech_specs">Technical specifications</h2>
                     <div id="specs-container"></div>
-
                     <p style="margin-top: 20px; font-size: 0.9rem; color: var(--text-light);">
-                        <em>Note: Specifications are subject to change without notice. For custom ranges and configurations, please contact our sales team.</em>
+                        <em data-i18n="specs_note">Note: Specifications are subject to change without notice. For custom ranges and configurations, please contact our sales team.</em>
                     </p>
                 </div>
-
                 <div class="product-content-block">
-                    <h2>FAQ</h2>
+                    <h2 data-i18n="faq_title">FAQ</h2>
                     <div class="accordion-container">
                         <div class="accordion-item">
-                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What equipment is this load compatible with?</button>
-                            <div class="accordion-body"><div class="accordion-body-inner">It is designed for SKAT-70, AVID-70, and AID-70 series, among other similar high-voltage test devices.</div></div>
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_faq1_q">What equipment is this load compatible with?</span></button>
+                            <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_faq1_a">It is designed for SKAT-70, AVID-70, and AID-70 series, among other similar high-voltage test devices.</div></div>
                         </div>
                         <div class="accordion-item">
-                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> What is the maximum power dissipation?</button>
-                            <div class="accordion-body"><div class="accordion-body-inner">The total maximum dissipated power is 3750 W, with each step having its own power rating. Maximum continuous operation at full power is 1 hour.</div></div>
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_faq2_q">What is the maximum power dissipation?</span></button>
+                            <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_faq2_a">The total maximum dissipated power is 3750 W, with each step having its own power rating. Maximum continuous operation at full power is 1 hour.</div></div>
                         </div>
                         <div class="accordion-item">
-                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Does it require external cooling?</button>
-                            <div class="accordion-body"><div class="accordion-body-inner">It features a built-in automatic forced air cooling system. It turns on automatically when the internal temperature reaches 30 °C.</div></div>
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_faq3_q">Does it require external cooling?</span></button>
+                            <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_faq3_a">It features a built-in automatic forced air cooling system. It turns on automatically when the internal temperature reaches 30 °C.</div></div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- ===== ВКЛАДКА 3: ПОДДЕРЖКА ПРОДУКТА ===== -->
             <div id="tab-support" class="tab-pane">
                 <div class="product-content-block">
-                    <h2>Interpreting test results</h2>
-                    <p>For detailed guidance on calibration procedures and load testing standards, refer to your equipment's user manual.</p>
+                    <h2 data-i18n="interpreting_results">Interpreting test results</h2>
+                    <p data-i18n="prod_avn70_support1">For detailed guidance on calibration procedures and load testing standards, refer to your equipment's user manual.</p>
                 </div>
                 <div class="product-content-block">
-                    <h2>Troubleshooting &amp; Software updates</h2>
+                    <h2 data-i18n="troubleshooting">Troubleshooting &amp; Software updates</h2>
                     <div class="accordion-container">
                         <div class="accordion-item">
-                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Common troubleshooting steps</button>
-                            <div class="accordion-body"><div class="accordion-body-inner"><ul><li><strong>No power or cooling:</strong> Ensure the cooling system power supply is connected and the unit is plugged in.</li><li><strong>Incorrect load values:</strong> Verify high-voltage jumper connections are secure and correctly configured.</li><li><strong>Overheating:</strong> Check the air filter and ensure the ventilation is not blocked.</li></ul></div></div>
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="common_steps">Common troubleshooting steps</span></button>
+                            <div class="accordion-body"><div class="accordion-body-inner">
+                                <ul>
+                                    <li data-i18n="prod_avn70_ts1">No power or cooling: Ensure the cooling system power supply is connected and the unit is plugged in.</li>
+                                    <li data-i18n="prod_avn70_ts2">Incorrect load values: Verify high-voltage jumper connections are secure and correctly configured.</li>
+                                    <li data-i18n="prod_avn70_ts3">Overheating: Check the air filter and ensure the ventilation is not blocked.</li>
+                                </ul>
+                            </div></div>
                         </div>
                         <div class="accordion-item">
-                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> Software &amp; firmware updates</button>
-                            <div class="accordion-body"><div class="accordion-body-inner"><p>This device does not require software or firmware updates. Contact technical support for any calibration inquiries.</p></div></div>
+                            <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="soft_updates">Software &amp; firmware updates</span></button>
+                            <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_soft">This device does not require software or firmware updates. Contact technical support for any calibration inquiries.</div></div>
                         </div>
                     </div>
                 </div>
                 <div class="product-content-block">
-                    <h2>Application and academic support</h2>
-                    <p>For detailed application notes, contact our support team.</p>
-                    <a href="contact.html" class="btn-outline-dark" style="margin-top: 15px;">Contact Support</a>
+                    <h2 data-i18n="academic_support">Application and academic support</h2>
+                    <p data-i18n="prod_avn70_support2">For detailed application notes, contact our support team.</p>
+                    <a href="contact.html" class="btn-outline-dark" style="margin-top: 15px;" data-i18n="contact_support">Contact Support</a>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Контейнер для футера -->
     <div id="footer-container"></div>
 
-    <!-- ===== ЛАЙТБОКС ===== -->
     <div id="img-main" class="lightbox">
         <a href="#" class="lightbox-close">&times;</a>
         <div style="position: relative; max-width: 80%; max-height: 85%; display: flex; align-items: center; justify-content: center;">
             <a href="#" class="lightbox-nav prev" onclick="lightboxNav(event, -1)"><i class="fa-solid fa-chevron-left"></i></a>
-            <img class="lightbox-content" src="images/avn70-1.png" alt="SKAT-AVN-70 Full View Large">
+            <img class="lightbox-content" src="images/avn70-1.webp" alt="SKAT-AVN-70 Full View Large">
             <a href="#" class="lightbox-nav next" onclick="lightboxNav(event, 1)"><i class="fa-solid fa-chevron-right"></i></a>
             <div class="lightbox-counter" id="lightboxCounter">1 / 3</div>
         </div>
     </div>
 
-    <!-- Подключение библиотеки ресурсов -->
     <script src="assets.js"></script>
+    <script src="lang.js"></script>
+    <script src="prod_common.js"></script>
+    <script src="prod_img.js"></script>
+    <script src="prod_vid.js"></script>
 
-    <!-- Основной скрипт для страниц продуктов -->
-    <script src="product.js"></script>
-    
-    <!-- Скрипт мега-меню -->
-    <script src="megamenu.js"></script>
-
-    <!-- Инициализация галереи -->
     <script>
         initProductGallery('avn70');
+        initVideoGallery('avn70');
     </script>
 
-    <!-- Инициализация таблицы характеристик -->
+    <!-- ИСПРАВЛЕНО: используем правильный ключ 'skat-avn70' -->
     <script src="table_style.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

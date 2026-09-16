@@ -1,0 +1,387 @@
+{
+  "kvc-b": {
+    "models": [
+      { "id": "KVC-10B", "name": "KVC-10B-0.5" },
+      { "id": "KVC-70B", "name": "KVC-70B-1.0" },
+      { "id": "KVC-100B", "name": "KVC-100B-1.0" },
+      { "id": "KVC-120B", "name": "KVC-120B-1.0" }
+    ],
+    "groups": [
+      {
+        "title": "Metroloji xüsusiyyətlər",
+        "parameters": [
+          { "label": "AC gərginlik diapazonu (50 Hz)", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "DC gərginlik diapazonu", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "AC gərginlik dəqiqliyi", "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"] },
+          { "label": "DC gərginlik dəqiqliyi", "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "DC giriş müqaviməti", "values": ["50 MΩ ±10%", "300 MΩ ±10%", "500 MΩ ±10%", "500 MΩ ±10%"] },
+          { "label": "Enerji təchizatı", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Enerji sərfiyyatı", "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"], "merge": true },
+          { "label": "Ölçülər (Göstərici bloku)", "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"], "merge": true },
+          { "label": "Ölçülər (Yüksək gərginlikli bölücü bloku)", "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 650 mm"], "notes": { "KVC-10B": "Göstərici blokuna inteqrasiya olunub" } },
+          { "label": "Çəki (Göstərici bloku)", "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"], "merge": true },
+          { "label": "Çəki (Yüksək gərginlikli bölücü bloku)", "values": ["—", "5.5 kg", "5.5 kg", "5.5 kg"], "notes": { "KVC-10B": "Göstərici blokuna inteqrasiya olunub" } },
+          { "label": "İş temperaturu", "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"], "merge": true },
+          { "label": "İstismar müddəti", "values": ["5 il", "5 il", "5 il", "5 il"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      { "id": "KVC-10C", "name": "KVC-10C-0.25" },
+      { "id": "KVC-70C", "name": "KVC-70C-0.25" },
+      { "id": "KVC-100C", "name": "KVC-100C-0.25" },
+      { "id": "KVC-120C", "name": "KVC-120C-0.25" }
+    ],
+    "groups": [
+      {
+        "title": "Metroloji xüsusiyyətlər",
+        "parameters": [
+          { "label": "AC gərginlik diapazonu (50 Hz)", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "AC gərginlik diapazonu (40 – 65 Hz)", "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"] },
+          { "label": "AC gərginlik diapazonu (390 – 410 Hz)", "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"] },
+          { "label": "DC gərginlik diapazonu", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "Gərginlik ölçmə dəqiqliyi", "values": ["±0.25%", "±0.25%", "±0.25%", "±0.25%"], "merge": true },
+          { "label": "Tezlik dəqiqliyi (40 – 65 Hz)", "values": ["±0.015 Hz", "±0.015 Hz", "±0.015 Hz", "±0.015 Hz"], "merge": true },
+          { "label": "Tezlik dəqiqliyi (390 – 410 Hz)", "values": ["±0.2 Hz", "±0.2 Hz", "±0.2 Hz", "±0.2 Hz"], "merge": true },
+          { "label": "THD ölçmə diapazonu (Ku)", "values": ["0.5 – 30%", "0.5 – 30%", "0.5 – 30%", "0.5 – 30%"], "merge": true },
+          { "label": "THD dəqiqliyi (Ku < 3%)", "values": ["±0.15%", "±0.15%", "±0.15%", "±0.15%"], "merge": true },
+          { "label": "THD dəqiqliyi (Ku ≥ 3%)", "values": ["±5%", "±5%", "±5%", "±5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "DC giriş müqaviməti", "values": ["50 MΩ ±10%", "300 MΩ ±10%", "420 MΩ ±10%", "500 MΩ ±10%"] },
+          { "label": "Enerji təchizatı", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Enerji sərfiyyatı", "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"], "merge": true },
+          { "label": "Ölçülər (Göstərici bloku)", "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"], "merge": true },
+          { "label": "Ölçülər (Yüksək gərginlikli bölücü bloku)", "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 800 mm"], "notes": { "KVC-10C": "Göstərici blokuna inteqrasiya olunub" } },
+          { "label": "Çəki (Göstərici bloku)", "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"], "merge": true },
+          { "label": "Çəki (Yüksək gərginlikli bölücü bloku)", "values": ["—", "5.5 kg", "5.5 kg", "6.4 kg"], "notes": { "KVC-10C": "Göstərici blokuna inteqrasiya olunub" } },
+          { "label": "İş temperaturu", "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"], "merge": true },
+          { "label": "Nisbi rütubət (+25 °C-də)", "values": ["≤ 80%", "≤ 80%", "≤ 80%", "≤ 80%"], "merge": true },
+          { "label": "İstismar müddəti", "values": ["5 il", "5 il", "5 il", "5 il"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      { "id": "SKAT-70C", "name": "SKAT-70C" },
+      { "id": "SKAT-100C", "name": "SKAT-100C" }
+    ],
+    "groups": [
+      {
+        "title": "Çıxış xüsusiyyətləri",
+        "parameters": [
+          { "label": "AC gərginlik tənzimləmə diapazonu", "values": ["1 – 51 kV", "1 – 71 kV"] },
+          { "label": "DC gərginlik tənzimləmə diapazonu", "values": ["1 – 71 kV", "1 – 101 kV"] },
+          { "label": "Maks. AC çıxış cərəyanı", "values": ["≥ 50 mA", "≥ 35 mA"] },
+          { "label": "Maks. DC çıxış cərəyanı", "values": ["≥ 20 mA", "≥ 15 mA"] },
+          { "label": "DC dalğalanma amplitudası", "values": ["≤ 3%", "≤ 3%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ölçmə xüsusiyyətləri",
+        "parameters": [
+          { "label": "AC gərginlik ölçmə diapazonu", "values": ["2 – 50 kV", "3 – 70 kV"] },
+          { "label": "DC gərginlik ölçmə diapazonu (Amplituda)", "values": ["3 – 70 kV", "5 – 100 kV"] },
+          { "label": "AC sinusoidal distorsiya əmsalı", "values": ["≤ 5%", "≤ 5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Displey", "values": ["6\" LCD", "6\" LCD"], "merge": true },
+          { "label": "Enerji təchizatı", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Zəmanət", "values": ["18 ay", "18 ay"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      { "id": "SKAT-70M", "name": "SKAT-70M" },
+      { "id": "SKAT-70MA", "name": "SKAT-70MA" }
+    ],
+    "groups": [
+      {
+        "title": "Çıxış xüsusiyyətləri",
+        "parameters": [
+          { "label": "AC gərginlik tənzimləmə diapazonu", "values": ["1 – 51 kV", "1 – 51 kV"], "merge": true },
+          { "label": "DC gərginlik tənzimləmə diapazonu", "values": ["1 – 71 kV", "1 – 71 kV"], "merge": true },
+          { "label": "DC polarite", "values": ["Mənfi", "Müsbət"] },
+          { "label": "Maks. AC çıxış cərəyanı", "values": ["≥ 50 mA", "≥ 50 mA"], "merge": true },
+          { "label": "Maks. DC çıxış cərəyanı", "values": ["≥ 20 mA", "≥ 20 mA"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ölçmə xüsusiyyətləri",
+        "parameters": [
+          { "label": "AC gərginlik ölçmə diapazonu", "values": ["2 – 50 kV", "2 – 50 kV"], "merge": true },
+          { "label": "DC gərginlik ölçmə diapazonu (Amplituda)", "values": ["3 – 70 kV", "3 – 70 kV"], "merge": true },
+          { "label": "DC dalğalanma amplitudası", "values": ["≤ 3%", "≤ 3%"], "merge": true },
+          { "label": "AC sinusoidal distorsiya əmsalı", "values": ["≤ 5%", "≤ 5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Enerji təchizatı", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Ölçülər (İdarəetmə bloku)", "values": ["420 × 340 × 220 mm", "420 × 340 × 220 mm"], "merge": true },
+          { "label": "Ölçülər (Yüksək gərginlikli blok)", "values": ["650 × 375 × 360 mm", "650 × 375 × 360 mm"], "merge": true },
+          { "label": "Çəki (İdarəetmə bloku)", "values": ["14 kg", "14 kg"], "merge": true },
+          { "label": "Çəki (Yüksək gərginlikli blok)", "values": ["29 kg", "29 kg"], "merge": true },
+          { "label": "Zəmanət", "values": ["18 ay", "18 ay"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      { "id": "M100V", "name": "SKAT-M100V" }
+    ],
+    "groups": [
+      {
+        "title": "Metroloji xüsusiyyətlər",
+        "parameters": [
+          { "label": "AC gərginlik ölçmə diapazonu", "values": ["10.0 – 100.0 kV"] },
+          { "label": "Ölçmə dəqiqliyi", "values": ["±2.5%"] },
+          { "label": "Gərginlik ayırdetmə qabiliyyəti", "values": ["0.1 kV"] },
+          { "label": "Avtomatik sınaqların sayı", "values": ["1 – 6"] },
+          { "label": "Deşilmə zamanı söndürmə vaxtı", "values": ["≤ 100 µs"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Gərginlik qaldırma sürəti", "values": ["0.5, 1, 2, 5 kV/s"] },
+          { "label": "Gərginlik limitləri", "values": ["60, 70, 80, 90, 100 kV"] },
+          { "label": "Enerji təchizatı", "values": ["220 V AC, 50 Hz"] },
+          { "label": "Ölçülər (En×Dərinlik×Hündürlük)", "values": ["470 × 315 × 370 mm"] },
+          { "label": "Çəki", "values": ["41 ±1 kg"] },
+          { "label": "Mühafizə sinfi", "values": ["IP53"] },
+          { "label": "Zəmanət", "values": ["18 ay"] }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      { "id": "TANGENS", "name": "SKAT-TANGENS-M" }
+    ],
+    "groups": [
+      {
+        "title": "Metroloji xüsusiyyətlər",
+        "parameters": [
+          { "label": "tan δ ölçmə diapazonu", "values": ["1·10⁻⁴ – 1.000"] },
+          { "label": "Tutum ölçmə diapazonu", "values": ["28 – 1000 pF"] },
+          { "label": "Sınaq gərginliyi (AC, 40-62 Hz)", "values": ["500 – 2000 V"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Hüceyrə temperaturu diapazonu", "values": ["40 – 110 °C"] },
+          { "label": "Təyin olunmuş temperatura qədər qızdırma vaxtı", "values": ["≤ 50 dəq"] },
+          { "label": "Displey", "values": ["7\" IPS Sensorlu"] },
+          { "label": "Daxili yaddaş", "values": ["250 sınaq nəticəsinə qədər"] },
+          { "label": "Ölçülər (En×Dərinlik×Hündürlük)", "values": ["540 × 330 × 360 mm"] },
+          { "label": "Çəki", "values": ["≤ 24 kg"] },
+          { "label": "Zəmanət", "values": ["18 ay"] }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      { "id": "70P", "name": "SKAT-70P" }
+    ],
+    "groups": [
+      {
+        "title": "Metroloji xüsusiyyətlər",
+        "parameters": [
+          { "label": "AC gərginlik ölçmə diapazonu", "values": ["0.3 – 20 kV"] },
+          { "label": "AC cərəyan ölçmə diapazonu (hər kanal üçün)", "values": ["0.5 – 22 mA"] },
+          { "label": "Gərginlik ölçmə dəqiqliyi", "values": ["±2.5%"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Cərəyan kanallarının sayı", "values": ["4"] },
+          { "label": "Proqramlaşdırıla bilən sınaq vaxtı", "values": ["1 – 8 dəq"] },
+          { "label": "Ölçülər (İdarəetmə bloku)", "values": ["310 × 280 × 120 mm"] },
+          { "label": "Ölçülər (Sınaq vannası)", "values": ["825 × 270 × 765 mm"] },
+          { "label": "Çəki (İdarəetmə bloku)", "values": ["5.8 kg"] },
+          { "label": "Çəki (Sınaq vannası)", "values": ["19.0 kg"] },
+          { "label": "Zəmanət", "values": ["18 ay"] }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      { "id": "SVS-50C", "name": "SKAT-SVS-50C" },
+      { "id": "SVS-100C", "name": "SKAT-SVS-100C" },
+      { "id": "SVS-100-20C", "name": "SKAT-SVS-100-20C" }
+    ],
+    "groups": [
+      {
+        "title": "Ölçmə diapazonları",
+        "parameters": [
+          { "label": "Daxili mənbə: Gərginlik diapazonu", "values": ["20 – 1000 V", "20 – 1000 V", "20 – 1000 V"], "merge": true },
+          { "label": "Daxili mənbə: Cərəyan diapazonu", "values": ["0.5 – 10 mA", "0.5 – 10 mA", "0.5 – 10 mA"], "merge": true },
+          { "label": "50 kV bloku: Gərginlik diapazonu", "values": ["1 – 50 kV", "1 – 50 kV", "—"] },
+          { "label": "50 kV bloku: Cərəyan diapazonu", "values": ["1 – 40 mA", "1 – 40 mA", "—"] },
+          { "label": "100 kV bloku: Gərginlik diapazonu", "values": ["—", "5 – 100 kV", "5 – 100 kV"] },
+          { "label": "100 kV bloku: Cərəyan diapazonu", "values": ["—", "1 – 20 mA", "1 – 20 mA"] },
+          { "label": "20 kV bloku: Gərginlik diapazonu", "values": ["—", "—", "1 – 20 kV"] },
+          { "label": "20 kV bloku: Cərəyan diapazonu", "values": ["—", "—", "1 – 40 mA"] },
+          { "label": "Gərginlik ölçmə dəqiqliyi", "values": ["±3%", "±3%", "±3%"], "merge": true },
+          { "label": "Cərəyan ölçmə dəqiqliyi", "values": ["±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Xarici yüksək gərginlikli mənbələrin sayı", "values": ["1", "2", "2"] },
+          { "label": "Cərəyan kanallarının sayı (Sınaq vannası)", "values": ["4", "4", "4"], "merge": true },
+          { "label": "Enerji təchizatı", "values": ["230 V AC, 50 Hz", "230 V AC, 50 Hz", "230 V AC, 50 Hz"], "merge": true },
+          { "label": "İdarəetmə blokunun ölçüləri (En×Dərinlik×Hündürlük)", "values": ["490 × 370 × 200 mm", "490 × 370 × 200 mm", "490 × 370 × 200 mm"], "merge": true },
+          { "label": "20 kV blokunun ölçüləri (En×Dərinlik×Hündürlük)", "values": ["—", "—", "350 × 375 × 650 mm"] },
+          { "label": "50 kV blokunun ölçüləri (En×Dərinlik×Hündürlük)", "values": ["350 × 375 × 650 mm", "350 × 375 × 650 mm", "—"] },
+          { "label": "100 kV blokunun ölçüləri (En×Dərinlik×Hündürlük)", "values": ["—", "—", "415 × 580 × 940 mm"] },
+          { "label": "Sınaq vannasının ölçüləri (En×Dərinlik×Hündürlük)", "values": ["820 × 270 × 765 mm", "820 × 270 × 765 mm", "820 × 270 × 765 mm"], "merge": true },
+          { "label": "İdarəetmə blokunun çəkisi", "values": ["23 kg", "23 kg", "23 kg"], "merge": true },
+          { "label": "20 kV blokunun çəkisi", "values": ["—", "—", "33.8 kg"] },
+          { "label": "50 kV blokunun çəkisi", "values": ["35.4 kg", "35.4 kg", "—"] },
+          { "label": "100 kV blokunun çəkisi", "values": ["—", "—", "64 kg"] },
+          { "label": "Sınaq vannasının çəkisi", "values": ["18.7 kg", "18.7 kg", "18.7 kg"], "merge": true },
+          { "label": "İş temperaturu", "values": ["+10 … +40 °C", "+10 … +40 °C", "+10 … +40 °C"], "merge": true },
+          { "label": "Nisbi rütubət (+25 °C-də)", "values": ["≤ 80%", "≤ 80%", "≤ 80%"], "merge": true },
+          { "label": "Atmosfer təzyiqi", "values": ["84.0 – 106.7 kPa", "84.0 – 106.7 kPa", "84.0 – 106.7 kPa"], "merge": true },
+          { "label": "İstismar müddəti", "values": ["10 il", "10 il", "10 il"], "merge": true },
+          { "label": "Zəmanət", "values": ["18 ay", "18 ay", "18 ay"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      { "id": "AVN70", "name": "SKAT-AVN-70" }
+    ],
+    "groups": [
+      {
+        "title": "Yük xüsusiyyətləri",
+        "parameters": [
+          { "label": "Maks. DC iş gərginliyi", "values": ["70 kV"] },
+          { "label": "Maks. AC pik gərginliyi (50 Hz)", "values": ["70 kV"] },
+          { "label": "Yük pillələrinin sayı", "values": ["6"] },
+          { "label": "Yük kombinasiyalarının sayı", "values": ["40"] },
+          { "label": "Ümumi maks. sərf olunan güc", "values": ["3750 W"] },
+          { "label": "Maks. gücdə fasiləsiz işləmə", "values": ["1 saat"] }
+        ]
+      },
+      {
+        "title": "Pillə detalları (Nominal müqavimət / Maks. güc)",
+        "parameters": [
+          { "label": "Pillə 1", "values": ["68 MΩ ±5% / 80 W"] },
+          { "label": "Pillə 2", "values": ["22.4 MΩ ±5% / 250 W"] },
+          { "label": "Pillə 3", "values": ["14.1 MΩ ±5% / 350 W"] },
+          { "label": "Pillə 4", "values": ["6.6 MΩ ±5% / 750 W"] },
+          { "label": "Pillə 5", "values": ["2.4 MΩ ±5% / 1500 W"] },
+          { "label": "Pillə 6", "values": ["1.35 MΩ ±5% / 2000 W"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Ölçülər (En×Dərinlik×Hündürlük)", "values": ["550 × 440 × 1620 mm"] },
+          { "label": "Çəki", "values": ["50 kg"] },
+          { "label": "Soyutma sisteminin enerji təchizatı", "values": ["220 V AC, 50 Hz"] },
+          { "label": "Soyutma sisteminin enerji sərfiyyatı", "values": ["≤ 200 W"] },
+          { "label": "Ətraf mühit temperaturu", "values": ["+5 … +40 °C"] },
+          { "label": "Nisbi rütubət (+25 °C-də)", "values": ["≤ 80%"] },
+          { "label": "İstismar müddəti", "values": ["10 il"] },
+          { "label": "Zəmanət", "values": ["18 ay"] }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      { "id": "STEND50", "name": "SKAT-STEND-50" }
+    ],
+    "groups": [
+      {
+        "title": "Sınaq xüsusiyyətləri",
+        "parameters": [
+          { "label": "Maks. sınaq gərginliyi", "values": ["50 kV AC"] },
+          { "label": "Maks. eyni vaxtda sınaq obyektləri", "values": ["2"] },
+          { "label": "Ölçülər (ştanqlarla hündürlük)", "values": ["1830 mm"] },
+          { "label": "Masa ölçüləri (En×Dərinlik)", "values": ["530 × 1220 mm"] },
+          { "label": "Çəki", "values": ["≤ 31 kg"] },
+          { "label": "İş temperaturu", "values": ["+10 … +40 °C"] },
+          { "label": "Zəmanət", "values": ["18 ay"] }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      { "id": "UBSVN", "name": "UBSVN-LM" }
+    ],
+    "groups": [
+      {
+        "title": "Elektrik xüsusiyyətləri",
+        "parameters": [
+          { "label": "Enerji təchizatı gərginliyi", "values": ["220 V AC"] },
+          { "label": "Nominal cərəyan", "values": ["60 mA"] },
+          { "label": "Səs səviyyəsi (1 m məsafədə)", "values": ["≥ 95 dB"] },
+          { "label": "Kontrast işıq qavrayışı", "values": ["≥ 500 lüks"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Ölçülər", "values": ["140 × 140 × 90 mm"] },
+          { "label": "Çəki", "values": ["≤ 0.32 kg"] },
+          { "label": "İş temperaturu", "values": ["-30 … +55 °C"] },
+          { "label": "Zəmanət", "values": ["12 ay"] }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      { "id": "IK100", "name": "IK 100-0.4" }
+    ],
+    "groups": [
+      {
+        "title": "Elektrik xüsusiyyətləri",
+        "parameters": [
+          { "label": "Nominal gərginlik", "values": ["100 kV"] },
+          { "label": "Nominal tutum", "values": ["0.4 µF"] },
+          { "label": "Sınaq gərginliyi", "values": ["125 kV"] }
+        ]
+      },
+      {
+        "title": "Ümumi xüsusiyyətlər",
+        "parameters": [
+          { "label": "Ölçülər (En×Dərinlik×Hündürlük)", "values": ["500 × 155 × 345 mm"] },
+          { "label": "Çəki", "values": ["≤ 32 kg"] },
+          { "label": "Ətraf mühit temperaturu", "values": ["-1 … +35 °C"] },
+          { "label": "Zəmanət", "values": ["6 ay"] }
+        ]
+      }
+    ]
+  }
+}

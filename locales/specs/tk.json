@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň goýberilýän ýalňyşlyk çägi",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň goýberilýän ýalňyşlyk çägi",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy tehniki häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Hemişelik tok boýunça giriş garşylygy",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "500 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Iýmitlendiriş naprýaženiýesi",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Sarp edilýän kuwwat",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Görkeziş blokunyň ölçegleri",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly naprýaženiýe ölçeýjisiniň ölçegleri",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Görkeziş blokuna ornaşdyrylan"
+            }
+          },
+          {
+            "label": "Görkeziş blokunyň agramy",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly naprýaženiýe ölçeýjisiniň agramy",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "5,5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Görkeziş blokuna ornaşdyrylan"
+            }
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hyzmat möhleti",
+            "values": [
+              "5 ýyl",
+              "5 ýyl",
+              "5 ýyl",
+              "5 ýyl"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony (40–65 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony (390–410 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Naprýaženiýäni ölçemegiň goýberilýän ýalňyşlyk çägi",
+            "values": [
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýygylygy ölçemegiň goýberilýän mutlak ýalňyşlyk çägi (40–65 Hz)",
+            "values": [
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýygylygy ölçemegiň goýberilýän mutlak ýalňyşlyk çägi (390–410 Hz)",
+            "values": [
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Spektral düzüjileriň jemleýji koeffisiýentiniň (Ku) ölçeg diapazony",
+            "values": [
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ku ölçeginiň ýalňyşlyk çägi (Ku < 3 %)",
+            "values": [
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ku ölçeginiň ýalňyşlyk çägi (Ku ≥ 3 %)",
+            "values": [
+              "±5 %",
+              "±5 %",
+              "±5 %",
+              "±5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Umumy tehniki häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Hemişelik tok boýunça giriş garşylygy",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "420 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Iýmitlendiriş naprýaženiýesi",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Sarp edilýän kuwwat",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Görkeziş blokunyň ölçegleri",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly naprýaženiýe ölçeýjisiniň ölçegleri",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Görkeziş blokuna ornaşdyrylan"
+            }
+          },
+          {
+            "label": "Görkeziş blokunyň agramy",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly naprýaženiýe ölçeýjisiniň agramy",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "6,4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Görkeziş blokuna ornaşdyrylan"
+            }
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Gatnaşyklaýyn çyglylyk (+25 °C-de)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hyzmat möhleti",
+            "values": [
+              "5 ýyl",
+              "5 ýyl",
+              "5 ýyl",
+              "5 ýyl"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Çykyş parametrleri",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň sazlaýyş diapazony",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň sazlaýyş diapazony",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň iň ýokary togy",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň iň ýokary togy",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň pulsasiýa amplitudasy",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň ölçeg diapazony (amplituda bahasy)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň sinusoidallyk bozulma koeffisiýenti",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Displeý",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Iýmitlendiriş",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý",
+              "18 aý"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Çykyş parametrleri",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň sazlaýyş diapazony",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň sazlaýyş diapazony",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hemişelik toguň polýarlygy",
+            "values": [
+              "Otrisatel",
+              "Položitel"
+            ]
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň iň ýokary togy",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň iň ýokary togy",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň ölçeg diapazony (amplituda bahasy)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hemişelik naprýaženiýäniň pulsasiýa amplitudasy",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Üýtgeýän naprýaženiýäniň sinusoidallyk bozulma koeffisiýenti",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Iýmitlendiriş",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dolandyryş blokunyň ölçegleri",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly blokuň ölçegleri",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dolandyryş blokunyň agramy",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ýokary woltly blokuň agramy",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý",
+              "18 aý"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "10,0 – 100,0 kV"
+            ]
+          },
+          {
+            "label": "Ölçegleriň goýberilýän ýalňyşlyk çägi",
+            "values": [
+              "±2,5 %"
+            ]
+          },
+          {
+            "label": "Naprýaženiýäni ölçemegiň ädimi",
+            "values": [
+              "0,1 kV"
+            ]
+          },
+          {
+            "label": "Awtomatik ölçegleriň sany",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Deşilende öçürilme wagty",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Naprýaženiýäniň ýokarlanma tizligi",
+            "values": [
+              "0,5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Iň ýokary naprýaženiýäniň çäklendirilmesi",
+            "values": [
+              "60; 70; 80; 90; 100 kV"
+            ]
+          },
+          {
+            "label": "Iýmitlendiriş",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Ölçegleri (U×I×B)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Goragyň derejesi",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Dielektrik ýitgileriniň burç tangensiniň ölçeg diapazony",
+            "values": [
+              "1·10⁻⁴ – 1,000"
+            ]
+          },
+          {
+            "label": "Elektrik sygymynyň ölçeg diapazony",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Synag naprýaženiýesi (AC, 40-62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Öýjügiň gyzdyryş temperatura diapazony",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Bellenen temperatura çenli gyzdyrma wagty",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Displeý",
+            "values": [
+              "7\" IPS duýgur ekran"
+            ]
+          },
+          {
+            "label": "Içki ýat",
+            "values": [
+              "250-ä çenli synag netijesi"
+            ]
+          },
+          {
+            "label": "Ölçegleri (U×I×B)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Üýtgeýän naprýaženiýäniň ölçeg diapazony",
+            "values": [
+              "0,3 – 20 kV"
+            ]
+          },
+          {
+            "label": "Üýtgeýän toguň ölçeg diapazony (kanal başyna)",
+            "values": [
+              "0,5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Naprýaženiýäni ölçemegiň ýalňyşlyk çägi",
+            "values": [
+              "±2,5 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Tok ölçeg kanallarynyň sany",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Programlaşdyrylýan synag wagty",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Ölçeg blokunyň ölçegleri",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Synag wannasynyň ölçegleri",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Ölçeg blokunyň agramy",
+            "values": [
+              "5,8 kg"
+            ]
+          },
+          {
+            "label": "Synag wannasynyň agramy",
+            "values": [
+              "19,0 kg"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Ölçeg diapazonlary",
+        "parameters": [
+          {
+            "label": "Ornaşdyrylan çeşme: naprýaženiýe diapazony",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ornaşdyrylan çeşme: tok diapazony",
+            "values": [
+              "0,5 – 10 mA",
+              "0,5 – 10 mA",
+              "0,5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "50 kV blok: naprýaženiýe diapazony",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "50 kV blok: tok diapazony",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV blok: naprýaženiýe diapazony",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "100 kV blok: tok diapazony",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "20 kV blok: naprýaženiýe diapazony",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "20 kV blok: tok diapazony",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Naprýaženiýäni ölçemegiň ýalňyşlyk çägi",
+            "values": [
+              "±3 %",
+              "±3 %",
+              "±3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Togy ölçemegiň ýalňyşlyk çägi",
+            "values": [
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Daşky ýokary woltly bloklaryň sany",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Tok kanallarynyň sany (synag wannasy)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Iýmitlendiriş",
+            "values": [
+              "230 V, 50 Hz",
+              "230 V, 50 Hz",
+              "230 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dolandyryş blokunyň ölçegleri (U×I×B)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "20 kV blokuň ölçegleri (U×I×B)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "50 kV blokuň ölçegleri (U×I×B)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV blokuň ölçegleri (U×I×B)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Synag wannasynyň ölçegleri (U×I×B)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dolandyryş blokunyň agramy",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "20 kV blokuň agramy",
+            "values": [
+              "—",
+              "—",
+              "33,8 kg"
+            ]
+          },
+          {
+            "label": "50 kV blokuň agramy",
+            "values": [
+              "35,4 kg",
+              "35,4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV blokuň agramy",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Synag wannasynyň agramy",
+            "values": [
+              "18,7 kg",
+              "18,7 kg",
+              "18,7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "+10 – +40 °C",
+              "+10 – +40 °C",
+              "+10 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Gatnaşyklaýyn çyglylyk (+25 °C-de)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Atmosfera basyşy",
+            "values": [
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hyzmat möhleti",
+            "values": [
+              "10 ýyl",
+              "10 ýyl",
+              "10 ýyl"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý",
+              "18 aý",
+              "18 aý"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Ýük parametrleri",
+        "parameters": [
+          {
+            "label": "Iň ýokary iş hemişelik naprýaženiýesi",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Iň ýokary amplitudaly üýtgeýän naprýaženiýe (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Ýük basgançaklarynyň sany",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Ýük utgaşmalarynyň sany",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Iň ýokary umumy ýaýradylýan kuwwat",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Iň ýokary kuwwatda işleýiş wagty",
+            "values": [
+              "1 sagat"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Basgançaklaryň parametrleri (nominal garşylyk / kuwwat)",
+        "parameters": [
+          {
+            "label": "Basgançak 1",
+            "values": [
+              "68 MΩ ±5 % / 80 W"
+            ]
+          },
+          {
+            "label": "Basgançak 2",
+            "values": [
+              "22,4 MΩ ±5 % / 250 W"
+            ]
+          },
+          {
+            "label": "Basgançak 3",
+            "values": [
+              "14,1 MΩ ±5 % / 350 W"
+            ]
+          },
+          {
+            "label": "Basgançak 4",
+            "values": [
+              "6,6 MΩ ±5 % / 750 W"
+            ]
+          },
+          {
+            "label": "Basgançak 5",
+            "values": [
+              "2,4 MΩ ±5 % / 1500 W"
+            ]
+          },
+          {
+            "label": "Basgançak 6",
+            "values": [
+              "1,35 MΩ ±5 % / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Ölçegleri (I×Ç×B)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Sowadyş ulgamynyň iýmitlendirişi",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Sowadyş ulgamynyň sarp edýän kuwwaty",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "+5 – +40 °C"
+            ]
+          },
+          {
+            "label": "Gatnaşyklaýyn çyglylyk (+25 °C-de)",
+            "values": [
+              "≤ 80 %"
+            ]
+          },
+          {
+            "label": "Hyzmat möhleti",
+            "values": [
+              "10 ýyl"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Synag parametrleri",
+        "parameters": [
+          {
+            "label": "Iň ýokary synag naprýaženiýesi",
+            "values": [
+              "50 kV AC"
+            ]
+          },
+          {
+            "label": "Bir wagtda synagdan geçirilýän obýektleriň iň ýokary sany",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Ölçegleri (diregler bilen beýikligi)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Stoluň ölçegleri (I×U)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "+10 – +40 °C"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "18 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektrik parametrleri",
+        "parameters": [
+          {
+            "label": "Iýmitlendiriş naprýaženiýesi",
+            "values": [
+              "220 V AC"
+            ]
+          },
+          {
+            "label": "Nominal sarp ediş togy",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Ses basyşynyň derejesi (1 m aralykda)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Ýagtylygyň kontrast kabul edilişi",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Ölçegleri",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "≤ 0,32 kg"
+            ]
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "-30 – +55 °C"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "12 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektrik parametrleri",
+        "parameters": [
+          {
+            "label": "Nominal naprýaženiýe",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Nominal sygym",
+            "values": [
+              "0,4 µF"
+            ]
+          },
+          {
+            "label": "Synag naprýaženiýesi",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Umumy häsiýetnamalar",
+        "parameters": [
+          {
+            "label": "Ölçegleri (U×I×B)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Agramy",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Iş temperaturasy",
+            "values": [
+              "-1 – +35 °C"
+            ]
+          },
+          {
+            "label": "Kepillik",
+            "values": [
+              "6 aý"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

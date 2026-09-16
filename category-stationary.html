@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="prod_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stationary Test Benches & PPE | SKAT</title>
+    <title data-i18n="page_title">Stationary Test Benches & PPE | SKAT</title>
+    <meta name="description" data-i18n="page_description" content="High-voltage test systems for dielectric gloves, boots, insulators, and personal protective equipment (PPE). Compliant with IEC 60903, IEC 61112.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,9 +23,8 @@
     <!-- HERO БЛОК -->
     <section class="category-hero">
         <div class="container hero-content">
-            <h1>Stationary Test Benches & PPE</h1>
-            <p>High-voltage test systems for dielectric gloves, boots, insulators, and personal protective equipment (PPE).<br>
-               Compliant with IEC 60903, IEC 61112.</p>
+            <h1 data-i18n="cat_hero_title_stationary">Stationary Test Benches & PPE</h1>
+            <p data-i18n="cat_hero_subtitle_stationary">High-voltage test systems for dielectric gloves, boots, insulators, and personal protective equipment (PPE).<br>Compliant with IEC 60903, IEC 61112.</p>
         </div>
     </section>
 
@@ -32,16 +36,12 @@
             <article class="tech-card">
                 <div class="tech-card__image-wrap">
                     <img src="images/svs-1.png" alt="SKAT-SVS" class="tech-card__img">
-                    <div class="tech-card__badge green">IEC 60060</div>
+                    <div class="tech-card__badge green" data-i18n="badge_iec60060">IEC 60060</div>
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">SKAT-SVS Series</h3>
-                    <p class="tech-card__desc">
-                        Complete stationary HV test systems for cables, PPE, and insulators. 20 kV to 100 kV modules.
-                    </p>
-                    <a href="product-svs.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_svs_title">SKAT-SVS Series</h3>
+                    <p data-i18n="cat_svs_desc">Complete stationary HV test systems for cables, PPE, and insulators. 20 kV to 100 kV modules.</p>
+                    <a href="product-svs.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
@@ -51,13 +51,9 @@
                     <img src="images/70p-1.png" alt="SKAT-70P" class="tech-card__img">
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">SKAT-70P Measuring Attachment</h3>
-                    <p class="tech-card__desc">
-                        4-channel leakage current measuring attachment for comprehensive PPE testing.
-                    </p>
-                    <a href="product-70p.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_70p_title">SKAT-70P Measuring Attachment</h3>
+                    <p data-i18n="cat_70p_desc">4-channel leakage current measuring attachment for comprehensive PPE testing.</p>
+                    <a href="product-70p.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
@@ -67,19 +63,15 @@
                     <img src="images/ubsvn-1.png" alt="UBSVN-LM" class="tech-card__img">
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">UBSVN-LM Safety Interlock</h3>
-                    <p class="tech-card__desc">
-                        Audio-visual alarm and safety interlock for HV laboratories. Up to 95 dB sound level.
-                    </p>
-                    <a href="product-ubsvn.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_ubsvn_title">UBSVN-LM Safety Interlock</h3>
+                    <p data-i18n="cat_ubsvn_desc">Audio-visual alarm and safety interlock for HV laboratories. Up to 95 dB sound level.</p>
+                    <a href="product-ubsvn.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html#products" class="btn-outline-dark">Back to Products</a>
+            <a href="index.html#products" class="btn-outline-dark" data-i18n="back_to_products">Back to Products</a>
         </div>
     </section>
 
@@ -90,6 +82,7 @@
 
     <!-- СКРИПТЫ -->
     <script src="assets.js"></script>
+    <script src="lang.js"></script>
     <script src="category.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

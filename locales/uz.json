@@ -1,0 +1,1060 @@
+{
+  "page_title": "SKAT — Yuqori kuchlanishli sinov va o'lchash uskunalari | IEF SKAT",
+  "page_description": "Elektr kabellari, transformator moyi va shaxsiy himoya vositalari uchun sanoat tipidagi yuqori kuchlanishli sinov uskunalari.",
+  "hero_title": "O'lchang. Tekshiring. Himoya qiling.",
+  "hero_subtitle": "Akkreditatsiyalangan metrologiya laboratoriyalaridan energiya obyektlariga, neft-kimyo korxonalariga, kemasozlik zavodlariga, tog'-kon sanoatiga, metropoliten va temir yo'l tizimlarigacha — SKAT butun dunyoda yuqori kuchlanishli muhandislar ishonadigan aniqlik, xavfsizlik va ishonchlilikni ta'minlaydi.",
+  "view_catalog": "Katalogga o'tish",
+  "lang_choose_title": "Tilni tanlang",
+  "about_title": "Muhandislik yaxlitligiga asoslangan",
+  "about_subtitle": "IEF SKAT — 2006-yildan beri yuqori kuchlanishli sinov uskunalarining to'liq siklli ishlab chiqaruvchisi.",
+  "feature1_title": "O'zining ilmiy-tadqiqot va ishlab chiqarish bazasi",
+  "feature1_desc": "IEF SKAT Volgogradda 2000 m² dan ortiq ishlab chiqarish maydoniga ega. Barcha apparat ta'minoti va dasturiy ta'minot kompaniya ichida ishlab chiqiladi, bu esa sifat va innovatsiyalar ustidan to'liq nazoratni ta'minlaydi.",
+  "feature2_title": "Akkreditatsiyalangan metrologiya laboratoriyasi",
+  "feature2_desc": "Biz o'zimizning akkreditatsiyalangan metrologiya laboratoriyamizga egamiz. Har bir qurilma jo'natilishidan oldin xalqaro va YEOI standartlariga muvofiq qat'iy kalibrlash va tekshiruvdan o'tadi.",
+  "feature3_title": "Xavfsizlik birinchi o'rinda",
+  "feature3_desc": "Ichki blokirovkalar, avtomatik yerga ulash va ishonchli ortiqcha tok himoyasi: operator xavfsizligi yuqori kuchlanishli ishlarda bizning asosiy ustuvor yo'nalishimizdir.",
+  "feature4_title": "Xalqaro standartlar va global servis",
+  "feature4_desc": "Uskunalar Rossiya, Belarus va Qozog'iston davlat reyestrlariga kiritilgan. 18 oylik kafolat, Volgograd va Minskda servis markazlari, butun dunyoda qo'llab-quvvatlash.",
+  "stats_1_label": "yil muhandislik tajribasi (2006-yildan)",
+  "stats_2_label": "dunyo bo'ylab davlatlar",
+  "stats_3_label": "Texnologiyalar. Aniqlik. Sifat.",
+  "products_title": "Mahsulotlarga umumiy nuqtai",
+  "products_subtitle": "Yuqori kuchlanishli sinov va diagnostika uchun kompleks yechimlar.",
+  "category1_title": "Suyuq dielektriklarni sinov qurilmalari",
+  "category1_desc": "Suyuq dielektriklarning teshilish kuchlanishini va dielektrik yo'qotish burchagi tangensini (tan δ) o'lchash uchun qurilmalar (IEC 60247, IEC 60156).",
+  "cat1_feat1": "To'liq avtomatik sikllar",
+  "cat1_feat2": "Ichki termoprinter",
+  "cat1_feat3": "7 dyuymli sensorli IPS displey",
+  "view_series": "Seriyani ko'rish",
+  "category2_title": "AC/DC sinov qurilmalari",
+  "category2_desc": "Kabellar, cheklovchilar va izolyatsiyani sinash uchun yuqori kuchlanishli manbalar (analog va raqamli).",
+  "cat2_feat1": "101 kV gacha (DC)",
+  "cat2_feat2": "Raqamli LCD displey",
+  "cat2_feat3": "Teshilishni avtomatik aniqlash",
+  "category3_title": "Statsionar stendlar va SHV",
+  "category3_desc": "Dielektrik qo'lqoplar, etiklar, izolyatorlar va shaxsiy himoya vositalari (SHV) uchun yuqori kuchlanishli sinov tizimlari.",
+  "cat3_feat1": "4 kanalli oqish tokini o'lchash",
+  "cat3_feat2": "10 ta sinov profili",
+  "cat3_feat3": "Eshik blokirovkasi va signalizatsiya",
+  "category4_title": "Yuqori aniqlikdagi o'lchovlar",
+  "category4_desc": "AC/DC kuchlanishini, garmonik tahlilni va kalibrlashni o'lchash uchun raqamli kilovoltmetrlar.",
+  "cat4_feat1": "0,25 % gacha aniqlik",
+  "cat4_feat2": "THD tahlili (50 garmonikagacha)",
+  "cat4_feat3": "USB-C quvvat banki bilan ishlash",
+  "category5_title": "Kalibrlash va xavfsizlik",
+  "category5_desc": "Metrologik tekshiruv uchun aktiv yuqori kuchlanishli yuklar va yuqori kuchlanishli impuls kondensatorlari.",
+  "cat5_feat1": "3750 Vt gacha sochiladigan quvvat",
+  "cat5_feat2": "Majburiy havo bilan sovutish",
+  "cat5_feat3": "100 kV impuls kondensatori",
+  "category6_title": "Sinov stendlari",
+  "category6_desc": "Izolyatsiyalovchi shtanglar, kuchlanish ostida ishlash asboblari va yuqori kuchlanish ko'rsatkichlari uchun portativ stendlar.",
+  "cat6_feat1": "50 kV gacha kuchlanish",
+  "cat6_feat2": "5 qismga bo'lib sinash",
+  "cat6_feat3": "Dielektrik asoslar to'plamda",
+  "applications_title": "Qo'llash sohalari va sanoat yechimlari",
+  "applications_subtitle": "Dunyo bo'ylab yetakchi energiya va sanoat kompaniyalari bizga ishonadi.",
+  "app1_title": "Elektr kabellarini diagnostika qilish",
+  "app1_desc": "O'rta va yuqori kuchlanishli kabel liniyalarini elektr mustahkamligiga sinash va shikastlanish joylarini aniqlash, jumladan izolyatsiyani kuydirish va qattiq dielektriklarni sinash.",
+  "app2_title": "Transformator moyini tahlil qilish",
+  "app2_desc": "Moy bilan to'ldirilgan energiya uskunalari uchun teshilish kuchlanishini (100 kV gacha) va yo'qotish burchagi tangensini (tan δ) yuqori aniqlikda o'lchash.",
+  "app3_title": "SHV va podstansiya xavfsizligi",
+  "app3_desc": "Yuqori kuchlanishli obyektlarda xodimlar xavfsizligini ta'minlash uchun dielektrik qo'lqoplar, etiklar, izolyatsiyalovchi shtanglar, kuchlanish ko'rsatkichlari va kuchlanish ostida ishlash asboblarini sinash.",
+  "app4_title": "Metrologiya va kalibrlash",
+  "app4_desc": "Sinov qurilmalari va yuqori kuchlanish manbalarini metrologik tekshirish va kalibrlash uchun yuqori aniqlikdagi raqamli kilovoltmetrlar va aktiv yuqori kuchlanishli yuklar.",
+  "news_title": "Yangiliklar va tadbirlar",
+  "news_subtitle": "SKAT'ning so'nggi ishlanmalaridan xabardor bo'ling.",
+  "news1_date": "Iyun 2026",
+  "news1_title": "KVC seriyasi uchun dasturiy ta'minot yangilanishi",
+  "news1_text": "KVC seriyasi uchun yangi proshivka chiqarildi: juda past chastotali (VLF) o'lchovlarning aniqligi va barqarorligi oshirildi.",
+  "news2_date": "May 2026",
+  "news2_title": "SKAT energetika konferensiyasida",
+  "news2_text": "Jamoamiz Moskvada bo'lib o'tadigan Power Grid xalqaro konferensiyasida yuqori kuchlanishli sinov uchun yangi yechimlarni taqdim etadi.",
+  "news3_date": "Aprel 2026",
+  "news3_title": "Janubi-Sharqiy Osiyo bozoriga chiqish",
+  "news3_text": "Vyetnam va Tailandda yangi distributsiya hamkorliklarini e'lon qilishdan faxrlanamiz.",
+  "read_more": "Batafsil",
+  "ticker_text": "SKAT | Yuqori kuchlanishli sinov uskunalari | Kabel diagnostikasi | Transformator moyi tahlili | SHV sinovi | Laboratoriya yechimlari | Kalibrlash va tekshiruv",
+  "header_tagline": "Yuqori kuchlanishli sinov va o'lchash uskunalari",
+  "header_catalog": "Katalog",
+  "nav_home": "Bosh sahifa",
+  "nav_products": "Mahsulotlar",
+  "nav_about": "Biz haqimizda",
+  "nav_support": "Qo'llab-quvvatlash",
+  "nav_contact": "Aloqa",
+  "lang_choose": "Tilni tanlang",
+  "menu_cat1": "Suyuq dielektriklar",
+  "menu_cat1_sub": "tan δ va teshilish kuchlanishi o'lchagichlar",
+  "menu_cat2": "AC/DC qurilmalari",
+  "menu_cat2_sub": "101 kV gacha chiqish kuchlanishi",
+  "menu_cat3": "Statsionar stendlar",
+  "menu_cat3_sub": "SHV va xavfsizlik sinovi",
+  "menu_cat4": "Yuqori aniqlikdagi o'lchovlar",
+  "menu_cat4_sub": "0.25 sinfli kilovoltmetrlar",
+  "menu_cat5": "Kalibrlash va xavfsizlik",
+  "menu_cat5_sub": "Yuqori kuchlanishli yuklar va kondensatorlar",
+  "menu_cat6": "Sinov stendlari",
+  "menu_cat6_sub": "Izolyatsiyalovchi shtanglar sinovi",
+  "menu_download": "Katalogni yuklab olish",
+  "close_btn": "Yopish",
+  "cat_hero_title": "Suyuq dielektriklarni sinov qurilmalari",
+  "cat_hero_subtitle": "Izolyatsiya moylari va suyuq dielektriklarni yuqori aniqlikda tahlil qilish.<br>IEC 60156, ASTM D1816 va GOST 6581-75 standartlariga muvofiqlik.",
+  "badge_iec60156": "IEC 60156",
+  "cat_m100v_title": "SKAT-M100V Moy sinov apparati",
+  "cat_m100v_desc": "Transformator moyi va izolyatsiya suyuqliklarining teshilish kuchlanishini o'lchash uchun to'liq avtomatik apparat.<br>100 kV gacha, 6 sinov ketma-ketligi, ichki termoprinter.",
+  "learn_more": "Batafsil",
+  "badge_iec60247": "IEC 60247",
+  "cat_tangens_title": "SKAT-TANGENS-M Suyuq dielektriklarni sinov qurilmasi",
+  "cat_tangens_desc": "Dielektrik yo'qotish burchagi tangensini (tan δ) va nisbiy dielektrik o'tkazuvchanligini yuqori aniqlikda o'lchash.<br>7 dyuymli sensorli ekran, to'liq avtomatik sikl, IEC 60247 muvofiq.",
+  "back_to_products": "Mahsulotlarga qaytish",
+  "cat_hero_title_acdc": "AC/DC sinov qurilmalari",
+  "cat_hero_subtitle_acdc": "Kabellar, cheklovchilar va qattiq dielektriklarni sinash uchun yuqori kuchlanishli manbalar.<br>IEC 60060 standartiga muvofiqlik.",
+  "badge_iec60060": "IEC 60060",
+  "cat_70c_title": "SKAT-70C / 100C Raqamli",
+  "cat_70c_desc": "Mikrokontroller boshqaruvi va LCD displeyli AC/DC dielektrik sinov apparatlari.",
+  "cat_70m_title": "SKAT-70M / 70MA Analog",
+  "cat_70m_desc": "Dala va laboratoriya sharoitlari uchun ishonchli analog qurilmalar (1–71 kV). IEC 60060 muvofiq.",
+  "cat_hero_title_stationary": "Statsionar stendlar va SHV",
+  "cat_hero_subtitle_stationary": "Dielektrik qo'lqoplar, etiklar, izolyatorlar va shaxsiy himoya vositalari (SHV) uchun yuqori kuchlanishli sinov tizimlari.<br>IEC 60903, IEC 61112 standartlariga muvofiqlik.",
+  "cat_svs_title": "SKAT-SVS seriyasi",
+  "cat_svs_desc": "Kabellar, SHV va izolyatorlar uchun komplekt statsionar yuqori kuchlanishli sinov tizimlari. 20 kV dan 100 kV gacha modullar.",
+  "cat_70p_title": "SKAT-70P O'lchov qo'shimchasi",
+  "cat_70p_desc": "SHV kompleks sinovi uchun 4 kanalli oqish tokini o'lchash qo'shimchasi.",
+  "cat_ubsvn_title": "UBSVN-LM Xavfsizlik blokirovkasi",
+  "cat_ubsvn_desc": "Yuqori kuchlanishli laboratoriyalar uchun tovush-yorug'lik signalizatsiyasi va xavfsizlik blokirovkasi. Tovush darajasi ≥95 dB.",
+  "cat_hero_title_precision": "Yuqori aniqlikdagi o'lchovlar",
+  "cat_hero_subtitle_precision": "AC/DC kuchlanishini, garmonik tahlilni va kalibrlashni o'lchash uchun yuqori aniqlikdagi raqamli kilovoltmetrlar.<br>0.25 aniqlik sinfi.",
+  "badge_class_025_10": "0.25–1.0 sinfi",
+  "cat_kvc_b_title": "KVC-B seriyasi (moy bilan to'ldirilgan)",
+  "cat_kvc_b_desc": "AC (50 Hz) va DC kuchlanishini o'lchash uchun yuqori aniqlikdagi moy bilan to'ldirilgan kilovoltmetrlar. 0,25; 0,5 va 1,0 aniqlik sinflari.",
+  "badge_class_025": "0.25 sinfi",
+  "cat_kvc_c_title": "KVC-C seriyasi (havoda izolyatsiyalangan)",
+  "cat_kvc_c_desc": "THD tahlili (50 garmonikagacha) va VLF rejimi bilan kengaytirilgan qo'llash uchun 0,25 aniqlik sinfi.",
+  "cat_hero_title_calibration": "Kalibrlash va xavfsizlik",
+  "cat_hero_subtitle_calibration": "Metrologik tekshiruv, yuqori energiyali impulslarni generatsiya qilish va yuqori kuchlanishli laboratoriyalar xavfsizligi uchun asboblar.<br>Siz ishonishingiz mumkin bo'lgan aniqlik.",
+  "cat_avn70_title": "SKAT-AVN-70 Aktiv yuqori kuchlanishli yuk",
+  "cat_avn70_desc": "Dielektrik sinov qurilmalarini kalibrlash uchun yuqori aniqlikdagi yuqori kuchlanishli yuk bloki (70 kV). 6 pog'ona, 3750 Vt gacha sochiladigan quvvat.",
+  "cat_ik100_title": "IK 100-0.4 Yuqori kuchlanishli impuls kondensatori",
+  "cat_ik100_desc": "Impuls tok generatorlari uchun yuqori kuchlanishli impuls kondensatori. 100 kV, 0,4 µF. Polipropilen korpus.",
+  "cat_calibration": "Kalibrlash va sinov aksessuarlari",
+  "prod_avn70_title": "SKAT-AVN-70 Aktiv yuqori kuchlanishli yuk",
+  "prod_avn70_subtitle": "Dielektrik sinov qurilmalarini kalibrlash uchun yuqori aniqlikdagi yuqori kuchlanishli yuk bloki (70 kV).",
+  "prod_avn70_desc": "Dielektrik sinov qurilmalarini metrologik tekshirish va kalibrlash uchun maxsus ishlab chiqilgan SKAT-AVN-70 aktiv yuki texnik mutaxassislarga yuk sharoitida kuchlanish va tok o'lchovlarini aniq tekshirish imkonini beradi. 6 mustaqil rezistiv pog'ona, 40 yuk kombinatsiyasi va majburiy havo bilan sovutish tufayli uzoq muddatli sinovlar davomida ishonchli ishlashni ta'minlaydi.",
+  "request_quote": "Tijoriy taklif so'rash",
+  "prod_avn70_feat1_title": "40 ta noyob yuk kombinatsiyasi",
+  "prod_avn70_feat1_desc": "Oltita mustaqil rezistiv pog'ona turli yuk sharoitlarini aniq simulyatsiya qilish imkonini beradi, 40 tagacha kombinatsiyani ta'minlaydi.",
+  "prod_avn70_feat2_title": "Avtomatik majburiy havo bilan sovutish tizimi",
+  "prod_avn70_feat2_desc": "Yuqori quvvat darajalarida uzoq muddatli sinovlar davomida ishonchli ishlash va issiqlikni samarali chiqarishni ta'minlaydi. 30 °C da avtomatik ishga tushadi.",
+  "prod_avn70_feat3_title": "Mobil dielektrik shkaf konstruksiyasi",
+  "prod_avn70_feat3_desc": "Yengil va mustahkam konstruksiya yukni laboratoriyada yoki sinov maydonchasida oson joylashtirish imkonini beradi.",
+  "prod_avn70_feat4_title": "Silikon izolyatsiyali yuqori kuchlanishli kabellar",
+  "prod_avn70_feat4_desc": "Barcha ulanishlar xavfsizlik va ishonchlilik uchun yuqori haroratli silikon izolyatsiyali maxsus yuqori kuchlanishli sim bilan amalga oshiriladi.",
+  "tab_info": "Mahsulot haqida ma'lumot",
+  "tab_specs": "Texnik xususiyatlar",
+  "tab_support": "Mahsulotni qo'llab-quvvatlash",
+  "tech_support": "Texnik qo'llab-quvvatlash",
+  "about_product": "Mahsulot haqida",
+  "product_docs": "Mahsulot hujjatlari",
+  "data_sheet": "Texnik pasport",
+  "user_guide": "Foydalanish qo'llanmasi",
+  "related_products": "Bog'liq mahsulotlar",
+  "tech_specs": "Texnik xususiyatlar",
+  "specs_note": "Eslatma: Texnik xususiyatlar oldindan ogohlantirishsiz o'zgartirilishi mumkin. Individual diapazonlar va konfiguratsiyalar uchun savdo jamoamiz bilan bog'laning.",
+  "faq_title": "Tez-tez beriladigan savollar",
+  "interpreting_results": "Sinov natijalarini sharhlash",
+  "troubleshooting": "Nosozliklarni bartaraf etish va dasturiy ta'minot yangilanishlari",
+  "common_steps": "Nosozliklarni bartaraf etish uchun tipik qadamlar",
+  "soft_updates": "Dasturiy ta'minot va proshivka yangilanishlari",
+  "academic_support": "Qo'llash va akademik qo'llab-quvvatlash",
+  "contact_support": "Bilimlar bazasini ochish",
+  "prod_avn70_about1": "SKAT-AVN-70 — dielektrik sinov qurilmalarini (SKAT-70, AVID-70 va AID-70 seriyalari kabi) metrologik tekshirish va kalibrlash uchun maxsus ishlab chiqilgan professional aktiv yuqori kuchlanishli yukdir. Bu kuchli yuk bloki texnik mutaxassislarga yuk sharoitida kuchlanish va tok o'lchovlarini aniq tekshirish imkonini beradi.",
+  "prod_avn70_about2": "Uning mobil dielektrik shkaf konstruksiyasi mustahkamlik va yengillikni ta'minlaydi, avtomatik majburiy havo bilan sovutish tizimi esa rezistiv qismlarda ajraladigan issiqlikni samarali chiqaradi. Modullar orasidagi barcha ulanishlar yuqori haroratli silikon izolyatsiyali maxsus yuqori kuchlanishli sim bilan amalga oshiriladi.",
+  "prod_avn70_faq1_q": "Bu yuk qaysi uskunalar bilan mos keladi?",
+  "prod_avn70_faq1_a": "U SKAT-70, AVID-70 va AID-70 seriyalari, shuningdek boshqa o'xshash yuqori kuchlanishli sinov qurilmalari uchun mo'ljallangan.",
+  "prod_avn70_faq2_q": "Maksimal sochiladigan quvvat qancha?",
+  "prod_avn70_faq2_a": "Umumiy maksimal sochiladigan quvvat 3750 Vt, har bir pog'onaning o'z quvvat reytingi bor. To'liq quvvatda uzluksiz ishlash muddati 1 soat.",
+  "prod_avn70_faq3_q": "Tashqi sovutish talab qilinadimi?",
+  "prod_avn70_faq3_a": "U ichki avtomatik majburiy havo bilan sovutish tizimi bilan jihozlangan. Ichki harorat 30 °C ga yetganda avtomatik ishga tushadi.",
+  "prod_avn70_support1": "Kalibrlash protseduralari va yuk ostida sinov standartlari haqida batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_avn70_ts1": "Quvvat yoki sovutish yo'q: Sovutish tizimining quvvat manbai ulanganligini va qurilma tarmoqqa ulanganligini tekshiring.",
+  "prod_avn70_ts2": "Noto'g'ri yuk qiymatlari: Yuqori kuchlanishli ulanishlar mustahkam va to'g'ri konfiguratsiya qilinganligini tekshiring.",
+  "prod_avn70_ts3": "Haddan tashqari qizish: Havo filtrini tekshiring va ventilyatsiya to'silmaganligiga ishonch hosil qiling.",
+  "prod_avn70_soft": "Bu qurilma dasturiy ta'minot yoki proshivka yangilanishini talab qilmaydi. Kalibrlash bo'yicha savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_avn70_support2": "Batafsil texnik materiallar uchun qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_70c_title": "SKAT-70C Raqamli dielektrik sinov qurilmasi",
+  "related_70c_desc": "Mikrokontroller boshqaruvi bilan AC/DC dielektrik sinov qurilmasi.",
+  "related_70m_title": "SKAT-70M / 70MA Analog sinov qurilmalari",
+  "related_70m_desc": "Dala va laboratoriya sharoitlari uchun ishonchli analog qurilmalar.",
+  "cat_lab_accessories": "Laboratoriya aksessuarlari",
+  "prod_ik100_title": "IK 100-0.4 Yuqori kuchlanishli impuls kondensatori",
+  "prod_ik100_subtitle": "Impuls tok generatorlari uchun yuqori kuchlanishli impuls kondensatori.",
+  "prod_ik100_desc": "Transformatorlar, kabellar va elektr uzatish liniyalarining tashqi izolyatsiyasini sinashda yuqori energiyali impulslarni generatsiya qilish uchun ajralmas. Polipropilen korpus va moy bilan to'yingan qog'oz-filoli dielektrik ishonchli ishlash va yuqori energiya zichligini ta'minlaydi.",
+  "prod_ik100_feat1_title": "Yuqori energiya zichligi",
+  "prod_ik100_feat1_desc": "Yuqori kuchlanishli uskunalarni sinash va diagnostika qilishda yuqori energiyali impuls qo'llanilishi uchun mo'ljallangan.",
+  "prod_ik100_feat2_title": "Polipropilen korpus",
+  "prod_ik100_feat2_desc": "Mustahkam va yengil konstruksiya laboratoriya va dala sharoitlarida uzoq umr va qulay foydalanishni ta'minlaydi.",
+  "prod_ik100_feat3_title": "Moy bilan to'yingan dielektrik",
+  "prod_ik100_feat3_desc": "Yuqori yuklarda ishonchli ishlash uchun moy bilan singdirilgan kondensator qog'ozi va sintetik plyonkalardan foydalanadi.",
+  "prod_ik100_feat4_title": "Qulay tashish uchun ikkita tutqich",
+  "prod_ik100_feat4_desc": "Ichki tutqichlar laboratoriya yoki sinov markazi ichida qulay tashishni ta'minlaydi.",
+  "prod_ik100_about1": "IK 100-0.4 — impuls kuchlanish va tok generatorlarida foydalanish uchun mo'ljallangan yuqori kuchlanishli impuls kondensatoridir. Transformatorlar, kabellar va elektr uzatish liniyalarining tashqi izolyatsiyasini sinashda yuqori energiyali impulslarni generatsiya qilish uchun ajralmas.",
+  "prod_ik100_about2": "Polipropilen korpus va moy bilan to'yingan qog'oz-filoli dielektrik bilan tayyorlangan bu kondensator ishonchli ishlash va yuqori energiya zichligini ta'minlaydi. Ikkita tutqich qulay tashishni ta'minlaydi, bu esa uni laboratoriya va dala foydalanishi uchun amaliy tanlov qiladi.",
+  "prod_ik100_faq1_q": "Bu kondensator asosan nima uchun ishlatiladi?",
+  "prod_ik100_faq1_a": "U transformatorlar, kabellar va elektr uzatish liniyalarining tashqi izolyatsiyasini sinash uchun impuls kuchlanish va tok generatorlarida qo'llaniladi.",
+  "prod_ik100_faq2_q": "Qanday dielektrik turi ishlatiladi?",
+  "prod_ik100_faq2_a": "Moy bilan singdirilgan kondensator qog'ozi va sintetik plyonkalar kombinatsiyasi ishlatiladi.",
+  "prod_ik100_faq3_q": "U bilan ishlash xavfsizmi?",
+  "prod_ik100_faq3_a": "Ha, lekin ishlashdan oldin har doim kondensatorni zaryadsizlantiring va yerga ulang. Yuqori kuchlanishli ishlarda standart xavfsizlik qoidalariga rioya qiling.",
+  "prod_ik100_support1": "Impuls generatorlari bilan sinash va kondensator spetsifikatsiyalari haqida batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_ik100_ts1": "Zaryadsizlanish yo'q: Ishlashdan oldin yerga ulash va zaryadsizlantirish tartib-qoidalariga rioya qiling.",
+  "prod_ik100_ts2": "Fizik shikastlanishlar: Korpusni yoriqlar yoki oqishlar uchun tekshiring. Shikastlangan bo'lsa, ishlatmang.",
+  "prod_ik100_ts3": "Noto'g'ri sig'im: Ulanishlarni tekshiring va kalibrlangan LCR o'lchagich bilan o'lchang.",
+  "prod_ik100_soft": "Bu qurilma dasturiy ta'minot yoki proshivka yangilanishini talab qilmaydi. Har qanday savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_ik100_support2": "Batafsil texnik materiallar uchun qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_avn70_title": "SKAT-AVN-70 Aktiv yuqori kuchlanishli yuk",
+  "related_avn70_desc": "Dielektrik sinov qurilmalarini kalibrlash uchun yuqori aniqlikdagi yuqori kuchlanishli yuk bloki.",
+  "prod_kvc_b_title": "KVC B-Series Raqamli kilovoltmetrlar (moy bilan to'ldirilgan)",
+  "prod_kvc_b_subtitle": "AC (50 Hz) va DC kuchlanishini o'lchash uchun yuqori aniqlikdagi asboblar.",
+  "prod_kvc_b_desc": "Moy bilan to'ldirilgan rezistiv yuqori kuchlanishli bo'luvchi bilan jihozlangan KVC-B seriyasi kilovoltmetrlari standart sanoat chastotalarida o'lchovlar uchun ajoyib barqarorlik va past bo'lish koeffitsienti xatosini ta'minlaydi. 0,25 %, 0,5 % va 1,0 % aniqlik sinflarida mavjud, bu asboblar yuqori kuchlanishli sinov uskunalarini kalibrlash uchun dastlabki etalon sifatida xizmat qiladi.",
+  "prod_kvc_b_feat1_title": "Moy bilan to'ldirilgan rezistiv bo'luvchi",
+  "prod_kvc_b_feat1_desc": "Standart sanoat chastotalarida aniq o'lchovlar uchun yuqori barqarorlik va past bo'lish koeffitsienti xatosini ta'minlaydi.",
+  "prod_kvc_b_feat2_title": "Bir nechta aniqlik sinflari",
+  "prod_kvc_b_feat2_desc": "Turli kalibrlash va o'lchov talablarini qondirish uchun 0,25 %, 0,5 % va 1,0 % aniqlik sinflarida mavjud.",
+  "prod_kvc_b_feat3_title": "Kompyuterga ulanish uchun USB interfeysi",
+  "prod_kvc_b_feat3_desc": "Maxsus kompyuter dasturi orqali real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va ma'lumotlarni arxivlashni ta'minlaydi.",
+  "prod_kvc_b_feat4_title": "Ichki signal shakli yozuvchisi (32 osillogramma)",
+  "prod_kvc_b_feat4_desc": "Keyingi tahlil va ko'rish uchun 32 tagacha osillogrammani saqlaydi. 0,2 dan 5 soniyagacha sozlanadigan o'lchov oynasi.",
+  "prod_kvc_b_about1": "KVC-B seriyasi moy bilan to'ldirilgan rezistiv yuqori kuchlanishli bo'luvchi bilan yuqori aniqlikdagi raqamli kilovoltmetrlarning yangi avlodini ifodalaydi. 50 Hz chastotada DC kuchlanish va AC kuchlanishning o'rtacha kvadratik qiymatini yuqori aniqlikda o'lchash uchun mo'ljallangan bu asboblar yuqori kuchlanishli sinov uskunalarini kalibrlash uchun muhim etalon sifatida xizmat qiladi.",
+  "prod_kvc_b_about2": "0,25 % dan 1,0 % gacha aniqlik sinflari bilan KVC-B seriyasi ishonchli va takrorlanadigan natijalarni ta'minlaydi. USB interfeysi kompyuterga oson ulanish imkonini beradi, real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va maxsus dastur orqali ma'lumotlarni arxivlashni ta'minlaydi. Ichki xotira har biri 3 soniyalik 32 tagacha osillogrammani saqlaydi.",
+  "prod_kvc_b_faq1_q": "B va C seriyalari o'rtasidagi farq nima?",
+  "prod_kvc_b_faq1_a": "B seriyasi standart sanoat chastotalarida (50/60 Hz) o'lchovlar uchun optimallashtirilgan moy bilan to'ldirilgan rezistiv bo'luvchidan foydalanadi. C seriyasi THD tahlili va VLF o'lchovlari kabi kengaytirilgan qo'llashlar uchun havoda izolyatsiyalangan chastota kompensatsiyalangan bo'luvchi bilan jihozlangan.",
+  "prod_kvc_b_faq2_q": "Qanday aniqlik sinflari mavjud?",
+  "prod_kvc_b_faq2_a": "B seriyasi turli kalibrlash va o'lchov ehtiyojlarini qondirish uchun 0,25 %, 0,5 % va 1,0 % aniqlik sinflarida mavjud.",
+  "prod_kvc_b_faq3_q": "Bu asbobni kompyuterga ulash mumkinmi?",
+  "prod_kvc_b_faq3_a": "Ha. USB interfeysi kompyuterga oson ulanish imkonini beradi, real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va to'plamdagi dastur orqali ma'lumotlarni arxivlashni ta'minlaydi.",
+  "prod_kvc_b_support1": "Kalibrlash protseduralari, o'lchov noaniqligi va xalqaro standartlarga muvofiqlik haqida batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va quyidagi hujjatlarga murojaat qiling:",
+  "prod_kvc_b_ts1": "Displey yoki quvvat yo'q: AC quvvat manbaini yoki USB-C tashqi quvvat manbaini tekshiring.",
+  "prod_kvc_b_ts2": "Noto'g'ri ko'rsatkichlar: Barcha ulanishlar mustahkam ekanligiga va yuqori kuchlanishli bo'luvchi to'g'ri yerga ulanganligiga ishonch hosil qiling.",
+  "prod_kvc_b_ts3": "USB aloqa xatosi: USB kabel ulanishini tekshiring va kompyuter dasturini qayta ishga tushiring.",
+  "prod_kvc_b_soft": "Qurilmaning proshivkasini yangilash yoki signal shakli tahlili va ma'lumotlarni boshqarish uchun eng so'nggi kompyuter dasturini yuklab olish uchun texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_kvc_b_support2": "Yuqori kuchlanishli o'lchovlar bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_kvc_c_title": "KVC-C seriyasi (havoda izolyatsiyalangan)",
+  "related_kvc_c_desc": "Kengaytirilgan qo'llash uchun THD tahlili va VLF rejimi bilan 0,25 aniqlik sinfi.",
+  "prod_kvc_c_title": "KVC C-Series Raqamli kilovoltmetrlar (havoda izolyatsiyalangan)",
+  "prod_kvc_c_subtitle": "AC (50 Hz) va DC kuchlanishini o'lchash uchun yuqori aniqlikdagi asboblar.",
+  "prod_kvc_c_desc": "Havoda izolyatsiyalangan chastota kompensatsiyalangan rezistiv-sig'imli bo'luvchi bilan jihozlangan KVC-C seriyasi kilovoltmetrlari standart sanoat chastotalarida o'lchovlar uchun ajoyib barqarorlik va past bo'lish koeffitsienti xatosini ta'minlaydi. 0,25 % aniqlik sinfida mavjud, bu asboblar yuqori kuchlanishli sinov uskunalarini kalibrlash uchun dastlabki etalon sifatida xizmat qiladi.",
+  "prod_kvc_c_feat1_title": "Havoda izolyatsiyalangan chastota kompensatsiyalangan bo'luvchi",
+  "prod_kvc_c_feat1_desc": "40 dan 410 Hz gacha keng chastota diapazonida, shuningdek VLF rejimida yuqori barqarorlik va past bo'lish koeffitsienti xatosini ta'minlaydi.",
+  "prod_kvc_c_feat2_title": "50 garmonikagacha THD tahlili",
+  "prod_kvc_c_feat2_desc": "0,25 % aniqlik sinfi bilan aniq o'lchovlarni va 50-garmonikagacha umumiy garmonik distorsiya koeffitsientining batafsil tahlilini ta'minlaydi.",
+  "prod_kvc_c_feat3_title": "Kompyuterga ulanish uchun USB interfeysi",
+  "prod_kvc_c_feat3_desc": "Maxsus kompyuter dasturi orqali real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va ma'lumotlarni arxivlashni ta'minlaydi.",
+  "prod_kvc_c_feat4_title": "Ichki signal shakli yozuvchisi (32 osillogramma)",
+  "prod_kvc_c_feat4_desc": "Keyingi tahlil va ko'rish uchun 32 tagacha osillogrammani saqlaydi. 0,2 dan 5 soniyagacha sozlanadigan o'lchov oynasi.",
+  "prod_kvc_c_about1": "KVC-C seriyasi havoda izolyatsiyalangan chastota kompensatsiyalangan rezistiv-sig'imli bo'luvchi bilan yuqori aniqlikdagi raqamli kilovoltmetrlarning yangi avlodini ifodalaydi. 50 Hz chastotada DC kuchlanish va AC kuchlanishning o'rtacha kvadratik qiymatini yuqori aniqlikda o'lchash uchun mo'ljallangan bu asboblar yuqori kuchlanishli sinov uskunalarini kalibrlash uchun muhim etalon sifatida xizmat qiladi.",
+  "prod_kvc_c_about2": "0,25 % aniqlik sinfi bilan KVC-C seriyasi ishonchli va takrorlanadigan natijalarni ta'minlaydi. USB interfeysi kompyuterga oson ulanish imkonini beradi, real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va maxsus dastur orqali ma'lumotlarni arxivlashni ta'minlaydi. Ichki xotira har biri 3 soniyalik 32 tagacha osillogrammani saqlaydi.",
+  "prod_kvc_c_faq1_q": "C va B seriyalari o'rtasidagi farq nima?",
+  "prod_kvc_c_faq1_a": "C seriyasi THD tahlili va VLF o'lchovlari kabi kengaytirilgan qo'llashlar uchun havoda izolyatsiyalangan chastota kompensatsiyalangan bo'luvchi bilan jihozlangan. B seriyasi standart sanoat chastotalarida (50/60 Hz) o'lchovlar uchun optimallashtirilgan moy bilan to'ldirilgan rezistiv bo'luvchidan foydalanadi.",
+  "prod_kvc_c_faq2_q": "Qanday aniqlik sinflari mavjud?",
+  "prod_kvc_c_faq2_a": "C seriyasi turli kalibrlash va o'lchov ehtiyojlarini qondirish uchun 0,25 % aniqlik sinfida mavjud.",
+  "prod_kvc_c_faq3_q": "Bu asbobni kompyuterga ulash mumkinmi?",
+  "prod_kvc_c_faq3_a": "Ha. USB interfeysi kompyuterga oson ulanish imkonini beradi, real vaqt rejimida osillograf funksiyalarini, signal shakli tahlilini va to'plamdagi dastur orqali ma'lumotlarni arxivlashni ta'minlaydi.",
+  "prod_kvc_c_support1": "Kalibrlash protseduralari, o'lchov noaniqligi va xalqaro standartlarga muvofiqlik haqida batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va quyidagi hujjatlarga murojaat qiling:",
+  "prod_kvc_c_ts1": "Displey yoki quvvat yo'q: AC quvvat manbaini yoki USB-C tashqi quvvat manbaini tekshiring.",
+  "prod_kvc_c_ts2": "Noto'g'ri ko'rsatkichlar: Barcha ulanishlar mustahkam ekanligiga va yuqori kuchlanishli bo'luvchi to'g'ri yerga ulanganligiga ishonch hosil qiling.",
+  "prod_kvc_c_ts3": "USB aloqa xatosi: USB kabel ulanishini tekshiring va kompyuter dasturini qayta ishga tushiring.",
+  "prod_kvc_c_soft": "Qurilmaning proshivkasini yangilash yoki signal shakli tahlili va ma'lumotlarni boshqarish uchun eng so'nggi kompyuter dasturini yuklab olish uchun texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_kvc_c_support2": "Yuqori kuchlanishli o'lchovlar bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_kvc_b_title": "KVC-B seriyasi (moy bilan to'ldirilgan)",
+  "related_kvc_b_desc": "Standart sanoat chastotalarida o'lchovlar uchun 0,25–1,0 aniqlik sinfi.",
+  "prod_m100v_title": "SKAT-M100V Moy sinov apparati",
+  "prod_m100v_subtitle": "Transformator moyining teshilish kuchlanishini o'lchash uchun to'liq avtomatik apparat (100 kV gacha).",
+  "prod_m100v_desc": "IEC 60156 va GOST 6581-75 standartlariga muvofiq SKAT-M100V transformator moyi va boshqa suyuq dielektriklarning teshilish kuchlanishini o'lchash uchun maxsus to'liq avtomatik sinov qurilmasidir. Qurilma moy sifatini baholash uchun ishonchli va standartlashtirilgan usulni ta'minlaydi.",
+  "prod_m100v_feat1_title": "To'liq avtomatik sinov ketma-ketligi",
+  "prod_m100v_feat1_desc": "Kuchlanishni ko'tarish va teshilishni aniqlashni o'z ichiga olgan butun sinov jarayoni ishonchli va takrorlanadigan natijalar uchun to'liq avtomatlashtirilgan.",
+  "prod_m100v_feat2_title": "Ichki termoprinter",
+  "prod_m100v_feat2_desc": "Natijalar ichki termoprinter orqali to'g'ridan-to'g'ri joyida chop etilishi mumkin, bu esa darhol hujjatlashtirishni ta'minlaydi.",
+  "prod_m100v_feat3_title": "Blokirovkali himoya eshigi",
+  "prod_m100v_feat3_desc": "Himoya eshigi ochiq bo'lganda yuqori kuchlanishni berish avtomatik bloklanadi, bu esa operator xavfsizligini har doim ta'minlaydi.",
+  "prod_m100v_feat4_title": "Tanlanadigan kuchlanish ko'tarish tezliklari",
+  "prod_m100v_feat4_desc": "Muayyan sinov talablari va standartlariga moslashish uchun 0,5; 1; 2 yoki 5 kV/s ko'tarish tezliklarini tanlang.",
+  "prod_m100v_about1": "SKAT-M100V — transformator moyi va boshqa suyuq dielektriklarning teshilish kuchlanishini o'lchash uchun maxsus to'liq avtomatik sinov qurilmasidir. Qurilma IEC 60156 (GOST 6581-75) talablariga qat'iy rioya qiladi va moy sifatini baholash uchun ishonchli va standartlashtirilgan usulni ta'minlaydi.",
+  "prod_m100v_about2": "Qurilma to'liq avtomatik sinov ketma-ketligi, darhol hujjatlashtirish uchun ichki termoprinter va qopqoq ochiq bo'lganda yuqori kuchlanishni berishni bloklaydigan blokirovka tizimiga ega himoya eshigi bilan jihozlangan. Operatorlar muayyan standartlarga moslashish uchun 0,5 dan 5 kV/s gacha kuchlanish ko'tarish tezliklarini tanlashlari mumkin.",
+  "prod_m100v_about3": "Kengaytirilgan ma'lumotlarni boshqarish uchun SKAT-M100V sinov natijalarini batafsil tahlil qilish va arxivlash imkonini beruvchi tashqi kompyuter dasturiga ulanishi mumkin.",
+  "prod_m100v_faq1_q": "SKAT-M100V nima o'lchaydi?",
+  "prod_m100v_faq1_a": "U transformator moyi va boshqa suyuq dielektriklarning teshilish kuchlanishini o'lchaydi, bu esa moyning elektr kuchlanishiga chidamlilik qobiliyatini ko'rsatadi.",
+  "prod_m100v_faq2_q": "Bu sinov xalqaro standartlar bilan qo'llab-quvvatlanadimi?",
+  "prod_m100v_faq2_a": "Ha. Qurilma izolyatsiya suyuqliklarining elektr mustahkamligini sinash uchun asosiy standartlar bo'lgan IEC 60156 va GOST 6581-75 standartlariga to'liq mos keladi.",
+  "prod_m100v_faq3_q": "Teshilish kuchlanishini o'lchash nima uchun muhim?",
+  "prod_m100v_faq3_a": "Teshilish kuchlanishi moydagi ifloslantiruvchilar, namlik yoki zarrachalar mavjudligini ko'rsatadi. Past teshilish qiymatlari transformatorning ishdan chiqishiga olib kelishi mumkin.",
+  "prod_m100v_support1": "Xalqaro standartlar natijalarni sharhlashni va tavsiya etilgan choralarni belgilaydi. Batafsil ma'lumot uchun quyidagi hujjatlarga murojaat qiling:",
+  "prod_m100v_ts1": "Sinov boshlanmaydi: Himoya qopqog'i mahkam yopilganligini tekshiring.",
+  "prod_m100v_ts2": "Beqaror natijalar: Moy namunasi toza ekanligiga va sinov idishi to'g'ri to'ldirilganligiga ishonch hosil qiling.",
+  "prod_m100v_ts3": "Xato kodlari: Xato kodlarining batafsil izohi uchun foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_m100v_soft": "Qurilmaning proshivkasini yangilash yoki ma'lumotlarni boshqarish uchun kompyuter dasturidan foydalanish uchun rasmiy saytimizga kiring yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_m100v_support2": "Izolyatsiya moylarini sinash bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_m100v_title": "SKAT-M100V Moy sinov apparati",
+  "related_m100v_desc": "100 kV gacha moyning teshilish kuchlanishini sinash uchun to'liq avtomatik apparat.",
+  "prod_tangens_title": "SKAT-TANGENS-M Suyuq dielektriklarni sinov qurilmasi",
+  "prod_tangens_subtitle": "Dielektrik yo'qotish burchagi tangensini (tan δ) va nisbiy dielektrik o'tkazuvchanligini yuqori aniqlikda o'lchash.",
+  "prod_tangens_desc": "IEC 60247 va GOST 6581-75 standartlariga to'liq mos keladigan SKAT-TANGENS-M izolyatsiya moylari va boshqa suyuq dielektriklar sifatini nazorat qilish uchun mikroprotsessor boshqaruvli laboratoriya qurilmasidir. U zamonaviy raqamli garmonik tahlildan foydalanib, tan δ va sig'imning to'liq avtomatik o'lchovini ta'minlaydi.",
+  "prod_tangens_feat1_title": "To'liq avtomatik o'lchov sikli",
+  "prod_tangens_feat1_desc": "Haroratni barqarorlashtirishdan ma'lumotlarni yig'ish va tahlil qilishgacha butun jarayon mikrokontroller nazorati ostida to'liq avtomatlashtirilgan.",
+  "prod_tangens_feat2_title": "Yuqori aniqlikdagi raqamli garmonik tahlil",
+  "prod_tangens_feat2_desc": "tan δ va sig'imni o'lchashda yuqori aniqlikni ta'minlash uchun zamonaviy raqamli signal qayta ishlashdan foydalanadi.",
+  "prod_tangens_feat3_title": "110 °C gacha induksion isitish",
+  "prod_tangens_feat3_desc": "Ichki induksion isitish 40 °C dan 110 °C gacha tez va aniq harorat nazoratini ta'minlaydi, ±1 °C bir xillik bilan.",
+  "prod_tangens_feat4_title": "Ichki printer va USB interfeysi",
+  "prod_tangens_feat4_desc": "Natijalar ichki termoprinter orqali to'g'ridan-to'g'ri chop etilishi yoki batafsil tahlil va arxivlash uchun USB orqali kompyuterga uzatilishi mumkin.",
+  "prod_tangens_about1": "SKAT-TANGENS-M — suyuq dielektriklarning dielektrik yo'qotish burchagi tangensini (tan δ) va nisbiy dielektrik o'tkazuvchanligini yuqori aniqlikda o'lchash uchun mikroprotsessor boshqaruvli murakkab qurilmadir. U GOST R IEC 60247-2013 (IEC 60247) talablariga to'liq mos keladi va energiya uskunalarida ishlatiladigan transformator moylari hamda boshqa suyuq dielektriklar sifatiga ishonchli va standartlashtirilgan nazoratni ta'minlaydi.",
+  "prod_tangens_about2": "Sinov qurilmasi xalqaro standartlarda ko'rsatilganidek, elektrodlar orasida 2 mm bo'shliqqa ega zanglamaydigan po'latdan tayyorlangan uch terminalli o'lchov kamerasidan foydalanadi. O'lchov jarayoni to'liq avtomatik bo'lib, yuqori aniqlik uchun raqamli garmonik tahlildan foydalanadi. Ichki induksion isitish tizimi 40 °C dan 110 °C gacha aniq harorat nazoratini ta'minlaydi va dielektrik xususiyatlarning haroratga bog'liqligini tahlil qilish imkonini beradi.",
+  "prod_tangens_about3": "Qurilma intuitiv boshqaruv uchun 7 dyuymli sensorli IPS rangli ekran, 250 tagacha sinov natijasini saqlash uchun ichki xotira va darhol hujjatlashtirish uchun ichki termoprinter bilan jihozlangan. Xavfsizlik uchun himoya qopqog'i ochiq bo'lganda yuqori kuchlanishni berish avtomatik bloklanadi.",
+  "prod_tangens_faq1_q": "SKAT-TANGENS-M nima o'lchaydi?",
+  "prod_tangens_faq1_a": "U izolyatsiya suyuqligi bilan to'ldirilgan sinov kamerasining dielektrik yo'qotish burchagi tangensini (tan δ) va sig'imini o'lchaydi. Bulardan suyuqlikning nisbiy dielektrik o'tkazuvchanligi (ε) hisoblanadi.",
+  "prod_tangens_faq2_q": "Bu sinov xalqaro standartlar bilan qo'llab-quvvatlanadimi?",
+  "prod_tangens_faq2_a": "Ha. Qurilma suyuq dielektriklarning dielektrik xususiyatlarini sinash uchun asosiy standartlar bo'lgan GOST R IEC 60247-2013 (IEC 60247) va GOST 6581-75 standartlariga to'liq mos keladi.",
+  "prod_tangens_faq3_q": "Transformator moyi uchun tan δ o'lchash nima uchun muhim?",
+  "prod_tangens_faq3_a": "Dielektrik yo'qotish burchagi tangensi (tan δ) moyda issiqlik shaklida yo'qotiladigan energiya miqdorini ko'rsatadi. Yuqori tan δ qiymatlari ifloslanish, namlik yoki oksidlanishni ko'rsatadi, bu esa moyning izolyatsiya xususiyatlarini sezilarli darajada pasaytirishi va transformatorning ishdan chiqishiga olib kelishi mumkin.",
+  "prod_tangens_support1": "Xalqaro standartlar natijalarni sharhlashni va tavsiya etilgan choralarni belgilaydi. Batafsil ma'lumot uchun quyidagi hujjatlarga murojaat qiling:",
+  "prod_tangens_ts1": "«START» tugmasi mavjud emas: O'lchov elektrodi yoki koaksial adapter kabeli uzilganligini yoki himoya qopqog'i ochiqligini tekshiring.",
+  "prod_tangens_ts2": "Harorat ko'rsatkichlari «----» ko'rsatadi: Harorat sensori ulangan bo'lmasligi mumkin. Elektrod va koaksial kabel ulanishlarini tekshiring.",
+  "prod_tangens_ts3": "O'lchov paytida xato: Xato kodlari uchun foydalanish qo'llanmasidagi 6-jadvalga murojaat qiling. Umumiy muammolarga elektrod bo'shlig'idagi begona jismlar (Xato 2, 3) yoki nosoz kondensator (Xato 4) kiradi.",
+  "prod_tangens_soft": "Qurilmaning proshivkasini yangilash yoki sinov protokollarini boshqarish uchun servis dasturidan foydalanish uchun rasmiy saytimizga kiring.",
+  "prod_tangens_support2": "Izolyatsiya moylarini sinash bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_tangens_title": "SKAT-TANGENS-M Suyuq dielektriklarni sinov qurilmasi",
+  "related_tangens_desc": "Dielektrik yo'qotish burchagi tangensini va o'tkazuvchanlikni yuqori aniqlikda o'lchash.",
+  "prod_70c_title": "SKAT-70C / 100C Raqamli dielektrik sinov apparatlari",
+  "prod_70c_subtitle": "Kabellar, transformatorlar va izolyatsiyani sinash uchun mikroprotsessor boshqaruvli AC/DC qurilmalari.",
+  "prod_70c_desc": "SKAT-70C va SKAT-100C yuqori kontrastli LCD interfeysi va aniq mikroprotsessor boshqaruvi bilan zamonaviy raqamli dielektrik sinov apparatlaridir. Portativ va 19 dyuymli rack o'rnatish konfiguratsiyalarida mavjud, bu qurilmalar izolyatsiya sinovining eng talabchan qo'llanilishi uchun ishonchli yuqori kuchlanishli AC va DC chiqishlarini ta'minlaydi.",
+  "prod_70c_feat1_title": "Mikrokontroller asosidagi raqamli boshqaruv",
+  "prod_70c_feat1_desc": "Zamonaviy mikrokontroller boshqaruvi 0,1 kV diskretlik bilan aniq kuchlanish nazoratini va aniq o'lchovlarni ta'minlaydi.",
+  "prod_70c_feat2_title": "Yuqori kontrastli LCD displey",
+  "prod_70c_feat2_desc": "Aniq, yuqori kontrastli 6 dyuymli LCD ekran barcha sinov parametrlarini real vaqt rejimida kuzatishni ta'minlaydi.",
+  "prod_70c_feat3_title": "Teshilishni avtomatik aniqlash",
+  "prod_70c_feat3_desc": "Izolyatsiyaning teshilishini darhol aniqlaydi va ortiqcha tok himoyasi bilan sinovni xavfsiz tarzda yakunlaydi.",
+  "prod_70c_feat4_title": "Tashqi xavfsizlik lampasi chiqishi",
+  "prod_70c_feat4_desc": "Laboratoriya xavfsizligini oshirish uchun tashqi ogohlantirish lampalarini ulang. Eshikni aniqlash uchun blokirovka sxemasi.",
+  "prod_70c_about1": "SKAT-70C va SKAT-100C seriyalari raqamli dielektrik sinov apparatlarining keyingi avlodini ifodalaydi. Foydalanuvchiga qulay LCD interfeysi va mikrokontroller boshqaruvi bilan bu qurilmalar izolyatsiya sinovining eng talabchan qo'llanilishi uchun yuqori kuchlanishli AC va DC chiqishlarini aniq sozlash va o'lchashni ta'minlaydi.",
+  "prod_70c_about2": "Teshilishni avtomatik aniqlash, ortiqcha tok himoyasi va maxsus tashqi xavfsizlik lampasi chiqishi bilan bu sinov qurilmalari ham samaradorlik, ham operator xavfsizligini hisobga olgan holda ishlab chiqilgan. Portativ va 19 dyuymli rack o'rnatish konfiguratsiyalari kabi bir nechta form-faktorlar mavjud, bu esa ularni laboratoriya va dala foydalanishi uchun mos qiladi.",
+  "prod_70c_faq1_q": "SKAT-70C va SKAT-100C o'rtasidagi farq nima?",
+  "prod_70c_faq1_a": "SKAT-100C SKAT-70C bilan solishtirganda yuqori kuchlanish chiqishini ta'minlaydi (101 kV DC va 71 kV AC) (71 kV DC va 51 kV AC).",
+  "prod_70c_faq2_q": "Ular 19 dyuymli rack bilan mos keladimi?",
+  "prod_70c_faq2_a": "Ha, ikkala model ham mavjud sinov tizimlariga integratsiya qilish uchun 19 dyuymli rack o'rnatish form-faktorida mavjud.",
+  "prod_70c_faq3_q": "Qanday xavfsizlik funksiyalari mavjud?",
+  "prod_70c_faq3_a": "Qurilmalarga teshilishni avtomatik aniqlash, ortiqcha tok himoyasi va laboratoriya ogohlantirish tizimlari uchun tashqi xavfsizlik lampasi chiqishi kiradi.",
+  "prod_70c_support1": "Kabel va izolyatsiya sinovi bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va quyidagi hujjatlarga murojaat qiling:",
+  "prod_70c_ts1": "Sinov boshlanmaydi: Yuqori kuchlanishli blok to'g'ri ulanganligini va xavfsizlik blokirovkasi yopiq ekanligini tekshiring.",
+  "prod_70c_ts2": "Displey javob bermaydi: Quvvat manbaini va ichki ulanishlarni tekshiring.",
+  "prod_70c_ts3": "Sinov paytida xato: Xato kodlari izohi uchun foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_70c_soft": "Qurilmaning proshivkasini yangilash yoki dasturiy ta'minot bilan bog'liq savollar uchun texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_70c_support2": "Batafsil texnik qaydlar va manbalar uchun qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_70m_title": "SKAT-70M / 70MA Analog dielektrik sinov apparatlari",
+  "prod_70m_subtitle": "Dala va laboratoriya sharoitlari uchun ishonchli analog qurilmalar (1–71 kV).",
+  "prod_70m_desc": "Ishonchli va mustahkam SKAT-70M seriyasi dala va laboratoriya sharoitlarida elektr mustahkamligiga sinash uchun sanoat standartidir. Salbiy (70M) yoki musbat (70MA) DC polaritesi bilan mavjud, bu qurilmalar elektr kabellari, cheklovchilar va shaxsiy himoya vositalarining izolyatsiyasini diagnostika qilish uchun sinusoidal AC kuchlanishini (50 Hz) va tartibga solinadigan DC chiqishini generatsiya qiladi.",
+  "prod_70m_feat1_title": "Ikki rejim: qo'lda va avtomatik sinov ketma-ketliklari",
+  "prod_70m_feat1_desc": "Enkoder orqali aniq qo'lda boshqarish yoki barqaror va takrorlanadigan natijalar uchun to'liq avtomatik sinov ketma-ketliklari o'rtasida tanlang.",
+  "prod_70m_feat2_title": "Dasturlashtiriladigan sinov taymeri va teshilishni aniqlash",
+  "prod_70m_feat2_desc": "Dasturlashtiriladigan taymer bilan maxsus sinov muddatlarini belgilang. Qurilma teshilishlarni avtomatik aniqlaydi, sinovni to'xtatadi va kuchlanish darajasini ushlab turadi.",
+  "prod_70m_feat3_title": "Operator xavfsizligi uchun ikki blokli konstruksiya",
+  "prod_70m_feat3_desc": "Alohida boshqaruv va yuqori kuchlanishli bloklar, shuningdek avtomatik yerga ulash shtangi va ichki ortiqcha tok himoyasi yuqori kuchlanishli ishlarda maksimal xavfsizlikni ta'minlaydi.",
+  "prod_70m_feat4_title": "Ichki xavfsizlik funksiyalari",
+  "prod_70m_feat4_desc": "Standart funksiyalarga kuchlanishni cheklash, transformatorning haddan tashqari qizishidan himoya va tashqi laboratoriya eshiklari uchun xavfsizlik blokirovkasi kiradi.",
+  "prod_70m_about1": "SKAT-70M seriyasi — AC va DC bilan elektr mustahkamligiga sinash uchun ishonchli yuqori kuchlanishli sinov qurilmalaridir. Ular elektr kabellari, cheklovchilar, qattiq dielektriklar va shaxsiy himoya vositalarining izolyatsiyasini diagnostika qilish uchun sinusoidal AC kuchlanishini (50 Hz) va DC kuchlanishini (salbiy yoki musbat polarite) generatsiya qiladi. Bu ikki tomonlama funksionallik uni energiya tarmoqlariga xizmat ko'rsatuvchi jamoalar va sinov laboratoriyalari uchun ajralmas vositaga aylantiradi.",
+  "prod_70m_about2": "Ishonchlilik uchun ishlab chiqilgan tizim boshqaruv va yuqori kuchlanishli qismlarni ajratuvchi ikki blokli konstruksiyaga ega, bu esa foydalanish xavfsizligini sezilarli darajada oshiradi. Aniq LCD displey va yuqori aniqlikdagi aylanuvchi enkoder bilan intuitiv boshqaruv paneli operatorlarga sinov parametrlari ustidan to'liq nazoratni ta'minlaydi.",
+  "prod_70m_about3": "SKAT-70M ning avtomatik sinov ketma-ketliklari dasturlashtiriladigan kuchlanish ko'tarish tezliklarini, avtomatik o'chirish bilan teshilishni aniqlashni va sinovdan keyin sig'imli yuklarning xavfsiz zaryadsizlanishini ta'minlaydigan ishonchli yerga ulash mexanizmini o'z ichiga oladi.",
+  "prod_70m_faq1_q": "SKAT-70M va SKAT-70MA o'rtasidagi farq nima?",
+  "prod_70m_faq1_a": "Asosiy farq DC chiqish kuchlanishining polaritesida. SKAT-70M salbiy polariteli DC kuchlanishini ta'minlaydi, SKAT-70MA esa musbat polariteli DC kuchlanishini ta'minlaydi.",
+  "prod_70m_faq2_q": "Buni kabel sinovi uchun ishlatish mumkinmi?",
+  "prod_70m_faq2_a": "Ha. SKAT-70M seriyasi IEC 60060 kabi standartlar talablariga javob berish uchun mo'ljallangan elektr kabellarining yuqori kuchlanishli elektr mustahkamligiga sinovi uchun juda mos keladi.",
+  "prod_70m_faq3_q": "Qanday xavfsizlik funksiyalari mavjud?",
+  "prod_70m_faq3_a": "Tizim yuqori kuchlanishli blokda avtomatik yerga ulash shtanglarini, ortiqcha tok himoyasini, transformatorning haddan tashqari qizishidan himoyani va tashqi blokirovka imkoniyatlarini o'z ichiga oladi.",
+  "prod_70m_support1": "Kabel va SHV sinovi bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va quyidagi hujjatlarga murojaat qiling:",
+  "prod_70m_ts1": "Sinov boshlanmaydi: Yuqori kuchlanishli blok to'g'ri ulanganligini va xavfsizlik blokirovkasi yopiq ekanligini tekshiring.",
+  "prod_70m_ts2": "Xato xabarlari: Tizim diagnostik xabarlarining batafsil izohi uchun foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_70m_ts3": "Beqaror ko'rsatkichlar: Yerga ulash mustahkam ekanligiga va barcha ulanishlar mahkam ekanligiga ishonch hosil qiling.",
+  "prod_70m_soft": "Qurilmaning proshivkasini yangilash yoki ma'lumotlarni boshqarish dasturi bo'yicha yordam olish uchun rasmiy saytimizga kiring yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_70m_support2": "Yuqori kuchlanishli dielektrik sinovi bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "prod_70p_title": "SKAT-70P O'lchov qo'shimchasi",
+  "prod_70p_subtitle": "SHV sinovi uchun 4 kanalli oqish tokini o'lchash qo'shimchasi.",
+  "prod_70p_desc": "SKAT-70P — elektr shaxsiy himoya vositalarini (SHV) oqish tokiga sinash uchun yuqori kuchlanishli manbalar bilan ishlashga mo'ljallangan maxsus o'lchov qo'shimchasidir. U bir vaqtning o'zida to'rttagacha mahsulotni sinash imkonini beradi va sinov vaqtini sezilarli darajada qisqartiradi.",
+  "prod_70p_feat1_title": "4 kanalda bir vaqtda sinash",
+  "prod_70p_feat1_desc": "Bir vaqtning o'zida to'rttagacha SHV mahsulotini sinang. Har bir kanal mustaqil ishlaydi va oqish tokini real vaqt rejimida ko'rsatadi.",
+  "prod_70p_feat2_title": "Real vaqt rejimida tok monitoringi",
+  "prod_70p_feat2_desc": "Har bir kanalning oqish toki LCD ekranda real vaqt rejimida ko'rsatiladi va darhol qayta aloqani ta'minlaydi.",
+  "prod_70p_feat3_title": "Tovush-yorug'lik xavfsizlik signalizatsiyasi",
+  "prod_70p_feat3_desc": "Yuqori kuchlanish aktivligi, teshilishni aniqlash va sinov tugashi uchun ichki ko'rsatkichlar.",
+  "prod_70p_feat4_title": "Uzluksiz integratsiya",
+  "prod_70p_feat4_desc": "Standart yuqori kuchlanishli sinov qurilmalari uchun mo'ljallangan: SKAT-70M, SKAT-70C, AID-70C va o'xshash manbalar.",
+  "prod_70p_about1": "SKAT-70P — elektr shaxsiy himoya vositalarini (SHV) oqish tokiga sinash uchun yuqori kuchlanishli manbalar bilan ishlashga mo'ljallangan maxsus o'lchov qo'shimchasidir. U bir vaqtning o'zida to'rttagacha mahsulotni sinash imkonini beradi va sinov vaqtini sezilarli darajada qisqartiradi.",
+  "prod_70p_about2": "Uning modulli konstruksiyasi standart yuqori kuchlanishli sinov qurilmalari bilan uzluksiz integratsiyani ta'minlaydi, bu esa uni istalgan yuqori kuchlanishli xavfsizlik laboratoriyasi uchun universal va ajralmas vositaga aylantiradi. Tizim sinov vannasi, boshqaruv bloki va to'liq ulanish kabellari to'plamini o'z ichiga oladi.",
+  "prod_70p_faq1_q": "Bir vaqtning o'zida nechta mahsulotni sinash mumkin?",
+  "prod_70p_faq1_a": "To'rttagacha SHV mahsulotini bir vaqtning o'zida sinash mumkin, har bir kanalda oqish tokining mustaqil o'lchovi bilan.",
+  "prod_70p_faq2_q": "Bu qaysi yuqori kuchlanishli sinov qurilmalari bilan mos keladi?",
+  "prod_70p_faq2_a": "SKAT-70P SKAT-70M, SKAT-70C va AID-70C seriyalari, shuningdek tegishli boshqaruv interfeyslariga ega boshqa yuqori kuchlanishli manbalar uchun mo'ljallangan.",
+  "prod_70p_faq3_q": "Tovush-yorug'lik signalizatsiyasi nimani bildiradi?",
+  "prod_70p_faq3_a": "Tizim «Yuqori kuchlanish faol», «Teshilish aniqlandi» va «Sinov tugadi» holatlari uchun aniq tovush-yorug'lik signallarini ta'minlaydi va operatorning har doim xabardor bo'lishini ta'minlaydi.",
+  "prod_70p_support1": "SHV sinovi bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va quyidagi standartlarga murojaat qiling:",
+  "prod_70p_ts1": "Tok ko'rsatkichlari yo'q: Ulanishlarni tekshiring va sinov vannasi to'g'ri yerga ulanganligiga ishonch hosil qiling.",
+  "prod_70p_ts2": "Beqaror ko'rsatkichlar: Sinov obyektlari toza ekanligiga va vannada to'g'ri joylashtirilganligiga ishonch hosil qiling.",
+  "prod_70p_ts3": "Aloqa xatosi: Boshqaruv bloki va sinov vannasi o'rtasidagi kabel ulanishlarini tekshiring.",
+  "prod_70p_soft": "Bu qurilma dasturiy ta'minot yoki proshivka yangilanishini talab qilmaydi. Har qanday savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_70p_support2": "SHV sinovi bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_70p_title": "SKAT-70P O'lchov qo'shimchasi",
+  "related_70p_desc": "SHV kompleks sinovi uchun 4 kanalli oqish tokini o'lchash qo'shimchasi.",
+  "prod_svs_title": "SKAT-SVS Seriyasi Yuqori kuchlanishli statsionar sinov stendlari",
+  "prod_svs_subtitle": "Kabellar, SHV va izolyatorlar uchun komplekt statsionar yuqori kuchlanishli tizimlar.",
+  "prod_svs_desc": "SKAT-SVS seriyasi — elektr kabellari, izolyatorlar va shaxsiy himoya vositalarini (SHV) qabul qilish- topshirish va foydalanish sinovlari uchun komplekt statsionar yuqori kuchlanishli sinov tizimlaridir. 20 kV dan 100 kV gacha modullar bilan uch konfiguratsiyada mavjud, bu tizimlar 4 kanalgacha oqish tokini o'lchash va to'liq dasturlashtiriladigan sinov profillarini taklif qiladi.",
+  "prod_svs_feat1_title": "4 kanalli oqish tokini o'lchash",
+  "prod_svs_feat1_desc": "Samarali SHV sinovi uchun 4 tagacha obyektda oqish tokini bir vaqtda o'lchash.",
+  "prod_svs_feat2_title": "Dasturlashtiriladigan sinov profillari",
+  "prod_svs_feat2_desc": "Takrorlanadigan sinovlar uchun foydalanuvchi tomonidan belgilangan parametrlar bilan 10 tagacha maxsus sinov dasturini saqlang va chaqiring.",
+  "prod_svs_feat3_title": "Teshilishni avtomatik aniqlash",
+  "prod_svs_feat3_desc": "Teshilishni avtomatik aniqlaydi va tahlil uchun kuchlanish darajasini ushlab turadi, darhol o'chirish bilan.",
+  "prod_svs_feat4_title": "Rack o'rnatiladigan boshqaruv bloki",
+  "prod_svs_feat4_desc": "Mavjud sinov tizimlari va laboratoriyalarga integratsiya uchun 19 dyuymli rack o'rnatiladigan boshqaruv bloki.",
+  "prod_svs_about1": "SKAT-SVS seriyasi — qabul qilish- topshirish va foydalanish sinovlarining keng doirasi uchun komplekt statsionar yuqori kuchlanishli sinov tizimlaridir. Ular elektr kabellari, izolyatorlar va shaxsiy himoya vositalarini (SHV) sinashga qodir.",
+  "prod_svs_about2": "Tizim 4 kanalli oqish tokini o'lchash, dasturlashtiriladigan sinov profillari (10 oldindan o'rnatilgan), teshilishni avtomatik aniqlash va 19 dyuymli rack o'rnatiladigan boshqaruv blokini o'z ichiga oladi. Alohida yuqori kuchlanishli modullar tizimning masshtablanishi va moslashuvchanligini ta'minlaydi. Sinov vannasi 4 ta bir vaqtda kanal bilan etiklar, qo'lqoplar va izolyatsiyalangan asboblarni samarali sinash uchun mo'ljallangan.",
+  "prod_svs_faq1_q": "Uchta SVS modeli o'rtasidagi farq nima?",
+  "prod_svs_faq1_a": "Modellar to'plamga kiritilgan yuqori kuchlanishli bloklar soni va turi bilan farqlanadi. SVS-50C bitta 50 kV blokni, SVS-100C ikkita 50 kV blokni, SVS-100-20C esa bitta 100 kV va bitta 20 kV blokni o'z ichiga oladi.",
+  "prod_svs_faq2_q": "Bu tizim bilan SHV sinash mumkinmi?",
+  "prod_svs_faq2_a": "Ha. Tizim 4 kanalli oqish tokini o'lchash bilan dielektrik etiklar, qo'lqoplar va asboblar uchun sinov vannasi bilan jihozlangan.",
+  "prod_svs_faq3_q": "Qanday xavfsizlik funksiyalari mavjud?",
+  "prod_svs_faq3_a": "Tizim barcha yuqori kuchlanishli bloklarda avtomatik yerga ulash shtanglarini, haddan tashqari kuchlanish va tok himoyasini, shuningdek laboratoriya eshiklari uchun tashqi blokirovka ulagichini o'z ichiga oladi.",
+  "prod_svs_support1": "Sinov protseduralari va natijalarni sharhlash bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va tegishli IEC standartlariga murojaat qiling.",
+  "prod_svs_ts1": "To'g'ri yerga ulashni ta'minlang: Yuqori kuchlanishli ulanishlarni tekshiring. Sinov obyekti to'g'ri joylashtirilganligiga ishonch hosil qiling.",
+  "prod_svs_ts2": "Ulanish xatosi: Boshqaruv bloki va yuqori kuchlanishli bloklar o'rtasidagi kabellarni tekshiring.",
+  "prod_svs_ts3": "Haddan tashqari qizish: Ventilyatsiya to'silmaganligiga ishonch hosil qiling.",
+  "prod_svs_soft": "Dasturiy ta'minot yoki kalibrlash bo'yicha savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_svs_support2": "Yuqori kuchlanishli sinov bo'yicha batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_svs_title": "SKAT-SVS Statsionar sinov stendlari",
+  "related_svs_desc": "Kabellar va SHV uchun komplekt statsionar yuqori kuchlanishli tizimlar.",
+  "prod_stend50_title": "SKAT-STEND-50 Sinov stendi",
+  "prod_stend50_subtitle": "Izolyatsiyalovchi shtanglar va kuchlanish ko'rsatkichlarini 50 kV gacha sinash uchun stend.",
+  "prod_stend50_desc": "SKAT-STEND-50 — podstansiyalar va elektr uzatish liniyalarida ishlatiladigan izolyatsiyalovchi shtanglar, kuchlanish ostida ishlash asboblari va yuqori kuchlanish ko'rsatkichlarini yuqori kuchlanishli sinash uchun mo'ljallangan universal sinov stendidir. Uning modulli konstruksiyasi stendni oson yig'ish va qismlarga ajratish imkonini beradi, bu esa uni dala va laboratoriya foydalanishi uchun ideal qiladi.",
+  "prod_stend50_feat1_title": "50 kV gacha AC kuchlanishi bilan sinashni qo'llab-quvvatlaydi",
+  "prod_stend50_feat1_desc": "Izolyatsiyalovchi shtanglar, kuchlanish ostida ishlash asboblari va kuchlanish ko'rsatkichlarini 50 kV gacha sinash uchun mo'ljallangan.",
+  "prod_stend50_feat2_title": "Qismlarga bo'lib sinash",
+  "prod_stend50_feat2_desc": "Bitta obyektni 5 qismgacha yoki ikkita obyektni har biri 2 qismgacha sinash imkonini beradi.",
+  "prod_stend50_feat3_title": "Modulli konstruksiya",
+  "prod_stend50_feat3_desc": "Tashish va saqlash uchun oson yig'ish va qismlarga ajratish. Dielektrik asoslar to'plamda.",
+  "prod_stend50_feat4_title": "To'liq aksessuarlar to'plami",
+  "prod_stend50_feat4_desc": "Yuqori kuchlanishli kabellar, yerga ulash simlari va 15 ta vaqtinchalik elektrodni o'z ichiga oladi.",
+  "prod_stend50_about1": "SKAT-STEND-50 — podstansiyalar va elektr uzatish liniyalarida 50 kV gacha ishlatiladigan izolyatsiyalovchi shtanglar, kuchlanish ostida ishlash asboblari va yuqori kuchlanish ko'rsatkichlarini yuqori kuchlanishli sinash uchun mo'ljallangan universal sinov stendidir.",
+  "prod_stend50_about2": "Uning modulli konstruksiyasi stendni oson yig'ish va qismlarga ajratish imkonini beradi. Stend qismlarga bo'lib sinashni qo'llab-quvvatlaydi, bu esa bitta obyektni 5 qismgacha yoki ikkita obyektni bir vaqtda har biri 2 qismgacha sinash imkonini beradi. To'plamga obyektlarni xavfsiz joylashtirish uchun dielektrik asoslar, yuqori kuchlanishli va yerga ulash simlarining to'liq to'plami, shuningdek 15 ta vaqtinchalik elektrod kiradi.",
+  "prod_stend50_faq1_q": "Maksimal sinov kuchlanishi qancha?",
+  "prod_stend50_faq1_a": "Stend 50 kV AC bilan sinashni qo'llab-quvvatlaydi. U 50 kV gacha podstansiyalarda ishlatiladigan izolyatsiyalovchi shtanglar, kuchlanish ostida ishlash asboblari va kuchlanish ko'rsatkichlari uchun mo'ljallangan.",
+  "prod_stend50_faq2_q": "Bir vaqtning o'zida nechta obyektni sinash mumkin?",
+  "prod_stend50_faq2_a": "Stend bir vaqtning o'zida ikkita obyektgacha sinashni qo'llab-quvvatlaydi. Bitta obyekt uchun 5 qismgacha sinash mumkin.",
+  "prod_stend50_faq3_q": "To'plamga nima kiradi?",
+  "prod_stend50_faq3_a": "To'plamga sinov stoli, dielektrik asoslar, yuqori kuchlanishli kabellar, yerga ulash simlari va 15 ta vaqtinchalik elektrod kiradi.",
+  "prod_stend50_support1": "Sinov protseduralari va natijalarni sharhlash bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga va tegishli IEC standartlariga murojaat qiling.",
+  "prod_stend50_ts1": "To'g'ri yerga ulashni ta'minlang: Yuqori kuchlanishli ulanishlarni tekshiring. Sinov obyekti to'g'ri joylashtirilganligiga ishonch hosil qiling.",
+  "prod_stend50_ts2": "Beqaror ko'rsatkichlar: Sinov obyektlari toza ekanligiga va to'g'ri mahkamlanganligiga ishonch hosil qiling.",
+  "prod_stend50_ts3": "Ulanish xatosi: Kabel ulanishlarini tekshiring.",
+  "prod_stend50_soft": "Bu qurilma dasturiy ta'minot yoki proshivka yangilanishini talab qilmaydi. Har qanday savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_stend50_support2": "Batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_stend50_title": "SKAT-STEND-50 Sinov stendi",
+  "related_stend50_desc": "Izolyatsiyalovchi shtanglar va kuchlanish ko'rsatkichlarini 50 kV gacha sinash uchun stend.",
+  "prod_ubsvn_title": "UBSVN-LM Xavfsizlik blokirovkasi va tovush-yorug'lik signalizatsiyasi",
+  "prod_ubsvn_subtitle": "Yuqori kuchlanishli laboratoriyalar uchun xavfsizlik blokirovkasi va tovush-yorug'lik signalizatsiyasi.",
+  "prod_ubsvn_desc": "UBSVN-LM — yuqori kuchlanishli sinov laboratoriyalari uchun mo'ljallangan muhim xavfsizlik qurilmasidir. U yuqori kuchlanish faol bo'lganda aniq tovush-yorug'lik ogohlantirishini ta'minlaydi va laboratoriya eshigi ochilganda yuqori kuchlanishli manbaning quvvatini jismonan bloklaydi, xodimlarni tasodifiy ta'sirdan himoya qiladi.",
+  "prod_ubsvn_feat1_title": "Yuqori intensivlikdagi ogohlantirish lampasi",
+  "prod_ubsvn_feat1_desc": "Yorqin yorug'lik sharoitlarida ham aniq ko'rinish uchun ≥500 lyuks kontrast idrok etish.",
+  "prod_ubsvn_feat2_title": "Baland tovushli signalizatsiya",
+  "prod_ubsvn_feat2_desc": "1 metr masofada ≥95 dB tovush darajasi.",
+  "prod_ubsvn_feat3_title": "Eshikni aniqlash uchun xavfsizlik blokirovkasi",
+  "prod_ubsvn_feat3_desc": "Oddiy ochiq chegara kaliti bilan eshik ochilishini aniqlash.",
+  "prod_ubsvn_feat4_title": "Keng harorat bardoshliligi",
+  "prod_ubsvn_feat4_desc": "-30 °C dan +55 °C gacha ishonchli ishlaydi.",
+  "prod_ubsvn_about1": "UBSVN-LM — yuqori kuchlanishli sinov laboratoriyalari uchun mo'ljallangan muhim xavfsizlik qurilmasidir. U yuqori kuchlanish faol bo'lganda aniq tovush-yorug'lik ogohlantirishini ta'minlaydi va laboratoriya eshigi ochilganda yuqori kuchlanishli manbaning quvvatini jismonan bloklaydi, xodimlarni tasodifiy ta'sirdan himoya qiladi.",
+  "prod_ubsvn_about2": "Qurilma SKAT-70M, SKAT-70C, SKAT-70C/100C, SKAT-SVS seriyalari va oddiy ochiq quruq kontakli blokirovka sxemasiga ega boshqa yuqori kuchlanishli sinov uskunalari bilan mos keladi. O'rnatish oddiy, foydalanish qo'llanmasida aniq ulanish sxemalari berilgan.",
+  "prod_ubsvn_faq1_q": "Bu blokirovka qaysi qurilmalar bilan mos keladi?",
+  "prod_ubsvn_faq1_a": "U SKAT-70M/70MA, SKAT-70C/100C seriyalari, SKAT-SVS seriyasi va oddiy ochiq quruq kontakli blokirovka sxemasiga ega boshqa yuqori kuchlanishli manbalar bilan mos keladi.",
+  "prod_ubsvn_faq2_q": "Signal qanchalik baland?",
+  "prod_ubsvn_faq2_a": "Tovush bosimi darajasi 1 metr masofada kamida 95 dB.",
+  "prod_ubsvn_faq3_q": "Ish harorati diapazoni qancha?",
+  "prod_ubsvn_faq3_a": "Qurilma -30 °C dan +55 °C gacha ishonchli ishlaydi.",
+  "prod_ubsvn_support1": "O'rnatish va nosozliklarni bartaraf etish bo'yicha batafsil ma'lumot uchun uskunaning foydalanish qo'llanmasiga murojaat qiling.",
+  "prod_ubsvn_ts1": "To'g'ri simlarni ta'minlang: ulanish sxemasiga muvofiq. Chegara kaliti eshikka to'g'ri o'rnatilganligini tekshiring. Quvvat manbaini tekshiring.",
+  "prod_ubsvn_ts2": "Signal yo'q: Chegara kaliti ulanishini va quvvat manbaini tekshiring.",
+  "prod_ubsvn_ts3": "Blokirovka ishga tushmaydi: Ulanish sxemasini tekshiring.",
+  "prod_ubsvn_soft": "Bu qurilma dasturiy ta'minot yoki proshivka yangilanishini talab qilmaydi. Har qanday savollar uchun texnik qo'llab-quvvatlashga murojaat qiling.",
+  "prod_ubsvn_support2": "Batafsil texnik qaydlar, qo'llanmalar va akademik manbalar uchun saytimizdagi bilim bazasiga murojaat qiling yoki texnik qo'llab-quvvatlash jamoamiz bilan bog'laning.",
+  "related_ubsvn_title": "UBSVN-LM Xavfsizlik blokirovkasi",
+  "related_ubsvn_desc": "Yuqori kuchlanishli laboratoriyalar uchun tovush-yorug'lik signalizatsiyasi va xavfsizlik blokirovkasi.",
+  "footer_rights": "© 2026 IEF SKAT. Barcha huquqlar himoyalangan.",
+  "footer_company_desc": "2006-yildan beri yuqori kuchlanishli muhandislik.",
+  "footer_contact_title": "Aloqa",
+  "footer_contact_address": "Volgograd, Rossiya",
+  "footer_downloads_title": "Yuklab olishlar",
+  "footer_downloads_catalog": "Katalog",
+  "footer_downloads_brochure": "Broshyura",
+  "footer_shipping_title": "Yetkazib berish",
+  "footer_shipping_from": "Volgograddan",
+  "footer_shipping_world": "Butun dunyoga yetkazib berish",
+  "footer_shipping_warranty": "18 oylik kafolat",
+  "about_hero_title": "IEF SKAT haqida",
+  "about_hero_subtitle": "Muhandislik yaxlitligiga asoslangan. Xavfsizlik, aniqlik va yuqori kuchlanishli diagnostika ishonchliligiga sodiqmiz.",
+  "about_hero_text": "Volgograddagi akkreditatsiyalangan metrologiya laboratoriyamizdan butun dunyodagi energiya tarmoqlarigacha — biz sanoat ishonadigan sinov yechimlarini yetkazib beramiz.",
+  "about_video_title": "2006-yildan beri muhandislik mukammalligi",
+  "about_video_subtitle": "O'z konstruktorlik byuromizdan 2000 m² ishlab chiqarish zaligacha — biz jarayonning har bir bosqichini nazorat qilamiz, bu esa murosasiz sifatni ta'minlaydi.",
+  "about_value_title": "Har bir ulanishda ishonch.",
+  "about_value_text1": "IEF SKAT'da biz shunchaki sinov uskunalarini yaratmaymiz — biz ishonch yaratamiz. Yuqori kuchlanishli laboratoriyadan podstansiyagacha, moy tahlilidan metrologik tekshiruvgacha — bizning asboblarimiz muhandislarga energiyani xavfsiz va ishonchli yetkazish uchun zarur bo'lgan muhim ma'lumotlarni beradi.",
+  "about_value_text2": "Bizning yo'limiz 2006-yilda energiya sektorining qat'iy talablariga javob beradigan yuqori kuchlanishli sinov yechimlarini yaratish missiyasi bilan boshlangan. Bugun biz YEOI, Yevropa, Osiyo va Yaqin Sharq bo'ylab mijozlarga xizmat ko'rsatadigan o'z akkreditatsiyalangan metrologiya laboratoriyasiga ega to'liq siklli ishlab chiqaruvchimiz.",
+  "about_cta": "Jamoamiz bilan bog'laning",
+  "about_diff_title": "IEF SKAT'ni nima ajratib turadi",
+  "about_diff1_title": "100% ichki muhandislik",
+  "about_diff1_desc": "Biz o'z apparat ta'minotimiz, dasturiy ta'minotimiz va proshivkalarimizni ishlab chiqamiz va ishlab chiqaramiz, bu esa sifat va innovatsiyalar ustidan to'liq nazoratni ta'minlaydi.",
+  "about_diff2_title": "Akkreditatsiyalangan metrologiya laboratoriyasi",
+  "about_diff2_desc": "Biz o'z akkreditatsiyalangan metrologiya laboratoriyamizni saqlab turamiz va har bir qurilma jo'natilishidan oldin qat'iy kalibrlash va tekshiruvdan o'tishiga kafolat beramiz.",
+  "about_diff3_title": "Xavfsizlik birinchi o'rinda bo'lgan dizayn falsafasi",
+  "about_diff3_desc": "Ichki xavfsizlik blokirovkalari, avtomatik yerga ulash va ishonchli ortiqcha tok himoyasi bizning mahsulot liniyamiz uchun standartdir.",
+  "about_diff4_title": "Global muvofiqlik va servis",
+  "about_diff4_desc": "Rossiya, Belarus va Qozog'iston davlat reyestrlariga kiritilgan. 18 oylik kafolat va ixtisoslashgan servis markazlari bilan ta'minlangan.",
+  "about_global_title": "Global energiya sanoatiga xizmat",
+  "about_global_desc": "Volgograddagi ishlab chiqarish bazamizdan Yevropa, Osiyo va Yaqin Sharqdagi distribyutorlarimizgacha — biz yuqori kuchlanishli sinov yechimlarini eng kerakli joylarga yetkazamiz.",
+  "about_global1_title": "Energiya kompaniyalari va podstansiyalar",
+  "about_global1_desc": "Transformatorlar, kabel liniyalari va taqsimlash qurilmalarini sinash va diagnostika qilish.",
+  "about_global2_title": "Metrologiya va kalibrlash laboratoriyalari",
+  "about_global2_desc": "Metrologik tekshiruv uchun yuqori aniqlikdagi kilovoltmetrlar va aktiv yuklar.",
+  "about_global3_title": "Sanoat va korxona xavfsizligi",
+  "about_global3_desc": "SHV sinov uskunalari: dielektrik qo'lqoplar, etiklar va kuchlanish ostida ishlash asboblari.",
+  "support_hero_title": "Mijozlarimiz uchun professional servis",
+  "support_hero_subtitle": "Uskunangizning ishonchliligi bizning asosiy ustuvor yo'nalishimizdir",
+  "support_hero_text": "Biz butun dunyoda yuqori malakali mutaxassislar tomonidan bajariladigan keng ko'lamli xizmatlarni taklif qilamiz. Bunga texnik qo'llab-quvvatlash, ehtiyot qismlar yetkazib berish, muntazam texnik xizmat ko'rsatish, yillik kalibrlash va nosozliklar yuzaga kelganda ta'mirlash, shuningdek qurilmalarimizdan foydalanish bo'yicha o'qitish kiradi.",
+  "support_hero_text2": "Maqsadimiz sizning shaxsiy ehtiyojlaringizga moslashtirilgan birinchi darajali mijozlar xizmatini taqdim etishdir. Servis xizmatiga yozilish uchun biz bilan bog'laning.",
+  "support_cta": "Qo'llab-quvvatlash xizmati bilan bog'lanish",
+  "support_services_title": "Xizmatlarimiz",
+  "support_service1_title": "Texnik qo'llab-quvvatlash",
+  "support_service1_desc": "Nosozliklarni bartaraf etish, foydalanish bo'yicha ko'rsatmalar va texnik so'rovlar uchun muhandislik jamoamizga to'g'ridan-to'g'ri kirish.",
+  "support_service2_title": "Kalibrlash va sozlash",
+  "support_service2_desc": "Aniqlik va standartlarga muvofiqlikni ta'minlash uchun uskunangizni sertifikatlangan kalibrlash va metrologik tekshiruv.",
+  "support_service3_title": "O'qitish va kurslar",
+  "support_service3_desc": "SKAT uskunalarini ishlatish, texnik xizmat ko'rsatish va xavfsizligi bo'yicha diler xodimlari va yakuniy foydalanuvchilar uchun professional o'qitish.",
+  "support_warranty_title": "Kafolat",
+  "support_warranty_main": "Asosiy uskuna:",
+  "support_warranty_main_desc": "Barcha ishlab chiqarish nuqsonlarini qoplaydigan 18 oylik kafolat.",
+  "support_warranty_accessories": "Aksessuarlar:",
+  "support_warranty_accessories_desc": "UBSVN-LM — 12 oy / IK 100-0.4 — 6 oy.",
+  "support_warranty_note": "Foydalanish qo'llanmalariga rioya qilingan taqdirda kafolat muddati davomida bepul ta'mirlash.",
+  "support_centers_title": "Servis markazlari",
+  "support_center1": "Asosiy markaz:",
+  "support_center1_val": "Volgograd, Rossiya",
+  "support_center2": "Regional markaz:",
+  "support_center2_val": "Minsk, Belarus",
+  "support_center3": "Avtorizatsiya qilingan hamkorlar:",
+  "support_center3_val": "Qozog'iston",
+  "support_centers_note": "Rus va ingliz tillarida ko'p tilli qo'llab-quvvatlash mavjud.",
+  "academy_hero_title": "SKAT Akademiyasi",
+  "academy_hero_subtitle": "Yuqori kuchlanishli sinov va diagnostika bo'yicha ekspert o'qitish",
+  "academy_hero_text": "Biz sizning shaxsiy ehtiyojlaringizga moslashtirilgan yuqori sifatli o'quv kurslarini taklif qilamiz. Diler, texnik xizmat muhandisi yoki laborant bo'lasizmi — bizning dasturlarimiz SKAT uskunalarini ishlatish, texnik xizmat ko'rsatish va xavfsizligini qamrab oladi.",
+  "academy_hero_text2": "Kurs portfelimiz doimiy ravishda kengayib bormoqda. Maxsus talablar yoki takliflar bo'lsa, bizga xabar bering — fikr-mulohazalaringiz taklifimizni yanada yaxshilashga yordam beradi.",
+  "academy_cta": "O'qitish bo'yicha biz bilan bog'laning",
+  "academy_cta_title": "Qiziqasizmi?",
+  "academy_cta_text": "Qaysi mavzular va formatlar sizni qiziqtirishini ayting — jamoangiz uchun o'quv dasturini tayyorlaymiz.",
+  "academy_cta_btn": "Sizni nima qiziqtirishini ayting",
+  "applications_hero_title": "Qo'llash sohalari",
+  "applications_hero_subtitle": "Energetika sanoatiga ishonch uyg'otamiz.",
+  "applications_1_title": "Elektr kabellarini sinash",
+  "applications_1_desc": "Bizning AC/DC yuqori kuchlanishli sinov qurilmalarimiz (SKAT-70M, SKAT-70C) o'rta va yuqori kuchlanishli elektr kabellarini diagnostik sinash va elektr mustahkamligiga sinash uchun yaratilgan.",
+  "applications_2_title": "Transformator moyini sinash",
+  "applications_2_desc": "Biz suyuq dielektriklarni tahlil qilish uchun kompleks yechimlarni taklif qilamiz: SKAT-M100V teshilish kuchlanishini o'lchash uchun, SKAT-TANGENS-M esa tan δ yuqori aniqlikdagi o'lchovlar uchun.",
+  "applications_3_title": "Podstansiya diagnostikasi",
+  "applications_3_desc": "Bizning statsionar sinov stendlari (SKAT-SVS seriyasi) va sinov stendlari (SKAT-STEND-50) izolyatorlar, cheklovchilar va tok transformatorlarini sinash uchun mo'ljallangan.",
+  "applications_4_title": "SHV sinovi",
+  "applications_4_desc": "Bizning SKAT-70P qo'shimchasi va SKAT-SVS tizimlari dielektrik qo'lqoplar, etiklar va kuchlanish ostida ishlash asboblarini tizimli sinash imkonini beradi.",
+  "certifications_hero_title": "Sertifikatlar va standartlar",
+  "certifications_hero_subtitle": "Global muvofiqlik va sifat kafolati.",
+  "certifications_state_title": "Davlat reyestrlari",
+  "certifications_state_ru": "Rossiya:",
+  "certifications_state_ru_val": "№ 93557-24, 95985-25, 87761-22, 82533-21, 89524-23, 74644-19",
+  "certifications_state_by": "Belarus",
+  "certifications_state_kz": "Qozog'iston",
+  "certifications_state_kg": "Qirg'iziston",
+  "certifications_state_tj": "Tojikiston",
+  "certifications_int_title": "Xalqaro standartlar",
+  "certifications_int_1": "IEC 60247:",
+  "certifications_int_1_desc": "Izolyatsiya suyuqliklari — tan δ va to'g'ri oqimga nisbatan qarshilikni aniqlash.",
+  "certifications_int_2": "IEC 60060:",
+  "certifications_int_2_desc": "Yuqori kuchlanishli sinov texnikasi.",
+  "certifications_int_3": "IEC 61010:",
+  "certifications_int_3_desc": "Laboratoriya uskunalari uchun xavfsizlik talablari.",
+  "certifications_int_4": "GOST 22261-94:",
+  "certifications_int_4_desc": "Elektr va magnit kattaliklarni o'lchash vositalari.",
+  "certifications_note": "«Rossiyada ishlab chiqarilgan» ixtiyoriy sertifikatlashtirish tizimi bilan sertifikatlangan.",
+  "glossary_hero_title": "Sertifikatlar va standartlar",
+  "glossary_hero_subtitle": "Global muvofiqlik va sifat kafolati.",
+  "glossary_state_title": "Davlat reyestrlari",
+  "glossary_state_ru": "Rossiya:",
+  "glossary_state_ru_val": "№ 93557-24, 95985-25, 87761-22, 82533-21, 89524-23, 74644-19",
+  "glossary_state_by": "Belarus",
+  "glossary_state_kz": "Qozog'iston",
+  "glossary_state_kg": "Qirg'iziston",
+  "glossary_state_tj": "Tojikiston",
+  "glossary_int_title": "Xalqaro standartlar",
+  "glossary_int_1": "IEC 60247:",
+  "glossary_int_1_desc": "Izolyatsiya suyuqliklari — tan δ va to'g'ri oqimga nisbatan qarshilikni aniqlash.",
+  "glossary_int_2": "IEC 60060:",
+  "glossary_int_2_desc": "Yuqori kuchlanishli sinov texnikasi.",
+  "glossary_int_3": "IEC 61010:",
+  "glossary_int_3_desc": "Laboratoriya uskunalari uchun xavfsizlik talablari.",
+  "glossary_int_4": "GOST 22261-94:",
+  "glossary_int_4_desc": "Elektr va magnit kattaliklarni o'lchash vositalari.",
+  "glossary_note": "«Rossiyada ishlab chiqarilgan» ixtiyoriy sertifikatlashtirish tizimi bilan sertifikatlangan.",
+  "contact_hero_title": "Qayerdan sotib olish va biz bilan bog'lanish",
+  "contact_hero_subtitle": "Siz bizdan to'g'ridan-to'g'ri, bosh ofisimiz orqali yoki butun dunyo bo'ylab avtorizatsiya qilingan distribyutorlarimiz orqali sotib olishingiz mumkin.",
+  "contact_search_placeholder": "Joylashuv bo'yicha qidirish...",
+  "contact_hq_label": "Bosh ofis: Volgograd, Rossiya",
+  "contact_hq_name": "IEF SKAT — Volgograd (bosh ofis)",
+  "contact_dealer_btn": "Bog'lanish",
+  "contact_modal_title": "Bog'lanish",
+  "contact_modal_name": "Ismingiz",
+  "contact_modal_email": "Email manzilingiz",
+  "contact_modal_company": "Kompaniya nomi",
+  "contact_modal_message": "So'rovingiz...",
+  "contact_modal_submit": "So'rov yuborish",
+  "contact_dealer_electronpribor_moscow": "Moskva bo'yicha OOO Electronpribor",
+  "contact_dealer_terra_impex": "Novosibirsk bo'yicha OOO Terra Impex",
+  "contact_dealer_soyuz_pribor": "Qozon bo'yicha OOO Soyuz-Pribor",
+  "contact_dealer_eliz": "Cherepovets bo'yicha OOO Eliz",
+  "contact_dealer_electronpribor_irkutsk": "Irkutsk bo'yicha OOO Electronpribor",
+  "contact_dealer_profteam": "Minsk bo'yicha Profteam",
+  "contact_dealer_tp_consult": "Minsk bo'yicha TP Consult",
+  "contact_dealer_tessa": "Almati bo'yicha TESSA INTER GROUP",
+  "contact_dealer_kbs": "Almati bo'yicha KBS Group",
+  "contact_dealer_electronpribor_kz": "Petropavlovsk bo'yicha OOO Electronpribor KZ",
+  "contact_dealer_lokator": "Sofiya bo'yicha Lokator-K",
+  "contact_dealer_tooshkan": "Bishkek bo'yicha OsOO Tooshkan",
+  "contact_dealer_techengineers": "Bishkek bo'yicha OsOO TechEngineers",
+  "contact_dealer_maybo": "Boku bo'yicha Maybo LLC",
+  "contact_dealer_alten": "Boku bo'yicha Alten Group",
+  "contact_dealer_nvk": "Toshkent bo'yicha OOO NVK Management",
+  "captions": {
+    "avn70": [
+      "SKAT-AVN-70 aktiv yuqori kuchlanishli yukining umumiy ko'rinishi",
+      "Rezistiv qismlar va simlarning ichki joylashuvi",
+      "Avtomatik majburiy havo bilan sovutish tizimi va boshqaruv paneli"
+    ],
+    "ik100": [
+      "IK 100-0,4 yuqori kuchlanishli impuls kondensatori – umumiy ko'rinish",
+      "Klemmalar va mahkamlash detallari",
+      "Impuls tok generatorida qo'llash misoli"
+    ],
+    "kvc-b": [
+      "Moy bilan to'ldirilgan bo'luvchi bilan KVC-B seriyali raqamli kilovoltmetr",
+      "LCD displeyli ko'rsatkich blokining old paneli",
+      "Antikorona ekranli yuqori kuchlanishli bo'luvchi bloki"
+    ],
+    "kvc-c": [
+      "Havoda izolyatsiyalangan bo'luvchi bilan KVC-C seriyali raqamli kilovoltmetr",
+      "Ko'rsatkich bloki va boshqaruv interfeysi",
+      "Chastota kompensatsiyalangan tuzilishga ega yuqori kuchlanishli bo'luvchi"
+    ],
+    "m100v": [
+      "SKAT-M100V moyni sinash uchun to'liq avtomatik apparat",
+      "Yuqori kuchlanishli elektrodlarga ega o'lchov kamerasi",
+      "Interfeys va termoprinter bilan boshqaruv paneli"
+    ],
+    "stend50": [
+      "SKAT-STEND-50 sinov stendi – to'liq yig'ish",
+      "Dielektrik asoslar va shtangni qisish detallari",
+      "Ulangan izolyatsiyalovchi shtang bilan sinov qurilmasi"
+    ],
+    "svs": [
+      "SKAT-SVS statsionar stendi – boshqaruv bloki va yuqori kuchlanishli bloklar",
+      "Dielektrik qo'lqoplar va etiklar uchun sinov vannasi",
+      "LCD displey va enkoder bilan boshqaruv blokining old paneli"
+    ],
+    "tangens": [
+      "SKAT-TANGENS-M suyuq dielektriklarni sinash qurilmasi – umumiy ko'rinish",
+      "Uch klemmali o'lchov kamerasi va elektrod yig'masi",
+      "Sinov natijalari ko'rsatilgan sensorli interfeys"
+    ],
+    "ubsvn": [
+      "UBSVN-LM blokirovka va ovoz-yorug'lik signalizatsiya qurilmasi",
+      "Ichki ulanish va montaj sxemasi",
+      "Ogohlantirish chiroq bilan laboratoriya eshigi ustida o'rnatilgan"
+    ],
+    "70c": [
+      "SKAT-70C dielektriklarni sinash uchun raqamli apparat – portativ versiya",
+      "6\" LCD displeyli boshqaruv bloki",
+      "Avtomatik yerga ulash shtangi bilan yuqori kuchlanishli blok"
+    ],
+    "70m": [
+      "SKAT-70M dielektriklarni sinash uchun analog apparat – dala sharoiti uchun",
+      "Analog interfeysli boshqaruv bloki",
+      "Yuqori kuchlanishli blok va yerga ulash tuguni"
+    ],
+    "70p": [
+      "SKAT-70P o'lchov qo'shmasi – o'lchov bloki va vanna",
+      "To'rt kanalli tok ko'rsatkichi",
+      "Dielektrik qo'lqoplarni sinash uchun sozlash"
+    ]
+  },
+  "video_metadata": {
+    "tangens": [
+      {
+        "title": "SKAT-TANGENS-M: Mahsulotga umumiy nuqtai",
+        "desc": "Qurilmaning asosiy funktsiyalari va imkoniyatlariga umumiy nuqtai."
+      },
+      {
+        "title": "O'lchov jarayoni",
+        "desc": "Oddiy tan δ o'lchov siklining bosqichma-bosqich namoyishi."
+      },
+      {
+        "title": "Tayyorlash va sozlash",
+        "desc": "O'lchov kamerasini qanday tayyorlash va sinov ketma-ketligini boshlash."
+      },
+      {
+        "title": "Ma'lumotlarni tahlil qilish va eksport",
+        "desc": "Sinov natijalarini ko'rish va eksport qilish."
+      }
+    ],
+    "70c": [
+      {
+        "title": "SKAT-70C: Mahsulotga umumiy nuqtai",
+        "desc": "Raqamli dielektrik sinov apparatiga va uning asosiy funktsiyalariga umumiy nuqtai."
+      },
+      {
+        "title": "Qurilmani ulash",
+        "desc": "Yuqori kuchlanishli blokni boshqaruv blokiga ulash bo'yicha ko'rsatmalar."
+      },
+      {
+        "title": "Sinov ketma-ketligini ishga tushirish",
+        "desc": "Avtomatlashtirilgan sinov siklining namoyishi."
+      }
+    ],
+    "70m": [
+      {
+        "title": "SKAT-70M: Mahsulotga umumiy nuqtai",
+        "desc": "Dala va laboratoriya uchun ishonchli analog sinov qurilmasi."
+      },
+      {
+        "title": "Sozlash va konfiguratsiya",
+        "desc": "Qurilmani elektr mustahkamligi sinoviga tayyorlash."
+      },
+      {
+        "title": "Xavfsizlik funktsiyalariga umumiy nuqtai",
+        "desc": "Avtomatik yerga ulash, tok himoyasi va blokirovka tizimi."
+      }
+    ],
+    "70p": [
+      {
+        "title": "SKAT-70P: Mahsulotga umumiy nuqtai",
+        "desc": "SHV sinovi uchun 4 kanalli tok o'lchov qo'shmasi."
+      },
+      {
+        "title": "SHV sinovi",
+        "desc": "4 kanalli tizim bilan dielektrik qo'lqoplar va etiklarni qanday sinash."
+      }
+    ],
+    "avn70": [
+      {
+        "title": "SKAT-AVN-70: Mahsulotga umumiy nuqtai",
+        "desc": "Kalibrlash va tekshirish uchun aktiv yuqori kuchlanishli yuk."
+      },
+      {
+        "title": "Bosqichlarni tanlash",
+        "desc": "Turli yuk sharoitlarini simulyatsiya qilish uchun rezistor kombinatsiyalarini tanlash."
+      }
+    ],
+    "ik100": [
+      {
+        "title": "IK 100-0,4: Mahsulotga umumiy nuqtai",
+        "desc": "Impuls tok generatorlari uchun yuqori kuchlanishli impuls kondensatori."
+      },
+      {
+        "title": "Qo'llash",
+        "desc": "Impuls kuchlanish va tok generatorlarida foydalanish."
+      }
+    ],
+    "kvc-b": [
+      {
+        "title": "KVC-B seriyasi: Mahsulotga umumiy nuqtai",
+        "desc": "AC/DC aniq o'lchovlar uchun moy bilan to'ldirilgan raqamli kilovoltmetr."
+      },
+      {
+        "title": "Kompyuterga ulanish",
+        "desc": "Ma'lumotlarni yig'ish va tahlil qilish uchun USB interfeysidan foydalanish."
+      }
+    ],
+    "kvc-c": [
+      {
+        "title": "KVC-C seriyasi: Mahsulotga umumiy nuqtai",
+        "desc": "THD tahlili imkoniyatlariga ega 0,25 aniqlik sinfidagi kilovoltmetr."
+      },
+      {
+        "title": "VLF o'lchov rejimi",
+        "desc": "Kengaytirilgan diagnostika uchun juda past chastotada o'lchovlar."
+      }
+    ],
+    "m100v": [
+      {
+        "title": "SKAT-M100V: Mahsulotga umumiy nuqtai",
+        "desc": "Transformator moyini tahlil qilish uchun to'liq avtomatik apparat."
+      },
+      {
+        "title": "Sinovni ishga tushirish",
+        "desc": "To'liq avtomatik sinov siklining namoyishi."
+      }
+    ],
+    "stend50": [
+      {
+        "title": "SKAT-STEND-50: Mahsulotga umumiy nuqtai",
+        "desc": "Izolyatsiyalovchi shtanglar va kuchlanish ko'rsatkichlarini 50 kV gacha sinash uchun stend."
+      },
+      {
+        "title": "Yig'ish qo'llanmasi",
+        "desc": "Stendni yig'ish bo'yicha bosqichma-bosqich ko'rsatma."
+      }
+    ],
+    "svs": [
+      {
+        "title": "SKAT-SVS: Mahsulotga umumiy nuqtai",
+        "desc": "Kabellar va SHV sinovi uchun statsionar yuqori kuchlanishli stend."
+      },
+      {
+        "title": "SHV sinovi",
+        "desc": "Sinov vannasidan foydalanib dielektrik qo'lqoplar va etiklarni sinash."
+      }
+    ],
+    "ubsvn": [
+      {
+        "title": "UBSVN-LM: Mahsulotga umumiy nuqtai",
+        "desc": "Yuqori kuchlanishli laboratoriyalar uchun blokirovka va ovoz-yorug'lik signalizatsiyasi."
+      },
+      {
+        "title": "Ulanish sxemasi",
+        "desc": "Yuqori kuchlanishli manbalar bilan integratsiya uchun ulanish diagrammasi."
+      }
+    ]
+  },
+  "support": {
+    "m100v": {
+      "faq": [
+        {
+          "q": "O'lchov kamerasini qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Sinov paytida xato?",
+          "a": "Qopqoqning mahkam yopilganini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Qurilmaning orqa tomonidagi plastinada."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "tangens": {
+      "faq": [
+        {
+          "q": "O'lchov kamerasini qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "«Error 2/3» xatosi?",
+          "a": "Elektrod bo'shlig'ida begona jism. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Qurilmaning orqa tomonidagi plastinada."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "70c": {
+      "faq": [
+        {
+          "q": "Yuqori kuchlanishli blokni qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 3-bo'lim."
+        },
+        {
+          "q": "Sinov boshlamayapti?",
+          "a": "Xavfsizlik blokirovkasini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Boshqaruv blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "70m": {
+      "faq": [
+        {
+          "q": "Yukni qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "AC chiqishi yo'q?",
+          "a": "Saqlagichlarni tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Boshqaruv blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "70p": {
+      "faq": [
+        {
+          "q": "4 kanalni qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Tok ko'rsatkichlari yo'q?",
+          "a": "Vannaning yerga ulanishini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Boshqaruv blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "svs": {
+      "faq": [
+        {
+          "q": "Yuqori kuchlanishli bloklarni qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 3-bo'lim."
+        },
+        {
+          "q": "Sinov boshlamayapti?",
+          "a": "Kabel ulanishlarini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Boshqaruv blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "stend50": {
+      "faq": [
+        {
+          "q": "Stendni qanday yig'ish mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Shtangni qanday mahkamlash mumkin?",
+          "a": "Dielektrik asoslardan foydalaning. Qo'llanmaga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Stolning plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "ubsvn": {
+      "faq": [
+        {
+          "q": "Manbaga qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 3-bo'lim."
+        },
+        {
+          "q": "Blokirovka ishlamayapti?",
+          "a": "Chekka kalitni tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Qurilma korpusida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "avn70": {
+      "faq": [
+        {
+          "q": "Yuk bosqichini qanday tanlash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Haddan tashqari qizish?",
+          "a": "Ventilyatsiyani tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Shkafning plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "ik100": {
+      "faq": [
+        {
+          "q": "Generatorga qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Ishlashdan oldin zaryadsizlantiring!",
+          "a": "Har doim kondensatorni zaryadsizlantiring va yerga ulang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Kondensator korpusida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "kvc-b": {
+      "faq": [
+        {
+          "q": "Tarmoqqa qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Ko'rsatkichlar yo'q?",
+          "a": "Bo'luvchini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Ko'rsatkich blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    },
+    "kvc-c": {
+      "faq": [
+        {
+          "q": "Tarmoqqa qanday ulash mumkin?",
+          "a": "Foydalanish qo'llanmasiga qarang, 2-bo'lim."
+        },
+        {
+          "q": "Ko'rsatkichlar yo'q?",
+          "a": "Bo'luvchini tekshiring. Troubleshooting-ga qarang."
+        },
+        {
+          "q": "Seriya raqami qayerda?",
+          "a": "Ko'rsatkich blokining plastinasida."
+        }
+      ],
+      "phone": "+7 (8442) 26-99-94",
+      "email": "st@skat-v.com"
+    }
+  },
+  "mobile_slide_products_title": "To'liq mahsulot assortimenti",
+  "mobile_slide_products_cta": "Barcha toifalar",
+  "mobile_slide_academy_subtitle": "Yuqori kuchlanish muhandislari uchun bepul texnik ta'lim",
+  "mobile_slide_academy_cta": "Akademiyaga o'tish",
+  "mobile_qa_categories": "Toifalar",
+  "mobile_qa_academy": "Akademiya",
+  "mobile_qa_faq": "FAQ",
+  "mobile_qa_support": "Qo'llab-quvvatlash",
+  "mobile_qa_contacts": "Aloqa",
+  "nav_search": "Qidiruv",
+  "video_unavailable": "Video mavjud emas"
+}

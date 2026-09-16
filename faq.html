@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="main_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="faq_page_title">FAQ — Frequently Asked Questions | SKAT</title>
+    <meta name="description" data-i18n="faq_page_description" content="Answers about liquid dielectric testing, AC/DC test sets, PPE benches, precision measurement, and calibration equipment made by SKAT.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="megamenu.css">
+    <!-- Аккордеон переиспользуется из карточек товара -->
+    <link rel="stylesheet" href="prod_common.css">
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <!-- Контейнер для шапки -->
+    <div id="header-container"></div>
+
+    <main>
+        <!-- HERO -->
+        <section class="category-hero">
+            <div class="container hero-content">
+                <h1 data-i18n="faq_hero_title">Frequently Asked Questions</h1>
+                <p data-i18n="faq_hero_subtitle">Answers about our testers, test benches, and calibration equipment — grouped by product category.<br>Can't find what you need? <a href="support.html" style="color: inherit; text-decoration: underline;">Contact technical support</a>.</p>
+            </div>
+        </section>
+
+        <!-- БЫСТРАЯ НАВИГАЦИЯ ПО КАТЕГОРИЯМ -->
+        <nav class="container faq-jumpnav" aria-label="FAQ categories">
+            <a href="#faq-dielectric" data-i18n="menu_cat1">Dielectric Liquids</a>
+            <a href="#faq-acdc" data-i18n="menu_cat2">AC/DC Test Sets</a>
+            <a href="#faq-stationary" data-i18n="menu_cat3">Stationary Benches</a>
+            <a href="#faq-precision" data-i18n="menu_cat4">Precision Measure</a>
+            <a href="#faq-calibration" data-i18n="menu_cat5">Calibration & Safety</a>
+            <a href="#faq-stands" data-i18n="menu_cat6">Test Stands</a>
+        </nav>
+
+        <!-- 1. DIELECTRIC LIQUIDS -->
+        <section class="container faq-section" id="faq-dielectric">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat1">Dielectric Liquids</h2>
+                <a href="category-dielectric.html" class="faq-section-link" data-i18n="faq_see_category">See products in this category <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_dielectric_sub">SKAT-M100V oil breakdown tester and SKAT-TANGENS-M dielectric loss (tan δ) tester.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_m100v_faq1_q">What does the SKAT-M100V measure?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_m100v_faq1_a">It measures the dielectric breakdown voltage of transformer oil and other liquid insulants, which indicates the oil's ability to withstand electrical stress.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_m100v_faq2_q">Is this test supported by international standards?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_m100v_faq2_a">Yes. The instrument is fully compliant with IEC 60156 and GOST 6581-75, which are the primary standards for testing the dielectric strength of insulating liquids.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_m100v_faq3_q">Why is measuring breakdown voltage important?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_m100v_faq3_a">The breakdown voltage indicates the presence of contaminants, moisture, or particles in the oil. Low breakdown values can lead to transformer failure.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_tangens_faq1_q">What does the SKAT-TANGENS-M measure?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_tangens_faq1_a">It measures the dielectric loss factor (tan δ) and the capacitance of a test cell filled with insulating liquid. From these, it calculates the relative permittivity (ε) of the liquid.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_tangens_faq2_q">Is this test supported by international standards?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_tangens_faq2_a">Yes. The instrument is fully compliant with GOST R IEC 60247-2013 (IEC 60247) and GOST 6581-75, which are the primary standards for testing the dielectric properties of insulating liquids.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_tangens_faq3_q">Why is measuring Tan δ important for transformer oil?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_tangens_faq3_a">The dielectric loss factor (tan δ) indicates the amount of energy lost as heat in the oil. High tan δ values suggest contamination, moisture, or oxidation, which can significantly reduce the oil's insulating properties and lead to transformer failure.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. AC/DC TEST SETS -->
+        <section class="container faq-section" id="faq-acdc">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat2">AC/DC Test Sets</h2>
+                <a href="category-acdc.html" class="faq-section-link" data-i18n="faq_see_category">See products in this category <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_acdc_sub">SKAT-70C/100C digital and SKAT-70M/70MA analog AC/DC dielectric test sets.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70c_faq1_q">What is the difference between the SKAT-70C and SKAT-100C?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70c_faq1_a">The SKAT-100C offers higher voltage output capability (up to 101 kV DC and 71 kV AC) compared to the SKAT-70C (up to 71 kV DC and 51 kV AC).</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70c_faq2_q">Are these compatible with 19" racks?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70c_faq2_a">Yes, both models are available in a 19" rack-mountable form factor for integration into existing test systems.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70c_faq3_q">What safety features are included?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70c_faq3_a">The devices include automatic breakdown detection, overcurrent protection, and an external safety lamp output for laboratory warning systems.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70m_faq1_q">What is the difference between SKAT-70M and SKAT-70MA?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70m_faq1_a">The primary difference is the polarity of the DC output voltage. The SKAT-70M provides a negative polarity DC voltage, while the SKAT-70MA provides a positive polarity DC voltage.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70m_faq2_q">Can I use this for cable testing?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70m_faq2_a">Yes. The SKAT-70M series is perfectly suited for high-voltage withstand testing of power cables, designed to meet the requirements of standards such as IEC 60060.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70m_faq3_q">What safety features are included?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70m_faq3_a">The system includes automatic earthing rods on the high-voltage block, overcurrent protection, transformer overheat protection, and external interlock capabilities.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. STATIONARY BENCHES & PPE -->
+        <section class="container faq-section" id="faq-stationary">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat3">Stationary Benches</h2>
+                <a href="category-stationary.html" class="faq-section-link" data-i18n="faq_see_category">See products in this category <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_stationary_sub">SKAT-SVS test systems, SKAT-70P measuring attachment, and the UBSVN-LM safety interlock.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_svs_faq1_q">What is the difference between the three SVS models?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_svs_faq1_a">The models differ in the number and type of high-voltage blocks included. SVS-50C includes one 50 kV block, SVS-100C includes two 50 kV blocks, and SVS-100-20C includes one 100 kV and one 20 kV block.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_svs_faq2_q">Can I test PPE with this system?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_svs_faq2_a">Yes. The system is equipped with a test bath for dielectric boots, gloves, and tools, with 4-channel leakage current measurement.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_svs_faq3_q">What safety features are included?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_svs_faq3_a">The system includes automatic earthing rods on all HV blocks, overvoltage and overcurrent protection, and an external interlock connector for laboratory doors.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70p_faq1_q">How many items can be tested at once?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70p_faq1_a">Up to four PPE items can be tested simultaneously, with independent leakage current measurement per channel.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70p_faq2_q">Which HV testers is this compatible with?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70p_faq2_a">The SKAT-70P is designed for use with SKAT-70M, SKAT-70C, and AID-70C series, as well as other high-voltage sources with appropriate control interfaces.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_70p_faq3_q">What does the audio-visual signalization indicate?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_70p_faq3_a">The system provides clear audio-visual signals for HV Active, Breakdown Detected, and Test Complete, ensuring operator awareness at all times.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_ubsvn_faq1_q">Which devices is this interlock compatible with?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_ubsvn_faq1_a">It is compatible with SKAT-70M/70MA, SKAT-70C/100C series, SKAT-SVS series, and other HV sources with a normally open dry contact interlock circuit.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_ubsvn_faq2_q">How loud is the alarm?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_ubsvn_faq2_a">The sound pressure level is at least 95 dB at 1 meter distance.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_ubsvn_faq3_q">What is the operating temperature range?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_ubsvn_faq3_a">The device operates reliably from -30 °C to +55 °C.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. PRECISION MEASUREMENT -->
+        <section class="container faq-section" id="faq-precision">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat4">Precision Measure</h2>
+                <a href="category-precision.html" class="faq-section-link" data-i18n="faq_see_category">See products in this category <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_precision_sub">KVC B-Series (oil-insulated) and C-Series (air-insulated) digital kilovoltmeters.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_kvc_b_faq1_q">What is the difference between the B-Series and C-Series?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_kvc_b_faq1_a">The B-Series uses an oil-insulated resistive divider, optimized for standard industrial frequency (50/60 Hz) measurements. The C-Series features an air-insulated frequency-compensated divider for advanced applications like THD analysis and VLF measurements.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_kvc_b_faq2_q">What accuracy classes are available?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_kvc_b_faq2_a">The B-Series is available in 0.25%, 0.5%, and 1.0% accuracy classes to suit various calibration and measurement needs.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_kvc_b_faq3_q">Can I connect this meter to a PC?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_kvc_b_faq3_a">Yes. The USB interface allows for easy connection to a PC, enabling real-time oscilloscope functionality, waveform analysis, and data archiving via the included software.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_kvc_c_faq2_q">What accuracy classes are available?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_kvc_c_faq2_a">The C-Series is available in an accuracy class of 0.25% to suit various calibration and measurement needs.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_kvc_c_faq3_q">Can I connect this meter to a PC?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_kvc_c_faq3_a">Yes. The USB interface allows for easy connection to a PC, enabling real-time oscilloscope functionality, waveform analysis, and data archiving via the included software.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. CALIBRATION & SAFETY -->
+        <section class="container faq-section" id="faq-calibration">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat5">Calibration & Safety</h2>
+                <a href="category-calibration.html" class="faq-section-link" data-i18n="faq_see_category">See products in this category <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_calibration_sub">SKAT-AVN-70 active HV load and the IK 100-0.4 pulse capacitor.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_faq1_q">What equipment is this load compatible with?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_faq1_a">It is designed for SKAT-70, AVID-70, and AID-70 series, among other similar high-voltage test devices.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_avn70_faq2_q">What is the maximum power dissipation?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_avn70_faq2_a">The total maximum dissipated power is 3750 W, with each step having its own power rating. Maximum continuous operation at full power is 1 hour.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_ik100_faq1_q">What is the primary application of this capacitor?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_ik100_faq1_a">It is used in impulse voltage and current generators for testing transformers, cables, and external insulation of power lines.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_ik100_faq3_q">Is it safe to handle?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_ik100_faq3_a">Yes, but always discharge and ground the capacitor before handling. Follow standard high-voltage safety procedures.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. TEST STANDS -->
+        <section class="container faq-section" id="faq-stands">
+            <div class="faq-section-head">
+                <h2 data-i18n="menu_cat6">Test Stands</h2>
+                <a href="product-stend50.html" class="faq-section-link" data-i18n="faq_see_product">See product page <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            <p class="faq-section-sub" data-i18n="faq_stands_sub">SKAT-STEND-50 stand for insulating rods and voltage indicators.</p>
+            <div class="accordion-container">
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_stend50_faq1_q">What is the maximum test voltage?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_stend50_faq1_a">The stand supports testing up to 50 kV AC. It is designed for insulating rods, live-line tools, and HV indicators used in substations up to 110 kV.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_stend50_faq2_q">How many objects can be tested at once?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_stend50_faq2_a">The stand supports testing of up to two objects simultaneously. For a single object, you can test up to 5 segments.</div></div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header"><i class="fa-solid fa-circle-check"></i> <span data-i18n="prod_stend50_faq3_q">What is included in the kit?</span></button>
+                    <div class="accordion-body"><div class="accordion-body-inner" data-i18n="prod_stend50_faq3_a">The kit includes the test table, dielectric bases, high-voltage cables, grounding wires, and 15 temporary electrodes.</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="container" style="padding: 20px 0 60px;">
+            <div class="academy-cta-block" style="background-color: var(--bg-secondary); border: 2px solid var(--accent-yellow); border-radius: 12px; padding: 40px 30px; text-align: center;">
+                <h3 style="font-size: 1.6rem; color: var(--primary-dark); margin-bottom: 15px;" data-i18n="faq_cta_title">Still have a question?</h3>
+                <p style="color: var(--text-light); margin-bottom: 25px;" data-i18n="faq_cta_text">Our technical support team responds within 1 business day.</p>
+                <a href="support.html" class="btn-primary" data-i18n="faq_cta_btn">Contact Technical Support</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- ФУТЕР -->
+    <div id="footer-container"></div>
+
+    <a href="#" class="scroll-top" id="scrollTopBtn"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <!-- СКРИПТЫ -->
+    <script src="main.js"></script>
+    <script src="megamenu.js"></script>
+    <script src="assets.js"></script>
+    <script src="lang.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>

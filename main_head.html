@@ -1,149 +1,175 @@
 <header>
     <div class="container header-content">
-        <!-- Логотип (слева) -->
+        <!-- Логотип -->
         <a href="index.html" class="logo-container">
             <img src="logo.png" alt="SKAT Logo" class="site-logo">
-            <div class="tagline">High-Voltage Test & Measurement Equipment</div>
+    
         </a>
 
-        <!-- Навигация (центр) -->
-        <nav>
+        <!-- Навигация -->
+        <nav class="desktop-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#" class="nav-link" id="megaMenuToggle">Products</a>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="support.html">Support</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                <li><a href="index.html#products" id="megaMenuToggle" data-i18n="nav_products">Products</a></li>
+                <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                <li><a href="academy.html" data-i18n="nav_academy">SKAT Academy</a></li>
+                <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+                <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
             </ul>
         </nav>
 
-        <!-- Правая часть: Иконки + Кнопка -->
+        <!-- ПРАВЫЙ БЛОК -->
         <div class="nav-icons">
-            <a href="#" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#" class="nav-icon globe">
-                <i class="fa-solid fa-globe"></i>
-                <span>EN</span>
+            <a href="#" class="nav-icon" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></a>
+
+            <!-- КНОПКА ВЫБОРА ЯЗЫКА (триггер) -->
+            <div class="language-selector" id="languageSelector" data-language-code="en">
+                <div class="language-selector__content language-icon">
+                    <img src="flags/intl.png" alt="Intl. English" class="language-flag">
+                    <span class="language-text">Intl. English</span>
+                    <span class="language-code">EN</span>
+                    <span class="language-chevron"></span>
+                </div>
+            </div>
+
+            <!-- Каталог -->
+            <a href="catalog.pdf" class="btn-catalog-header">
+                <i class="fa-solid fa-file-pdf"></i> <span data-i18n="header_catalog">Catalog</span>
             </a>
-            <a href="catalog.pdf" target="_blank" class="btn-catalog-header"><i class="fa-solid fa-file-pdf"></i> Catalog</a>
+        </div>
+
+        <!-- Бургер -->
+        <button id="burgerToggle" class="burger-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+
+    <!-- Мобильное меню -->
+    <div id="mobileNav" class="mobile-nav">
+        <ul>
+            <li><a href="#" data-search-open class="mobile-nav-search"><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="nav_search">Search</span></a></li>
+            <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+            <li><a href="category-dielectric.html" data-i18n="menu_cat1">Dielectric Liquids</a></li>
+            <li><a href="category-acdc.html" data-i18n="menu_cat2">AC/DC Test Sets</a></li>
+            <li><a href="category-stationary.html" data-i18n="menu_cat3">Stationary Benches</a></li>
+            <li><a href="category-precision.html" data-i18n="menu_cat4">Precision Measure</a></li>
+            <li><a href="category-calibration.html" data-i18n="menu_cat5">Calibration & Safety</a></li>
+            <li><a href="about.html" data-i18n="nav_about">About</a></li>
+            <li><a href="academy.html" data-i18n="nav_academy">SKAT Academy</a></li>
+            <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+            <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+        <div class="mobile-actions">
+            <a href="catalog.pdf" class="btn-primary" style="width: 100%; justify-content: center;" data-i18n="menu_download">Download Catalog</a>
         </div>
     </div>
+	
 </header>
 
-<!-- ПОЛНОЭКРАННЫЙ ОВЕРЛЕЙ (ПЕРЕКРЫВАЕТ КОНТЕНТ, НО НЕ ШАПКУ) -->
+<!-- МЕГА-МЕНЮ -->
 <div class="mega-overlay" id="megaOverlay">
     <div class="mega-overlay-close">
-        <button class="mega-close-btn"><i class="fa-solid fa-times"></i> Close</button>
+        <button class="mega-close-btn"><i class="fa-solid fa-times"></i> <span data-i18n="close_btn">Close</span></button>
     </div>
     <div class="mega-overlay-container">
-        <!-- ЛЕВАЯ ЧАСТЬ: Карточки категорий -->
         <div class="mega-cards-column">
             <div class="mega-card-item" data-category="dielectric">
                 <img src="icons/flask.png" class="mega-icon" alt="Dielectric">
                 <div class="mega-text">
-                    <h4>Dielectric Liquids</h4>
-                    <p>Tan δ &amp; breakdown testers</p>
+                    <h4 data-i18n="menu_cat1">Dielectric Liquids</h4>
+                    <p data-i18n="menu_cat1_sub">Tan δ & breakdown testers</p>
                 </div>
             </div>
             <div class="mega-card-item" data-category="acdc">
                 <img src="icons/damaged-wire.png" class="mega-icon" alt="AC/DC">
                 <div class="mega-text">
-                    <h4>AC/DC Test Sets</h4>
-                    <p>Up to 101 kV output</p>
+                    <h4 data-i18n="menu_cat2">AC/DC Test Sets</h4>
+                    <p data-i18n="menu_cat2_sub">Up to 101 kV output</p>
                 </div>
             </div>
             <div class="mega-card-item" data-category="stationary">
                 <img src="icons/ppe.png" class="mega-icon" alt="PPE">
                 <div class="mega-text">
-                    <h4>Stationary Benches</h4>
-                    <p>PPE &amp; safety testing</p>
+                    <h4 data-i18n="menu_cat3">Stationary Benches</h4>
+                    <p data-i18n="menu_cat3_sub">PPE & safety testing</p>
                 </div>
             </div>
             <div class="mega-card-item" data-category="precision">
                 <img src="icons/KVC.png" class="mega-icon" alt="KVC">
                 <div class="mega-text">
-                    <h4>Precision Measure</h4>
-                    <p>Class 0.25 kV meters</p>
+                    <h4 data-i18n="menu_cat4">Precision Measure</h4>
+                    <p data-i18n="menu_cat4_sub">Class 0.25 kV meters</p>
                 </div>
             </div>
             <div class="mega-card-item" data-category="calibration">
                 <img src="icons/AVN.png" class="mega-icon" alt="AVN">
                 <div class="mega-text">
-                    <h4>Calibration &amp; Safety</h4>
-                    <p>HV loads &amp; capacitors</p>
+                    <h4 data-i18n="menu_cat5">Calibration & Safety</h4>
+                    <p data-i18n="menu_cat5_sub">HV loads & capacitors</p>
                 </div>
             </div>
             <div class="mega-card-item" data-category="stand">
                 <img src="icons/rod.png" class="mega-icon" alt="Rod">
                 <div class="mega-text">
-                    <h4>Test Stands</h4>
-                    <p>Insulating rod testing</p>
+                    <h4 data-i18n="menu_cat6">Test Stands</h4>
+                    <p data-i18n="menu_cat6_sub">Insulating rod testing</p>
                 </div>
             </div>
         </div>
 
-        <!-- ПРАВАЯ ЧАСТЬ: Ссылки -->
         <div class="mega-links-column">
-            <!-- Dielectric Liquids -->
             <div class="mega-links-group" data-category="dielectric">
-                <div class="mega-links-title">Dielectric Liquids Testers</div>
+                <div class="mega-links-title" data-i18n="menu_cat1">Dielectric Liquids</div>
                 <ul class="mega-links-list">
                     <li><a href="product-m100v.html">SKAT-M100V Oil Breakdown Tester</a></li>
                     <li><a href="product-tangens.html">SKAT-TANGENS-M Tan δ Tester</a></li>
                 </ul>
-                <a href="category-dielectric.html" class="mega-view-all">View All →</a>
             </div>
-
-            <!-- AC/DC Test Sets -->
             <div class="mega-links-group" data-category="acdc">
-                <div class="mega-links-title">AC/DC Test Sets</div>
+                <div class="mega-links-title" data-i18n="menu_cat2">AC/DC Test Sets</div>
                 <ul class="mega-links-list">
                     <li><a href="product-70c.html">SKAT-70C / 100C (Digital)</a></li>
                     <li><a href="product-70m.html">SKAT-70M / 70MA (Analog)</a></li>
                 </ul>
-                <a href="category-acdc.html" class="mega-view-all">View All →</a>
             </div>
-
-            <!-- Stationary Benches -->
             <div class="mega-links-group" data-category="stationary">
-                <div class="mega-links-title">Stationary Benches &amp; PPE</div>
+                <div class="mega-links-title" data-i18n="menu_cat3">Stationary Benches</div>
                 <ul class="mega-links-list">
                     <li><a href="product-svs.html">SKAT-SVS Test Benches</a></li>
                     <li><a href="product-70p.html">SKAT-70P Measuring Attachment</a></li>
                     <li><a href="product-ubsvn.html">UBSVN-LM Safety Interlock</a></li>
                 </ul>
-                <a href="category-stationary.html" class="mega-view-all">View All →</a>
             </div>
-
-            <!-- Precision Measure -->
             <div class="mega-links-group" data-category="precision">
-                <div class="mega-links-title">Precision Measurement</div>
+                <div class="mega-links-title" data-i18n="menu_cat4">Precision Measure</div>
                 <ul class="mega-links-list">
                     <li><a href="product-kvc-b.html">KVC B-Series (Oil-Insulated)</a></li>
                     <li><a href="product-kvc-c.html">KVC C-Series (Air-Insulated)</a></li>
                 </ul>
-                <a href="category-precision.html" class="mega-view-all">View All →</a>
             </div>
-
-            <!-- Calibration & Safety -->
             <div class="mega-links-group" data-category="calibration">
-                <div class="mega-links-title">Calibration &amp; Safety</div>
+                <div class="mega-links-title" data-i18n="menu_cat5">Calibration & Safety</div>
                 <ul class="mega-links-list">
                     <li><a href="product-avn70.html">SKAT-AVN-70 Active HV Load</a></li>
                     <li><a href="product-ik100.html">IK 100-0.4 Pulse Capacitor</a></li>
                 </ul>
-                <a href="category-calibration.html" class="mega-view-all">View All →</a>
             </div>
-
-            <!-- Test Stands -->
             <div class="mega-links-group" data-category="stand">
-                <div class="mega-links-title">Test Stands</div>
+                <div class="mega-links-title" data-i18n="menu_cat6">Test Stands</div>
                 <ul class="mega-links-list">
                     <li><a href="product-stend50.html">SKAT-STEND-50 Insulating Rod Stand</a></li>
                 </ul>
-                <a href="product-stend50.html" class="mega-view-all">View All →</a>
             </div>
         </div>
+    </div>
+</div>
+<!-- МОДАЛЬНОЕ ОКНО ПОИСКА -->
+<div class="search-modal" id="searchModal">
+    <div class="search-modal__overlay"></div>
+    <div class="search-modal__content">
+        <button class="search-modal__close" onclick="document.getElementById('searchModal').classList.remove('active')">&times;</button>
+        <h3 class="search-modal__title" id="searchTitle">Search</h3>
+        <input type="text" class="search-modal__input" id="searchInput" placeholder="Search for products, events, other..." autocomplete="off" data-i18n-placeholder="search_modal_placeholder">
+        <div class="search-modal__results" id="searchResults"></div>
     </div>
 </div>

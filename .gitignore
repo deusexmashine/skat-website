@@ -1,0 +1,16 @@
+﻿# Рабочие/черновые файлы — не нужны в проде
+Claude outputs/
+Новая папка/
+обучение ИИ/
+проект Листовки/
+версии/
+SKAT-project-handoff.md
+~$*.docx
+*.docx
+*.tmp
+Thumbs.db
+desktop.ini
+
+# Локальный dev-сервер — не часть сайта
+server_range.py
+start_skat.bat

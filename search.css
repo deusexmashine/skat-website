@@ -1,0 +1,164 @@
+/* ==========================================================
+   SEARCH.CSS — Модальное окно поиска
+   ========================================================== */
+
+/* Модальное окно */
+.search-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10002;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 120px;
+}
+
+.search-modal.active {
+    display: flex;
+}
+
+/* Затемнение фона — НЕ перекрывает шапку */
+.search-modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(28, 29, 38, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* Контент модального окна */
+.search-modal__content {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 20px 40px rgba(28, 29, 38, 0.2);
+    padding: 15px 20px;
+    z-index: 2;
+    border: 2px solid #eaeaea;
+}
+
+/* Кнопка закрытия */
+.search-modal__close {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: color 0.3s;
+    line-height: 1;
+}
+
+.search-modal__close:hover {
+    color: var(--accent-yellow);
+}
+
+/* Заголовок (скрыт — не нужен в пилюле) */
+.search-modal__title {
+    display: none;
+}
+
+/* Поле ввода */
+.search-modal__input {
+    width: 100%;
+    padding: 12px 50px 12px 15px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-family: inherit;
+    outline: none;
+    background: transparent;
+}
+
+.search-modal__input::placeholder {
+    color: #aaa;
+}
+
+/* Результаты */
+.search-modal__results {
+    margin-top: 15px;
+    max-height: 350px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #c7c7cd transparent;
+}
+
+.search-modal__results::-webkit-scrollbar {
+    width: 6px;
+}
+
+.search-modal__results::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.search-modal__results::-webkit-scrollbar-thumb {
+    background: #c7c7cd;
+    border-radius: 3px;
+}
+
+.search-modal__results a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    transition: background 0.2s, transform 0.2s;
+    border-left: 3px solid transparent;
+}
+
+.search-modal__results a:hover {
+    background: #f5f5f7;
+    border-left-color: var(--accent-yellow);
+    transform: translateX(4px);
+}
+
+.search-modal__results a i {
+    color: var(--accent-yellow);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.search-modal__empty {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .search-modal {
+        padding-top: 100px;
+    }
+    .search-modal__content {
+        padding: 10px 15px;
+    }
+}
+/* ===== SEARCH v2 ===== */
+.search-modal__content { animation: searchPop .18s ease; }
+@keyframes searchPop { from { opacity: 0; transform: translateY(-10px) scale(.98); } to { opacity: 1; transform: none; } }
+mark { background: rgba(255, 184, 28, .4); color: inherit; border-radius: 3px; padding: 0 2px; font-weight: 600; }
+.search-group-title { font-size: .72rem; letter-spacing: 1.2px; text-transform: uppercase; color: var(--text-light); margin: 10px 15px 4px; }
+.search-chips { display: flex; flex-wrap: wrap; gap: 8px; padding: 10px 15px; }
+.search-chip { border: 1.5px solid var(--accent-yellow); background: transparent; color: var(--primary-dark); border-radius: 50px; padding: 4px 12px; font-size: .8rem; font-weight: 600; cursor: pointer; transition: all .2s; }
+.search-chip:hover { background: var(--accent-yellow); transform: translateY(-1px); }
+.search-modal__results a.active { background: #f5f5f7; border-left-color: var(--accent-yellow); }
+.search-modal__input:focus-visible, .search-chip:focus-visible { outline: 2px solid var(--accent-yellow); outline-offset: 2px; }
+@media (max-width: 575px) {
+    .search-modal { padding-top: 0; align-items: stretch; }
+    .search-modal__content { max-width: none; width: 100%; height: 100%; border-radius: 0; border: none; }
+    .search-modal__results { max-height: none; flex: 1; }
+}

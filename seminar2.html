@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интенсив для менеджеров ЗПО СКАТ — 2 дня (полный курс)</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-dark: #1C1D26;
+            --accent-yellow: #FFB81C;
+            --bg-white: #FFFFFF;
+            --bg-secondary: #F5F6F8;
+            --text-dark: #333333;
+            --text-light: #666666;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ffffff;
+            color: var(--text-dark);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+            padding: 40px 20px;
+        }
+        .document-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            padding: 50px 70px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        .header { border-bottom: 4px solid var(--accent-yellow); padding-bottom: 20px; margin-bottom: 40px; }
+        .title { font-size: 38px; font-weight: 900; color: var(--primary-dark); }
+        h1 { font-size: 36px; font-weight: 900; text-transform: uppercase; border-bottom: 3px solid var(--accent-yellow); padding-bottom: 10px; margin-bottom: 30px; margin-top: 60px; }
+        h2 { font-size: 28px; font-weight: 800; margin-bottom: 20px; margin-top: 40px; color: var(--primary-dark); }
+        h3 { font-size: 22px; font-weight: 700; margin-bottom: 15px; color: var(--primary-dark); }
+        .time-block { background: var(--accent-yellow); display: inline-block; padding: 8px 20px; border-radius: 30px; font-weight: 800; font-size: 15px; color: var(--primary-dark); margin-bottom: 20px; text-transform: uppercase; letter-spacing: 1px; }
+        .action-block { background: var(--bg-secondary); border-left: 8px solid var(--accent-yellow); padding: 20px 25px; margin: 20px 0; border-radius: 8px; font-size: 15px; }
+        .lector-text { background: #f9f9f9; border: 1px solid #eaeaea; border-left: 8px solid var(--accent-yellow); padding: 25px 30px; margin: 20px 0; font-size: 16px; line-height: 1.8; border-radius: 8px; font-style: italic; color: #2d250c; }
+        .key-points { background: rgba(255,184,28,0.08); border: 1px solid #eaeaea; border-radius: 8px; padding: 20px 25px; margin: 20px 0; }
+        .key-points h4 { font-size: 18px; font-weight: 800; margin-bottom: 12px; color: var(--primary-dark); }
+        .key-points ul { list-style: none; padding-left: 0; }
+        .key-points ul li { padding: 6px 0; font-size: 15px; line-height: 1.6; display: flex; gap: 12px; }
+        .key-points ul li i { color: var(--accent-yellow); margin-top: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 25px 0 40px 0; font-size: 14px; }
+        table th { background-color: #f0f0f0; color: var(--primary-dark); font-weight: 800; padding: 14px 16px; text-align: left; border-bottom: 4px solid var(--accent-yellow); }
+        table td { padding: 14px 16px; border-bottom: 1px solid #eaeaea; vertical-align: top; }
+        table tr:nth-child(even) { background-color: #fafafa; }
+        .formula-block { text-align: center; font-size: 28px; font-weight: 900; color: var(--primary-dark); padding: 20px; background: var(--bg-secondary); border-radius: 10px; margin: 20px 0; }
+        .footer { margin-top: 60px; background: var(--accent-yellow); border-radius: 12px; padding: 25px 35px; display: flex; justify-content: space-between; align-items: center; font-size: 18px; font-weight: 800; color: var(--primary-dark); }
+        .hr { border: none; border-top: 2px dashed #d0d0d0; margin: 50px 0; }
+        @media print { body { padding: 0; background: white; } .document-container { box-shadow: none; max-width: 100%; padding: 20px 10px; } .lector-text { break-inside: avoid; } .key-points { break-inside: avoid; } table { break-inside: auto; } @page { margin: 20mm; } }
+    </style>
+</head>
+<body>
+
+<div class="document-container">
+
+    <!-- ШАПКА -->
+    <div class="header">
+        <div class="logo-container"><img src="images/logo.webp" alt="СКАТ" style="height:60px;"></div>
+        <div class="title">ИНТЕНСИВ ДЛЯ МЕНЕДЖЕРОВ</div>
+        <div class="subtitle" style="font-size: 16px; color: var(--text-light);">Полный курс: Продукт, Технологии, Нормативка, Продажи</div>
+        <div style="background: var(--accent-yellow); display:inline-block; padding: 8px 20px; border-radius: 30px; font-weight: 800; font-size: 15px; color: var(--primary-dark); margin-top: 15px;">2 дня | 16 академических часов</div>
+    </div>
+
+    <!-- ВВЕДЕНИЕ -->
+    <div style="text-align: center; margin-bottom: 50px;">
+        <h1 style="border: none; margin: 0;">Добро пожаловать в команду!</h1>
+        <p style="font-size: 20px; color: var(--text-light);">Ваш путь к профессиональному успеху в продажах высоковольтного оборудования</p>
+    </div>
+
+    <!-- О КОМПАНИИ -->
+    <h1>Введение. Кто мы и что мы производим</h1>
+    <div class="time-block">08:00 – 08:30 | Открытие</div>
+    <div class="action-block"><strong>Действия лектора:</strong> Приветствие участников, выдача бейджей, представление компании.</div>
+    <div class="lector-text">«Коллеги, добро пожаловать на наш завод! Меня зовут [Имя Фамилия], я возглавляю отдел продаж. Сегодня мы собрались не просто для теории — мы собрались для того, чтобы вы стали экспертами, способными продавать сложное оборудование. За два дня вы узнаете всё: от физики процессов до юридических преимуществ, которые дают нашим клиентам покупки нашего оборудования. Мы — ООО "ЗПО СКАТ", российский производитель высоковольтного испытательного и измерительного оборудования. Всё, что вы здесь видите, разработано и собрано в Волгограде.»</div>
+
+    <div class="time-block">08:30 – 09:00 | Миссия и ценности компании</div>
+    <div class="lector-text">«Наша миссия — обеспечить надёжность и безопасность электрических сетей России. Мы — завод полного цикла. Сами разрабатываем, сами производим, сами испытываем. Это наша гордость и наше конкурентное преимущество.»</div>
+
+    <div class="key-points">
+        <h4>Ключевые тезисы для продаж:</h4>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Полный цикл производства: от идеи до серийного выпуска.</li>
+            <li><i class="fa-solid fa-check"></i> Все компоненты — российские, не зависим от импорта.</li>
+            <li><i class="fa-solid fa-check"></i> Собственный сервисный центр и техническая поддержка.</li>
+        </ul>
+    </div>
+
+    <!-- ДЕНЬ 1: ПРОДУКТ -->
+    <h1>День 1: Техническая экспертиза</h1>
+
+    <div class="time-block">09:00 – 10:30 | Модуль 1: Классификация повреждений и физика дефектов</div>
+    <div class="action-block"><strong>Действия лектора:</strong> Презентация с классификацией повреждений, разбор типов изоляции, формула диагноста.</div>
+    <div class="lector-text">«Для успешных продаж необходимо понимать физику процесса. Клиент покупает не просто прибор — он покупает решение проблемы. Начнём с основ. Типы повреждений: обрыв, низкоомное КЗ, высокоомное («заплывающее») и повреждение оболочки. Формула диагноста: L = (v × t) / 2, где v — скорость распространения импульса (для СПЭ ~170, для БПИ ~140-160 м/мкс).»</div>
+    
+    <div class="key-points">
+        <h4>Почему это важно для продаж?</h4>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> Вы можете объяснить клиенту, почему именно наш прибор решает его задачу.</li>
+            <li><i class="fa-solid fa-check"></i> Понимание физики процессов позволяет аргументированно отвечать на вопросы.</li>
+        </ul>
+    </div>
+
+    <div class="time-block">10:30 – 11:00 | Кофе-брейк</div>
+
+    <div class="time-block">11:00 – 12:30 | Модуль 2: Новинки линейки 2025-2026</div>
+    <div class="action-block"><strong>Демонстрация новых продуктов:</strong> СКАТ-СНЧ, СКАТ-М100В, обновлённый СКАТ-70Ц.</div>
+    <div class="lector-text">«Посмотрите на эти приборы. Это наш флагман — <strong>СКАТ-СНЧ</strong>. Что это? Это установка для испытания кабелей сверхнизкой частотой. Почему это "золотой стандарт"? Потому что постоянный ток накапливает заряд в изоляции и убивает старую изоляцию. А синусоида 0,1 Гц — щадящая. Она выявляет дефекты, которые другие методы пропускают.<br><br>
+    А это <strong>СКАТ-М100В</strong> — полностью автоматический аппарат для испытания масла. Он сам поднимает напряжение, фиксирует пробой и печатает протокол. Ваш клиент — лаборатория или завод? Им это нужно для соответствия требованиям Ростехнадзора.»</div>
+
+    <div class="key-points">
+        <h4>Что вам нужно знать о новинках:</h4>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-СНЧ</strong>: Частоты 0,1 / 0,05 / 0,02 / 0,01 Гц. Щадящее испытание изоляции. Память на 896 протоколов, встроенный принтер.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-М100В</strong>: Испытание пробивного напряжения масла. Автоматическое управление, встроенный принтер.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-70Ц</strong>: Обновлённая версия. Режим «Прожиг», автоматическая штанга заземления, сохранение 50 протоколов.</li>
+        </ul>
+    </div>
+
+    <div class="time-block">12:30 – 13:30 | Обед</div>
+
+    <div class="time-block">13:30 – 15:00 | Модуль 3: Испытания сверхнизкой частотой (практика)</div>
+    <div class="action-block"><strong>Демонстрация СКАТ-СНЧ-52. Настройка частоты, напряжения, анализ тока утечки.</strong></div>
+    <div class="lector-text">«Давайте посмотрим на СКАТ-СНЧ в работе. Сенсорный экран 7 дюймов, всё на русском. Выберите режим AC, установите 5 кВ, нажмите "Пуск". Через 10 минут у вас готов протокол — прибор сам его печатает. Это то, что нужно вашим клиентам для отчётности перед Ростехнадзором.<br><br>
+    <strong>Технические характеристики, которые вы должны знать:</strong><br>
+    - Выходное напряжение (AC/DC): 3-52 кВ<br>
+    - Погрешность воспроизведения напряжения: ±2%<br>
+    - Частоты СНЧ: 0,1 / 0,05 / 0,02 / 0,01 Гц<br>
+    - Максимальная ёмкость кабеля при 0,1 Гц: 1,2 мкФ<br>
+    - Диапазон измерений тока: ±100 мА</div>
+
+    <div class="time-block">15:00 – 15:30 | Кофе-брейк</div>
+
+    <div class="time-block">15:30 – 17:00 | Модуль 4: Рефлектометрия и режим «Прожиг»</div>
+    <div class="action-block"><strong>Показ на СКАТ-70Ц, как включается режим «Прожиг».</strong></div>
+    <div class="lector-text">«СКАТ-70Ц — это не просто аппарат, это инструмент для поиска повреждений. Режим "Прожиг" позволяет перевести высокоомное повреждение в низкоомное. Объясните клиенту: вы экономите ему недели простоя. Сначала находите проблему, потом её устраняете.<br><br>
+    <strong>Технические характеристики СКАТ-70Ц:</strong><br>
+    - Выходное напряжение AC: от 1 до 51 кВ<br>
+    - Выходное напряжение DC: от 1 до 71 кВ<br>
+    - Максимальный выходной ток AC: 50 мА<br>
+    - Максимальный выходной ток DC: 20 мА<br>
+    - Погрешность измерения напряжения: ±(2,0+0,04·((50/U)-1))%</div>
+
+    <!-- ДЕНЬ 2 -->
+    <h1>День 2: Нормативная база и продажи</h1>
+
+    <div class="time-block">08:30 – 10:00 | Модуль 5: Постановление 719 и реестр Минпромторга</div>
+    <div class="action-block"><strong>Отдельный блок для понимания юридических преимуществ.</strong></div>
+    <div class="lector-text">«Теперь самое важное для ваших продаж. <strong>Постановление Правительства № 719</strong> — это документ, который подтверждает, что наша продукция произведена в России. Что это даёт клиенту?<br><br>
+    1. <strong>Право на участие в госзакупках</strong> (44-ФЗ, 223-ФЗ). Иностранные аналоги могут быть отклонены.<br>
+    2. <strong>Приоритет в закупках</strong> — российская продукция имеет преимущество по цене 15%.<br>
+    3. <strong>Прямая экономия</strong> — клиент покупает наше оборудование и получает бюджетное финансирование.»</div>
+
+    <div class="key-points">
+        <h4>Наши ключевые записи в реестре:</h4>
+        <ul>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-70Ц</strong> — Госреестр СИ РФ № 87761-22, срок до 20.12.2027.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-ТАНГЕНС-М</strong> — Госреестр СИ РФ № 93557-24, срок до 23.10.2029.</li>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-70П</strong> — Госреестр СИ РФ (МП 441322.022-2023).</li>
+            <li><i class="fa-solid fa-check"></i> <strong>СКАТ-СНЧ</strong> — внесены в реестр Минпромторга, что позволяет участвовать в закупках.</li>
+        </ul>
+    </div>
+
+    <div class="time-block">10:00 – 10:30 | Кофе-брейк</div>
+
+    <div class="time-block">10:30 – 12:00 | Модуль 6: Межповерочный интервал и гарантия</div>
+    <div class="action-block"><strong>Блок о преимуществах сервиса.</strong></div>
+    <div class="lector-text">«Гарантия 1,5 года — это наше обещание. Но есть ещё один аргумент: <strong>межповерочный интервал 2 года</strong>. Что это значит для клиента? Он экономит на поверке в два раза. Это прямая выгода в деньгах. Вы говорите клиенту: "Коллега, у нас гарантия больше, чем у BAUR, на полгода. Вы будете экономить на ремонте уже в первый год".»</div>
+
+    <div class="time-block">12:00 – 13:00 | Обед</div>
+
+    <div class="time-block">13:00 – 14:30 | Модуль 7: Работа с возражениями</div>
+    <div class="action-block"><strong>Отработка типовых сценариев.</strong></div>
+    <table>
+        <tr>
+            <th>Возражение клиента</th>
+            <th>Ваш ответ</th>
+        </tr>
+        <tr>
+            <td>«У BAUR дешевле»</td>
+            <td>«Да, но у нас гарантия 1,5 года, а не 1 год. Вы будете экономить на сервисе. Кроме того, у нас русский интерфейс — ваши сотрудники не будут тратить время на обучение.»</td>
+        </tr>
+        <tr>
+            <td>«У нас бюджет ограничен»</td>
+            <td>«Понимаю. Но наше оборудование включено в реестр Минпромторга — вы можете участвовать в госзакупках с приоритетом по цене 15%. Это окупит разницу.»</td>
+        </tr>
+        <tr>
+            <td>«Мы привыкли к BAUR»</td>
+            <td>«Поверьте, перестроиться проще, чем кажется. Смотрите, у нас интуитивный интерфейс. Вот демонстрация — ваш сотрудник разберётся за 15 минут.»</td>
+        </tr>
+        <tr>
+            <td>«Нужна поверка, а у вас МПИ 2 года?»</td>
+            <td>«Да, это наше преимущество. Вы экономите на поверке в два раза. Это прямая выгода для вашего бюджета.»</td>
+        </tr>
+    </table>
+
+    <div class="time-block">14:30 – 15:00 | Кофе-брейк</div>
+
+    <div class="time-block">15:00 – 16:30 | Модуль 8: Демонстрация продукта клиенту</div>
+    <div class="action-block"><strong>Практическое задание: провести мини-презентацию СКАТ-М100В.</strong></div>
+    <div class="lector-text">«Сейчас вы попробуете провести презентацию. Задание: за 5 минут представить СКАТ-М100В клиенту-лаборатории. Подчеркните простоту управления, автоматический подъёмный стол, встроенный принтер. Помните, что ваш клиент — это специалист, который ценит точность и надёжность.»</div>
+
+    <div class="time-block">16:30 – 17:30 | Итоговое тестирование и сертификаты</div>
+    <div class="action-block"><strong>Раздаёт тестовые листы. Даёт 30 минут. Разбирает ошибки. Вручает сертификаты.</strong></div>
+    <div class="lector-text">«Коллеги, теперь проверю, насколько вы усвоили материал. Это не экзамен, это самопроверка. Вопросы: Что такое высокоомное повреждение? Как читать рефлектограмму? Как называется прибор для испытания сверхнизкой частотой? Что такое "прожиг"? Какие преимущества даёт Постановление 719?<br><br>
+    Поздравляю вас! Вы прошли обучение. Помните — вы всегда можете обратиться к нам за помощью. Спасибо за внимание! Успехов в работе!»</div>
+
+    <!-- НИЖНЯЯ ПЛАШКА -->
+    <div class="footer">
+        <div>ООО «ЗПО СКАТ» — завод полного цикла</div>
+        <div style="font-weight: 900;">www.skat-v.ru</div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ранняя загрузка шапки и логотипа, чтобы избежать заметной задержки отрисовки -->
+    <link rel="preload" href="prod_head.html" as="fetch" crossorigin>
+    <link rel="preload" href="logo.png" as="image">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precision Measurement | SKAT</title>
+    <title data-i18n="page_title">Precision Measurement | SKAT</title>
+    <meta name="description" data-i18n="page_description" content="High-precision digital kilovoltmeters for AC/DC voltage, harmonic analysis, and calibration. Class 0.25 accuracy.">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,9 +23,8 @@
     <!-- HERO БЛОК -->
     <section class="category-hero">
         <div class="container hero-content">
-            <h1>Precision Measurement</h1>
-            <p>High-precision digital kilovoltmeters for AC/DC voltage, harmonic analysis, and calibration.<br>
-               Class 0.25 accuracy.</p>
+            <h1 data-i18n="cat_hero_title_precision">Precision Measurement</h1>
+            <p data-i18n="cat_hero_subtitle_precision">High-precision digital kilovoltmeters for AC/DC voltage, harmonic analysis, and calibration.<br>Class 0.25 accuracy.</p>
         </div>
     </section>
 
@@ -32,16 +36,12 @@
             <article class="tech-card">
                 <div class="tech-card__image-wrap">
                     <img src="images/kvc-b-1.png" alt="KVC B-Series" class="tech-card__img">
-                    <div class="tech-card__badge blue">Class 0.25–1.0</div>
+                    <div class="tech-card__badge blue" data-i18n="badge_class_025_10">Class 0.25–1.0</div>
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">KVC B-Series (Oil-Insulated)</h3>
-                    <p class="tech-card__desc">
-                        High-precision oil-insulated kilovoltmeters for AC (50 Hz) and DC voltage. Accuracy classes 0.25, 0.5, and 1.0.
-                    </p>
-                    <a href="product-kvc-b.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_kvc_b_title">KVC B-Series (Oil-Insulated)</h3>
+                    <p data-i18n="cat_kvc_b_desc">High-precision oil-insulated kilovoltmeters for AC (50 Hz) and DC voltage. Accuracy classes 0.25, 0.5, and 1.0.</p>
+                    <a href="product-kvc-b.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
@@ -49,22 +49,18 @@
             <article class="tech-card">
                 <div class="tech-card__image-wrap">
                     <img src="images/kvc-c-1.png" alt="KVC C-Series" class="tech-card__img">
-                    <div class="tech-card__badge green">Class 0.25</div>
+                    <div class="tech-card__badge green" data-i18n="badge_class_025">Class 0.25</div>
                 </div>
                 <div class="tech-card__content">
-                    <h3 class="tech-card__title">KVC C-Series (Air-Insulated)</h3>
-                    <p class="tech-card__desc">
-                        Class 0.25 precision with THD analysis (up to 50 harmonics) and VLF mode for advanced applications.
-                    </p>
-                    <a href="product-kvc-c.html" class="tech-card__btn">
-                        Learn More <i class="fa-solid fa-arrow-right"></i>
-                    </a>
+                    <h3 data-i18n="cat_kvc_c_title">KVC C-Series (Air-Insulated)</h3>
+                    <p data-i18n="cat_kvc_c_desc">Class 0.25 precision with THD analysis (up to 50 harmonics) and VLF mode for advanced applications.</p>
+                    <a href="product-kvc-c.html" class="tech-card__btn" data-i18n="learn_more">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </article>
 
         </div>
         <div style="text-align: center; margin-top: 40px;">
-            <a href="index.html#products" class="btn-outline-dark">Back to Products</a>
+            <a href="index.html#products" class="btn-outline-dark" data-i18n="back_to_products">Back to Products</a>
         </div>
     </section>
 
@@ -75,6 +71,7 @@
 
     <!-- СКРИПТЫ -->
     <script src="assets.js"></script>
+    <script src="lang.js"></script>
     <script src="category.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {

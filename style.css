@@ -6,8 +6,28 @@
     --bg-secondary: #F5F6F8;
     --text-dark: #333333;
     --text-light: #666666;
+    --header-outer-width: 92%;
+    --header-outer-max-width: 1440px;
+}
+/* Шапка скрыта, пока не загрузится через fetch */
+#header-container {
+    opacity: 0;
+    transition: opacity .1s ease;
 }
 
+#header-container.ready {
+    opacity: 1;
+}
+
+/* Футер скрыт, пока не загрузится через fetch */
+#footer-container {
+    opacity: 0;
+    transition: opacity .1s ease;
+}
+
+#footer-container.ready {
+    opacity: 1;
+}
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Inter', sans-serif;
@@ -32,7 +52,7 @@ header {
     background: #FFFFFF;
     border-radius: 50px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    z-index: 1000;
+    z-index: 10001;
     transition: all 0.3s ease;
     display: flex;
     justify-content: center;
@@ -176,6 +196,18 @@ section { padding: 60px 0; }
 .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
 .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
 
+/* Раньше .grid-2 не имел мобильной адаптации вообще: две колонки (текст +
+   фото) продолжали сжиматься в две узкие полоски на любом экране — отсюда
+   жалоба "повторяется расположение неспециальной версии, фотка просто
+   уменьшается". Теперь на мобильных верстка честно превращается в один
+   столбец: сначала блок (обычно текст), затем фото/иллюстрация под ним. */
+@media (max-width: 768px) {
+    .grid-2 {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+}
+
 /* Why SKAT */
 .feature-card {
     text-align: center;
@@ -237,10 +269,12 @@ section { padding: 60px 0; }
 }
 .product-link:hover { 
     background-color: var(--accent-yellow); 
-    border-color: var(--accent-yellow); 
+    border-color: var(--accent-yellow);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.30);
 }
 .product-link i { transition: transform 0.3s ease; }
-.product-link:hover i { transform: translateX(5px); }
+.product-link:hover i { transform: translateX(4px); }
 .hover-features {
     max-height: 0;
     overflow: hidden;
@@ -464,222 +498,7 @@ tr:hover { background-color: #f9f9f9; }
     opacity: 1;
 }
 
-/* MEGA-OVERLAY */
-.mega-overlay {
-    display: none;
-    position: fixed;
-    top: 120px;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 120px);
-    background: #FFFFFF;
-    z-index: 9999;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 20px 40px 20px;
-    animation: fadeInOverlay 0.3s ease forwards;
-}
-
-.mega-overlay.active {
-    display: flex;
-}
-
-@keyframes fadeInOverlay {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-.mega-overlay-close {
-    position: absolute;
-    top: 20px;
-    right: 40px;
-}
-
-.mega-close-btn {
-    background: transparent;
-    border: none;
-    color: var(--text-light);
-    font-size: 1rem;
-    font-weight: 500;
-    cursor: pointer;
-    padding: 5px 12px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.mega-close-btn:hover {
-    background: var(--bg-secondary);
-    color: var(--primary-dark);
-}
-
-.mega-overlay-container {
-    display: flex;
-    gap: 40px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.mega-cards-column {
-    flex: 0 0 230px;
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-.mega-card-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 10px 14px;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border-left: 4px solid transparent;
-}
-
-.mega-card-item:hover,
-.mega-card-item.active {
-    background: var(--bg-secondary);
-    border-left-color: var(--accent-yellow);
-    transform: translateX(5px);
-}
-
-.mega-card-item .mega-icon {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-    filter: invert(11%) sepia(8%) saturate(748%) hue-rotate(204deg) brightness(95%) contrast(90%);
-    transition: filter 0.3s ease, transform 0.3s ease;
-}
-
-.mega-card-item:hover .mega-icon,
-.mega-card-item.active .mega-icon {
-    filter: invert(71%) sepia(92%) saturate(2066%) hue-rotate(358deg) brightness(101%) contrast(105%);
-    transform: scale(1.05);
-}
-
-.mega-card-item .mega-text h4 {
-    margin: 0;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: var(--primary-dark);
-}
-
-.mega-card-item .mega-text p {
-    margin: 0;
-    font-size: 0.75rem;
-    color: var(--text-light);
-}
-
-.mega-links-column {
-    flex: 1;
-    padding-left: 20px;
-    border-left: 1px solid #eaeaea;
-    min-height: 280px;
-}
-
-.mega-links-group {
-    display: none;
-    animation: fadeInContent 0.4s ease;
-}
-
-.mega-links-group.active {
-    display: block;
-}
-
-@keyframes fadeInContent {
-    from {
-        opacity: 0;
-        transform: translateY(8px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.mega-links-title {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--primary-dark);
-    margin-bottom: 15px;
-}
-
-.mega-links-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 20px 0;
-}
-
-.mega-links-list li {
-    margin-bottom: 10px;
-}
-
-.mega-links-list a {
-    text-decoration: none;
-    color: var(--text-dark);
-    font-size: 0.9rem;
-    transition: color 0.3s ease;
-    display: block;
-    padding: 2px 0;
-}
-
-.mega-links-list a:hover {
-    color: var(--accent-yellow);
-    padding-left: 5px;
-}
-
-.mega-view-all {
-    display: inline-block;
-    font-weight: 600;
-    color: var(--primary-dark);
-    text-decoration: none;
-    padding: 6px 14px;
-    border: 2px solid var(--primary-dark);
-    border-radius: 6px;
-    font-size: 0.85rem;
-    transition: all 0.3s ease;
-}
-
-.mega-view-all:hover {
-    background: var(--primary-dark);
-    color: #fff;
-}
-
-@media (max-width: 992px) {
-    .mega-overlay {
-        top: 100px;
-        height: calc(100% - 100px);
-        padding: 15px 15px 20px 15px;
-    }
-    .mega-overlay-container {
-        flex-direction: column;
-        gap: 20px;
-    }
-    .mega-cards-column {
-        flex: 1;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 8px;
-    }
-    .mega-links-column {
-        padding-left: 0;
-        border-left: none;
-        border-top: 1px solid #eaeaea;
-        padding-top: 15px;
-        min-height: auto;
-    }
-    .mega-card-item {
-        padding: 8px 12px;
-    }
-    .mega-overlay-close {
-        top: 15px;
-        right: 20px;
-    }
-}
+/* MEGA-OVERLAY — вынесено в megamenu.css, здесь больше не дублируется */
 
 /* UNIVERSAL PADDING */
 .hero-video {
@@ -768,7 +587,7 @@ body.home main { padding-top: 0; }
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(28, 29, 38, 0.7);
+    background: rgba(28, 29, 38, 0.35);
     z-index: 1;
 }
 
@@ -778,23 +597,42 @@ body.home main { padding-top: 0; }
     z-index: 2;
 }
 
+/* Контейнер растягиваем на всю ширину, а центрируем содержимое —
+   раньше .container оставался узким flex-item'ом и «сжимался» под
+   текст, из-за чего заголовок визуально уезжал влево от истинного
+   центра баннера. Теперь центровка честная и одинаковая на всех языках. */
+.page-hero-about .container,
+.category-hero .container {
+    width: 100%;
+}
+
 .hero-about-content,
 .category-hero .hero-content {
-    max-width: 600px;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .page-hero-about h1,
 .category-hero h1 {
-    font-size: 3.5rem;
+    font-size: clamp(1.9rem, 4.2vw, 3.5rem);
     margin-bottom: 20px;
     color: #fff;
+    line-height: 1.2;
+    /* Длинные непереводимые слова (KZ/AZ/UZ и составные термины) не должны
+       вылезать за рамки баннера — переносим по слогам/границе слова. */
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
 }
 
 .page-hero-about p,
 .category-hero p {
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.2rem);
     color: #e0e0e0;
     line-height: 1.7;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 /* ОТДЕЛЬНОЕ ПРАВИЛО ДЛЯ ABOUT (БЕЗ background-image) */
@@ -808,82 +646,190 @@ body.home main { padding-top: 0; }
     .category-hero {
         padding: 120px 0 60px 0;
     }
-    .page-hero-about h1,
-    .category-hero h1 { font-size: 2.2rem; }
-    .page-hero-about p,
-    .category-hero p { font-size: 1rem; }
+    .hero-about-content,
+    .category-hero .hero-content {
+        max-width: 100%;
+        padding: 0 10px;
+    }
 }
 
 /* ========================================= */
-/* ЕДИНЫЙ СТИЛЬ ДЛЯ ВСЕХ КНОПОК (КАК У MEGGER) */
+/* УНИФИЦИРОВАННАЯ СИСТЕМА КНОПОК (одна палитра, одни состояния) */
 /* ========================================= */
 
-/* 1. Основная жёлтая кнопка (CTA) */
-.btn-primary {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: var(--accent-yellow);
-    color: var(--primary-dark);
-    padding: 10px 24px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 2px solid var(--accent-yellow);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.btn-primary:hover {
-    background-color: transparent;
-    color: var(--accent-yellow);
-}
-
-/* 2. Второстепенная кнопка (Outline - только рамка) */
-.btn-outline-dark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    background-color: transparent;
-    color: var(--primary-dark);
-    padding: 10px 24px;
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 2px solid var(--primary-dark);
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-.btn-outline-dark:hover {
-    background-color: var(--primary-dark);
-    color: #fff;
-}
-
-/* 3. Кнопка для скачивания каталога (специальный компактный стиль) */
+/* Общие свойства для всех пилюль */
+.btn-primary,
+.btn-outline,
+.btn-outline-dark,
+.btn-outline-light,
 .btn-catalog-header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
+    padding: 10px 24px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    cursor: pointer;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+    transform: translateY(0);
+}
+
+/* 1. PRIMARY — главный CTA (FILLED -> OUTLINE на hover) */
+.btn-primary {
+    background-color: var(--accent-yellow);
+    color: var(--primary-dark);
+    border: 2px solid var(--accent-yellow);
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
+}
+
+.btn-primary:active {
+    transform: translateY(-1px) scale(0.97);
+    box-shadow: 0 2px 6px rgba(255, 184, 28, 0.15);
+    transition-duration: 0.05s;
+}
+
+.btn-primary:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* 2. SECONDARY — товарный CTA (OUTLINE янтарь -> FILLED на hover) */
+.btn-outline {
+    background-color: transparent;
+    color: var(--primary-dark);
+    border: 2px solid var(--accent-yellow);
+}
+
+.btn-outline:hover {
+    background-color: var(--accent-yellow);
+    color: var(--primary-dark);
+    border-color: var(--accent-yellow);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
+}
+
+.btn-outline:active {
+    transform: translateY(-1px) scale(0.97);
+    box-shadow: 0 2px 6px rgba(255, 184, 28, 0.15);
+    transition-duration: 0.05s;
+}
+
+.btn-outline:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* 3. NEUTRAL — возврат/закрытие (OUTLINE графит -> FILLED графит) */
+.btn-outline-dark {
+    background-color: transparent;
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
+}
+
+.btn-outline-dark:hover {
+    background-color: var(--primary-dark);
+    color: #fff;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(28, 29, 38, 0.25);
+}
+
+.btn-outline-dark:active {
+    transform: translateY(-1px) scale(0.97);
+    box-shadow: 0 2px 6px rgba(28, 29, 38, 0.15);
+    transition-duration: 0.05s;
+}
+
+.btn-outline-dark:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* 4. OUTLINE-LIGHT — CTA на тёмных карточках (прозрачный + белый текст + янтарь, hover -> заливка) */
+.btn-outline-light {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 2px solid var(--accent-yellow);
+}
+
+.btn-outline-light:hover {
+    background-color: var(--accent-yellow);
+    color: var(--primary-dark);
+    border-color: var(--accent-yellow);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
+}
+
+.btn-outline-light:active {
+    transform: translateY(-1px) scale(0.97);
+    transition-duration: 0.05s;
+}
+
+.btn-outline-light:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+.btn-outline-light i { transition: transform 0.3s ease; }
+.btn-outline-light:hover i { transform: translateX(4px); }
+
+/* 5. CATALOG-HEADER — компактный PRIMARY */
+.btn-catalog-header {
     background-color: var(--accent-yellow);
     color: var(--primary-dark);
     padding: 6px 14px;
     font-size: 0.85rem;
-    font-weight: 600;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 2px solid var(--accent-yellow);
-    transition: all 0.3s ease;
     line-height: 1.2;
+    border: 2px solid var(--accent-yellow);
+    gap: 6px;
 }
+
 .btn-catalog-header:hover {
     background-color: transparent;
     color: var(--accent-yellow);
+    border-color: var(--accent-yellow);
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
 }
-.btn-catalog-header i { font-size: 0.9rem; }
+
+.btn-catalog-header:active {
+    transform: translateY(-1px) scale(0.97);
+    box-shadow: 0 2px 6px rgba(255, 184, 28, 0.15);
+    transition-duration: 0.05s;
+}
+
+.btn-catalog-header:focus-visible {
+    outline: 2px solid var(--primary-dark);
+    outline-offset: 2px;
+}
+
+/* ===== ЕДИНОЕ МИКРО-ДВИЖЕНИЕ СТРЕЛКИ ===== */
+.btn-outline i,
+.btn-primary i,
+.btn-outline-light i,
+.btn-catalog-header i,
+.product-link i {
+    transition: transform 0.3s ease;
+}
+
+.btn-outline:hover i,
+.btn-primary:hover i,
+.btn-outline-light:hover i,
+.btn-catalog-header:hover i,
+.product-card:hover .btn-outline i,
+.product-link:hover i {
+    transform: translateX(4px);
+}
 
 /* ========================================= */
 /* СТРАНИЦА CONTACT (КАК У MEGGER)           */
@@ -1174,8 +1120,7 @@ body.home main { padding-top: 0; }
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 50%; left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
     font-size: 2rem;
     color: #fff;
@@ -1260,3 +1205,1053 @@ body.home main { padding-top: 0; }
 #products {
     scroll-margin-top: 160px;
 }
+/* ========================================= */
+/* MOBILE HEADER & BURGER MENU STYLES        */
+/* ========================================= */
+
+/* Скрываем десктопные элементы на мобильных */
+@media (max-width: 768px) {
+    .desktop-nav,
+    .desktop-icons {
+        display: none;
+    }
+}
+
+/* Стили для кнопки бургера */
+.burger-btn {
+    display: none; /* Скрыта на десктопе */
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+    padding: 0;
+    flex: 0 0 44px; /* Жёстко запрещаем flexbox сжимать кнопку */
+    width: 44px;   /* Фиксированная ширина для тапа пальцем */
+    height: 44px;
+    margin-left: auto; /* Прижимаем к правому краю контейнера */
+}
+
+/* Линии бургера с фирменным жёлтым цветом, толщиной 4px и закруглением */
+.burger-btn span {
+    display: block;
+    position: absolute;
+    height: 4px; /* Увеличена толщина с 2px до 4px */
+    width: 24px; /* Фиксированная ширина линий */
+    background: var(--accent-yellow); /* Фирменный жёлтый #FFB81C */
+    border-radius: 4px; /* Скругление концов */
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%) rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.burger-btn span:nth-child(1) { top: 8px; }
+.burger-btn span:nth-child(2) { top: 20px; }
+.burger-btn span:nth-child(3) { top: 32px; }
+
+/* Анимация бургера в крестик при открытом меню (тоже жёлтый) */
+.burger-btn.active span:nth-child(1) {
+    top: 20px;
+    transform: translateX(-50%) rotate(135deg);
+}
+.burger-btn.active span:nth-child(2) {
+    opacity: 0;
+    left: 50%;
+    transform: translateX(-50%) scale(0);
+}
+.burger-btn.active span:nth-child(3) {
+    top: 20px;
+    transform: translateX(-50%) rotate(-135deg);
+}
+
+/* Мобильное выпадающее меню */
+.mobile-nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 12px 12px;
+    z-index: 1000;
+}
+
+.mobile-nav.active {
+    display: block;
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+}
+
+.mobile-nav ul li {
+    margin-bottom: 12px;
+}
+
+.mobile-nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 1.1rem;
+    font-weight: 500;
+    display: block;
+    padding: 6px 0;
+    transition: color 0.3s;
+}
+
+.mobile-nav ul li a:hover {
+    color: var(--accent-yellow);
+}
+
+/* Показываем бургер на мобильных */
+@media (max-width: 768px) {
+    .burger-btn {
+        display: block;
+    }
+}
+
+/* КРИТИЧНОЕ ИСПРАВЛЕНИЕ: На мобильных скрываем слоган, чтобы освободить место для бургера */
+@media (max-width: 768px) {
+    .tagline {
+        display: none;
+    }
+}
+/* =========================================
+   NEWS & EVENTS — приведено к механике Products Overview
+   Карточка = колонка (CTA прижат к низу), hover поднимает карточку
+   и зажигает кнопку янтарём (как product-card + btn-outline).
+   Read More = btn-outline (та же пилюля, что на support,
+   но в «светлой фазе», т.к. фон карточки белый).
+   ========================================= */
+.news-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;          /* колонка → margin-top:auto прижмёт кнопку */
+  background: var(--bg-white);
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 28px 26px 24px;
+  border-top: 4px solid transparent;
+  overflow: visible;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.news-card:hover {
+  border-top-color: var(--accent-yellow);   /* янтарная полоса сверху, как у product-card */
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(28, 29, 38, 0.12);
+}
+
+/* Дата — янтарный акцент */
+.news-card__date {
+  align-self: flex-start;
+  color: var(--accent-yellow);
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.news-card__title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
+
+.news-card__text {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
+
+/* Кнопка: прижимаем к низу И не даём растянуться на всю ширину колонки */
+.news-card__cta {
+  margin-top: auto;        /* пустота уходит МЕЖДУ текстом и кнопкой → все 3 в линию */
+  align-self: flex-start;  /* пилюля по ширине контента, а не во всю карточку */
+}
+
+/* HOVER-СВЯЗЬ: навели на карточку → её кнопка переходит в FILLED,
+   даже если курсор не на самой кнопке (точно как product-card:hover .btn-outline).
+   Специфичность 0,3,0 бьёт базовый .btn-outline:hover (0,2,0). */
+.news-card:hover .news-card__cta {
+  background-color: var(--accent-yellow);
+  color: var(--primary-dark);
+  border-color: var(--accent-yellow);
+}
+
+.news-card:hover .news-card__cta i {
+  transform: translateX(4px);   /* стрелка едет вправо синхронно с подъёмом */
+}
+
+/* ===== БЕГУЩАЯ СТРОКА (MARQUEE) ===== */
+.marquee {
+    background: var(--primary-dark);
+    color: #fff;
+    padding: 15px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.marquee-track {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+    white-space: nowrap;
+}
+
+/* Замедляем анимацию для русского языка (текст длиннее) */
+html[lang="ru"] .marquee-track {
+    animation-duration: 40s; /* Увеличиваем время прокрутки в 2 раза */
+}
+
+/* Дополнительно: убираем слипание текста за счёт паузы между повторениями */
+html[lang="ru"] .marquee-track {
+    animation: scroll-ru 40s linear infinite;
+}
+
+@keyframes scroll-ru {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Стандартная анимация (для английского) */
+@keyframes scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+/* ==========================================================
+   Переключатель языка в стиле Megger
+   ========================================================== */
+.lang-switcher {
+    position: relative;
+}
+
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary-dark);
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+.lang-toggle:hover {
+    background: #f5f5f7;
+}
+
+.lang-chevron {
+    font-size: 0.7rem;
+    transition: transform 0.2s;
+}
+
+.lang-switcher.open .lang-chevron {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown {
+    position: absolute;
+    right: 0;
+    top: calc(100% + 8px);
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    padding: 12px;
+    display: none;
+    z-index: 1000;
+}
+
+.lang-switcher.open .lang-dropdown {
+    display: block;
+}
+
+.lang-dropdown-title {
+    font-size: 0.8rem;
+    color: #8a8a93;
+    margin: 4px 8px 8px;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-size: 0.9rem;
+}
+
+.lang-option:hover {
+    background: #f5f5f7;
+}
+
+.lang-option.active {
+    background: #fff7e6;
+    color: #b07f00;
+    font-weight: 700;
+}
+
+.lang-flag {
+    font-size: 1.2rem;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .lang-switcher {
+        display: none;
+    }
+}
+
+/* ==========================================================
+   СЕЛЕКТОР ЯЗЫКА (MEGGER-СТИЛЬ)
+   ========================================================== */
+
+/* Триггер (кнопка) — теперь прозрачный, как лупа и меню */
+.language-selector {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: transparent;  /* Убрали серый фон */
+    user-select: none;
+    transition: background 0.2s, color 0.2s;
+    color: var(--text-dark);   /* Тёмный текст, как у меню */
+}
+
+/* При наведении — лёгкая подсветка, как у пунктов меню */
+.language-selector:hover {
+    background: rgba(0, 0, 0, 0.04); /* Очень лёгкая подсветка вместо серой плашки */
+}
+
+/* Флаг */
+.language-selector .language-flag {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
+    transition: transform 0.2s ease; /* Добавили анимацию флагу */
+}
+
+/* Текст */
+.language-selector .language-text {
+    font-size: 0.9rem;
+    font-weight: 500; /* Средний вес, как у меню */
+    color: var(--text-dark);
+    white-space: nowrap;
+    transition: color 0.3s;
+}
+
+/* Короткий код (RU/EN/KZ/AZ/UZ) — скрыт на десктопе, показывается
+   только в компактном мобильном варианте селектора (см. медиа-запрос
+   в конце файла), чтобы полное название языка не выталкивало бургер
+   за пределы шапки на узких экранах. */
+.language-selector .language-code {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    letter-spacing: 0.02em;
+}
+
+/* Шеврон */
+.language-selector .language-chevron {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid var(--text-dark);
+    border-bottom: 2px solid var(--text-dark);
+    transform: rotate(45deg);
+    transition: transform 0.2s;
+    margin-top: -3px;
+}
+
+/* При наведении на триггер */
+.language-selector:hover .language-text {
+    color: var(--accent-yellow); /* Жёлтый при наведении, как у пунктов меню */
+}
+
+.language-selector:hover .language-flag {
+    transform: scale(1.1); /* Лёгкое увеличение флага */
+}
+
+/* При открытии */
+.language-selector.open .language-chevron {
+    transform: rotate(225deg);
+}
+
+.language-selector.open .language-text {
+    color: var(--accent-yellow);
+}
+
+/* ПАНЕЛЬ — absolute внутри триггера */
+.site-selector {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    z-index: 10000;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    border: 1px solid #eaeaea;
+    width: 320px;
+    max-width: calc(100vw - 40px);
+    
+    /* Эффект появления */
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    pointer-events: none;
+}
+
+.site-selector.open {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+/* Содержимое панели — ВАЖНО: max-height для скролла */
+.site-selector__dropdown {
+    max-height: min(70vh, 520px);  /* Ограничиваем высоту панели */
+    overflow-y: auto;              /* Скроллим внутри панели */
+    padding: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #ccc #f0f0f0;
+}
+
+.site-selector__dropdown::-webkit-scrollbar {
+    width: 6px;
+}
+
+.site-selector__dropdown::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+}
+
+.site-selector__dropdown::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.site-selector__dropdown::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+/* Заголовок */
+.site-selector__title {
+    font-size: 0.8rem;
+    color: #8a8a93;
+    margin: 8px 12px 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #f1f1f3;
+    font-weight: 600;
+}
+
+/* Список языков */
+.site-selector__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+/* Пункт списка */
+.site-selector__site {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    transition: background 0.2s;
+}
+
+.site-selector__site:hover {
+    background: #f5f5f7;
+}
+
+.site-selector__site.active {
+    background: #fff7e6;
+    color: #b07f00;
+    font-weight: 600;
+}
+
+.site-selector__site--disabled {
+    opacity: .45;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
+/* Флаг */
+.site-selector__site .image-container {
+    width: 24px;
+    height: 18px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.site-selector__site .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Название языка */
+.site-selector__site-name {
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 768px) {
+    .site-selector {
+        width: 280px;
+        right: -60px;
+    }
+    .site-selector__dropdown {
+        max-height: 60vh;
+    }
+}
+/* ==========================================================
+   ФИКСЫ ЯЗЫКОВОГО СЕЛЕКТОРА
+   ========================================================== */
+
+/* 2. Hover без серой подложки */
+.language-selector:hover {
+    background: transparent;
+}
+
+
+/* ==========================================================
+   ФИКС: ГЛОБУС (intl.png) В ВЫПАДАЮЩЕМ МЕНЮ
+   ========================================================== */
+
+/* В панели — круглый, как в шапке */
+.site-selector .image-container img[src*="intl"] {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+}
+
+/* ==========================================================
+   ФИКС: АНИМАЦИЯ ШЕВРОНА ПРИ НАВЕДЕНИИ
+   ========================================================== */
+
+/* Шеврон в триггере */
+.language-selector .language-chevron {
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid var(--text-dark);
+    border-bottom: 2px solid var(--text-dark);
+    transform: rotate(45deg);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    margin-top: -4px;
+}
+
+/* При наведении: увеличивается и становится жёлтым */
+.language-selector:hover .language-chevron {
+    border-right-color: var(--accent-yellow);
+    border-bottom-color: var(--accent-yellow);
+    transform: rotate(45deg) scale(1.3);
+}
+
+/* При открытии: переворачивается вверх */
+.language-selector.open .language-chevron {
+    transform: rotate(225deg) scale(1.1);
+    border-right-color: var(--accent-yellow);
+    border-bottom-color: var(--accent-yellow);
+}
+
+/* Дополнительная анимация "ныряния" при наведении */
+@keyframes skat-chevron-bounce {
+    0%, 100% { transform: rotate(45deg) translateY(0) scale(1); }
+    50%      { transform: rotate(45deg) translateY(3px) scale(1.2); }
+}
+
+.language-selector:hover .language-chevron {
+    animation: skat-chevron-bounce 0.5s ease infinite;
+}
+/* ===== ФИКС: значок Global — круглый, как в шапке, без «флаг-рамки» ===== */
+/* контейнер глобуса: убираем рамку и фон, делаем круглым */
+.site-selector__site .image-container:has(img[src*="intl"]),
+.site-selector__site .image-container--globe {
+    width: 18px !important;
+    height: 18px !important;
+    border: none !important;
+    background: transparent !important;
+    border-radius: 50% !important;
+}
+/* сам глобус: contain + круг, не кропается в флаг */
+.site-selector__site .image-container img[src*="intl"],
+.site-selector__site img.flag--globe,
+.language-flag[src*="intl"] {
+    width: 18px !important;
+    height: 18px !important;
+    object-fit: contain !important;
+    border-radius: 50% !important;
+    border: none !important;
+    background: transparent !important;
+}
+/* ===== СЕЛЕКТОР ЯЗЫКА: ВЫРАВНЯНО КАК У MEGGER ===== */
+/* Триггер НЕ создаёт containing block — панель позиционируется от ШАПКИ */
+.language-selector { position: static; }
+
+.site-selector {
+    display: none;
+    position: absolute !important;
+    top: calc(100% + 10px) !important;  /* сразу под шапкой */
+    right: 0 !important;                /* вровень с правым краем шапки, как у Megger */
+    left: auto !important;
+    width: 300px;
+    max-width: calc(100vw - 40px);
+    max-height: none;                   /* скролл переносим внутрь списка */
+    overflow: hidden;                   /* только скругление углов панели */
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    z-index: 10001;
+}
+.site-selector.open { display: block; }
+
+/* Скроллится ТОЛЬКО внутренний список — тонким скроллбаром, как у Megger */
+.site-selector__dropdown {
+    max-height: min(70vh, 520px);
+    overflow-y: auto;
+    padding: 8px;
+    scrollbar-width: thin;
+    scrollbar-color: #c7c7cd transparent;
+}
+.site-selector__dropdown::-webkit-scrollbar { width: 6px; }
+.site-selector__dropdown::-webkit-scrollbar-track { background: transparent; }
+.site-selector__dropdown::-webkit-scrollbar-thumb { background: #c7c7cd; border-radius: 3px; }
+.site-selector__dropdown::-webkit-scrollbar-thumb:hover { background: #a9a9b0; }
+
+/* ==========================================================
+   ШИРЕ ПИЛЮЛЯ + ВОЗДУШНЫЕ ЗАЗОРЫ + АДАПТАЦИЯ «КАТАЛОГ»
+   ========================================================== */
+
+/* 1) Шире пилюля */
+header {
+  width: 92%;
+  max-width: 1440px;          /* было 1100/1240 */
+}
+
+/* 2) Меню: большие воздушные зазоры */
+.header-content { gap: 28px; }
+
+nav ul,
+.desktop-nav ul {
+  gap: clamp(24px, 2.6vw, 52px);
+}
+
+/* 3) Страховка для средних экранов */
+@media (max-width: 1300px) {
+  nav ul,
+  .desktop-nav ul { gap: 20px; }
+
+  /* Остаётся только иконка PDF */
+  .btn-catalog-header span {
+    display: none;
+  }
+
+  .btn-catalog-header {
+    padding: 6px 10px;
+  }
+}
+
+/* 4) «Каталог» тоже прячем на очень узких экранах */
+@media (max-width: 1100px) {
+  .btn-catalog-header {
+    display: none;
+  }
+}
+/* ==========================================================
+   АДАПТАЦИЯ ШАПКИ ПОД ЯЗЫК (все 18 языков)
+   ========================================================== */
+
+/* Базовые значения (по умолчанию — английский) */
+:root {
+  --header-nav-gap: clamp(24px, 2.6vw, 52px);
+  --header-padding-x: 30px;
+  --header-logo-max-width: 180px;
+}
+
+/* EN — короткие слова, свободно */
+html[lang="en"] {
+  --header-nav-gap: clamp(24px, 2.6vw, 52px);
+  --header-padding-x: 30px;
+  --header-logo-max-width: 180px;
+}
+
+/* RU — длинные слова, компактнее */
+html[lang="ru"] {
+  --header-nav-gap: clamp(16px, 2vw, 36px);
+  --header-padding-x: 22px;
+  --header-logo-max-width: 160px;
+}
+
+/* KZ — очень длинные, плотно */
+html[lang="kz"] {
+  --header-nav-gap: clamp(14px, 1.8vw, 32px);
+  --header-padding-x: 20px;
+  --header-logo-max-width: 150px;
+}
+
+/* AZ — средние */
+html[lang="az"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* UZ — средние */
+html[lang="uz"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* DE — очень длинные, максимально плотно */
+html[lang="de"] {
+  --header-nav-gap: clamp(12px, 1.6vw, 28px);
+  --header-padding-x: 18px;
+  --header-logo-max-width: 140px;
+}
+
+/* ES — средние */
+html[lang="es"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* FR — средние */
+html[lang="fr"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* IT — средние */
+html[lang="it"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* TR — средние */
+html[lang="tr"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* PL — длинные */
+html[lang="pl"] {
+  --header-nav-gap: clamp(14px, 1.8vw, 32px);
+  --header-padding-x: 20px;
+  --header-logo-max-width: 150px;
+}
+
+/* SV — средние */
+html[lang="sv"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* CS — средние */
+html[lang="cs"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* BG — длинные (кириллица) */
+html[lang="bg"] {
+  --header-nav-gap: clamp(14px, 1.8vw, 32px);
+  --header-padding-x: 20px;
+  --header-logo-max-width: 150px;
+}
+
+/* SR — длинные (кириллица) */
+html[lang="sr"] {
+  --header-nav-gap: clamp(14px, 1.8vw, 32px);
+  --header-padding-x: 20px;
+  --header-logo-max-width: 150px;
+}
+
+/* PT — средние */
+html[lang="pt"] {
+  --header-nav-gap: clamp(18px, 2.2vw, 40px);
+  --header-padding-x: 24px;
+  --header-logo-max-width: 170px;
+}
+
+/* ZH — компактные (иероглифы) */
+html[lang="zh"] {
+  --header-nav-gap: clamp(20px, 2.4vw, 44px);
+  --header-padding-x: 26px;
+  --header-logo-max-width: 180px;
+}
+
+/* AR — длинные (справа налево) */
+html[lang="ar"] {
+  --header-nav-gap: clamp(14px, 1.8vw, 32px);
+  --header-padding-x: 20px;
+  --header-logo-max-width: 150px;
+}
+
+/* Применяем переменные */
+header {
+  width: var(--header-outer-width);
+  max-width: var(--header-outer-max-width);
+  padding-left: var(--header-padding-x);
+  padding-right: var(--header-padding-x);
+}
+
+.header-content {
+  gap: var(--header-padding-x);
+}
+
+nav ul,
+.desktop-nav ul {
+  gap: var(--header-nav-gap);
+}
+
+.logo-container img.site-logo {
+  max-width: var(--header-logo-max-width);
+}
+
+/* Страховка: если всё равно не влезает — сжимаем текст */
+@media (max-width: 1300px) {
+  .desktop-nav a {
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+
+  .btn-catalog-header span {
+    display: none;
+  }
+
+  .btn-catalog-header {
+    padding: 6px 10px;
+  }
+}
+
+/* Ещё уже — скрываем «Каталог» полностью */
+@media (max-width: 1100px) {
+  .btn-catalog-header {
+    display: none;
+  }
+}
+
+/* ==========================================================
+   ИСПРАВЛЕНИЕ МОБИЛЬНОЙ ШАПКИ: бургер больше не "уезжает" за
+   пределы белой пилюли на узких экранах.
+
+   Причина бага: на мобильных прятался только .desktop-nav, а блок
+   .nav-icons (лупа + языковой селектор с полным названием языка,
+   например "Intl. English" / "Русский" + флаг + шеврон) оставался
+   в полную ширину. Вместе с логотипом и бургером это не влезало в
+   узкую шапку, и бургер визуально "вылетал" за края пилюли.
+
+   Решение: на мобильных селектор языка показывает только
+   флаг + короткий код (EN/RU/KZ/AZ/UZ) вместо полного названия —
+   ровно как попросил заказчик ("флаг + межд. обозначение",
+   "глобус + EN" для английского). Это резко сокращает ширину блока
+   и всё снова помещается рядом с бургером.
+   ========================================================== */
+@media (max-width: 768px) {
+  .language-selector .language-text {
+    display: none;
+  }
+  .language-selector .language-code {
+    display: inline-block;
+  }
+  .language-selector {
+    padding: 6px 6px;
+    gap: 4px;
+  }
+  .language-selector .language-chevron {
+    display: none;
+  }
+
+  /* Лупу убираем из компактной шапки — она давила логотип и языковой
+     переключатель друг на друга ("прилипают, выглядит скомкано").
+     Поиск переехал первым пунктом в мобильное меню (см. .mobile-nav ul),
+     открывается тем же поисковым модальным окном через [data-search-open]. */
+  .nav-icons .nav-icon[aria-label="Search"] {
+    display: none;
+  }
+
+  .nav-icons {
+    gap: 10px;
+  }
+
+  /* Больше воздуха между логотипом, языком и бургером — раньше вся
+     свободная ширина уходила в margin-left:auto бургера, и логотип с
+     языковым переключателем оказывались вплотную друг к другу. */
+  header {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  .header-content {
+    gap: 16px;
+  }
+  .logo-container img.site-logo {
+    max-width: 130px;
+  }
+}
+
+/* Совсем узкие экраны — чуть плотнее поля и логотип, чтобы гарантированно
+   оставалось место под бургер даже на самых маленьких телефонах. */
+@media (max-width: 400px) {
+  header {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+  .logo-container img.site-logo {
+    max-width: 110px;
+  }
+}
+
+/* ==========================================================
+   МОБИЛЬНАЯ ГЛАВНАЯ: меньше "простыней" текста
+   --------------------------------------------------------
+   Жалоба: "Built on Engineering Integrity", блок статистики и
+   "Applications & Industry Solutions" перегружают мобильного
+   пользователя — читать длинные абзацы под каждой карточкой на
+   телефоне неинтересно, нужна конкретика. Решение: секции чуть
+   компактнее по вертикали, статистика — не три растянутых блока
+   подряд, а плотная строка из трёх цифр, а абзацы под карточками
+   преимуществ/применений обрезаются до короткого тизера в 2 строки
+   (полный текст остаётся на десктопе).
+   ========================================================== */
+@media (max-width: 768px) {
+  section {
+    padding: 44px 0;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+  }
+  .stats-grid .stat-item h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 4px;
+  }
+  .stats-grid .stat-item p {
+    font-size: 0.7rem !important;
+    line-height: 1.3;
+  }
+
+  .feature-card {
+    padding: 22px 18px;
+  }
+  .feature-card p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+/* ==========================================================
+   RTL — арабский (ar) и персидский (fa)
+   lang.js переключает document.documentElement.dir = 'rtl' для
+   этих двух языков. Ниже — зеркалирование layout для [dir="rtl"]:
+   шапка, мобильное меню, вкладки, направленные иконки-стрелки,
+   аккордеон, футер. Числа, коды моделей и стандарты (SKAT-70C,
+   IEC 60156 и т.д.) остаются LTR автоматически — Unicode Bidi
+   Algorithm сам разворачивает "острова" латиницы/цифр внутри
+   RTL-текста, трогать их не нужно.
+   ========================================================== */
+[dir="rtl"] body { direction: rtl; text-align: right; }
+
+/* Шапка: логотип / навигация / иконки — зеркалим порядок блоков */
+[dir="rtl"] .header-content { flex-direction: row-reverse; }
+[dir="rtl"] .desktop-nav ul,
+[dir="rtl"] .nav-icons,
+[dir="rtl"] .mobile-nav ul { text-align: right; }
+[dir="rtl"] .burger-btn { margin-left: 0; margin-right: auto; }
+
+/* Мега-меню и мобильное меню — текст и списки вправо */
+[dir="rtl"] .mega-card-item,
+[dir="rtl"] .mega-text,
+[dir="rtl"] .mobile-nav ul li a { text-align: right; }
+[dir="rtl"] .mobile-nav ul li a i { margin-left: 8px; margin-right: 0; }
+
+/* Языковой селектор: панель открывается от левого края шапки, а не от правого */
+[dir="rtl"] .site-selector,
+[dir="rtl"] #languagePanel { right: auto; left: 0; }
+[dir="rtl"] .language-selector__content { flex-direction: row-reverse; }
+
+/* Направленные иконки-стрелки ("читать далее", ссылки на категории) —
+   разворачиваем зеркально, чтобы стрелка визуально указывала "вперёд" (влево) */
+[dir="rtl"] .fa-arrow-right,
+[dir="rtl"] .fa-chevron-right,
+[dir="rtl"] .product-tabs-support-link i,
+[dir="rtl"] .related-product-card i { transform: scaleX(-1); }
+
+/* Вкладки товара и аккордеон — порядок и позиция плюс/минус зеркалим */
+[dir="rtl"] .product-tabs-nav { flex-direction: row-reverse; }
+[dir="rtl"] .product-tabs { flex-direction: row-reverse; }
+[dir="rtl"] .accordion-header { text-align: right; }
+[dir="rtl"] .accordion-header::after { right: auto; left: 20px; }
+[dir="rtl"] .accordion-header i { margin-left: 12px; margin-right: 0; }
+
+/* Списки и текстовые блоки: убираем левые отступы под маркеры, добавляем правые */
+[dir="rtl"] .features-list li,
+[dir="rtl"] .product-content-block ul { padding-left: 0; padding-right: 25px; }
+[dir="rtl"] .features-list li::before { left: auto; right: 0; }
+[dir="rtl"] .hover-features ul li i { margin-right: 0; margin-left: 8px; }
+
+/* Таблица характеристик — заголовок и ячейки вправо */
+[dir="rtl"] .specs-table th,
+[dir="rtl"] .specs-table td,
+[dir="rtl"] th, [dir="rtl"] td { text-align: right; }
+
+/* Документы, карточки статов и связанных товаров — иконки и текст вправо */
+[dir="rtl"] .document-item { flex-direction: row-reverse; text-align: right; }
+[dir="rtl"] .related-product-card { text-align: center; } /* карточка и так центрирована */
+
+/* Футер — колонки читаем справа налево, но выравнивание внутри оставляем как есть,
+   т.к. большинство футера уже читается по флексу */
+[dir="rtl"] .footer-shipping-warranty i,
+[dir="rtl"] .document-item i { margin-right: 0; margin-left: 15px; }
+
+/* Формы: телефонный код-переключатель и файловый инпут — разворачиваем группы */
+[dir="rtl"] .phone-input-wrap,
+[dir="rtl"] .file-input-wrap { flex-direction: row-reverse; }
+
+/* Хлебные крошки/breadcrumb-подобные "категория → товар" строки, если встречаются */
+[dir="rtl"] .category { text-align: right; }

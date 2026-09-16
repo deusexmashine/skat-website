@@ -1,0 +1,720 @@
+/* ==========================================================
+   MODALS.CSS — Модальные окна: КП, Техподдержка, База знаний
+   ========================================================== */
+
+/* Оверлей */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10003;
+    background: rgba(28, 29, 38, 0.7);
+    backdrop-filter: blur(4px);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+/* Контейнер модалки */
+.modal-box {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(28, 29, 38, 0.3);
+    padding: 40px;
+    border-top: 4px solid var(--accent-yellow);
+    animation: modalIn 0.3s ease;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes modalIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+/* Кнопка закрытия */
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: color 0.3s, transform 0.3s;
+    line-height: 1;
+    z-index: 10;
+}
+
+.modal-close:hover {
+    color: var(--accent-yellow);
+    transform: rotate(90deg);
+}
+
+/* Заголовок */
+.modal-title {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 25px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--accent-yellow);
+    display: inline-block;
+}
+
+/* Короткое пояснение под заголовком модалки (напр., #trainingModal) */
+.modal-subtitle {
+    display: block;
+    color: var(--text-light);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: -15px 0 20px;
+}
+
+/* Форма */
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.modal-form input,
+.modal-form select,
+.modal-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fafafa;
+}
+
+.modal-form input:focus,
+.modal-form select:focus,
+.modal-form textarea:focus {
+    border-color: var(--accent-yellow);
+    box-shadow: 0 0 0 3px rgba(255, 184, 28, 0.15);
+    background: #fff;
+}
+
+.modal-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.modal-form input[type="file"] {
+    padding: 8px;
+    background: #fff;
+}
+
+/* ==========================================================
+   КАСТОМНАЯ КНОПКА ВЫБОРА ФАЙЛА
+   Нативная кнопка <input type="file"> берёт текст ("Choose File" /
+   "Выберите файл") из ЯЗЫКА БРАУЗЕРА, а не языка страницы — её
+   нельзя перевести через data-i18n. Поэтому визуально прячем
+   нативный контрол и рисуем свою кнопку + статус, оба переводятся
+   как обычно.
+   ========================================================== */
+.file-input-wrap {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.file-input-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border: 2px solid var(--primary-dark, #1c1d26);
+    border-radius: 8px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 0.88rem;
+    white-space: nowrap;
+    transition: background 0.2s, color 0.2s;
+}
+
+.file-input-wrap:hover .file-input-btn {
+    background: var(--primary-dark, #1c1d26);
+    color: #fff;
+}
+
+.file-input-status,
+.file-input-filename {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.file-input-native {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Ошибки */
+.form-error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 4px;
+    min-height: 16px;
+}
+
+.form-error-field {
+    border-color: #dc3545 !important;
+}
+
+/* Счётчик символов */
+.form-counter {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    text-align: right;
+    margin-top: 4px;
+}
+
+.form-counter--warning {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* Подсказка */
+.form-hint {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--text-light);
+    margin-top: 4px;
+}
+
+/* Checkbox */
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    cursor: pointer;
+}
+
+.checkbox-label input {
+    width: auto;
+}
+
+/* Превью файла (КП) */
+.file-preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    background: #f5f5f7;
+    border-radius: 6px;
+    margin-top: 8px;
+    font-size: 0.85rem;
+}
+
+.file-preview button {
+    background: none;
+    border: none;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Превью фото (поддержка) */
+.photo-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.photo-thumb {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+}
+
+.photo-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.photo-thumb .photo-remove {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-thumb .photo-remove:hover {
+    background: #dc3545;
+}
+
+/* Кнопка отправки */
+.modal-submit {
+    width: 100%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.modal-submit i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-submit:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+/* Экран успеха */
+.modal-success {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.modal-success i {
+    font-size: 3rem;
+    color: var(--accent-yellow);
+    margin-bottom: 15px;
+}
+
+.modal-success h4 {
+    font-size: 1.3rem;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+}
+
+.modal-success p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+.modal-ticket {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin: 15px 0 !important;
+}
+
+/* Экран ошибки */
+.modal-error {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.modal-error i {
+    font-size: 2.5rem;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+.modal-error p {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+/* ==========================================================
+   МОДАЛКА: ПОДДЕРЖКА ПРОДУКТА (#productSupportModal)
+   ========================================================== */
+
+.modal-box--product-support {
+    max-width: 560px;
+}
+
+/* Документация */
+.modal-docs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.modal-doc-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--primary-dark);
+    background: #f5f5f7;
+    border-left: 3px solid var(--accent-yellow);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.modal-doc-link:hover {
+    background: #ececf0;
+    transform: translateX(4px);
+}
+
+.modal-doc-link i {
+    color: var(--accent-yellow);
+    font-size: 1.2rem;
+}
+
+.doc-meta {
+    color: var(--text-light);
+    font-size: 0.75rem;
+    margin-left: 8px;
+}
+
+/* FAQ */
+.modal-faq {
+    margin-bottom: 22px;
+}
+
+.modal-faq h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 12px;
+}
+
+.modal-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.modal-faq-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-faq-item strong {
+    color: var(--primary-dark);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-faq-item p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.modal-faq-empty {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    padding: 10px 0;
+}
+
+/* Ремонт / КП */
+.modal-repair {
+    margin: 22px 0;
+    padding: 16px;
+    background: var(--bg-secondary);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-repair p {
+    margin: 0 0 12px;
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+.modal-support-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.85rem;
+    color: var(--accent-yellow);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-support-link:hover {
+    color: var(--primary-dark);
+}
+
+/* Контакты */
+.modal-contacts {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.modal-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.modal-contact:hover {
+    color: var(--accent-yellow);
+}
+
+.modal-contact i {
+    color: var(--accent-yellow);
+}
+
+/* ==========================================================
+   МОДАЛКА: БАЗА ЗНАНИЙ (#knowledgeModal)
+   ========================================================== */
+.modal-box--knowledge {
+    max-width: 640px;
+}
+
+.kb-section {
+    margin-bottom: 22px;
+}
+
+.kb-section h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.kb-section h4::before {
+    content: '';
+    width: 4px;
+    height: 16px;
+    background: var(--accent-yellow);
+    border-radius: 2px;
+}
+
+.kb-item {
+    display: flex;
+    gap: 10px;
+    padding: 10px 12px;
+    background: #f5f5f7;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.kb-item i {
+    color: var(--accent-yellow);
+    margin-top: 3px;
+}
+
+.kb-item strong {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--primary-dark);
+}
+
+.kb-item p {
+    margin: 2px 0 0;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.kb-standards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.kb-std {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 12px;
+    border: 1px solid #eaeaea;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: #fff;
+}
+
+.kb-std i {
+    color: var(--accent-yellow);
+}
+
+.kb-text {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 10px;
+}
+
+/* ==========================================================
+   ТЕЛЕФОН С ФЛАГАМИ (#supportModal)
+   ========================================================== */
+.phone-input-wrap {
+    position: relative;
+    display: flex;
+    gap: 8px;
+}
+
+.phone-code-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 12px;
+    border: 2px solid #eaeaea;
+    border-radius: 8px;
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.phone-code-btn img,
+.phone-item img {
+    width: 20px;
+    height: 15px;
+    object-fit: cover;
+    border-radius: 2px;
+}
+
+.phone-code-btn .phone-code {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.phone-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    width: 250px;
+    max-height: 260px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+    z-index: 60;
+    padding: 6px;
+    scrollbar-width: thin;
+}
+
+.phone-input-wrap.open .phone-dropdown {
+    display: block;
+}
+
+.phone-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    background: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.88rem;
+}
+
+.phone-item:hover {
+    background: #f5f5f7;
+}
+
+.phone-item .phone-dial {
+    margin-left: auto;
+    color: var(--text-light);
+    font-size: 0.8rem;
+}
+
+.phone-input-wrap input {
+    flex: 1;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 575px) {
+    .modal-overlay {
+        padding: 0;
+        align-items: stretch;
+    }
+
+    .modal-box {
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        padding: 25px;
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .modal-form input,
+    .modal-form select,
+    .modal-form textarea {
+        min-height: 44px;
+    }
+
+    .modal-contacts {
+        flex-direction: column;
+        align-items: center;
+    }
+}

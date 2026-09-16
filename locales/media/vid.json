@@ -1,0 +1,237 @@
+{
+  "videos": {
+    "avn70": {
+      "main": {
+        "path": "video/avn70-main.mp4",
+        "purpose": "Главное видео SKAT-AVN-70 (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение, основные характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/avn70-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Выбор ступени нагрузки: как переключать резисторы."
+        },
+        {
+          "path": "video/avn70-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Подключение к источнику высокого напряжения."
+        }
+      ]
+    },
+    "ik100": {
+      "main": {
+        "path": "video/ik100-main.mp4",
+        "purpose": "Главное видео IK 100-0.4 (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/ik100-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Применение в генераторе импульсных токов."
+        },
+        {
+          "path": "video/ik100-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Подключение и меры безопасности."
+        }
+      ]
+    },
+    "kvc-b": {
+      "main": {
+        "path": "video/kvc-b-main.mp4",
+        "purpose": "Главное видео KVC B-Series (плейлист)",
+        "description": "Обзор продукта: внешний вид, характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/kvc-b-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Подключение к ПК через USB."
+        },
+        {
+          "path": "video/kvc-b-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Работа с осциллографом."
+        }
+      ]
+    },
+    "kvc-c": {
+      "main": {
+        "path": "video/kvc-c-main.mp4",
+        "purpose": "Главное видео KVC C-Series (плейлист)",
+        "description": "Обзор продукта: внешний вид, характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/kvc-c-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Анализ THD (гармоники)."
+        },
+        {
+          "path": "video/kvc-c-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "VLF-режим измерения."
+        }
+      ]
+    },
+    "m100v": {
+      "main": {
+        "path": "video/m100v-main.mp4",
+        "purpose": "Главное видео SKAT-M100V (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/m100v-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Запуск автоматического испытания."
+        },
+        {
+          "path": "video/m100v-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Работа с результатами испытаний."
+        }
+      ]
+    },
+    "stend50": {
+      "main": {
+        "path": "video/stend50-main.mp4",
+        "purpose": "Главное видео SKAT-STEND-50 (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/stend50-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Пошаговая сборка стенда."
+        },
+        {
+          "path": "video/stend50-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Крепление изолирующей штанги."
+        }
+      ]
+    },
+    "svs": {
+      "main": {
+        "path": "video/svs-main.mp4",
+        "purpose": "Главное видео SKAT-SVS (плейлист)",
+        "description": "Обзор продукта: внешний вид, характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/svs-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Испытание диэлектрических перчаток."
+        },
+        {
+          "path": "video/svs-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Подключение высоковольтных блоков."
+        }
+      ]
+    },
+    "tangens": {
+      "main": {
+        "path": "video/tangens-main.mp4",
+        "purpose": "Главное видео SKAT-TANGENS-M (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/tangens-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Процесс измерения tan δ."
+        },
+        {
+          "path": "video/tangens-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Подготовка и настройка ячейки."
+        },
+        {
+          "path": "video/tangens-extra-3.mp4",
+          "purpose": "Дополнительное видео 3",
+          "description": "Анализ и экспорт данных."
+        }
+      ]
+    },
+    "ubsvn": {
+      "main": {
+        "path": "video/ubsvn-main.mp4",
+        "purpose": "Главное видео UBSVN-LM (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/ubsvn-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Схема подключения."
+        },
+        {
+          "path": "video/ubsvn-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Монтаж на дверь лаборатории."
+        }
+      ]
+    },
+    "70c": {
+      "main": {
+        "path": "video/70c-main.mp4",
+        "purpose": "Главное видео SKAT-70C (плейлист)",
+        "description": "Обзор продукта: внешний вид, характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/70c-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Подключение высоковольтного блока."
+        },
+        {
+          "path": "video/70c-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Запуск теста."
+        }
+      ]
+    },
+    "70m": {
+      "main": {
+        "path": "video/70m-main.mp4",
+        "purpose": "Главное видео SKAT-70M (плейлист)",
+        "description": "Обзор продукта: внешний вид, характеристики."
+      },
+      "extras": [
+        {
+          "path": "video/70m-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Настройка и конфигурация."
+        },
+        {
+          "path": "video/70m-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Функции безопасности."
+        }
+      ]
+    },
+    "70p": {
+      "main": {
+        "path": "video/70p-main.mp4",
+        "purpose": "Главное видео SKAT-70P (плейлист)",
+        "description": "Обзор продукта: внешний вид, назначение."
+      },
+      "extras": [
+        {
+          "path": "video/70p-extra-1.mp4",
+          "purpose": "Дополнительное видео 1",
+          "description": "Испытание СИЗ."
+        },
+        {
+          "path": "video/70p-extra-2.mp4",
+          "purpose": "Дополнительное видео 2",
+          "description": "Подключение 4 каналов."
+        }
+      ]
+    }
+  }
+}

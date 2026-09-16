@@ -3,15 +3,17 @@
    Стили для страниц категорий (category-hero, tech-card, бейджи).
    ========================================================== */
 
-/* --- HERO БАННЕР ДЛЯ КАТЕГОРИЙ (как на about.html) --- */
+/* --- HERO БАННЕР ДЛЯ КАТЕГОРИЙ --- */
 .category-hero {
     position: relative;
     min-height: 450px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-top: -100px;
-    padding-top: 140px;
+    /* УБРАНО: margin-top: -100px; — он тянул hero под шапку */
+    margin-top: 0;
+    /* padding-top = высота шапки (20px top + ~80px высота) + зазор */
+    padding: 160px 0 80px 0;
     overflow: hidden;
 }
 
@@ -180,32 +182,59 @@
     flex-grow: 1;
 }
 
-/* Кнопка "Learn More" в стиле Outline с заполнением */
-.tech-card__btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-    border: 1px solid var(--primary-dark);
-    color: var(--primary-dark);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.9rem;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-    margin-top: auto;
+/* =========================================
+   КАТЕГОРИЙНЫЕ КАРТОЧКИ — кнопка "Learn More"
+   приведена к единой системе пилюль (= btn-outline).
+   ========================================= */
+.tech-card .tech-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-dark);
+  background-color: transparent;
+  border: 2px solid var(--accent-yellow);
+  border-radius: 50px;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: translateY(0);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  margin-top: auto;
+  cursor: pointer;
+}
+.tech-card .tech-card__btn i {
+  transition: transform 0.3s ease;
+}
+.tech-card .tech-card__btn:hover {
+  background-color: var(--accent-yellow);
+  color: var(--primary-dark);
+  border-color: var(--accent-yellow);
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
+}
+.tech-card .tech-card__btn:hover i {
+  transform: translateX(4px);
+}
+.tech-card:hover .tech-card__btn {
+  background-color: var(--accent-yellow);
+  color: var(--primary-dark);
+  border-color: var(--accent-yellow);
+}
+.tech-card:hover .tech-card__btn i {
+  transform: translateX(4px);
+}
+.tech-card:hover .tech-card__btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(255, 184, 28, 0.35);
 }
 
-.tech-card__btn i {
-    transition: transform 0.3s ease;
-}
-
-.tech-card__btn:hover {
-    background-color: var(--accent-yellow);
-    border-color: var(--accent-yellow);
-    color: var(--primary-dark);
-}
-
-.tech-card__btn:hover i {
-    transform: translateX(5px);
+/* ========================================= */
+/* ДОБАВЛЕНО: ОТМЕНА PADDING У MAIN ДЛЯ КАТЕГОРИЙ */
+/* ========================================= */
+body.category-page main {
+    padding-top: 0;
 }

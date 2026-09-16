@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru napięcia stałego",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Granice dopuszczalnego błędu pomiaru napięcia przemiennego",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          },
+          {
+            "label": "Granice dopuszczalnego błędu pomiaru napięcia stałego",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Ogólne dane techniczne",
+        "parameters": [
+          {
+            "label": "Rezystancja wejściowa dla prądu stałego",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "500 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Napięcie zasilania",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Pobór mocy",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku wskaźnikowego",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary wysokonapięciowego miernika napięcia",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Wbudowany w blok wskaźnikowy"
+            }
+          },
+          {
+            "label": "Masa bloku wskaźnikowego",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa wysokonapięciowego miernika napięcia",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "5,5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Wbudowany w blok wskaźnikowy"
+            }
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Okres eksploatacji",
+            "values": [
+              "5 lat",
+              "5 lat",
+              "5 lat",
+              "5 lat"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru napięcia przemiennego (40–65 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru napięcia przemiennego (390–410 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru napięcia stałego",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Granice dopuszczalnego błędu pomiaru napięcia",
+            "values": [
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Granice dopuszczalnego błędu bezwzględnego pomiaru częstotliwości (40–65 Hz)",
+            "values": [
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Granice dopuszczalnego błędu bezwzględnego pomiaru częstotliwości (390–410 Hz)",
+            "values": [
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Zakres pomiaru współczynnika zawartości harmonicznych (Ku)",
+            "values": [
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Granice błędu pomiaru Ku (Ku < 3%)",
+            "values": [
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Granice błędu pomiaru Ku (Ku ≥ 3%)",
+            "values": [
+              "±5 %",
+              "±5 %",
+              "±5 %",
+              "±5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Ogólne dane techniczne",
+        "parameters": [
+          {
+            "label": "Rezystancja wejściowa dla prądu stałego",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "420 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Napięcie zasilania",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Pobór mocy",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku wskaźnikowego",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary wysokonapięciowego miernika napięcia",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Wbudowany w blok wskaźnikowy"
+            }
+          },
+          {
+            "label": "Masa bloku wskaźnikowego",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa wysokonapięciowego miernika napięcia",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "6,4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Wbudowany w blok wskaźnikowy"
+            }
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wilgotność względna (przy +25°C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Okres eksploatacji",
+            "values": [
+              "5 lat",
+              "5 lat",
+              "5 lat",
+              "5 lat"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry wyjściowe",
+        "parameters": [
+          {
+            "label": "Zakres regulacji napięcia przemiennego",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "Zakres regulacji napięcia stałego",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Maksymalny prąd napięcia przemiennego",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Maksymalny prąd napięcia stałego",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "Amplituda tętnień napięcia stałego",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru napięcia stałego (wartość szczytowa)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Współczynnik zniekształcenia sinusoidy napięcia przemiennego",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Wyświetlacz",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Zasilanie",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy",
+              "18 miesięcy"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry wyjściowe",
+        "parameters": [
+          {
+            "label": "Zakres regulacji napięcia przemiennego",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Zakres regulacji napięcia stałego",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Biegunowość prądu stałego",
+            "values": [
+              "Ujemna",
+              "Dodatnia"
+            ]
+          },
+          {
+            "label": "Maksymalny prąd napięcia przemiennego",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Maksymalny prąd napięcia stałego",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Zakres pomiaru napięcia stałego (wartość szczytowa)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Amplituda tętnień napięcia stałego",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Współczynnik zniekształcenia sinusoidy napięcia przemiennego",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Zasilanie",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku sterującego",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku wysokonapięciowego",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa bloku sterującego",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa bloku wysokonapięciowego",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy",
+              "18 miesięcy"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego",
+            "values": [
+              "10,0 – 100,0 kV"
+            ]
+          },
+          {
+            "label": "Granice dopuszczalnego błędu pomiaru",
+            "values": [
+              "±2,5 %"
+            ]
+          },
+          {
+            "label": "Rozdzielczość pomiaru napięcia",
+            "values": [
+              "0,1 kV"
+            ]
+          },
+          {
+            "label": "Liczba pomiarów automatycznych",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Czas wyłączenia przy przebiciu",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Szybkość narastania napięcia",
+            "values": [
+              "0,5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Ograniczenie napięcia maksymalnego",
+            "values": [
+              "60; 70; 80; 90; 100 kV"
+            ]
+          },
+          {
+            "label": "Zasilanie",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Wymiary (dł.×szer.×wys.)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Stopień ochrony",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru tangensa kąta strat dielektrycznych",
+            "values": [
+              "1·10⁻⁴ – 1,000"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru pojemności elektrycznej",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Napięcie probiercze (AC, 40-62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Zakres temperatur nagrzewania celi",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Czas nagrzewania do zadanej temperatury",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Wyświetlacz",
+            "values": [
+              "7\" IPS ekran dotykowy"
+            ]
+          },
+          {
+            "label": "Pamięć wewnętrzna",
+            "values": [
+              "Do 250 wyników badań"
+            ]
+          },
+          {
+            "label": "Wymiary (dł.×szer.×wys.)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Charakterystyki metrologiczne",
+        "parameters": [
+          {
+            "label": "Zakres pomiaru napięcia przemiennego",
+            "values": [
+              "0,3 – 20 kV"
+            ]
+          },
+          {
+            "label": "Zakres pomiaru prądu przemiennego (na kanał)",
+            "values": [
+              "0,5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Granice błędu pomiaru napięcia",
+            "values": [
+              "±2,5 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Liczba kanałów pomiaru prądu",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Programowalny czas badania",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Wymiary bloku pomiarowego",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Wymiary wanny probierczej",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Masa bloku pomiarowego",
+            "values": [
+              "5,8 kg"
+            ]
+          },
+          {
+            "label": "Masa wanny probierczej",
+            "values": [
+              "19,0 kg"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Zakresy pomiarowe",
+        "parameters": [
+          {
+            "label": "Źródło wbudowane: zakres napięcia",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Źródło wbudowane: zakres prądu",
+            "values": [
+              "0,5 – 10 mA",
+              "0,5 – 10 mA",
+              "0,5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Blok 50 kV: zakres napięcia",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "Blok 50 kV: zakres prądu",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "Blok 100 kV: zakres napięcia",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Blok 100 kV: zakres prądu",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "Blok 20 kV: zakres napięcia",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "Blok 20 kV: zakres prądu",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Granice błędu pomiaru napięcia",
+            "values": [
+              "±3 %",
+              "±3 %",
+              "±3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Granice błędu pomiaru prądu",
+            "values": [
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Liczba zewnętrznych bloków wysokonapięciowych",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Liczba kanałów prądowych (wanna probiercza)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Zasilanie",
+            "values": [
+              "230 V, 50 Hz",
+              "230 V, 50 Hz",
+              "230 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku sterującego (dł.×szer.×wys.)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wymiary bloku 20 kV (dł.×szer.×wys.)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "Wymiary bloku 50 kV (dł.×szer.×wys.)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "Wymiary bloku 100 kV (dł.×szer.×wys.)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Wymiary wanny probierczej (dł.×szer.×wys.)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa bloku sterującego",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masa bloku 20 kV",
+            "values": [
+              "—",
+              "—",
+              "33,8 kg"
+            ]
+          },
+          {
+            "label": "Masa bloku 50 kV",
+            "values": [
+              "35,4 kg",
+              "35,4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "Masa bloku 100 kV",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Masa wanny probierczej",
+            "values": [
+              "18,7 kg",
+              "18,7 kg",
+              "18,7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "+10 – +40 °C",
+              "+10 – +40 °C",
+              "+10 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Wilgotność względna (przy +25°C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ciśnienie atmosferyczne",
+            "values": [
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Okres eksploatacji",
+            "values": [
+              "10 lat",
+              "10 lat",
+              "10 lat"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy",
+              "18 miesięcy",
+              "18 miesięcy"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry obciążenia",
+        "parameters": [
+          {
+            "label": "Maksymalne robocze napięcie stałe",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Maksymalne amplitudowe napięcie przemienne (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Liczba stopni obciążenia",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Liczba kombinacji obciążenia",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Maksymalna łączna moc rozpraszana",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Czas pracy przy mocy maksymalnej",
+            "values": [
+              "1 godzina"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Parametry stopni (rezystancja znamionowa / moc)",
+        "parameters": [
+          {
+            "label": "Stopień 1",
+            "values": [
+              "68 MΩ ±5 % / 80 W"
+            ]
+          },
+          {
+            "label": "Stopień 2",
+            "values": [
+              "22,4 MΩ ±5 % / 250 W"
+            ]
+          },
+          {
+            "label": "Stopień 3",
+            "values": [
+              "14,1 MΩ ±5 % / 350 W"
+            ]
+          },
+          {
+            "label": "Stopień 4",
+            "values": [
+              "6,6 MΩ ±5 % / 750 W"
+            ]
+          },
+          {
+            "label": "Stopień 5",
+            "values": [
+              "2,4 MΩ ±5 % / 1500 W"
+            ]
+          },
+          {
+            "label": "Stopień 6",
+            "values": [
+              "1,35 MΩ ±5 % / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Wymiary (szer.×gł.×wys.)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Zasilanie układu chłodzenia",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Pobór mocy układu chłodzenia",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "+5 – +40 °C"
+            ]
+          },
+          {
+            "label": "Wilgotność względna (przy +25°C)",
+            "values": [
+              "≤ 80 %"
+            ]
+          },
+          {
+            "label": "Okres eksploatacji",
+            "values": [
+              "10 lat"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry badań",
+        "parameters": [
+          {
+            "label": "Maksymalne napięcie probiercze",
+            "values": [
+              "50 kV AC"
+            ]
+          },
+          {
+            "label": "Maksymalna liczba jednocześnie badanych obiektów",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Wymiary (wysokość ze stojakami)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Wymiary stołu (szer.×dł.)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "+10 – +40 °C"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "18 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry elektryczne",
+        "parameters": [
+          {
+            "label": "Napięcie zasilania",
+            "values": [
+              "220 V AC"
+            ]
+          },
+          {
+            "label": "Znamionowy prąd poboru",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Poziom ciśnienia akustycznego (w odl. 1 m)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Percepcja kontrastu świetlnego",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Wymiary",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "≤ 0,32 kg"
+            ]
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "-30 – +55 °C"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "12 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry elektryczne",
+        "parameters": [
+          {
+            "label": "Napięcie znamionowe",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Pojemność znamionowa",
+            "values": [
+              "0,4 µF"
+            ]
+          },
+          {
+            "label": "Napięcie probiercze",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Charakterystyki ogólne",
+        "parameters": [
+          {
+            "label": "Wymiary (dł.×szer.×wys.)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Masa",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Temperatura otoczenia",
+            "values": [
+              "-1 – +35 °C"
+            ]
+          },
+          {
+            "label": "Gwarancja",
+            "values": [
+              "6 miesięcy"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

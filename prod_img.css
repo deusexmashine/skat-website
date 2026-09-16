@@ -1,0 +1,252 @@
+/* ==========================================================
+   prod_img.css — Стили галереи изображений и лайтбокса
+   ========================================================== */
+
+/* --- Карусель --- */
+.product-carousel { position: relative; }
+
+.carousel-main {
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    background: #F5F5F5;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 400px;
+    will-change: transform;
+}
+
+.carousel-main img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    will-change: opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.carousel-main img.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.carousel-thumbnails {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.carousel-thumbnails button {
+    width: 80px;
+    height: 80px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
+    background: #f5f5f5;
+    transition: border-color 0.3s;
+    padding: 0;
+}
+
+.carousel-thumbnails button:hover,
+.carousel-thumbnails button.active {
+    border-color: var(--accent-yellow);
+}
+
+.carousel-thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* --- Подпись к фото --- */
+.main-image-caption-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background: rgba(28, 29, 38, 0.85);
+    backdrop-filter: blur(6px);
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4;
+    pointer-events: none;
+    z-index: 10;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lightbox-active .main-image-caption-overlay {
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+}
+
+/* --- Лайтбокс --- */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.lightbox:target { display: flex; }
+
+.lightbox-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 0 15px 5px var(--accent-yellow, #FFB81C);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    font-family: sans-serif;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.lightbox-close:hover {
+    color: var(--accent-yellow);
+    transform: rotate(90deg);
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    z-index: 1001;
+    transition: all 0.3s ease;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px 8px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-nav:hover {
+    color: var(--accent-yellow, #FFB81C) !important;
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.lightbox-nav.prev { left: -50px; }
+.lightbox-nav.next { right: -50px; }
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 0.9rem;
+    background: rgba(0,0,0,0.5);
+    padding: 4px 14px;
+    border-radius: 20px;
+    z-index: 1001;
+}
+
+.lightbox-active header {
+    opacity: 0 !important;
+    pointer-events: none !important;
+    transition: opacity 0.3s ease;
+}
+
+/* --- Эффект наведения на главное фото --- */
+.gallery-main {
+    position: relative;
+    display: block;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #eaeaea;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+
+.gallery-main img {
+    width: 100%;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-main::after {
+    content: '\f002';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.gallery-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.3s ease;
+    z-index: 5;
+    pointer-events: none;
+}
+
+.gallery-main:hover img { transform: scale(1.05); }
+.gallery-main:hover::before { opacity: 1; }
+.gallery-main:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* --- Адаптивность --- */
+@media (max-width: 768px) {
+    .main-image-caption-overlay {
+        bottom: 10px;
+        left: 10px;
+        right: 10px;
+        padding: 10px 12px;
+        font-size: 0.8rem;
+    }
+    .carousel-main img { height: 250px; }
+    .carousel-main { min-height: 250px; }
+}

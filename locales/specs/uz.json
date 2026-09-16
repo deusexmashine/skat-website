@@ -1,0 +1,387 @@
+{
+  "kvc-b": {
+    "models": [
+      { "id": "KVC-10B", "name": "KVC-10B-0.5" },
+      { "id": "KVC-70B", "name": "KVC-70B-1.0" },
+      { "id": "KVC-100B", "name": "KVC-100B-1.0" },
+      { "id": "KVC-120B", "name": "KVC-120B-1.0" }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik xususiyatlar",
+        "parameters": [
+          { "label": "AC kuchlanish diapazoni (50 Hz)", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "DC kuchlanish diapazoni", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "AC kuchlanish aniqligi", "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"] },
+          { "label": "DC kuchlanish aniqligi", "values": ["±0.5%", "±1.0%", "±1.0%", "±1.0%"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "DC kirish qarshiligi", "values": ["50 MΩ ±10%", "300 MΩ ±10%", "500 MΩ ±10%", "500 MΩ ±10%"] },
+          { "label": "Quvvat manbai", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Quvvat sarfi", "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"], "merge": true },
+          { "label": "O'lchamlar (Ko'rsatkich bloki)", "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"], "merge": true },
+          { "label": "O'lchamlar (Yuqori kuchlanishli bo'luvchi bloki)", "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 650 mm"], "notes": { "KVC-10B": "Ko'rsatkich blokiga integratsiyalangan" } },
+          { "label": "Og'irlik (Ko'rsatkich bloki)", "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"], "merge": true },
+          { "label": "Og'irlik (Yuqori kuchlanishli bo'luvchi bloki)", "values": ["—", "5.5 kg", "5.5 kg", "5.5 kg"], "notes": { "KVC-10B": "Ko'rsatkich blokiga integratsiyalangan" } },
+          { "label": "Ish harorati", "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"], "merge": true },
+          { "label": "Xizmat muddati", "values": ["5 yil", "5 yil", "5 yil", "5 yil"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      { "id": "KVC-10C", "name": "KVC-10C-0.25" },
+      { "id": "KVC-70C", "name": "KVC-70C-0.25" },
+      { "id": "KVC-100C", "name": "KVC-100C-0.25" },
+      { "id": "KVC-120C", "name": "KVC-120C-0.25" }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik xususiyatlar",
+        "parameters": [
+          { "label": "AC kuchlanish diapazoni (50 Hz)", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "AC kuchlanish diapazoni (40 – 65 Hz)", "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"] },
+          { "label": "AC kuchlanish diapazoni (390 – 410 Hz)", "values": ["0.1 – 10 kV", "1 – 10 kV", "1 – 10 kV", "1 – 10 kV"] },
+          { "label": "DC kuchlanish diapazoni", "values": ["0.1 – 10 kV", "1 – 70 kV", "1 – 100 kV", "1 – 120 kV"] },
+          { "label": "Kuchlanish o'lchash aniqligi", "values": ["±0.25%", "±0.25%", "±0.25%", "±0.25%"], "merge": true },
+          { "label": "Chastota aniqligi (40 – 65 Hz)", "values": ["±0.015 Hz", "±0.015 Hz", "±0.015 Hz", "±0.015 Hz"], "merge": true },
+          { "label": "Chastota aniqligi (390 – 410 Hz)", "values": ["±0.2 Hz", "±0.2 Hz", "±0.2 Hz", "±0.2 Hz"], "merge": true },
+          { "label": "THD o'lchash diapazoni (Ku)", "values": ["0.5 – 30%", "0.5 – 30%", "0.5 – 30%", "0.5 – 30%"], "merge": true },
+          { "label": "THD aniqligi (Ku < 3%)", "values": ["±0.15%", "±0.15%", "±0.15%", "±0.15%"], "merge": true },
+          { "label": "THD aniqligi (Ku ≥ 3%)", "values": ["±5%", "±5%", "±5%", "±5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "DC kirish qarshiligi", "values": ["50 MΩ ±10%", "300 MΩ ±10%", "420 MΩ ±10%", "500 MΩ ±10%"] },
+          { "label": "Quvvat manbai", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Quvvat sarfi", "values": ["≤ 15 VA", "≤ 15 VA", "≤ 15 VA", "≤ 15 VA"], "merge": true },
+          { "label": "O'lchamlar (Ko'rsatkich bloki)", "values": ["310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm", "310 × 280 × 120 mm"], "merge": true },
+          { "label": "O'lchamlar (Yuqori kuchlanishli bo'luvchi bloki)", "values": ["—", "300 × 300 × 650 mm", "300 × 300 × 650 mm", "300 × 300 × 800 mm"], "notes": { "KVC-10C": "Ko'rsatkich blokiga integratsiyalangan" } },
+          { "label": "Og'irlik (Ko'rsatkich bloki)", "values": ["3.8 kg", "3.8 kg", "3.8 kg", "3.8 kg"], "merge": true },
+          { "label": "Og'irlik (Yuqori kuchlanishli bo'luvchi bloki)", "values": ["—", "5.5 kg", "5.5 kg", "6.4 kg"], "notes": { "KVC-10C": "Ko'rsatkich blokiga integratsiyalangan" } },
+          { "label": "Ish harorati", "values": ["+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C", "+5 … +40 °C"], "merge": true },
+          { "label": "Nisbiy namlik (+25 °C da)", "values": ["≤ 80%", "≤ 80%", "≤ 80%", "≤ 80%"], "merge": true },
+          { "label": "Xizmat muddati", "values": ["5 yil", "5 yil", "5 yil", "5 yil"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      { "id": "SKAT-70C", "name": "SKAT-70C" },
+      { "id": "SKAT-100C", "name": "SKAT-100C" }
+    ],
+    "groups": [
+      {
+        "title": "Chiqish xususiyatlari",
+        "parameters": [
+          { "label": "AC kuchlanish sozlash diapazoni", "values": ["1 – 51 kV", "1 – 71 kV"] },
+          { "label": "DC kuchlanish sozlash diapazoni", "values": ["1 – 71 kV", "1 – 101 kV"] },
+          { "label": "Maks. AC chiqish toki", "values": ["≥ 50 mA", "≥ 35 mA"] },
+          { "label": "Maks. DC chiqish toki", "values": ["≥ 20 mA", "≥ 15 mA"] },
+          { "label": "DC dalgalanma amplitudasi", "values": ["≤ 3%", "≤ 3%"], "merge": true }
+        ]
+      },
+      {
+        "title": "O'lchash xususiyatlari",
+        "parameters": [
+          { "label": "AC kuchlanish o'lchash diapazoni", "values": ["2 – 50 kV", "3 – 70 kV"] },
+          { "label": "DC kuchlanish o'lchash diapazoni (Amplituda)", "values": ["3 – 70 kV", "5 – 100 kV"] },
+          { "label": "AC sinusoidal distorsiya koeffitsiyenti", "values": ["≤ 5%", "≤ 5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Displey", "values": ["6\" LCD", "6\" LCD"], "merge": true },
+          { "label": "Quvvat manbai", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "Kafolat", "values": ["18 oy", "18 oy"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      { "id": "SKAT-70M", "name": "SKAT-70M" },
+      { "id": "SKAT-70MA", "name": "SKAT-70MA" }
+    ],
+    "groups": [
+      {
+        "title": "Chiqish xususiyatlari",
+        "parameters": [
+          { "label": "AC kuchlanish sozlash diapazoni", "values": ["1 – 51 kV", "1 – 51 kV"], "merge": true },
+          { "label": "DC kuchlanish sozlash diapazoni", "values": ["1 – 71 kV", "1 – 71 kV"], "merge": true },
+          { "label": "DC polarite", "values": ["Salbiy", "Musbat"] },
+          { "label": "Maks. AC chiqish toki", "values": ["≥ 50 mA", "≥ 50 mA"], "merge": true },
+          { "label": "Maks. DC chiqish toki", "values": ["≥ 20 mA", "≥ 20 mA"], "merge": true }
+        ]
+      },
+      {
+        "title": "O'lchash xususiyatlari",
+        "parameters": [
+          { "label": "AC kuchlanish o'lchash diapazoni", "values": ["2 – 50 kV", "2 – 50 kV"], "merge": true },
+          { "label": "DC kuchlanish o'lchash diapazoni (Amplituda)", "values": ["3 – 70 kV", "3 – 70 kV"], "merge": true },
+          { "label": "DC dalgalanma amplitudasi", "values": ["≤ 3%", "≤ 3%"], "merge": true },
+          { "label": "AC sinusoidal distorsiya koeffitsiyenti", "values": ["≤ 5%", "≤ 5%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Quvvat manbai", "values": ["220 V AC, 50 Hz", "220 V AC, 50 Hz"], "merge": true },
+          { "label": "O'lchamlar (Boshqaruv bloki)", "values": ["420 × 340 × 220 mm", "420 × 340 × 220 mm"], "merge": true },
+          { "label": "O'lchamlar (Yuqori kuchlanishli blok)", "values": ["650 × 375 × 360 mm", "650 × 375 × 360 mm"], "merge": true },
+          { "label": "Og'irlik (Boshqaruv bloki)", "values": ["14 kg", "14 kg"], "merge": true },
+          { "label": "Og'irlik (Yuqori kuchlanishli blok)", "values": ["29 kg", "29 kg"], "merge": true },
+          { "label": "Kafolat", "values": ["18 oy", "18 oy"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      { "id": "M100V", "name": "SKAT-M100V" }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik xususiyatlar",
+        "parameters": [
+          { "label": "AC kuchlanish o'lchash diapazoni", "values": ["10.0 – 100.0 kV"] },
+          { "label": "O'lchash aniqligi", "values": ["±2.5%"] },
+          { "label": "Kuchlanish ajratish qobiliyati", "values": ["0.1 kV"] },
+          { "label": "Avtomatik sinovlar soni", "values": ["1 – 6"] },
+          { "label": "Teshilishda o'chirish vaqti", "values": ["≤ 100 µs"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Kuchlanish ko'tarish tezligi", "values": ["0.5, 1, 2, 5 kV/s"] },
+          { "label": "Kuchlanish chegaralari", "values": ["60, 70, 80, 90, 100 kV"] },
+          { "label": "Quvvat manbai", "values": ["220 V AC, 50 Hz"] },
+          { "label": "O'lchamlar (En×Chuqurlik×Balandlik)", "values": ["470 × 315 × 370 mm"] },
+          { "label": "Og'irlik", "values": ["41 ±1 kg"] },
+          { "label": "Himoya sinfi", "values": ["IP53"] },
+          { "label": "Kafolat", "values": ["18 oy"] }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      { "id": "TANGENS", "name": "SKAT-TANGENS-M" }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik xususiyatlar",
+        "parameters": [
+          { "label": "tan δ o'lchash diapazoni", "values": ["1·10⁻⁴ – 1.000"] },
+          { "label": "Sig'im o'lchash diapazoni", "values": ["28 – 1000 pF"] },
+          { "label": "Sinov kuchlanishi (AC, 40-62 Hz)", "values": ["500 – 2000 V"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Hujayra harorati diapazoni", "values": ["40 – 110 °C"] },
+          { "label": "Belgilangan haroratgacha qizdirish vaqti", "values": ["≤ 50 daq"] },
+          { "label": "Displey", "values": ["7\" IPS Sensorli"] },
+          { "label": "Ichki xotira", "values": ["250 tagacha sinov natijasi"] },
+          { "label": "O'lchamlar (En×Chuqurlik×Balandlik)", "values": ["540 × 330 × 360 mm"] },
+          { "label": "Og'irlik", "values": ["≤ 24 kg"] },
+          { "label": "Kafolat", "values": ["18 oy"] }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      { "id": "70P", "name": "SKAT-70P" }
+    ],
+    "groups": [
+      {
+        "title": "Metrologik xususiyatlar",
+        "parameters": [
+          { "label": "AC kuchlanish o'lchash diapazoni", "values": ["0.3 – 20 kV"] },
+          { "label": "AC tok o'lchash diapazoni (har kanal uchun)", "values": ["0.5 – 22 mA"] },
+          { "label": "Kuchlanish o'lchash aniqligi", "values": ["±2.5%"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Tok kanallari soni", "values": ["4"] },
+          { "label": "Dasturlashtiriladigan sinov vaqti", "values": ["1 – 8 daq"] },
+          { "label": "O'lchamlar (Boshqaruv bloki)", "values": ["310 × 280 × 120 mm"] },
+          { "label": "O'lchamlar (Sinov vannasi)", "values": ["825 × 270 × 765 mm"] },
+          { "label": "Og'irlik (Boshqaruv bloki)", "values": ["5.8 kg"] },
+          { "label": "Og'irlik (Sinov vannasi)", "values": ["19.0 kg"] },
+          { "label": "Kafolat", "values": ["18 oy"] }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      { "id": "SVS-50C", "name": "SKAT-SVS-50C" },
+      { "id": "SVS-100C", "name": "SKAT-SVS-100C" },
+      { "id": "SVS-100-20C", "name": "SKAT-SVS-100-20C" }
+    ],
+    "groups": [
+      {
+        "title": "O'lchash diapazonlari",
+        "parameters": [
+          { "label": "Ichki manba: Kuchlanish diapazoni", "values": ["20 – 1000 V", "20 – 1000 V", "20 – 1000 V"], "merge": true },
+          { "label": "Ichki manba: Tok diapazoni", "values": ["0.5 – 10 mA", "0.5 – 10 mA", "0.5 – 10 mA"], "merge": true },
+          { "label": "50 kV bloki: Kuchlanish diapazoni", "values": ["1 – 50 kV", "1 – 50 kV", "—"] },
+          { "label": "50 kV bloki: Tok diapazoni", "values": ["1 – 40 mA", "1 – 40 mA", "—"] },
+          { "label": "100 kV bloki: Kuchlanish diapazoni", "values": ["—", "5 – 100 kV", "5 – 100 kV"] },
+          { "label": "100 kV bloki: Tok diapazoni", "values": ["—", "1 – 20 mA", "1 – 20 mA"] },
+          { "label": "20 kV bloki: Kuchlanish diapazoni", "values": ["—", "—", "1 – 20 kV"] },
+          { "label": "20 kV bloki: Tok diapazoni", "values": ["—", "—", "1 – 40 mA"] },
+          { "label": "Kuchlanish o'lchash aniqligi", "values": ["±3%", "±3%", "±3%"], "merge": true },
+          { "label": "Tok o'lchash aniqligi", "values": ["±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%", "±(2.0+0.1·((Iₘ/I)-1))%"], "merge": true }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "Tashqi yuqori kuchlanishli manbalar soni", "values": ["1", "2", "2"] },
+          { "label": "Tok kanallari soni (Sinov vannasi)", "values": ["4", "4", "4"], "merge": true },
+          { "label": "Quvvat manbai", "values": ["230 V AC, 50 Hz", "230 V AC, 50 Hz", "230 V AC, 50 Hz"], "merge": true },
+          { "label": "Boshqaruv bloki o'lchamlari (En×Chuqurlik×Balandlik)", "values": ["490 × 370 × 200 mm", "490 × 370 × 200 mm", "490 × 370 × 200 mm"], "merge": true },
+          { "label": "20 kV bloki o'lchamlari (En×Chuqurlik×Balandlik)", "values": ["—", "—", "350 × 375 × 650 mm"] },
+          { "label": "50 kV bloki o'lchamlari (En×Chuqurlik×Balandlik)", "values": ["350 × 375 × 650 mm", "350 × 375 × 650 mm", "—"] },
+          { "label": "100 kV bloki o'lchamlari (En×Chuqurlik×Balandlik)", "values": ["—", "—", "415 × 580 × 940 mm"] },
+          { "label": "Sinov vannasi o'lchamlari (En×Chuqurlik×Balandlik)", "values": ["820 × 270 × 765 mm", "820 × 270 × 765 mm", "820 × 270 × 765 mm"], "merge": true },
+          { "label": "Boshqaruv bloki og'irligi", "values": ["23 kg", "23 kg", "23 kg"], "merge": true },
+          { "label": "20 kV bloki og'irligi", "values": ["—", "—", "33.8 kg"] },
+          { "label": "50 kV bloki og'irligi", "values": ["35.4 kg", "35.4 kg", "—"] },
+          { "label": "100 kV bloki og'irligi", "values": ["—", "—", "64 kg"] },
+          { "label": "Sinov vannasi og'irligi", "values": ["18.7 kg", "18.7 kg", "18.7 kg"], "merge": true },
+          { "label": "Ish harorati", "values": ["+10 … +40 °C", "+10 … +40 °C", "+10 … +40 °C"], "merge": true },
+          { "label": "Nisbiy namlik (+25 °C da)", "values": ["≤ 80%", "≤ 80%", "≤ 80%"], "merge": true },
+          { "label": "Atmosfera bosimi", "values": ["84.0 – 106.7 kPa", "84.0 – 106.7 kPa", "84.0 – 106.7 kPa"], "merge": true },
+          { "label": "Xizmat muddati", "values": ["10 yil", "10 yil", "10 yil"], "merge": true },
+          { "label": "Kafolat", "values": ["18 oy", "18 oy", "18 oy"], "merge": true }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      { "id": "AVN70", "name": "SKAT-AVN-70" }
+    ],
+    "groups": [
+      {
+        "title": "Yuk xususiyatlari",
+        "parameters": [
+          { "label": "Maks. DC ish kuchlanishi", "values": ["70 kV"] },
+          { "label": "Maks. AC cho'qqi kuchlanishi (50 Hz)", "values": ["70 kV"] },
+          { "label": "Yuk pog'onalari soni", "values": ["6"] },
+          { "label": "Yuk kombinatsiyalari soni", "values": ["40"] },
+          { "label": "Umumiy maks. sochiladigan quvvat", "values": ["3750 W"] },
+          { "label": "Maks. quvvatda uzluksiz ishlash", "values": ["1 soat"] }
+        ]
+      },
+      {
+        "title": "Pog'ona tafsilotlari (Nominal qarshilik / Maks. quvvat)",
+        "parameters": [
+          { "label": "Pog'ona 1", "values": ["68 MΩ ±5% / 80 W"] },
+          { "label": "Pog'ona 2", "values": ["22.4 MΩ ±5% / 250 W"] },
+          { "label": "Pog'ona 3", "values": ["14.1 MΩ ±5% / 350 W"] },
+          { "label": "Pog'ona 4", "values": ["6.6 MΩ ±5% / 750 W"] },
+          { "label": "Pog'ona 5", "values": ["2.4 MΩ ±5% / 1500 W"] },
+          { "label": "Pog'ona 6", "values": ["1.35 MΩ ±5% / 2000 W"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "O'lchamlar (En×Chuqurlik×Balandlik)", "values": ["550 × 440 × 1620 mm"] },
+          { "label": "Og'irlik", "values": ["50 kg"] },
+          { "label": "Sovutish tizimi quvvat manbai", "values": ["220 V AC, 50 Hz"] },
+          { "label": "Sovutish tizimi quvvat sarfi", "values": ["≤ 200 W"] },
+          { "label": "Atrof-muhit harorati", "values": ["+5 … +40 °C"] },
+          { "label": "Nisbiy namlik (+25 °C da)", "values": ["≤ 80%"] },
+          { "label": "Xizmat muddati", "values": ["10 yil"] },
+          { "label": "Kafolat", "values": ["18 oy"] }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      { "id": "STEND50", "name": "SKAT-STEND-50" }
+    ],
+    "groups": [
+      {
+        "title": "Sinov xususiyatlari",
+        "parameters": [
+          { "label": "Maks. sinov kuchlanishi", "values": ["50 kV AC"] },
+          { "label": "Maks. bir vaqtda sinov obyektlari", "values": ["2"] },
+          { "label": "O'lchamlar (shtanglar bilan balandlik)", "values": ["1830 mm"] },
+          { "label": "Stol o'lchamlari (En×Chuqurlik)", "values": ["530 × 1220 mm"] },
+          { "label": "Og'irlik", "values": ["≤ 31 kg"] },
+          { "label": "Ish harorati", "values": ["+10 … +40 °C"] },
+          { "label": "Kafolat", "values": ["18 oy"] }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      { "id": "UBSVN", "name": "UBSVN-LM" }
+    ],
+    "groups": [
+      {
+        "title": "Elektr xususiyatlari",
+        "parameters": [
+          { "label": "Quvvat manbai kuchlanishi", "values": ["220 V AC"] },
+          { "label": "Nominal tok", "values": ["60 mA"] },
+          { "label": "Tovush darajasi (1 m masofada)", "values": ["≥ 95 dB"] },
+          { "label": "Kontrast yorug'lik idroki", "values": ["≥ 500 lyuks"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "O'lchamlar", "values": ["140 × 140 × 90 mm"] },
+          { "label": "Og'irlik", "values": ["≤ 0.32 kg"] },
+          { "label": "Ish harorati", "values": ["-30 … +55 °C"] },
+          { "label": "Kafolat", "values": ["12 oy"] }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      { "id": "IK100", "name": "IK 100-0.4" }
+    ],
+    "groups": [
+      {
+        "title": "Elektr xususiyatlari",
+        "parameters": [
+          { "label": "Nominal kuchlanish", "values": ["100 kV"] },
+          { "label": "Nominal sig'im", "values": ["0.4 µF"] },
+          { "label": "Sinov kuchlanishi", "values": ["125 kV"] }
+        ]
+      },
+      {
+        "title": "Umumiy xususiyatlar",
+        "parameters": [
+          { "label": "O'lchamlar (En×Chuqurlik×Balandlik)", "values": ["500 × 155 × 345 mm"] },
+          { "label": "Og'irlik", "values": ["≤ 32 kg"] },
+          { "label": "Atrof-muhit harorati", "values": ["-1 … +35 °C"] },
+          { "label": "Kafolat", "values": ["6 oy"] }
+        ]
+      }
+    ]
+  }
+}

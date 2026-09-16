@@ -1,0 +1,273 @@
+/* ==========================================================
+   prod_common.css — Общие стили для страниц продуктов
+   ========================================================== */
+
+/* --- ОТСТУПЫ --- */
+body.product-page main { padding-top: 0; }
+body.product-page .product-hero {
+    margin-top: -60px;
+    padding-top: 200px;
+}
+
+/* --- HERO --- */
+.product-hero { padding: 120px 0 40px 0; background: var(--bg-white); }
+.hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+
+.hero-content { display: flex; flex-direction: column; }
+.hero-content .category {
+    color: var(--text-light);
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+.hero-content h1 { font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 15px; line-height: 1.2; }
+.hero-content .subtitle { font-size: 1.2rem; color: var(--primary-dark); font-weight: 600; margin-bottom: 15px; }
+.hero-content .description { font-size: 1rem; color: var(--text-light); line-height: 1.6; margin-bottom: 25px; }
+.hero-actions { display: flex; gap: 15px; margin-bottom: 25px; flex-wrap: wrap; }
+
+/* --- АККОРДЕОН --- */
+.accordion-container {
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 4px;
+}
+.accordion-item {
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    background: #fff;
+}
+.accordion-item:last-child { margin-bottom: 0; }
+.accordion-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 16px 20px;
+    background: none;
+    border: none;
+    text-align: left;
+    font-weight: 600;
+    color: var(--primary-dark);
+    cursor: pointer;
+    position: relative;
+    transition: background 0.2s;
+    font-size: 0.95rem;
+}
+.accordion-header:hover { background: #f9f9f9; }
+.accordion-header i { color: var(--accent-yellow); font-size: 1.1rem; flex-shrink: 0; }
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+.accordion-header.active::after { content: '×'; color: #FF0000; transform: translateY(-50%) rotate(0deg); }
+.accordion-body { max-height: 0; overflow: hidden; transition: max-height 0.4s ease; background: #fcfcfc; }
+.accordion-body-inner { padding: 0 20px 20px 20px; color: var(--text-light); font-size: 0.9rem; line-height: 1.6; }
+
+/* --- ВКЛАДКИ --- */
+/* ВАЖНО: только верх/низ — этот блок уже несёт класс .container, у которого
+   есть свой боковой padding:0 20px. Раньше здесь стоял шорткат
+   "padding: 40px 0", который обнулял боковые поля .container, и весь текст
+   во вкладках (Product support и т.д.) прилипал к самому краю экрана на
+   мобильных, где .container ещё не упирается в max-width:1200px. */
+.product-tabs-wrapper { padding-top: 40px; padding-bottom: 40px; }
+.product-tabs-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.product-tabs { display: flex; gap: 0; }
+.product-tabs button {
+    padding: 15px 25px;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-light);
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+.product-tabs button:hover { color: var(--primary-dark); }
+.product-tabs button.active { color: var(--primary-dark); }
+.product-tabs button.active::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--accent-yellow);
+}
+.product-tabs-support-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+.product-tabs-support-link:hover { color: var(--accent-yellow); }
+
+.tab-pane { display: none; animation: fadeInContent 0.4s ease; }
+.tab-pane.active { display: block; }
+
+.product-content-block { margin-bottom: 40px; }
+.product-content-block h2 { font-size: 1.5rem; color: var(--primary-dark); margin-bottom: 20px; }
+.product-content-block p { color: var(--text-light); line-height: 1.7; margin-bottom: 15px; }
+.product-content-block ul { color: var(--text-light); line-height: 1.7; padding-left: 20px; margin-bottom: 15px; }
+
+/* --- ТАБЛИЦА ХАРАКТЕРИСТИК --- */
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95rem;
+}
+.specs-table th, .specs-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #eaeaea; }
+.specs-table th { background-color: var(--bg-secondary); color: var(--primary-dark); font-weight: 600; width: 40%; }
+.specs-table tr:hover { background-color: #f9f9f9; }
+
+/* --- ДОКУМЕНТЫ --- */
+.documents-list { display: flex; flex-direction: column; gap: 15px; }
+.document-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.document-item:hover { background: #f9f9f9; }
+.document-item i { color: var(--accent-yellow); font-size: 1.5rem; }
+.document-item .doc-info { flex: 1; }
+.document-item .doc-info a { color: var(--primary-dark); text-decoration: none; font-weight: 600; display: block; }
+.document-item .doc-info a:hover { color: var(--accent-yellow); }
+.document-item .doc-info span { font-size: 0.85rem; color: var(--text-light); }
+
+/* --- RELATED PRODUCTS --- */
+.related-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.related-product-card {
+    background: var(--bg-white);
+    border: 1px solid #eaeaea;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    border-top: 4px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+.related-product-card:hover {
+    border-top-color: var(--accent-yellow);
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(28, 29, 38, 0.12);
+}
+.related-product-card img {
+    width: 100%;
+    max-width: 220px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.related-product-card * { text-decoration: none !important; }
+.related-product-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 8px;
+    line-height: 1.3;
+    transition: color 0.3s ease;
+}
+.related-product-card p {
+    font-size: 0.9rem;
+    color: var(--text-light) !important;
+    line-height: 1.5;
+    margin: 0;
+}
+.related-product-card:hover h4 { color: var(--accent-yellow); }
+.related-product-card a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+}
+
+/* --- ОБЩАЯ АДАПТИВНОСТЬ --- */
+@media (max-width: 992px) {
+    .hero-grid { grid-template-columns: 1fr; gap: 30px; }
+    .hero-content h1 { font-size: 2rem; }
+    .product-tabs-nav { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@media (max-width: 768px) {
+    .hero-actions { flex-direction: column; }
+    .hero-actions .btn-primary, .hero-actions .btn-outline-dark { width: 100%; text-align: center; }
+    .product-tabs { width: 100%; justify-content: space-around; }
+    .product-tabs button { padding: 10px 15px; font-size: 0.9rem; }
+}
+/* ==========================================================
+   АДАПТАЦИЯ ШАПКИ ДЛЯ РУССКОГО ЯЗЫКА (RU)
+   ========================================================== */
+
+/* Расширяем пилюлю, чтобы длинные слова помещались */
+html[lang="ru"] header {
+    max-width: 1200px; /* Было 1100px — чуть шире для русского */
+}
+
+/* Уменьшаем отступы в меню для компактности */
+html[lang="ru"] .desktop-nav ul {
+    gap: 18px;
+}
+
+/* Чуть уменьшаем шрифт пунктов меню */
+html[lang="ru"] .desktop-nav a {
+    font-size: 0.9rem;
+}
+
+/* Уменьшаем слоган, чтобы не вылезал */
+html[lang="ru"] .tagline {
+    font-size: 0.65rem;
+}
+
+/* Страховка на средних экранах (если всё равно не влезает) */
+@media (max-width: 1500px) {
+    html[lang="ru"] .desktop-nav ul {
+        gap: 12px;
+    }
+    html[lang="ru"] .desktop-nav a {
+        font-size: 0.85rem;
+    }
+    html[lang="ru"] .tagline {
+        display: none; /* Скрываем слоган на узких экранах для RU */
+    }
+}

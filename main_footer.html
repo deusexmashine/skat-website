@@ -5,8 +5,8 @@
             
             <!-- 1. IEF SKAT -->
             <div style="flex: 1; min-width: 160px;">
-                <h4 style="color: #fff; margin-bottom: 8px;">IEF SKAT</h4>
-                <p style="color: #ccc; font-size: 0.85rem; line-height: 1.4; margin-bottom: 10px;">High-voltage engineering since 2006.</p>
+                <h4 style="color: #fff; margin-bottom: 8px;" data-i18n="footer_company_title">IEF SKAT</h4>
+                <p style="color: #ccc; font-size: 0.85rem; line-height: 1.4; margin-bottom: 10px;" data-i18n="footer_company_desc">High-voltage engineering since 2006.</p>
                 <div class="footer-social" style="display: flex; gap: 12px;">
                     <a href="#" style="color: #888; font-size: 1.2rem; transition: color 0.3s;"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="#" style="color: #888; font-size: 1.2rem; transition: color 0.3s;"><i class="fa-brands fa-youtube"></i></a>
@@ -16,29 +16,37 @@
 
             <!-- 2. Contact Info -->
             <div style="flex: 1; min-width: 180px;">
-                <h4 style="color: #fff; margin-bottom: 8px;">Contact</h4>
+                <h4 style="color: #fff; margin-bottom: 8px;" data-i18n="footer_contact_title">Contact</h4>
                 <ul style="list-style: none; padding: 0; color: #ccc; font-size: 0.85rem; line-height: 1.8;">
                     <li>
                         <img src="flags/ru.png" alt="Russia" style="width: 20px; height: 15px; vertical-align: middle; margin-right: 6px; border-radius: 2px;">
-                        Volgograd, Russia
+                        <span data-i18n="footer_contact_address">Volgograd, Russia</span>
                     </li>
                     <li><i class="fa-solid fa-phone" style="color: var(--accent-yellow); margin-right: 6px;"></i> +7 (8442) 26-99-94</li>
                     <li><i class="fa-solid fa-envelope" style="color: var(--accent-yellow); margin-right: 6px;"></i> st@skat-v.com</li>
+                    <li>
+                        <a href="faq.html" style="color: #ccc; text-decoration: none; transition: color 0.3s;">
+                            <i class="fa-solid fa-circle-question" style="color: var(--accent-yellow); margin-right: 6px;"></i>
+                            <span data-i18n="footer_faq_link">FAQ</span>
+                        </a>
+                    </li>
                 </ul>
             </div>
 
             <!-- 3. Downloads -->
             <div style="flex: 1; min-width: 120px;">
-                <h4 style="color: #fff; margin-bottom: 8px;">Downloads</h4>
+                <h4 style="color: #fff; margin-bottom: 8px;" data-i18n="footer_downloads_title">Downloads</h4>
                 <ul style="list-style: none; padding: 0; font-size: 0.9rem; line-height: 2;">
                     <li>
                         <a href="catalog.pdf" target="_blank" style="color: #ccc; text-decoration: none; transition: color 0.3s; display: flex; align-items: center; gap: 8px;">
-                            <i class="fa-solid fa-file-pdf" style="color: var(--accent-yellow); font-size: 1.1rem;"></i> Catalog
+                            <i class="fa-solid fa-file-pdf" style="color: var(--accent-yellow); font-size: 1.1rem;"></i>
+                            <span data-i18n="footer_downloads_catalog">Catalog</span>
                         </a>
                     </li>
                     <li>
                         <a href="#" target="_blank" style="color: #ccc; text-decoration: none; transition: color 0.3s; display: flex; align-items: center; gap: 8px;">
-                            <i class="fa-solid fa-file-pdf" style="color: var(--accent-yellow); font-size: 1.1rem;"></i> Brochure
+                            <i class="fa-solid fa-file-pdf" style="color: var(--accent-yellow); font-size: 1.1rem;"></i>
+                            <span data-i18n="footer_downloads_brochure">Brochure</span>
                         </a>
                     </li>
                 </ul>
@@ -46,18 +54,20 @@
 
             <!-- 4. Shipping -->
             <div style="flex: 1; min-width: 160px;">
-                <h4 style="color: #fff; margin-bottom: 8px;">Shipping</h4>
+                <h4 style="color: #fff; margin-bottom: 8px;" data-i18n="footer_shipping_title">Shipping</h4>
                 <ul style="list-style: none; padding: 0; color: #ccc; font-size: 0.85rem; line-height: 1.8;">
-                    <li><i class="fa-solid fa-truck" style="color: var(--accent-yellow); margin-right: 6px;"></i> From Volgograd</li>
-                    <li><i class="fa-solid fa-globe" style="color: var(--accent-yellow); margin-right: 6px;"></i> Worldwide delivery</li>
-                    <li><i class="fa-regular fa-calendar-check" style="color: var(--accent-yellow); margin-right: 6px;"></i> 18-month warranty</li>
+                    <li><i class="fa-solid fa-truck" style="color: var(--accent-yellow); margin-right: 6px;"></i> <span data-i18n="footer_shipping_from">From Volgograd</span></li>
+                    <li><i class="fa-solid fa-globe" style="color: var(--accent-yellow); margin-right: 6px;"></i> <span data-i18n="footer_shipping_world">Worldwide delivery</span></li>
+                    <li><i class="fa-regular fa-calendar-check" style="color: var(--accent-yellow); margin-right: 6px;"></i> <span data-i18n="footer_shipping_warranty">18-month warranty</span></li>
                 </ul>
             </div>
         </div>
 
         <!-- КОПИРАЙТ -->
         <div style="text-align: center; font-size: 0.8rem; color: #888; padding-top: 5px;">
-            © 2026 IEF SKAT. All rights reserved.
+            <span data-i18n="footer_rights">© 2026 IEF SKAT. All rights reserved.</span>
         </div>
     </div>
+	<script src="lang.js"></script>
+<script src="language-selector.js"></script>
 </footer>

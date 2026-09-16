@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření stejnosměrného napětí",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Mezní dovolená chyba měření střídavého napětí",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          },
+          {
+            "label": "Mezní dovolená chyba měření stejnosměrného napětí",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné technické parametry",
+        "parameters": [
+          {
+            "label": "Vstupní odpor pro stejnosměrný proud",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "500 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Napájecí napětí",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Příkon",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry indikační jednotky",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry vysokonapěťového měřiče napětí",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Integrován do indikační jednotky"
+            }
+          },
+          {
+            "label": "Hmotnost indikační jednotky",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost vysokonapěťového měřiče napětí",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "5,5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Integrován do indikační jednotky"
+            }
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Životnost",
+            "values": [
+              "5 let",
+              "5 let",
+              "5 let",
+              "5 let"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření střídavého napětí (40–65 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření střídavého napětí (390–410 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření stejnosměrného napětí",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Mezní dovolená chyba měření napětí",
+            "values": [
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Mezní dovolená absolutní chyba měření kmitočtu (40–65 Hz)",
+            "values": [
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Mezní dovolená absolutní chyba měření kmitočtu (390–410 Hz)",
+            "values": [
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozsah měření celkového činitele harmonického zkreslení (Ku)",
+            "values": [
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Mez chyby měření Ku (Ku < 3 %)",
+            "values": [
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Mez chyby měření Ku (Ku ≥ 3 %)",
+            "values": [
+              "±5 %",
+              "±5 %",
+              "±5 %",
+              "±5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné technické parametry",
+        "parameters": [
+          {
+            "label": "Vstupní odpor pro stejnosměrný proud",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "420 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Napájecí napětí",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Příkon",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry indikační jednotky",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry vysokonapěťového měřiče napětí",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Integrován do indikační jednotky"
+            }
+          },
+          {
+            "label": "Hmotnost indikační jednotky",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost vysokonapěťového měřiče napětí",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "6,4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Integrován do indikační jednotky"
+            }
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Relativní vlhkost (při +25 °C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Životnost",
+            "values": [
+              "5 let",
+              "5 let",
+              "5 let",
+              "5 let"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Výstupní parametry",
+        "parameters": [
+          {
+            "label": "Rozsah regulace střídavého napětí",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "Rozsah regulace stejnosměrného napětí",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Maximální výstupní střídavý proud",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Maximální výstupní stejnosměrný proud",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "Amplituda zvlnění stejnosměrného napětí",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření stejnosměrného napětí (amplitudová hodnota)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Činitel zkreslení sinusového průběhu střídavého napětí",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Displej",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Napájení",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců",
+              "18 měsíců"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Výstupní parametry",
+        "parameters": [
+          {
+            "label": "Rozsah regulace střídavého napětí",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozsah regulace stejnosměrného napětí",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Polarita stejnosměrného proudu",
+            "values": [
+              "Záporná",
+              "Kladná"
+            ]
+          },
+          {
+            "label": "Maximální výstupní střídavý proud",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Maximální výstupní stejnosměrný proud",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozsah měření stejnosměrného napětí (amplitudová hodnota)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Amplituda zvlnění stejnosměrného napětí",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Činitel zkreslení sinusového průběhu střídavého napětí",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Napájení",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry řídicí jednotky",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry vysokonapěťové jednotky",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost řídicí jednotky",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost vysokonapěťové jednotky",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců",
+              "18 měsíců"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí",
+            "values": [
+              "10,0 – 100,0 kV"
+            ]
+          },
+          {
+            "label": "Mezní dovolená chyba měření",
+            "values": [
+              "±2,5 %"
+            ]
+          },
+          {
+            "label": "Rozlišení měření napětí",
+            "values": [
+              "0,1 kV"
+            ]
+          },
+          {
+            "label": "Počet automatických měření",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Doba vypnutí při průrazu",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Rychlost nárůstu napětí",
+            "values": [
+              "0,5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Omezení maximálního napětí",
+            "values": [
+              "60; 70; 80; 90; 100 kV"
+            ]
+          },
+          {
+            "label": "Napájení",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Rozměry (D×Š×V)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Stupeň krytí",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření ztrátového činitele tan δ",
+            "values": [
+              "1·10⁻⁴ – 1,000"
+            ]
+          },
+          {
+            "label": "Rozsah měření elektrické kapacity",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Zkušební napětí (AC, 40–62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Rozsah teplot ohřevu měřicí cely",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Doba ohřevu na nastavenou teplotu",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Displej",
+            "values": [
+              "7\" IPS dotykový displej"
+            ]
+          },
+          {
+            "label": "Vnitřní paměť",
+            "values": [
+              "Až 250 výsledků zkoušek"
+            ]
+          },
+          {
+            "label": "Rozměry (D×Š×V)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrologické charakteristiky",
+        "parameters": [
+          {
+            "label": "Rozsah měření střídavého napětí",
+            "values": [
+              "0,3 – 20 kV"
+            ]
+          },
+          {
+            "label": "Rozsah měření střídavého proudu (na kanál)",
+            "values": [
+              "0,5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Mez chyby měření napětí",
+            "values": [
+              "±2,5 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Počet kanálů měření proudu",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Programovatelná doba zkoušky",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Rozměry měřicí jednotky",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Rozměry zkušební vany",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost měřicí jednotky",
+            "values": [
+              "5,8 kg"
+            ]
+          },
+          {
+            "label": "Hmotnost zkušební vany",
+            "values": [
+              "19,0 kg"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Rozsahy měření",
+        "parameters": [
+          {
+            "label": "Vestavěný zdroj: rozsah napětí",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Vestavěný zdroj: rozsah proudu",
+            "values": [
+              "0,5 – 10 mA",
+              "0,5 – 10 mA",
+              "0,5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Jednotka 50 kV: rozsah napětí",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "Jednotka 50 kV: rozsah proudu",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "Jednotka 100 kV: rozsah napětí",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Jednotka 100 kV: rozsah proudu",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "Jednotka 20 kV: rozsah napětí",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "Jednotka 20 kV: rozsah proudu",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Mez chyby měření napětí",
+            "values": [
+              "±3 %",
+              "±3 %",
+              "±3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Mez chyby měření proudu",
+            "values": [
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Počet externích vysokonapěťových jednotek",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Počet proudových kanálů (zkušební vana)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Napájení",
+            "values": [
+              "230 V, 50 Hz",
+              "230 V, 50 Hz",
+              "230 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry řídicí jednotky (D×Š×V)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Rozměry jednotky 20 kV (D×Š×V)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "Rozměry jednotky 50 kV (D×Š×V)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "Rozměry jednotky 100 kV (D×Š×V)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Rozměry zkušební vany (D×Š×V)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost řídicí jednotky",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Hmotnost jednotky 20 kV",
+            "values": [
+              "—",
+              "—",
+              "33,8 kg"
+            ]
+          },
+          {
+            "label": "Hmotnost jednotky 50 kV",
+            "values": [
+              "35,4 kg",
+              "35,4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "Hmotnost jednotky 100 kV",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Hmotnost zkušební vany",
+            "values": [
+              "18,7 kg",
+              "18,7 kg",
+              "18,7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "+10 – +40 °C",
+              "+10 – +40 °C",
+              "+10 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Relativní vlhkost (při +25 °C)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Atmosférický tlak",
+            "values": [
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Životnost",
+            "values": [
+              "10 let",
+              "10 let",
+              "10 let"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců",
+              "18 měsíců",
+              "18 měsíců"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Parametry zátěže",
+        "parameters": [
+          {
+            "label": "Maximální pracovní stejnosměrné napětí",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Maximální amplitudové střídavé napětí (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Počet stupňů zátěže",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Počet kombinací zátěže",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Maximální celkový ztrátový výkon",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Doba provozu při maximálním výkonu",
+            "values": [
+              "1 hodina"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Parametry stupňů (jmenovitý odpor / výkon)",
+        "parameters": [
+          {
+            "label": "Stupeň 1",
+            "values": [
+              "68 MΩ ±5 % / 80 W"
+            ]
+          },
+          {
+            "label": "Stupeň 2",
+            "values": [
+              "22,4 MΩ ±5 % / 250 W"
+            ]
+          },
+          {
+            "label": "Stupeň 3",
+            "values": [
+              "14,1 MΩ ±5 % / 350 W"
+            ]
+          },
+          {
+            "label": "Stupeň 4",
+            "values": [
+              "6,6 MΩ ±5 % / 750 W"
+            ]
+          },
+          {
+            "label": "Stupeň 5",
+            "values": [
+              "2,4 MΩ ±5 % / 1500 W"
+            ]
+          },
+          {
+            "label": "Stupeň 6",
+            "values": [
+              "1,35 MΩ ±5 % / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Rozměry (Š×H×V)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Napájení chladicího systému",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Příkon chladicího systému",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "+5 – +40 °C"
+            ]
+          },
+          {
+            "label": "Relativní vlhkost (při +25 °C)",
+            "values": [
+              "≤ 80 %"
+            ]
+          },
+          {
+            "label": "Životnost",
+            "values": [
+              "10 let"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Zkušební parametry",
+        "parameters": [
+          {
+            "label": "Maximální zkušební napětí",
+            "values": [
+              "50 kV AC"
+            ]
+          },
+          {
+            "label": "Maximální počet současně zkoušených objektů",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Rozměry (výška se stojany)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Rozměry stolu (Š×D)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "+10 – +40 °C"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "18 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektrické parametry",
+        "parameters": [
+          {
+            "label": "Napájecí napětí",
+            "values": [
+              "220 V AC"
+            ]
+          },
+          {
+            "label": "Jmenovitý odebíraný proud",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Hladina akustického tlaku (1 m)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Kontrastní vnímání osvětlení",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Rozměry",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "≤ 0,32 kg"
+            ]
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "-30 – +55 °C"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "12 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektrické parametry",
+        "parameters": [
+          {
+            "label": "Jmenovité napětí",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Jmenovitá kapacita",
+            "values": [
+              "0,4 µF"
+            ]
+          },
+          {
+            "label": "Zkušební napětí",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Všeobecné parametry",
+        "parameters": [
+          {
+            "label": "Rozměry (D×Š×V)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Hmotnost",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Pracovní teplota",
+            "values": [
+              "-1 – +35 °C"
+            ]
+          },
+          {
+            "label": "Záruka",
+            "values": [
+              "6 měsíců"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

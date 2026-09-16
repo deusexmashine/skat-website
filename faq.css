@@ -1,0 +1,76 @@
+/* ==========================================================
+   faq.css — стили страницы FAQ (frequently asked questions)
+   Аккордеон переиспользует стили из prod_common.css —
+   здесь только быстрая навигация и разметка секций.
+   ========================================================== */
+
+.faq-jumpnav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 30px 20px 10px;
+}
+
+.faq-jumpnav a {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background: var(--bg-secondary);
+    color: var(--primary-dark);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, color 0.2s;
+}
+
+.faq-jumpnav a:hover {
+    background: var(--accent-yellow);
+}
+
+.faq-section {
+    padding: 40px 0;
+    scroll-margin-top: 110px; /* чтобы плавающая шапка не перекрывала якорь */
+    border-bottom: 1px solid #eee;
+}
+
+.faq-section:last-of-type {
+    border-bottom: none;
+}
+
+.faq-section-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 6px;
+}
+
+.faq-section-head h2 {
+    color: var(--primary-dark);
+    font-size: 1.6rem;
+}
+
+.faq-section-link {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+}
+
+.faq-section-link:hover {
+    color: var(--accent-yellow);
+}
+
+.faq-section-sub {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+    .faq-jumpnav a { font-size: 0.8rem; padding: 6px 14px; }
+    .faq-section-head { flex-direction: column; }
+}

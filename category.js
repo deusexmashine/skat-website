@@ -1,54 +1,90 @@
 /* ==========================================================
-   category.js (ОЧИЩЕННАЯ ВЕРСИЯ)
-   - Полностью полагается на глобальный объект categoryImages из assets.js
-   - Использует DOMContentLoaded для гарантии загрузки
+   category.js (ИСПРАВЛЕННАЯ ВЕРСИЯ)
    ========================================================== */
 
-// Функция установки фона
+function ensureContainer(id) {
+    let el = document.getElementById(id);
+    if (!el) {
+        el = document.createElement('div');
+        el.id = id;
+        document.body.appendChild(el);
+    }
+    return el;
+}
+
+function whenDomReady(fn) {
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', fn);
+    } else {
+        fn();
+    }
+}
+
 function setCategoryHeroBackground(categoryKey) {
-    // Безопасно проверяем, что categoryImages существует
     if (typeof categoryImages === 'undefined') {
         console.error('❌ categoryImages не найдена. Проверьте assets.js.');
         return;
     }
-
     const imagePath = categoryImages[categoryKey];
     if (!imagePath) {
         console.warn('Картинка для категории "' + categoryKey + '" не найдена.');
         return;
     }
-
     const hero = document.querySelector('.category-hero');
     if (hero) {
         hero.style.backgroundImage = 'url(' + imagePath + ')';
     }
 }
 
-// Инициализация страницы категории
 function initCategoryPage(categoryKey) {
-    // 1. Загружаем шапку
-    fetch('prod_head.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('header-container').innerHTML = data;
-        })
-        .catch(error => console.error('Ошибка загрузки шапки:', error));
+    whenDomReady(function() {
+        document.body.classList.add('category-page');
 
-    // 2. Загружаем футер
-    fetch('main_footer.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('footer-container').innerHTML = data;
-        })
-        .catch(error => console.error('Ошибка загрузки футера:', error));
+        fetch('prod_head.html')
+            .then(response => {
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                return response.text();
+            })
+            .then(data => {
+                const container = ensureContainer('header-container');
+                container.innerHTML = data;
 
-    // 3. Ставим фон
-    setCategoryHeroBackground(categoryKey);
+                if (window.applyLanguage && window.getCurrentLang) {
+                    window.applyLanguage(window.getCurrentLang());
+                }
 
-    // 4. Кнопка "Вверх"
-    setTimeout(() => {
-        if (typeof initScrollToTop === 'function') {
-            initScrollToTop();
-        }
-    }, 200);
+                container.classList.add('ready');
+
+                const script = document.createElement('script');
+                script.src = 'main.js';
+                document.body.appendChild(script);
+            })
+            .catch(error => {
+                console.error('Ошибка загрузки шапки категории:', error);
+                ensureContainer('header-container').classList.add('ready');
+            });
+
+        fetch('main_footer.html')
+            .then(response => {
+                if (!response.ok) throw new Error('HTTP ' + response.status);
+                return response.text();
+            })
+            .then(data => {
+                const fc = ensureContainer('footer-container');
+                fc.innerHTML = data;
+                fc.classList.add('ready');
+            })
+            .catch(error => console.error('Ошибка загрузки футера:', error));
+
+        setCategoryHeroBackground(categoryKey);
+
+        setTimeout(() => {
+            if (typeof initScrollToTop === 'function') {
+                initScrollToTop();
+            }
+            if (typeof initCategoryHero === 'function') {
+                initCategoryHero();
+            }
+        }, 200);
+    });
 }

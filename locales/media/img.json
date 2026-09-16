@@ -1,0 +1,579 @@
+{
+  "images": {
+    "avn70": [
+      {
+        "path": "images/avn70-1.webp",
+        "type": "photo",
+        "product": "SKAT-AVN-70",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид спереди активной высоковольтной нагрузки СКАТ-АВН-70 в закрытом шкафу. Должно показывать корпус, ручки для переноски, вентиляционные отверстия."
+      },
+      {
+        "path": "images/avn70-2.webp",
+        "type": "photo",
+        "product": "SKAT-AVN-70",
+        "purpose": "Второе фото для галереи",
+        "description": "Внутреннее расположение резисторных сборок и проводки. Должно показывать 6 ступеней нагрузки, соединения, маркировку."
+      },
+      {
+        "path": "images/avn70-3.webp",
+        "type": "photo",
+        "product": "SKAT-AVN-70",
+        "purpose": "Третье фото для галереи",
+        "description": "Система автоматического принудительного воздушного охлаждения и панель управления. Должно показывать вентиляторы, индикаторы, кнопки."
+      }
+    ],
+    "ik100": [
+      {
+        "path": "images/ik100-1.webp",
+        "type": "photo",
+        "product": "IK 100-0.4",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид высоковольтного импульсного конденсатора ИК 100-0,4. Должно показывать полипропиленовый корпус, два вывода, ручки для переноски."
+      },
+      {
+        "path": "images/ik100-2.webp",
+        "type": "photo",
+        "product": "IK 100-0.4",
+        "purpose": "Второе фото для галереи",
+        "description": "Детали клемм и крепления. Должно показывать выводы, контактные площадки, крепёжные элементы."
+      },
+      {
+        "path": "images/ik100-3.webp",
+        "type": "photo",
+        "product": "IK 100-0.4",
+        "purpose": "Третье фото для галереи",
+        "description": "Пример применения в генераторе импульсных токов. Должно показывать конденсатор, подключённый к испытательной установке."
+      }
+    ],
+    "kvc-b": [
+      {
+        "path": "images/kvc-b-1.webp",
+        "type": "photo",
+        "product": "KVC B-Series",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид цифрового киловольтметра серии KVC-B с маслонаполненным делителем. Должно показывать блок индикации и высоковольтный делитель."
+      },
+      {
+        "path": "images/kvc-b-2.webp",
+        "type": "photo",
+        "product": "KVC B-Series",
+        "purpose": "Второе фото для галереи",
+        "description": "Лицевая панель блока индикации с ЖК-дисплеем. Должно показывать экран, кнопки управления, разъёмы USB."
+      },
+      {
+        "path": "images/kvc-b-3.webp",
+        "type": "photo",
+        "product": "KVC B-Series",
+        "purpose": "Третье фото для галереи",
+        "description": "Высоковольтный делитель с антикоронным экраном. Должно показывать цилиндрический корпус, изоляторы, клемму высокого напряжения."
+      }
+    ],
+    "kvc-c": [
+      {
+        "path": "images/kvc-c-1.webp",
+        "type": "photo",
+        "product": "KVC C-Series",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид цифрового киловольтметра серии KVC-C с воздушно-изолированным делителем. Должно показывать блок индикации и делитель."
+      },
+      {
+        "path": "images/kvc-c-2.webp",
+        "type": "photo",
+        "product": "KVC C-Series",
+        "purpose": "Второе фото для галереи",
+        "description": "Блок индикации и интерфейс управления. Должно показывать экран, кнопки, разъёмы."
+      },
+      {
+        "path": "images/kvc-c-3.webp",
+        "type": "photo",
+        "product": "KVC C-Series",
+        "purpose": "Третье фото для галереи",
+        "description": "Высоковольтный делитель с частотно-компенсированной конструкцией. Должно показывать корпус, изоляторы, клемму."
+      }
+    ],
+    "m100v": [
+      {
+        "path": "images/m100v-1.webp",
+        "type": "photo",
+        "product": "SKAT-M100V",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид полностью автоматического аппарата для испытания масла СКАТ-М100В. Должно показывать корпус, измерительную ячейку, панель управления."
+      },
+      {
+        "path": "images/m100v-2.webp",
+        "type": "photo",
+        "product": "SKAT-M100V",
+        "purpose": "Второе фото для галереи",
+        "description": "Измерительная ячейка с высоковольтными электродами. Должно показывать два электрода с зазором 2,5 мм, керамическую изоляцию."
+      },
+      {
+        "path": "images/m100v-3.webp",
+        "type": "photo",
+        "product": "SKAT-M100V",
+        "purpose": "Третье фото для галереи",
+        "description": "Панель управления с интерфейсом и термопринтером. Должно показывать ЖК-дисплей, кнопки, принтер."
+      }
+    ],
+    "stend50": [
+      {
+        "path": "images/stend50-1.webp",
+        "type": "photo",
+        "product": "SKAT-STEND-50",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид испытательного стенда СКАТ-СТЕНД-50 в собранном виде. Должно показывать стол, стойки, диэлектрические основания."
+      },
+      {
+        "path": "images/stend50-2.webp",
+        "type": "photo",
+        "product": "SKAT-STEND-50",
+        "purpose": "Второе фото для галереи",
+        "description": "Диэлектрические основания и детали зажима штанги. Должно показывать изоляторы, клеммы заземления."
+      },
+      {
+        "path": "images/stend50-3.webp",
+        "type": "photo",
+        "product": "SKAT-STEND-50",
+        "purpose": "Третье фото для галереи",
+        "description": "Испытательная установка с подключённой изолирующей штангой. Должно показывать штангу, закреплённую на стенде."
+      }
+    ],
+    "svs": [
+      {
+        "path": "images/svs-1.webp",
+        "type": "photo",
+        "product": "SKAT-SVS",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид стационарного стенда СКАТ-СВС: блок управления и высоковольтные блоки. Должно показывать стойку, кабели."
+      },
+      {
+        "path": "images/svs-2.webp",
+        "type": "photo",
+        "product": "SKAT-SVS",
+        "purpose": "Второе фото для галереи",
+        "description": "Испытательная ванна для диэлектрических перчаток и бот. Должно показывать ванну, 4 канала подключения."
+      },
+      {
+        "path": "images/svs-3.webp",
+        "type": "photo",
+        "product": "SKAT-SVS",
+        "purpose": "Третье фото для галереи",
+        "description": "Лицевая панель блока управления с ЖК-дисплеем и энкодером. Должно показывать экран, кнопки, индикаторы."
+      }
+    ],
+    "tangens": [
+      {
+        "path": "images/tangens-1.webp",
+        "type": "photo",
+        "product": "SKAT-TANGENS-M",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид тестера жидких диэлектриков СКАТ-ТАНГЕНС-М. Должно показывать корпус, измерительную ячейку, 7-дюймовый сенсорный экран."
+      },
+      {
+        "path": "images/tangens-2.webp",
+        "type": "photo",
+        "product": "SKAT-TANGENS-M",
+        "purpose": "Второе фото для галереи",
+        "description": "Трёхзажимная измерительная ячейка и электродная сборка. Должно показывать электроды, зазор 2 мм, разъёмы."
+      },
+      {
+        "path": "images/tangens-3.webp",
+        "type": "photo",
+        "product": "SKAT-TANGENS-M",
+        "purpose": "Третье фото для галереи",
+        "description": "Сенсорный интерфейс с отображением результатов испытаний. Должно показывать графики tan δ, таблицы."
+      }
+    ],
+    "ubsvn": [
+      {
+        "path": "images/ubsvn-1.webp",
+        "type": "photo",
+        "product": "UBSVN-LM",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид устройства блокировки и светозвуковой сигнализации УБСВН-ЛМ. Должно показывать корпус, лампу, динамик."
+      },
+      {
+        "path": "images/ubsvn-2.webp",
+        "type": "photo",
+        "product": "UBSVN-LM",
+        "purpose": "Второе фото для галереи",
+        "description": "Внутренняя схема подключения и монтажа. Должно показывать клеммы, проводку, концевой выключатель."
+      },
+      {
+        "path": "images/ubsvn-3.webp",
+        "type": "photo",
+        "product": "UBSVN-LM",
+        "purpose": "Третье фото для галереи",
+        "description": "Установлено над дверью лаборатории с лампой предупреждения. Должно показывать монтаж на стене."
+      }
+    ],
+    "70c": [
+      {
+        "path": "images/70c-1.webp",
+        "type": "photo",
+        "product": "SKAT-70C",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид цифрового аппарата испытания диэлектриков СКАТ-70Ц в портативном исполнении. Должно показывать блок управления и высоковольтный блок."
+      },
+      {
+        "path": "images/70c-2.webp",
+        "type": "photo",
+        "product": "SKAT-70C",
+        "purpose": "Второе фото для галереи",
+        "description": "Блок управления с 6-дюймовым ЖК-дисплеем. Должно показывать экран, кнопки, энкодер."
+      },
+      {
+        "path": "images/70c-3.webp",
+        "type": "photo",
+        "product": "SKAT-70C",
+        "purpose": "Третье фото для галереи",
+        "description": "Высоковольтный блок с автоматической штангой заземления. Должно показывать штангу, изоляторы, клемму."
+      }
+    ],
+    "70m": [
+      {
+        "path": "images/70m-1.webp",
+        "type": "photo",
+        "product": "SKAT-70M",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид аналогового аппарата испытания диэлектриков СКАТ-70М. Должно показывать блок управления и высоковольтный блок."
+      },
+      {
+        "path": "images/70m-2.webp",
+        "type": "photo",
+        "product": "SKAT-70M",
+        "purpose": "Второе фото для галереи",
+        "description": "Блок управления с аналоговым интерфейсом. Должно показывать стрелочные приборы, ручки, тумблеры."
+      },
+      {
+        "path": "images/70m-3.webp",
+        "type": "photo",
+        "product": "SKAT-70M",
+        "purpose": "Третье фото для галереи",
+        "description": "Высоковольтный блок и узел заземления. Должно показывать штангу, изоляторы, клемму."
+      }
+    ],
+    "70p": [
+      {
+        "path": "images/70p-1.webp",
+        "type": "photo",
+        "product": "SKAT-70P",
+        "purpose": "Главное фото продукта для галереи (carousel-main)",
+        "description": "Общий вид измерительной приставки СКАТ-70П: измерительный блок и ванна. Должно показывать блок управления и ванну."
+      },
+      {
+        "path": "images/70p-2.webp",
+        "type": "photo",
+        "product": "SKAT-70P",
+        "purpose": "Второе фото для галереи",
+        "description": "Четырёхканальный дисплей тока утечки. Должно показывать экран с 4 каналами, индикаторы."
+      },
+      {
+        "path": "images/70p-3.webp",
+        "type": "photo",
+        "product": "SKAT-70P",
+        "purpose": "Третье фото для галереи",
+        "description": "Настройка для испытания диэлектрических перчаток. Должно показывать перчатки, подключённые к ванне."
+      }
+    ]
+  },
+  "posters": {
+    "avn70": {
+      "main": {
+        "path": "images/avn70-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-AVN-70",
+        "description": "Превью видео: общий вид продукта на нейтральном фоне."
+      },
+      "thumbs": [
+        {
+          "path": "images/avn70-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/avn70-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: выбор ступени."
+        }
+      ]
+    },
+    "ik100": {
+      "main": {
+        "path": "images/ik100-main-poster.webp",
+        "purpose": "Постер для главного видео IK 100-0.4",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/ik100-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/ik100-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: применение."
+        }
+      ]
+    },
+    "kvc-b": {
+      "main": {
+        "path": "images/kvc-b-main-poster.webp",
+        "purpose": "Постер для главного видео KVC B-Series",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/kvc-b-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/kvc-b-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: подключение к ПК."
+        }
+      ]
+    },
+    "kvc-c": {
+      "main": {
+        "path": "images/kvc-c-main-poster.webp",
+        "purpose": "Постер для главного видео KVC C-Series",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/kvc-c-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/kvc-c-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: VLF-режим."
+        }
+      ]
+    },
+    "m100v": {
+      "main": {
+        "path": "images/m100v-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-M100V",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/m100v-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/m100v-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: запуск испытания."
+        }
+      ]
+    },
+    "stend50": {
+      "main": {
+        "path": "images/stend50-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-STEND-50",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/stend50-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/stend50-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: сборка."
+        }
+      ]
+    },
+    "svs": {
+      "main": {
+        "path": "images/svs-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-SVS",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/svs-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/svs-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: испытание СИЗ."
+        }
+      ]
+    },
+    "tangens": {
+      "main": {
+        "path": "images/tangens-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-TANGENS-M",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/tangens-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/tangens-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: процесс измерения."
+        },
+        {
+          "path": "images/tangens-thumb3.webp",
+          "purpose": "Миниатюра для третьего видео",
+          "description": "Кадр из третьего видео: анализ данных."
+        }
+      ]
+    },
+    "ubsvn": {
+      "main": {
+        "path": "images/ubsvn-main-poster.webp",
+        "purpose": "Постер для главного видео UBSVN-LM",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/ubsvn-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/ubsvn-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: схема подключения."
+        }
+      ]
+    },
+    "70c": {
+      "main": {
+        "path": "images/70c-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-70C",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/70c-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/70c-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: подключение."
+        }
+      ]
+    },
+    "70m": {
+      "main": {
+        "path": "images/70m-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-70M",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/70m-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/70m-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: настройка."
+        }
+      ]
+    },
+    "70p": {
+      "main": {
+        "path": "images/70p-main-poster.webp",
+        "purpose": "Постер для главного видео SKAT-70P",
+        "description": "Превью видео: общий вид продукта."
+      },
+      "thumbs": [
+        {
+          "path": "images/70p-thumb1.webp",
+          "purpose": "Миниатюра для первого видео",
+          "description": "Кадр из первого видео: общий вид."
+        },
+        {
+          "path": "images/70p-thumb2.webp",
+          "purpose": "Миниатюра для второго видео",
+          "description": "Кадр из второго видео: испытание СИЗ."
+        }
+      ]
+    }
+  },
+  "icons": {
+    "dielectric": {
+      "path": "icons/flask.png",
+      "purpose": "Иконка для мега-меню: категория «Жидкие диэлектрики»",
+      "description": "Колба/пробирка с жидкостью. Должна ассоциироваться с лабораторными испытаниями масел."
+    },
+    "acdc": {
+      "path": "icons/damaged-wire.png",
+      "purpose": "Иконка для мега-меню: категория «AC/DC Test Sets»",
+      "description": "Повреждённый кабель/провод с искрой. Должна ассоциироваться с высоким напряжением."
+    },
+    "stationary": {
+      "path": "icons/ppe.png",
+      "purpose": "Иконка для мега-меню: категория «Stationary Benches & PPE»",
+      "description": "Диэлектрические перчатки/каска. Должна ассоциироваться с средствами защиты."
+    },
+    "precision": {
+      "path": "icons/KVC.png",
+      "purpose": "Иконка для мега-меню: категория «Precision Measurement»",
+      "description": "Киловольтметр/измерительный прибор. Должна ассоциироваться с точными измерениями."
+    },
+    "calibration": {
+      "path": "icons/AVN.png",
+      "purpose": "Иконка для мега-меню: категория «Calibration & Safety»",
+      "description": "Нагрузочный блок/резистор. Должна ассоциироваться с калибровкой и поверкой."
+    },
+    "stand": {
+      "path": "icons/rod.png",
+      "purpose": "Иконка для мега-меню: категория «Test Stands»",
+      "description": "Изолирующая штанга/стенд. Должна ассоциироваться с испытаниями штанг."
+    }
+  },
+  "categoryImages": {
+    "dielectric": {
+      "path": "images/category-dielectric-bg.webp",
+      "purpose": "Фон для hero-секции категории «Жидкие диэлектрики»",
+      "description": "Лабораторное оборудование для испытания масел. Должна создавать профессиональный фон."
+    },
+    "acdc": {
+      "path": "images/category-acdc-bg.webp",
+      "purpose": "Фон для hero-секции категории «AC/DC Test Sets»",
+      "description": "Высоковольтное испытательное оборудование в работе. Должна ассоциироваться с испытаниями кабелей."
+    },
+    "stationary": {
+      "path": "images/category-stationary-bg.webp",
+      "purpose": "Фон для hero-секции категории «Stationary Benches & PPE»",
+      "description": "Испытательный стенд с перчатками. Должна ассоциироваться с испытаниями СИЗ."
+    },
+    "precision": {
+      "path": "images/category-precision-bg.webp",
+      "purpose": "Фон для hero-секции категории «Precision Measurement»",
+      "description": "Киловольтметр/измерительный прибор крупным планом. Должна ассоциироваться с точностью."
+    },
+    "calibration": {
+      "path": "images/category-calibration-bg.webp",
+      "purpose": "Фон для hero-секции категории «Calibration & Safety»",
+      "description": "Лабораторное оборудование для калибровки. Должна ассоциироваться с поверкой."
+    }
+  },
+  "aboutHeroBg": {
+    "path": "images/about-hero-bg.webp",
+    "purpose": "Фон для hero-секции страницы «О компании»",
+    "description": "Производственный цех или лаборатория СКАТ. Должна создавать впечатление надёжности."
+  }
+}

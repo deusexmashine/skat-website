@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "DC Gerilim Ölçüm Aralığı",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "AC Gerilim Doğruluğu",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          },
+          {
+            "label": "DC Gerilim Doğruluğu",
+            "values": [
+              "±0,5 %",
+              "±1,0 %",
+              "±1,0 %",
+              "±1,0 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Teknik Özellikler",
+        "parameters": [
+          {
+            "label": "DC Giriş Direnci",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "500 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Besleme Gerilimi",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Güç Tüketimi",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Gösterge Ünitesi)",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Yüksek Gerilim Bölücü Ünitesi)",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Gösterge ünitesine entegre"
+            }
+          },
+          {
+            "label": "Ağırlık (Gösterge Ünitesi)",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ağırlık (Yüksek Gerilim Bölücü Ünitesi)",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "5,5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Gösterge ünitesine entegre"
+            }
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kullanım Ömrü",
+            "values": [
+              "5 yıl",
+              "5 yıl",
+              "5 yıl",
+              "5 yıl"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı (50 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "AC Gerilim Ölçüm Aralığı (40–65 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "AC Gerilim Ölçüm Aralığı (390–410 Hz)",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "DC Gerilim Ölçüm Aralığı",
+            "values": [
+              "0,1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Gerilim Ölçüm Doğruluğu",
+            "values": [
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %",
+              "±0,25 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Frekans Ölçüm Doğruluğu (40–65 Hz)",
+            "values": [
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz",
+              "±0,015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Frekans Ölçüm Doğruluğu (390–410 Hz)",
+            "values": [
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz",
+              "±0,2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "THD Ölçüm Aralığı (Ku)",
+            "values": [
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %",
+              "0,5 – 30 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "THD Doğruluğu (Ku < %3)",
+            "values": [
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %",
+              "±0,15 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "THD Doğruluğu (Ku ≥ %3)",
+            "values": [
+              "±5 %",
+              "±5 %",
+              "±5 %",
+              "±5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Genel Teknik Özellikler",
+        "parameters": [
+          {
+            "label": "DC Giriş Direnci",
+            "values": [
+              "50 MΩ ±10 %",
+              "300 MΩ ±10 %",
+              "420 MΩ ±10 %",
+              "500 MΩ ±10 %"
+            ]
+          },
+          {
+            "label": "Besleme Gerilimi",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Güç Tüketimi",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Gösterge Ünitesi)",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Yüksek Gerilim Bölücü Ünitesi)",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Gösterge ünitesine entegre"
+            }
+          },
+          {
+            "label": "Ağırlık (Gösterge Ünitesi)",
+            "values": [
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg",
+              "3,8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ağırlık (Yüksek Gerilim Bölücü Ünitesi)",
+            "values": [
+              "—",
+              "5,5 kg",
+              "5,5 kg",
+              "6,4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Gösterge ünitesine entegre"
+            }
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C",
+              "+5 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Bağıl Nem (+25 °C'de)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kullanım Ömrü",
+            "values": [
+              "5 yıl",
+              "5 yıl",
+              "5 yıl",
+              "5 yıl"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Çıkış Parametreleri",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ayar Aralığı",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "DC Gerilim Ayar Aralığı",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Maks. AC Çıkış Akımı",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Maks. DC Çıkış Akımı",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "DC Gerilim Dalgalanma Genliği",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "DC Gerilim Ölçüm Aralığı (Tepe Değeri)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "AC Gerilim Sinüs Bozulma Katsayısı",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Ekran",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Besleme",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay",
+              "18 ay"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Çıkış Parametreleri",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ayar Aralığı",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "DC Gerilim Ayar Aralığı",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "DC Polarite",
+            "values": [
+              "Negatif",
+              "Pozitif"
+            ]
+          },
+          {
+            "label": "Maks. AC Çıkış Akımı",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Maks. DC Çıkış Akımı",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "DC Gerilim Ölçüm Aralığı (Tepe Değeri)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "DC Gerilim Dalgalanma Genliği",
+            "values": [
+              "≤ 3 %",
+              "≤ 3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "AC Gerilim Sinüs Bozulma Katsayısı",
+            "values": [
+              "≤ 5 %",
+              "≤ 5 %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Besleme",
+            "values": [
+              "220 V, 50 Hz",
+              "220 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Kontrol Ünitesi)",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Boyutlar (Yüksek Gerilim Ünitesi)",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ağırlık (Kontrol Ünitesi)",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ağırlık (Yüksek Gerilim Ünitesi)",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay",
+              "18 ay"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı",
+            "values": [
+              "10,0 – 100,0 kV"
+            ]
+          },
+          {
+            "label": "Ölçüm Doğruluğu",
+            "values": [
+              "±2,5 %"
+            ]
+          },
+          {
+            "label": "Gerilim Ölçüm Çözünürlüğü",
+            "values": [
+              "0,1 kV"
+            ]
+          },
+          {
+            "label": "Otomatik Ölçüm Sayısı",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Delinme Anında Kesme Süresi",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Gerilim Yükselme Hızı",
+            "values": [
+              "0,5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Gerilim Sınırları",
+            "values": [
+              "60; 70; 80; 90; 100 kV"
+            ]
+          },
+          {
+            "label": "Besleme",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Boyutlar (G×D×Y)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Koruma Sınıfı",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "Dielektrik Kayıp Açısı Tanjantı (tan δ) Ölçüm Aralığı",
+            "values": [
+              "1·10⁻⁴ – 1,000"
+            ]
+          },
+          {
+            "label": "Kapasitans Ölçüm Aralığı",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Test Gerilimi (AC, 40-62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Hücre Isıtma Sıcaklık Aralığı",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Ayarlanan Sıcaklığa Isınma Süresi",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Ekran",
+            "values": [
+              "7\" IPS dokunmatik ekran"
+            ]
+          },
+          {
+            "label": "Dahili Bellek",
+            "values": [
+              "250 adede kadar test sonucu"
+            ]
+          },
+          {
+            "label": "Boyutlar (G×D×Y)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Metrolojik Özellikler",
+        "parameters": [
+          {
+            "label": "AC Gerilim Ölçüm Aralığı",
+            "values": [
+              "0,3 – 20 kV"
+            ]
+          },
+          {
+            "label": "AC Akım Ölçüm Aralığı (kanal başına)",
+            "values": [
+              "0,5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Gerilim Ölçüm Doğruluğu",
+            "values": [
+              "±2,5 %"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Akım Ölçüm Kanalı Sayısı",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Programlanabilir Test Süresi",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Boyutlar (Ölçüm Ünitesi)",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Boyutlar (Test Küveti)",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık (Ölçüm Ünitesi)",
+            "values": [
+              "5,8 kg"
+            ]
+          },
+          {
+            "label": "Ağırlık (Test Küveti)",
+            "values": [
+              "19,0 kg"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Ölçüm Aralıkları",
+        "parameters": [
+          {
+            "label": "Dahili Kaynak: Gerilim Aralığı",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dahili Kaynak: Akım Aralığı",
+            "values": [
+              "0,5 – 10 mA",
+              "0,5 – 10 mA",
+              "0,5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "50 kV Ünitesi: Gerilim Aralığı",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "50 kV Ünitesi: Akım Aralığı",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV Ünitesi: Gerilim Aralığı",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "100 kV Ünitesi: Akım Aralığı",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "20 kV Ünitesi: Gerilim Aralığı",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "20 kV Ünitesi: Akım Aralığı",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Gerilim Ölçüm Doğruluğu",
+            "values": [
+              "±3 %",
+              "±3 %",
+              "±3 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Akım Ölçüm Doğruluğu",
+            "values": [
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %",
+              "±(2,0+0,1·((Iₘ/I)-1)) %"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Harici Yüksek Gerilim Ünitesi Sayısı",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Akım Kanalı Sayısı (Test Küveti)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Besleme",
+            "values": [
+              "230 V, 50 Hz",
+              "230 V, 50 Hz",
+              "230 V, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kontrol Ünitesi Boyutları (G×D×Y)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "20 kV Ünitesi Boyutları (G×D×Y)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "50 kV Ünitesi Boyutları (G×D×Y)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV Ünitesi Boyutları (G×D×Y)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Test Küveti Boyutları (G×D×Y)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Ağırlık (Kontrol Ünitesi)",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "20 kV Ünitesi Ağırlığı",
+            "values": [
+              "—",
+              "—",
+              "33,8 kg"
+            ]
+          },
+          {
+            "label": "50 kV Ünitesi Ağırlığı",
+            "values": [
+              "35,4 kg",
+              "35,4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "100 kV Ünitesi Ağırlığı",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Test Küveti Ağırlığı",
+            "values": [
+              "18,7 kg",
+              "18,7 kg",
+              "18,7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "+10 – +40 °C",
+              "+10 – +40 °C",
+              "+10 – +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Bağıl Nem (+25 °C'de)",
+            "values": [
+              "≤ 80 %",
+              "≤ 80 %",
+              "≤ 80 %"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Atmosfer Basıncı",
+            "values": [
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa",
+              "84,0 – 106,7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Kullanım Ömrü",
+            "values": [
+              "10 yıl",
+              "10 yıl",
+              "10 yıl"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay",
+              "18 ay",
+              "18 ay"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Yük Parametreleri",
+        "parameters": [
+          {
+            "label": "Maks. DC Çalışma Gerilimi",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Maks. AC Tepe Gerilimi (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Yük Kademesi Sayısı",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Yük Kombinasyonu Sayısı",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Maks. Toplam Dağıtılan Güç",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Maksimum Güçte Çalışma Süresi",
+            "values": [
+              "1 saat"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Kademe Parametreleri (Nominal Direnç / Güç)",
+        "parameters": [
+          {
+            "label": "Kademe 1",
+            "values": [
+              "68 MΩ ±5 % / 80 W"
+            ]
+          },
+          {
+            "label": "Kademe 2",
+            "values": [
+              "22,4 MΩ ±5 % / 250 W"
+            ]
+          },
+          {
+            "label": "Kademe 3",
+            "values": [
+              "14,1 MΩ ±5 % / 350 W"
+            ]
+          },
+          {
+            "label": "Kademe 4",
+            "values": [
+              "6,6 MΩ ±5 % / 750 W"
+            ]
+          },
+          {
+            "label": "Kademe 5",
+            "values": [
+              "2,4 MΩ ±5 % / 1500 W"
+            ]
+          },
+          {
+            "label": "Kademe 6",
+            "values": [
+              "1,35 MΩ ±5 % / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Boyutlar (G×D×Y)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Soğutma Sistemi Beslemesi",
+            "values": [
+              "220 V, 50 Hz"
+            ]
+          },
+          {
+            "label": "Soğutma Sistemi Güç Tüketimi",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "+5 – +40 °C"
+            ]
+          },
+          {
+            "label": "Bağıl Nem (+25 °C'de)",
+            "values": [
+              "≤ 80 %"
+            ]
+          },
+          {
+            "label": "Kullanım Ömrü",
+            "values": [
+              "10 yıl"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Test Parametreleri",
+        "parameters": [
+          {
+            "label": "Maks. Test Gerilimi",
+            "values": [
+              "50 kV AC"
+            ]
+          },
+          {
+            "label": "Aynı Anda Test Edilebilecek Maks. Nesne Sayısı",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Boyutlar (Direkli Yükseklik)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Masa Boyutları (G×D)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "+10 – +40 °C"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "18 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektriksel Parametreler",
+        "parameters": [
+          {
+            "label": "Besleme Gerilimi",
+            "values": [
+              "220 V AC"
+            ]
+          },
+          {
+            "label": "Nominal Tüketim Akımı",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Ses Basınç Seviyesi (1 m'de)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Aydınlatmada Kontrast Algısı",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Boyutlar",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "≤ 0,32 kg"
+            ]
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "-30 – +55 °C"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "12 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Elektriksel Parametreler",
+        "parameters": [
+          {
+            "label": "Nominal Gerilim",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Nominal Kapasitans",
+            "values": [
+              "0,4 µF"
+            ]
+          },
+          {
+            "label": "Test Gerilimi",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Genel Özellikler",
+        "parameters": [
+          {
+            "label": "Boyutlar (G×D×Y)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Ağırlık",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Çalışma Sıcaklığı",
+            "values": [
+              "-1 – +35 °C"
+            ]
+          },
+          {
+            "label": "Garanti",
+            "values": [
+              "6 ay"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
