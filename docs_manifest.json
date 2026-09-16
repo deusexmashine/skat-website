@@ -1,0 +1,63 @@
+{
+  "70c": {
+    "ru": [
+      { "label": "Руководство по эксплуатации", "file": "70C_UG_ru.pdf", "size": "1.6 MB" }
+    ]
+  },
+  "70m": {},
+  "70p": {
+    "ru": [
+      { "label": "Описание типа средства измерений", "file": "70P_DS_ru.pdf", "size": "0.3 MB" },
+      { "label": "Руководство по эксплуатации", "file": "70P_UG_ru.pdf", "size": "0.5 MB" }
+    ]
+  },
+  "avn70": {
+    "ru": [
+      { "label": "Паспорт", "file": "AVN70_DS_ru.pdf", "size": "0.6 MB" }
+    ]
+  },
+  "ik100": {
+    "ru": [
+      { "label": "Паспорт", "file": "IK100_DS_ru.pdf", "size": "0.2 MB" }
+    ]
+  },
+  "kvc-b": {
+    "ru": [
+      { "label": "Описание типа средства измерений", "file": "KVC_DS_ru.pdf", "size": "0.3 MB" },
+      { "label": "Руководство по эксплуатации", "file": "KVC-B_UG_ru.pdf", "size": "0.5 MB" }
+    ]
+  },
+  "kvc-c": {
+    "ru": [
+      { "label": "Описание типа средства измерений", "file": "KVC_DS_ru.pdf", "size": "0.3 MB" },
+      { "label": "Руководство по эксплуатации", "file": "KVC-C_UG_ru.pdf", "size": "0.5 MB" }
+    ]
+  },
+  "m100v": {
+    "ru": [
+      { "label": "Паспорт", "file": "M100V_DS_ru.pdf", "size": "0.4 MB" }
+    ]
+  },
+  "stend50": {
+    "ru": [
+      { "label": "Паспорт", "file": "STEND50_DS_ru.pdf", "size": "0.3 MB" }
+    ]
+  },
+  "svs": {
+    "ru": [
+      { "label": "Описание типа средства измерений", "file": "SVS_DS_ru.pdf", "size": "0.4 MB" },
+      { "label": "Руководство по эксплуатации", "file": "SVS_UG_ru.pdf", "size": "0.9 MB" }
+    ]
+  },
+  "tangens": {
+    "ru": [
+      { "label": "Сертификат об утверждении типа", "file": "TANGENS-M_DS_ru.pdf", "size": "0.9 MB" },
+      { "label": "Руководство по эксплуатации", "file": "TANGENS-M_UG_ru.pdf", "size": "0.9 MB" }
+    ]
+  },
+  "ubsvn": {
+    "ru": [
+      { "label": "Паспорт", "file": "UBSVN-LM_DS_ru.pdf", "size": "0.4 MB" }
+    ]
+  }
+}

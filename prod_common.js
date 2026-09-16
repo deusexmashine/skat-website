@@ -114,6 +114,54 @@ function openTab(evt, tabName) {
 }
 
 // ==========================================================
+// ДОКУМЕНТАЦИЯ ТОВАРА (паспорта/РЭ/сертификаты) — docs_manifest.json
+// Комплект зависит от языка: для ru показываем русский комплект
+// (паспорт/РЭ/сертификат), для остальных языков — английский, если он
+// появится в манифесте. Пока для языка нет ни одного документа — блок
+// "Product documents" целиком скрывается (лучше, чем мёртвые ссылки).
+// ==========================================================
+let productDocsManifest = null;
+let productDocsCode = null;
+
+function renderProductDocs() {
+    if (!productDocsCode || !productDocsManifest) return;
+    const section = document.getElementById('productDocsSection');
+    const container = document.querySelector('.documents-list[data-doc-code="' + productDocsCode + '"]');
+    if (!section || !container) return;
+
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const docLang = lang === 'ru' ? 'ru' : 'en';
+    const entry = productDocsManifest[productDocsCode];
+    const items = (entry && entry[docLang]) ? entry[docLang] : [];
+
+    if (!items.length) {
+        section.style.display = 'none';
+        return;
+    }
+    section.style.display = '';
+    container.innerHTML = items.map(function(doc) {
+        return '<div class="document-item">' +
+            '<i class="fa-solid fa-file-pdf"></i>' +
+            '<div class="doc-info"><a href="docs/' + doc.file + '" target="_blank">' +
+            '<span>' + doc.label + '</span></a><span>PDF | ' + doc.size + '</span></div>' +
+            '</div>';
+    }).join('');
+}
+
+function initProductDocs(code) {
+    productDocsCode = code;
+    fetch('docs_manifest.json')
+        .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function(data) {
+            productDocsManifest = data;
+            renderProductDocs();
+        })
+        .catch(function(err) { console.error('Ошибка загрузки docs_manifest.json:', err); });
+}
+
+document.addEventListener('languageChanged', renderProductDocs);
+
+// ==========================================================
 // АККОРДЕОН
 // ==========================================================
 document.querySelectorAll('.accordion-header').forEach(button => {

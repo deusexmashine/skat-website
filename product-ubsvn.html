@@ -112,17 +112,9 @@
                             <!-- Плейлист генерируется динамически через initVideoGallery() -->
                         </div>
                     </div>
-
+                    <div id="productDocsSection">
                     <h2 data-i18n="product_docs">Product documents</h2>
-                    <div class="documents-list">
-                        <div class="document-item">
-                            <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/UBSVN-LM_DS_en.pdf" target="_blank"><span data-i18n="data_sheet">Data sheet</span></a><span>PDF | 0.6 MB</span></div>
-                        </div>
-                        <div class="document-item">
-                            <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/UBSVN-LM_UG_en.pdf" target="_blank"><span data-i18n="user_guide">User guide</span></a><span>PDF | 1.8 MB</span></div>
-                        </div>
+                    <div class="documents-list" data-doc-code="ubsvn"></div>
                     </div>
 
                     <h2 style="margin-top: 40px;" data-i18n="related_products">Related products</h2>
@@ -222,6 +214,7 @@
     <script>
         initProductGallery('ubsvn');
         initVideoGallery('ubsvn');
+        initProductDocs('ubsvn');
     </script>
 
     <!-- ИСПРАВЛЕНО: используем правильный ключ 'ubsvn-lm' -->

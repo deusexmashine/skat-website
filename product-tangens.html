@@ -113,17 +113,9 @@
                             <!-- Плейлист генерируется динамически через initVideoGallery() -->
                         </div>
                     </div>
-
+                    <div id="productDocsSection">
                     <h2 data-i18n="product_docs">Product documents</h2>
-                    <div class="documents-list">
-                        <div class="document-item">
-                            <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/TANGENS-M_DS_en.pdf" target="_blank"><span data-i18n="data_sheet">Data sheet</span></a><span>PDF | 1.2 MB</span></div>
-                        </div>
-                        <div class="document-item">
-                            <i class="fa-solid fa-file-pdf"></i>
-                            <div class="doc-info"><a href="docs/TANGENS-M_UG_en.pdf" target="_blank"><span data-i18n="user_guide">User guide</span></a><span>PDF | 5.8 MB</span></div>
-                        </div>
+                    <div class="documents-list" data-doc-code="tangens"></div>
                     </div>
 
                     <h2 style="margin-top: 40px;" data-i18n="related_products">Related products</h2>
@@ -228,6 +220,7 @@
     <script>
         initProductGallery('tangens');
         initVideoGallery('tangens');
+        initProductDocs('tangens');
     </script>
 
     <!-- ИСПРАВЛЕНО: используем правильный ключ 'skat-tangens' -->
