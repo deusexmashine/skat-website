@@ -126,9 +126,10 @@ function openTab(evt, tabName) {
 // openCertLightbox()/certLightboxNav() ниже) и отдельной ссылкой на PDF.
 // preview/previewThumb в манифесте — не обязательны: без них карточка
 // просто не кликабельна (иконка вместо превью), только PDF-скачивание.
-// Сейчас сертификаты собраны только для русской версии — на других
-// языках список для этого товара пуст, и блок скрывается тем же общим
-// правилом (пусто → блок скрыт).
+// Выбор комплекта сертификатов по языку — с фолбэком (см. EAEU_MGS_LANGS
+// и renderProductCerts() ниже): свой язык → RU для стран ЕАЭС/МГС СНГ,
+// если своего набора нет → EN, если есть → иначе блок скрывается. При
+// показе не "родного" языка на карточке появляется пометка (RU/EN).
 // ==========================================================
 let productDocsManifest = null;
 let productDocsCode = null;
@@ -139,6 +140,13 @@ let productDocsCode = null;
 let certImagePaths = [];
 let certLabels = [];
 let currentCertLightboxIndex = 0;
+
+// Языки стран ЕАЭС (RU/BY/KZ/AM/KG) и МГС СНГ (+AZ/GE/MD/TJ/TM/UZ) —
+// для них официальные сертификаты (обычно существующие только на русском)
+// показываются как есть, а не скрываются: сертификат об утверждении типа СИ
+// РФ признаётся/актуален в этих странах в силу соглашений ЕАЭС/МГС, поэтому
+// лучше показать русский документ с пометкой языка, чем скрыть блок целиком.
+const EAEU_MGS_LANGS = ['ru', 'az', 'kz', 'tg', 'tk', 'uz', 'hy', 'be', 'ka', 'ky', 'ro'];
 
 function renderDocList(items) {
     return items.map(function(doc) {
@@ -151,8 +159,12 @@ function renderDocList(items) {
 }
 
 // ===== СЕРТИФИКАТЫ: карточка с превью (клик → лайтбокс, стиль prod_img.js) + ссылка на PDF =====
-function renderCertList(items) {
+// badgeLang — если задан, на карточку добавляется пометка языка документа
+// (используется, когда показываем RU-комплект как фолбэк для языка,
+// у которого своего набора сертификатов ещё нет — см. renderProductCerts()).
+function renderCertList(items, badgeLang) {
     let previewIdx = 0;
+    const badge = badgeLang ? '<span class="cert-lang-badge">' + badgeLang.toUpperCase() + '</span>' : '';
     return items.map(function(cert) {
         let thumb;
         if (cert.previewThumb || cert.preview) {
@@ -165,7 +177,7 @@ function renderCertList(items) {
             thumb = '<div class="cert-thumb cert-thumb-empty"><i class="fa-solid fa-certificate"></i></div>';
         }
         return '<div class="certificate-item">' + thumb +
-            '<div class="cert-info"><span class="cert-label">' + cert.label + '</span>' +
+            '<div class="cert-info"><span class="cert-label">' + cert.label + badge + '</span>' +
             '<a href="docs/' + cert.file + '" target="_blank" class="cert-download">' +
             '<i class="fa-solid fa-file-pdf"></i> PDF | ' + cert.size + '</a></div>' +
             '</div>';
@@ -223,10 +235,26 @@ function renderProductCerts() {
     if (!section || !container) return;
 
     const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
-    const docLang = lang === 'ru' ? 'ru' : 'en';
     const entry = productDocsManifest[productDocsCode];
     const certs = entry && entry.certificates ? entry.certificates : null;
-    const items = (certs && certs[docLang]) ? certs[docLang] : [];
+
+    // Порядок выбора комплекта: 1) свой язык, если есть; 2) для стран
+    // ЕАЭС/МГС СНГ — фолбэк на RU (официальные сертификаты валидны в этих
+    // странах, лучше показать с пометкой языка, чем скрыть блок); 3) EN,
+    // если есть; иначе блок скрывается (как и раньше).
+    let items = [];
+    let badgeLang = null;
+    if (certs) {
+        if (certs[lang] && certs[lang].length) {
+            items = certs[lang];
+        } else if (lang !== 'ru' && EAEU_MGS_LANGS.indexOf(lang) !== -1 && certs.ru && certs.ru.length) {
+            items = certs.ru;
+            badgeLang = 'ru';
+        } else if (lang !== 'en' && certs.en && certs.en.length) {
+            items = certs.en;
+            badgeLang = 'en';
+        }
+    }
 
     if (!items.length) {
         section.style.display = 'none';
@@ -238,7 +266,7 @@ function renderProductCerts() {
     const previewItems = items.filter(function(c) { return c.previewThumb || c.preview; });
     certImagePaths = previewItems.map(function(c) { return c.preview || c.previewThumb; });
     certLabels = previewItems.map(function(c) { return c.label; });
-    container.innerHTML = renderCertList(items);
+    container.innerHTML = renderCertList(items, badgeLang);
 }
 
 function initProductDocs(code) {

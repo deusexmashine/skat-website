@@ -214,6 +214,21 @@ body.product-page .product-hero {
 }
 .cert-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
 .cert-info .cert-label { color: var(--primary-dark); font-weight: 600; }
+/* Пометка языка документа — показывается, когда карточка выводит комплект
+   не на языке текущей страницы (напр. RU-сертификат для армянской/
+   белорусской и т.п. версии сайта — см. EAEU_MGS_LANGS в prod_common.js) */
+.cert-lang-badge {
+    display: inline-block;
+    margin-left: 6px;
+    padding: 1px 6px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--primary-dark);
+    background: var(--accent-yellow);
+    border-radius: 4px;
+    vertical-align: middle;
+}
 .cert-info .cert-download { color: var(--text-light); font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; width: fit-content; }
 .cert-info .cert-download:hover { color: var(--accent-yellow); }
 .cert-info .cert-download i { color: var(--accent-yellow); }
