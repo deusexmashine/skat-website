@@ -27,10 +27,15 @@ language-selector.js — селектор языка в стиле Megger.
         { code: 'sr', name: 'Serbia (Српски)',      flag: 'flags/rs.png' },
         { code: 'ar', name: 'Middle East (العربية)', flag: 'flags/ae.png' },
         { code: 'fa', name: 'Iran (فارسی)',         flag: 'flags/ir.png' },
-        { code: 'hi', name: 'India (हिन्दी)',        flag: 'flags/in.png' }
+        { code: 'hi', name: 'India (हिन्दी)',        flag: 'flags/in.png' },
+        { code: 'hy', name: 'Armenia (Հայերեն)',    flag: 'flags/am.png' },
+        { code: 'be', name: 'Belarus (Беларуская)', flag: 'flags/by.png' },
+        { code: 'ka', name: 'Georgia (ქართული)',    flag: 'flags/ge.png' },
+        { code: 'ky', name: 'Kyrgyzstan (Кыргызча)', flag: 'flags/kg.png' },
+        { code: 'ro', name: 'Moldova (Română)',     flag: 'flags/md.png' }
     ];
 
-    const AVAILABLE_LANGS = ['en', 'ru', 'kz', 'az', 'uz', 'de', 'pt', 'es', 'zh', 'fr', 'it', 'tr', 'pl', 'sv', 'cs', 'bg', 'sr', 'ar', 'fa', 'hi', 'tg', 'tk'];
+    const AVAILABLE_LANGS = ['en', 'ru', 'kz', 'az', 'uz', 'de', 'pt', 'es', 'zh', 'fr', 'it', 'tr', 'pl', 'sv', 'cs', 'bg', 'sr', 'ar', 'fa', 'hi', 'tg', 'tk', 'hy', 'be', 'ka', 'ky', 'ro'];
 
     // Полные названия для кнопки-триггера (как в списке)
     const TRIGGER_NAMES = {
@@ -55,7 +60,12 @@ language-selector.js — селектор языка в стиле Megger.
         'sr': 'Српски',
         'ar': 'العربية',
         'fa': 'فارسی',
-        'hi': 'हिन्दी'
+        'hi': 'हिन्दी',
+        'hy': 'Հայերեն',
+        'be': 'Беларуская',
+        'ka': 'ქართული',
+        'ky': 'Кыргызча',
+        'ro': 'Română'
     };
 
     // Короткие обозначения (флаг + код) — используются в компактном виде
@@ -83,7 +93,12 @@ language-selector.js — селектор языка в стиле Megger.
         'sr': 'SR',
         'ar': 'AR',
         'fa': 'FA',
-        'hi': 'HI'
+        'hi': 'HI',
+        'hy': 'AM',
+        'be': 'BY',
+        'ka': 'GE',
+        'ky': 'KG',
+        'ro': 'MD'
     };
 
     function currentLang() {

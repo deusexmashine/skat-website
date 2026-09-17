@@ -7,32 +7,14 @@ lang.js — ДВИЖОК перевода (EN / RU / KZ).
     'use strict';
 
     // Языки с готовыми словарями (locales/*.json)
-   const SUPPORTED_LANGS = ['en', 'ru', 'kz', 'az', 'uz', 'de', 'pt', 'es', 'zh', 'fr', 'it', 'tr', 'pl', 'sv', 'cs', 'bg', 'sr', 'ar', 'fa', 'hi', 'tg', 'tk'];
+   const SUPPORTED_LANGS = ['en', 'ru', 'kz', 'az', 'uz', 'de', 'pt', 'es', 'zh', 'fr', 'it', 'tr', 'pl', 'sv', 'cs', 'bg', 'sr', 'ar', 'fa', 'hi', 'tg', 'tk', 'hy', 'be', 'ka', 'ky', 'ro'];
     const FALLBACK_LANG = 'en';
     const RTL_LANGS = ['ar', 'fa'];
 
-    // Кука, которую также ставит/читает Cloudflare Worker (гео-роутинг):
-    // как только язык выбран (вручную или по геолокации на edge), кука
-    // не даёт повторным заходам на сайт "сбрасывать" выбор.
-    const LANG_COOKIE = 'skat_lang';
-
-    function getCookie(name) {
-        const match = document.cookie.match(new RegExp('(?:^|; )' + name + '=([^;]*)'));
-        return match ? decodeURIComponent(match[1]) : null;
-    }
-
-    function setLangCookie(lang) {
-        document.cookie = LANG_COOKIE + '=' + encodeURIComponent(lang) +
-            '; path=/; max-age=31536000; SameSite=Lax';
-    }
-
     function getLang() {
         const params = new URLSearchParams(window.location.search);
-        const urlLang = params.get('lang');
-        if (SUPPORTED_LANGS.includes(urlLang)) return urlLang;
-        const cookieLang = getCookie(LANG_COOKIE);
-        if (SUPPORTED_LANGS.includes(cookieLang)) return cookieLang;
-        return FALLBACK_LANG;
+        const lang = params.get('lang');
+        return SUPPORTED_LANGS.includes(lang) ? lang : FALLBACK_LANG;
     }
 
     let currentLang = getLang();
@@ -68,7 +50,6 @@ lang.js — ДВИЖОК перевода (EN / RU / KZ).
 
     async function applyLanguage(lang) {
         currentLang = SUPPORTED_LANGS.includes(lang) ? lang : FALLBACK_LANG;
-        setLangCookie(currentLang); // запоминаем — и ручной выбор, и то, что пришло из URL/гео-редиректа
         document.documentElement.lang = currentLang;
         // RTL: арабский и персидский читаются справа налево — переключаем
         // направление документа целиком, стили для [dir="rtl"] лежат в style.css

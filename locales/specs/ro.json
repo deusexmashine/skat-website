@@ -1,0 +1,1504 @@
+{
+  "kvc-b": {
+    "models": [
+      {
+        "id": "KVC-10B",
+        "name": "KVC-10B-0.5"
+      },
+      {
+        "id": "KVC-70B",
+        "name": "KVC-70B-1.0"
+      },
+      {
+        "id": "KVC-100B",
+        "name": "KVC-100B-1.0"
+      },
+      {
+        "id": "KVC-120B",
+        "name": "KVC-120B-1.0"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații metrologice",
+        "parameters": [
+          {
+            "label": "Domeniu tensiune CA (50 Hz)",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Domeniu tensiune CC",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Precizie tensiune CA",
+            "values": [
+              "±0.5%",
+              "±1.0%",
+              "±1.0%",
+              "±1.0%"
+            ]
+          },
+          {
+            "label": "Precizie tensiune CC",
+            "values": [
+              "±0.5%",
+              "±1.0%",
+              "±1.0%",
+              "±1.0%"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Rezistență de intrare CC",
+            "values": [
+              "50 MΩ ±10%",
+              "300 MΩ ±10%",
+              "500 MΩ ±10%",
+              "500 MΩ ±10%"
+            ]
+          },
+          {
+            "label": "Alimentare",
+            "values": [
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Consum de putere",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate de afișare)",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate divizor de înaltă tensiune)",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm"
+            ],
+            "notes": {
+              "KVC-10B": "Integrată în unitatea de afișare"
+            }
+          },
+          {
+            "label": "Masă (unitate de afișare)",
+            "values": [
+              "3.8 kg",
+              "3.8 kg",
+              "3.8 kg",
+              "3.8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă (unitate divizor de înaltă tensiune)",
+            "values": [
+              "—",
+              "5.5 kg",
+              "5.5 kg",
+              "5.5 kg"
+            ],
+            "notes": {
+              "KVC-10B": "Integrată în unitatea de afișare"
+            }
+          },
+          {
+            "label": "Temperatură de funcționare",
+            "values": [
+              "+5 … +40 °C",
+              "+5 … +40 °C",
+              "+5 … +40 °C",
+              "+5 … +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Durată de viață",
+            "values": [
+              "5 ani",
+              "5 ani",
+              "5 ani",
+              "5 ani"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "kvc-c": {
+    "models": [
+      {
+        "id": "KVC-10C",
+        "name": "KVC-10C-0.25"
+      },
+      {
+        "id": "KVC-70C",
+        "name": "KVC-70C-0.25"
+      },
+      {
+        "id": "KVC-100C",
+        "name": "KVC-100C-0.25"
+      },
+      {
+        "id": "KVC-120C",
+        "name": "KVC-120C-0.25"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații metrologice",
+        "parameters": [
+          {
+            "label": "Domeniu tensiune CA (50 Hz)",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Domeniu tensiune CA (40 – 65 Hz)",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Domeniu tensiune CA (390 – 410 Hz)",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV",
+              "1 – 10 kV"
+            ]
+          },
+          {
+            "label": "Domeniu tensiune CC",
+            "values": [
+              "0.1 – 10 kV",
+              "1 – 70 kV",
+              "1 – 100 kV",
+              "1 – 120 kV"
+            ]
+          },
+          {
+            "label": "Precizie de măsurare a tensiunii",
+            "values": [
+              "±0.25%",
+              "±0.25%",
+              "±0.25%",
+              "±0.25%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Precizie de frecvență (40 – 65 Hz)",
+            "values": [
+              "±0.015 Hz",
+              "±0.015 Hz",
+              "±0.015 Hz",
+              "±0.015 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Precizie de frecvență (390 – 410 Hz)",
+            "values": [
+              "±0.2 Hz",
+              "±0.2 Hz",
+              "±0.2 Hz",
+              "±0.2 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Domeniu de măsurare THD (Ku)",
+            "values": [
+              "0.5 – 30%",
+              "0.5 – 30%",
+              "0.5 – 30%",
+              "0.5 – 30%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Precizie THD (Ku < 3%)",
+            "values": [
+              "±0.15%",
+              "±0.15%",
+              "±0.15%",
+              "±0.15%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Precizie THD (Ku ≥ 3%)",
+            "values": [
+              "±5%",
+              "±5%",
+              "±5%",
+              "±5%"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Rezistență de intrare CC",
+            "values": [
+              "50 MΩ ±10%",
+              "300 MΩ ±10%",
+              "420 MΩ ±10%",
+              "500 MΩ ±10%"
+            ]
+          },
+          {
+            "label": "Alimentare",
+            "values": [
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Consum de putere",
+            "values": [
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA",
+              "≤ 15 VA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate de afișare)",
+            "values": [
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm",
+              "310 × 280 × 120 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate divizor de înaltă tensiune)",
+            "values": [
+              "—",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 650 mm",
+              "300 × 300 × 800 mm"
+            ],
+            "notes": {
+              "KVC-10C": "Integrată în unitatea de afișare"
+            }
+          },
+          {
+            "label": "Masă (unitate de afișare)",
+            "values": [
+              "3.8 kg",
+              "3.8 kg",
+              "3.8 kg",
+              "3.8 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă (unitate divizor de înaltă tensiune)",
+            "values": [
+              "—",
+              "5.5 kg",
+              "5.5 kg",
+              "6.4 kg"
+            ],
+            "notes": {
+              "KVC-10C": "Integrată în unitatea de afișare"
+            }
+          },
+          {
+            "label": "Temperatură de funcționare",
+            "values": [
+              "+5 … +40 °C",
+              "+5 … +40 °C",
+              "+5 … +40 °C",
+              "+5 … +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Umiditate relativă (la +25 °C)",
+            "values": [
+              "≤ 80%",
+              "≤ 80%",
+              "≤ 80%",
+              "≤ 80%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Durată de viață",
+            "values": [
+              "5 ani",
+              "5 ani",
+              "5 ani",
+              "5 ani"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70c": {
+    "models": [
+      {
+        "id": "SKAT-70C",
+        "name": "SKAT-70C"
+      },
+      {
+        "id": "SKAT-100C",
+        "name": "SKAT-100C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații de ieșire",
+        "parameters": [
+          {
+            "label": "Domeniu de reglare a tensiunii CA",
+            "values": [
+              "1 – 51 kV",
+              "1 – 71 kV"
+            ]
+          },
+          {
+            "label": "Domeniu de reglare a tensiunii CC",
+            "values": [
+              "1 – 71 kV",
+              "1 – 101 kV"
+            ]
+          },
+          {
+            "label": "Curent maxim de ieșire CA",
+            "values": [
+              "≥ 50 mA",
+              "≥ 35 mA"
+            ]
+          },
+          {
+            "label": "Curent maxim de ieșire CC",
+            "values": [
+              "≥ 20 mA",
+              "≥ 15 mA"
+            ]
+          },
+          {
+            "label": "Amplitudine reziduală CC (ripple)",
+            "values": [
+              "≤ 3%",
+              "≤ 3%"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații de măsurare",
+        "parameters": [
+          {
+            "label": "Domeniu de măsurare a tensiunii CA",
+            "values": [
+              "2 – 50 kV",
+              "3 – 70 kV"
+            ]
+          },
+          {
+            "label": "Domeniu de măsurare a tensiunii CC (amplitudine)",
+            "values": [
+              "3 – 70 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Factor de distorsiune sinusoidală CA",
+            "values": [
+              "≤ 5%",
+              "≤ 5%"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Afișaj",
+            "values": [
+              "6\" LCD",
+              "6\" LCD"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Alimentare",
+            "values": [
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni",
+              "18 luni"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70m": {
+    "models": [
+      {
+        "id": "SKAT-70M",
+        "name": "SKAT-70M"
+      },
+      {
+        "id": "SKAT-70MA",
+        "name": "SKAT-70MA"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații de ieșire",
+        "parameters": [
+          {
+            "label": "Domeniu de reglare a tensiunii CA",
+            "values": [
+              "1 – 51 kV",
+              "1 – 51 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Domeniu de reglare a tensiunii CC",
+            "values": [
+              "1 – 71 kV",
+              "1 – 71 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Polaritate CC",
+            "values": [
+              "Negativă",
+              "Pozitivă"
+            ]
+          },
+          {
+            "label": "Curent maxim de ieșire CA",
+            "values": [
+              "≥ 50 mA",
+              "≥ 50 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Curent maxim de ieșire CC",
+            "values": [
+              "≥ 20 mA",
+              "≥ 20 mA"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații de măsurare",
+        "parameters": [
+          {
+            "label": "Domeniu de măsurare a tensiunii CA",
+            "values": [
+              "2 – 50 kV",
+              "2 – 50 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Domeniu de măsurare a tensiunii CC (amplitudine)",
+            "values": [
+              "3 – 70 kV",
+              "3 – 70 kV"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Amplitudine reziduală CC (ripple)",
+            "values": [
+              "≤ 3%",
+              "≤ 3%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Factor de distorsiune sinusoidală CA",
+            "values": [
+              "≤ 5%",
+              "≤ 5%"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Alimentare",
+            "values": [
+              "220 V AC, 50 Hz",
+              "220 V AC, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate de comandă)",
+            "values": [
+              "420 × 340 × 220 mm",
+              "420 × 340 × 220 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni (unitate de înaltă tensiune)",
+            "values": [
+              "650 × 375 × 360 mm",
+              "650 × 375 × 360 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă (unitate de comandă)",
+            "values": [
+              "14 kg",
+              "14 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă (unitate de înaltă tensiune)",
+            "values": [
+              "29 kg",
+              "29 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni",
+              "18 luni"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-m100v": {
+    "models": [
+      {
+        "id": "M100V",
+        "name": "SKAT-M100V"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații metrologice",
+        "parameters": [
+          {
+            "label": "Domeniu de măsurare a tensiunii CA",
+            "values": [
+              "10.0 – 100.0 kV"
+            ]
+          },
+          {
+            "label": "Precizie de măsurare",
+            "values": [
+              "±2.5%"
+            ]
+          },
+          {
+            "label": "Rezoluție de tensiune",
+            "values": [
+              "0.1 kV"
+            ]
+          },
+          {
+            "label": "Număr de teste automate",
+            "values": [
+              "1 – 6"
+            ]
+          },
+          {
+            "label": "Timp de declanșare la străpungere",
+            "values": [
+              "≤ 100 µs"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Viteză de creștere a tensiunii",
+            "values": [
+              "0.5, 1, 2, 5 kV/s"
+            ]
+          },
+          {
+            "label": "Limite de tensiune",
+            "values": [
+              "60, 70, 80, 90, 100 kV"
+            ]
+          },
+          {
+            "label": "Alimentare",
+            "values": [
+              "220 V AC, 50 Hz"
+            ]
+          },
+          {
+            "label": "Dimensiuni (L×A×Î)",
+            "values": [
+              "470 × 315 × 370 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "41 ±1 kg"
+            ]
+          },
+          {
+            "label": "Clasă de protecție",
+            "values": [
+              "IP53"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-tangens": {
+    "models": [
+      {
+        "id": "TANGENS",
+        "name": "SKAT-TANGENS-M"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații metrologice",
+        "parameters": [
+          {
+            "label": "Domeniu de măsurare tan δ",
+            "values": [
+              "1·10⁻⁴ – 1.000"
+            ]
+          },
+          {
+            "label": "Domeniu de măsurare a capacității",
+            "values": [
+              "28 – 1000 pF"
+            ]
+          },
+          {
+            "label": "Tensiune de testare (CA, 40-62 Hz)",
+            "values": [
+              "500 – 2000 V"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Domeniu de temperatură a celulei",
+            "values": [
+              "40 – 110 °C"
+            ]
+          },
+          {
+            "label": "Timp de încălzire până la temperatura setată",
+            "values": [
+              "≤ 50 min"
+            ]
+          },
+          {
+            "label": "Afișaj",
+            "values": [
+              "7\" IPS Touchscreen"
+            ]
+          },
+          {
+            "label": "Memorie internă",
+            "values": [
+              "Up to 250 Test Results"
+            ]
+          },
+          {
+            "label": "Dimensiuni (L×A×Î)",
+            "values": [
+              "540 × 330 × 360 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "≤ 24 kg"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-70p": {
+    "models": [
+      {
+        "id": "70P",
+        "name": "SKAT-70P"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații metrologice",
+        "parameters": [
+          {
+            "label": "Domeniu de măsurare a tensiunii CA",
+            "values": [
+              "0.3 – 20 kV"
+            ]
+          },
+          {
+            "label": "Domeniu de măsurare a curentului CA (per canal)",
+            "values": [
+              "0.5 – 22 mA"
+            ]
+          },
+          {
+            "label": "Precizie de măsurare a tensiunii",
+            "values": [
+              "±2.5%"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Număr de canale de curent",
+            "values": [
+              "4"
+            ]
+          },
+          {
+            "label": "Timp de testare programabil",
+            "values": [
+              "1 – 8 min"
+            ]
+          },
+          {
+            "label": "Dimensiuni (cutie de comandă)",
+            "values": [
+              "310 × 280 × 120 mm"
+            ]
+          },
+          {
+            "label": "Dimensiuni (baie de testare)",
+            "values": [
+              "825 × 270 × 765 mm"
+            ]
+          },
+          {
+            "label": "Masă (cutie de comandă)",
+            "values": [
+              "5.8 kg"
+            ]
+          },
+          {
+            "label": "Masă (baie de testare)",
+            "values": [
+              "19.0 kg"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-svs": {
+    "models": [
+      {
+        "id": "SVS-50C",
+        "name": "SKAT-SVS-50C"
+      },
+      {
+        "id": "SVS-100C",
+        "name": "SKAT-SVS-100C"
+      },
+      {
+        "id": "SVS-100-20C",
+        "name": "SKAT-SVS-100-20C"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Game de măsurare",
+        "parameters": [
+          {
+            "label": "Sursă integrată: domeniu de tensiune",
+            "values": [
+              "20 – 1000 V",
+              "20 – 1000 V",
+              "20 – 1000 V"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Sursă integrată: domeniu de curent",
+            "values": [
+              "0.5 – 10 mA",
+              "0.5 – 10 mA",
+              "0.5 – 10 mA"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Bloc 50 kV: domeniu de tensiune",
+            "values": [
+              "1 – 50 kV",
+              "1 – 50 kV",
+              "—"
+            ]
+          },
+          {
+            "label": "Bloc 50 kV: domeniu de curent",
+            "values": [
+              "1 – 40 mA",
+              "1 – 40 mA",
+              "—"
+            ]
+          },
+          {
+            "label": "Bloc 100 kV: domeniu de tensiune",
+            "values": [
+              "—",
+              "5 – 100 kV",
+              "5 – 100 kV"
+            ]
+          },
+          {
+            "label": "Bloc 100 kV: domeniu de curent",
+            "values": [
+              "—",
+              "1 – 20 mA",
+              "1 – 20 mA"
+            ]
+          },
+          {
+            "label": "Bloc 20 kV: domeniu de tensiune",
+            "values": [
+              "—",
+              "—",
+              "1 – 20 kV"
+            ]
+          },
+          {
+            "label": "Bloc 20 kV: domeniu de curent",
+            "values": [
+              "—",
+              "—",
+              "1 – 40 mA"
+            ]
+          },
+          {
+            "label": "Precizie de măsurare a tensiunii",
+            "values": [
+              "±3%",
+              "±3%",
+              "±3%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Precizie de măsurare a curentului",
+            "values": [
+              "±(2.0+0.1·((Iₘ/I)-1))%",
+              "±(2.0+0.1·((Iₘ/I)-1))%",
+              "±(2.0+0.1·((Iₘ/I)-1))%"
+            ],
+            "merge": true
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Număr de surse externe de înaltă tensiune",
+            "values": [
+              "1",
+              "2",
+              "2"
+            ]
+          },
+          {
+            "label": "Număr de canale de curent (baie de testare)",
+            "values": [
+              "4",
+              "4",
+              "4"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Alimentare",
+            "values": [
+              "230 V AC, 50 Hz",
+              "230 V AC, 50 Hz",
+              "230 V AC, 50 Hz"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni unitate de comandă (L×A×Î)",
+            "values": [
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm",
+              "490 × 370 × 200 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Dimensiuni bloc 20 kV (L×A×Î)",
+            "values": [
+              "—",
+              "—",
+              "350 × 375 × 650 mm"
+            ]
+          },
+          {
+            "label": "Dimensiuni bloc 50 kV (L×A×Î)",
+            "values": [
+              "350 × 375 × 650 mm",
+              "350 × 375 × 650 mm",
+              "—"
+            ]
+          },
+          {
+            "label": "Dimensiuni bloc 100 kV (L×A×Î)",
+            "values": [
+              "—",
+              "—",
+              "415 × 580 × 940 mm"
+            ]
+          },
+          {
+            "label": "Dimensiuni baie de testare (L×A×Î)",
+            "values": [
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm",
+              "820 × 270 × 765 mm"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă unitate de comandă",
+            "values": [
+              "23 kg",
+              "23 kg",
+              "23 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Masă bloc 20 kV",
+            "values": [
+              "—",
+              "—",
+              "33.8 kg"
+            ]
+          },
+          {
+            "label": "Masă bloc 50 kV",
+            "values": [
+              "35.4 kg",
+              "35.4 kg",
+              "—"
+            ]
+          },
+          {
+            "label": "Masă bloc 100 kV",
+            "values": [
+              "—",
+              "—",
+              "64 kg"
+            ]
+          },
+          {
+            "label": "Masă baie de testare",
+            "values": [
+              "18.7 kg",
+              "18.7 kg",
+              "18.7 kg"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Temperatură de funcționare",
+            "values": [
+              "+10 … +40 °C",
+              "+10 … +40 °C",
+              "+10 … +40 °C"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Umiditate relativă (la +25 °C)",
+            "values": [
+              "≤ 80%",
+              "≤ 80%",
+              "≤ 80%"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Presiune atmosferică",
+            "values": [
+              "84.0 – 106.7 kPa",
+              "84.0 – 106.7 kPa",
+              "84.0 – 106.7 kPa"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Durată de viață",
+            "values": [
+              "10 ani",
+              "10 ani",
+              "10 ani"
+            ],
+            "merge": true
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni",
+              "18 luni",
+              "18 luni"
+            ],
+            "merge": true
+          }
+        ]
+      }
+    ]
+  },
+  "skat-avn70": {
+    "models": [
+      {
+        "id": "AVN70",
+        "name": "SKAT-AVN-70"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații de sarcină",
+        "parameters": [
+          {
+            "label": "Tensiune maximă de funcționare CC",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Tensiune maximă de vârf CA (50 Hz)",
+            "values": [
+              "70 kV"
+            ]
+          },
+          {
+            "label": "Număr de trepte de sarcină",
+            "values": [
+              "6"
+            ]
+          },
+          {
+            "label": "Număr de combinații de sarcină",
+            "values": [
+              "40"
+            ]
+          },
+          {
+            "label": "Putere maximă totală disipată",
+            "values": [
+              "3750 W"
+            ]
+          },
+          {
+            "label": "Funcționare continuă la putere maximă",
+            "values": [
+              "1 oră"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Detalii trepte (rezistență nominală / putere maximă)",
+        "parameters": [
+          {
+            "label": "Treapta 1",
+            "values": [
+              "68 MΩ ±5% / 80 W"
+            ]
+          },
+          {
+            "label": "Treapta 2",
+            "values": [
+              "22.4 MΩ ±5% / 250 W"
+            ]
+          },
+          {
+            "label": "Treapta 3",
+            "values": [
+              "14.1 MΩ ±5% / 350 W"
+            ]
+          },
+          {
+            "label": "Treapta 4",
+            "values": [
+              "6.6 MΩ ±5% / 750 W"
+            ]
+          },
+          {
+            "label": "Treapta 5",
+            "values": [
+              "2.4 MΩ ±5% / 1500 W"
+            ]
+          },
+          {
+            "label": "Treapta 6",
+            "values": [
+              "1.35 MΩ ±5% / 2000 W"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Dimensiuni (L×A×Î)",
+            "values": [
+              "550 × 440 × 1620 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "50 kg"
+            ]
+          },
+          {
+            "label": "Alimentare sistem de răcire",
+            "values": [
+              "220 V AC, 50 Hz"
+            ]
+          },
+          {
+            "label": "Consum de putere sistem de răcire",
+            "values": [
+              "≤ 200 W"
+            ]
+          },
+          {
+            "label": "Temperatură ambientală",
+            "values": [
+              "+5 … +40 °C"
+            ]
+          },
+          {
+            "label": "Umiditate relativă (la +25 °C)",
+            "values": [
+              "≤ 80%"
+            ]
+          },
+          {
+            "label": "Durată de viață",
+            "values": [
+              "10 ani"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "skat-stend50": {
+    "models": [
+      {
+        "id": "STEND50",
+        "name": "SKAT-STEND-50"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații de testare",
+        "parameters": [
+          {
+            "label": "Tensiune maximă de testare",
+            "values": [
+              "50 kV AC"
+            ]
+          },
+          {
+            "label": "Număr maxim de obiecte testate simultan",
+            "values": [
+              "2"
+            ]
+          },
+          {
+            "label": "Dimensiuni (înălțime cu stâlpi)",
+            "values": [
+              "1830 mm"
+            ]
+          },
+          {
+            "label": "Dimensiuni masă (L×A)",
+            "values": [
+              "530 × 1220 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "≤ 31 kg"
+            ]
+          },
+          {
+            "label": "Temperatură de funcționare",
+            "values": [
+              "+10 … +40 °C"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "18 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ubsvn-lm": {
+    "models": [
+      {
+        "id": "UBSVN",
+        "name": "UBSVN-LM"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații electrice",
+        "parameters": [
+          {
+            "label": "Tensiune de alimentare",
+            "values": [
+              "220 V AC"
+            ]
+          },
+          {
+            "label": "Curent nominal",
+            "values": [
+              "60 mA"
+            ]
+          },
+          {
+            "label": "Nivel sonor (la 1 m)",
+            "values": [
+              "≥ 95 dB"
+            ]
+          },
+          {
+            "label": "Percepție de contrast luminos",
+            "values": [
+              "≥ 500 lux"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Dimensiuni",
+            "values": [
+              "140 × 140 × 90 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "≤ 0.32 kg"
+            ]
+          },
+          {
+            "label": "Temperatură de funcționare",
+            "values": [
+              "-30 … +55 °C"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "12 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "ik100": {
+    "models": [
+      {
+        "id": "IK100",
+        "name": "IK 100-0.4"
+      }
+    ],
+    "groups": [
+      {
+        "title": "Specificații electrice",
+        "parameters": [
+          {
+            "label": "Tensiune nominală",
+            "values": [
+              "100 kV"
+            ]
+          },
+          {
+            "label": "Capacitate nominală",
+            "values": [
+              "0.4 µF"
+            ]
+          },
+          {
+            "label": "Tensiune de testare",
+            "values": [
+              "125 kV"
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Specificații generale",
+        "parameters": [
+          {
+            "label": "Dimensiuni (L×A×Î)",
+            "values": [
+              "500 × 155 × 345 mm"
+            ]
+          },
+          {
+            "label": "Masă",
+            "values": [
+              "≤ 32 kg"
+            ]
+          },
+          {
+            "label": "Temperatură ambientală",
+            "values": [
+              "-1 … +35 °C"
+            ]
+          },
+          {
+            "label": "Garanție",
+            "values": [
+              "6 luni"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
