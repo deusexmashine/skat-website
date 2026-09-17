@@ -119,9 +119,24 @@ function openTab(evt, tabName) {
 // (паспорт/РЭ/сертификат), для остальных языков — английский, если он
 // появится в манифесте. Пока для языка нет ни одного документа — блок
 // "Product documents" целиком скрывается (лучше, чем мёртвые ссылки).
+// Отдельно, если у товара в манифесте есть поле "certificates", под
+// документацией показывается блок "Сертификаты" (та же вёрстка, что и
+// "Документация", но своим списком файлов). Сейчас сертификаты собраны
+// только для русской версии — на других языках список для этого товара
+// пуст, и блок скрывается тем же общим правилом (пусто → блок скрыт).
 // ==========================================================
 let productDocsManifest = null;
 let productDocsCode = null;
+
+function renderDocList(items) {
+    return items.map(function(doc) {
+        return '<div class="document-item">' +
+            '<i class="fa-solid fa-file-pdf"></i>' +
+            '<div class="doc-info"><a href="docs/' + doc.file + '" target="_blank">' +
+            '<span>' + doc.label + '</span></a><span>PDF | ' + doc.size + '</span></div>' +
+            '</div>';
+    }).join('');
+}
 
 function renderProductDocs() {
     if (!productDocsCode || !productDocsManifest) return;
@@ -139,13 +154,27 @@ function renderProductDocs() {
         return;
     }
     section.style.display = '';
-    container.innerHTML = items.map(function(doc) {
-        return '<div class="document-item">' +
-            '<i class="fa-solid fa-file-pdf"></i>' +
-            '<div class="doc-info"><a href="docs/' + doc.file + '" target="_blank">' +
-            '<span>' + doc.label + '</span></a><span>PDF | ' + doc.size + '</span></div>' +
-            '</div>';
-    }).join('');
+    container.innerHTML = renderDocList(items);
+}
+
+function renderProductCerts() {
+    if (!productDocsCode || !productDocsManifest) return;
+    const section = document.getElementById('productCertsSection');
+    const container = document.querySelector('.certificates-list[data-cert-code="' + productDocsCode + '"]');
+    if (!section || !container) return;
+
+    const lang = window.getCurrentLang ? window.getCurrentLang() : 'en';
+    const docLang = lang === 'ru' ? 'ru' : 'en';
+    const entry = productDocsManifest[productDocsCode];
+    const certs = entry && entry.certificates ? entry.certificates : null;
+    const items = (certs && certs[docLang]) ? certs[docLang] : [];
+
+    if (!items.length) {
+        section.style.display = 'none';
+        return;
+    }
+    section.style.display = '';
+    container.innerHTML = renderDocList(items);
 }
 
 function initProductDocs(code) {
@@ -155,11 +184,13 @@ function initProductDocs(code) {
         .then(function(data) {
             productDocsManifest = data;
             renderProductDocs();
+            renderProductCerts();
         })
         .catch(function(err) { console.error('Ошибка загрузки docs_manifest.json:', err); });
 }
 
 document.addEventListener('languageChanged', renderProductDocs);
+document.addEventListener('languageChanged', renderProductCerts);
 
 // ==========================================================
 // АККОРДЕОН

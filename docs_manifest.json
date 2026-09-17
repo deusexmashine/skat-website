@@ -1,8 +1,22 @@
 {
   "70c": {
     "ru": [
-      { "label": "Руководство по эксплуатации", "file": "70C_UG_ru.pdf", "size": "1.6 MB" }
-    ]
+      { "label": "Паспорт", "file": "70C_PS_ru.pdf", "size": "0.3 MB" },
+      { "label": "Руководство по эксплуатации", "file": "70C_UG_ru.pdf", "size": "2.0 MB" }
+    ],
+    "en": [
+      { "label": "Technical Passport", "file": "70C_PS_en.pdf", "size": "0.2 MB" },
+      { "label": "User Manual", "file": "70C_UG_en.pdf", "size": "2.1 MB" }
+    ],
+    "certificates": {
+      "ru": [
+        { "label": "Сертификат об утверждении типа СИ (РФ) №87761-22", "file": "70C_CERT_RU-TypeApproval_ru.pdf", "size": "0.5 MB" },
+        { "label": "Сертификат об утверждении типа СИ (Республика Беларусь) №18143", "file": "70C_CERT_BY-TypeApproval_ru.pdf", "size": "0.2 MB" },
+        { "label": "Сертификат о признании утверждения типа СИ (Казахстан)", "file": "70C_CERT_KZ-TypeApproval_ru.pdf", "size": "0.2 MB" },
+        { "label": "Сертификат о происхождении товара (форма СТ-1)", "file": "70C_CERT_CT1-Origin_ru.pdf", "size": "0.3 MB" },
+        { "label": "Выписка из реестра российской промышленной продукции", "file": "70C_CERT_RU-MadeInRussia_ru.pdf", "size": "0.3 MB" }
+      ]
+    }
   },
   "70m": {},
   "70p": {
