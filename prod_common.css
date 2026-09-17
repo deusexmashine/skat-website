@@ -162,6 +162,66 @@ body.product-page .product-hero {
 .document-item .doc-info a:hover { color: var(--accent-yellow); }
 .document-item .doc-info span { font-size: 0.85rem; color: var(--text-light); }
 
+/* --- СЕРТИФИКАТЫ (превью + PDF), карточка ---
+   Превью открывается в лайтбоксе #cert-lightbox — визуально тот же
+   .lightbox/.lightbox-content/.lightbox-nav из prod_img.css, логика
+   открытия/закрытия там же обобщена под любой .lightbox. */
+.certificates-list { display: flex; flex-direction: column; gap: 15px; }
+.certificate-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    border: 1px solid #eaeaea;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+.certificate-item:hover { background: #f9f9f9; }
+.cert-thumb {
+    position: relative;
+    flex-shrink: 0;
+    width: 64px;
+    height: 84px;
+    border-radius: 6px;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #eaeaea;
+    background: #F5F5F5;
+    cursor: pointer;
+}
+.cert-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.3s ease; }
+.cert-thumb-zoom {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.cert-thumb:hover img { transform: scale(1.08); }
+.cert-thumb:hover .cert-thumb-zoom { opacity: 1; }
+.cert-thumb-empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: 1.4rem;
+    cursor: default;
+}
+.cert-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+.cert-info .cert-label { color: var(--primary-dark); font-weight: 600; }
+.cert-info .cert-download { color: var(--text-light); font-size: 0.85rem; text-decoration: none; display: inline-flex; align-items: center; gap: 6px; width: fit-content; }
+.cert-info .cert-download:hover { color: var(--accent-yellow); }
+.cert-info .cert-download i { color: var(--accent-yellow); }
+
+@media (max-width: 480px) {
+    .cert-thumb { width: 52px; height: 68px; }
+}
+
 /* --- RELATED PRODUCTS --- */
 .related-products-grid {
     display: grid;

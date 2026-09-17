@@ -10,11 +10,11 @@
     ],
     "certificates": {
       "ru": [
-        { "label": "Сертификат об утверждении типа СИ (РФ) №87761-22", "file": "70C_CERT_RU-TypeApproval_ru.pdf", "size": "0.5 MB" },
-        { "label": "Сертификат об утверждении типа СИ (Республика Беларусь) №18143", "file": "70C_CERT_BY-TypeApproval_ru.pdf", "size": "0.2 MB" },
-        { "label": "Сертификат о признании утверждения типа СИ (Казахстан)", "file": "70C_CERT_KZ-TypeApproval_ru.pdf", "size": "0.2 MB" },
-        { "label": "Сертификат о происхождении товара (форма СТ-1)", "file": "70C_CERT_CT1-Origin_ru.pdf", "size": "0.3 MB" },
-        { "label": "Выписка из реестра российской промышленной продукции", "file": "70C_CERT_RU-MadeInRussia_ru.pdf", "size": "0.3 MB" }
+        { "label": "Сертификат об утверждении типа СИ (РФ) №87761-22", "file": "70C_CERT_RU-TypeApproval_ru.pdf", "size": "0.5 MB", "preview": "previews/70C_CERT_RU-TypeApproval_ru.jpg", "previewThumb": "previews/70C_CERT_RU-TypeApproval_ru_thumb.jpg" },
+        { "label": "Сертификат об утверждении типа СИ (Республика Беларусь) №18143", "file": "70C_CERT_BY-TypeApproval_ru.pdf", "size": "0.2 MB", "preview": "previews/70C_CERT_BY-TypeApproval_ru.jpg", "previewThumb": "previews/70C_CERT_BY-TypeApproval_ru_thumb.jpg" },
+        { "label": "Сертификат о признании утверждения типа СИ (Казахстан)", "file": "70C_CERT_KZ-TypeApproval_ru.pdf", "size": "0.2 MB", "preview": "previews/70C_CERT_KZ-TypeApproval_ru.jpg", "previewThumb": "previews/70C_CERT_KZ-TypeApproval_ru_thumb.jpg" },
+        { "label": "Сертификат о происхождении товара (форма СТ-1)", "file": "70C_CERT_CT1-Origin_ru.pdf", "size": "0.3 MB", "preview": "previews/70C_CERT_CT1-Origin_ru.jpg", "previewThumb": "previews/70C_CERT_CT1-Origin_ru_thumb.jpg" },
+        { "label": "Выписка из реестра российской промышленной продукции", "file": "70C_CERT_RU-MadeInRussia_ru.pdf", "size": "0.3 MB", "preview": "previews/70C_CERT_RU-MadeInRussia_ru.jpg", "previewThumb": "previews/70C_CERT_RU-MadeInRussia_ru_thumb.jpg" }
       ]
     }
   },

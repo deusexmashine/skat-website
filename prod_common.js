@@ -120,13 +120,25 @@ function openTab(evt, tabName) {
 // появится в манифесте. Пока для языка нет ни одного документа — блок
 // "Product documents" целиком скрывается (лучше, чем мёртвые ссылки).
 // Отдельно, если у товара в манифесте есть поле "certificates", под
-// документацией показывается блок "Сертификаты" (та же вёрстка, что и
-// "Документация", но своим списком файлов). Сейчас сертификаты собраны
-// только для русской версии — на других языках список для этого товара
-// пуст, и блок скрывается тем же общим правилом (пусто → блок скрыт).
+// документацией показывается блок "Сертификаты". Каждый элемент —
+// карточка с превью-картинкой (клик открывает лайтбокс #cert-lightbox,
+// стиль/CSS общий с галереей товара из prod_img.css, навигация —
+// openCertLightbox()/certLightboxNav() ниже) и отдельной ссылкой на PDF.
+// preview/previewThumb в манифесте — не обязательны: без них карточка
+// просто не кликабельна (иконка вместо превью), только PDF-скачивание.
+// Сейчас сертификаты собраны только для русской версии — на других
+// языках список для этого товара пуст, и блок скрывается тем же общим
+// правилом (пусто → блок скрыт).
 // ==========================================================
 let productDocsManifest = null;
 let productDocsCode = null;
+
+// Данные для лайтбокса сертификатов (заполняются в renderProductCerts() из
+// полей preview/previewThumb элементов certificates.{lang} в манифесте;
+// сертификаты без preview остаются некликабельными — только PDF-скачивание).
+let certImagePaths = [];
+let certLabels = [];
+let currentCertLightboxIndex = 0;
 
 function renderDocList(items) {
     return items.map(function(doc) {
@@ -136,6 +148,53 @@ function renderDocList(items) {
             '<span>' + doc.label + '</span></a><span>PDF | ' + doc.size + '</span></div>' +
             '</div>';
     }).join('');
+}
+
+// ===== СЕРТИФИКАТЫ: карточка с превью (клик → лайтбокс, стиль prod_img.js) + ссылка на PDF =====
+function renderCertList(items) {
+    let previewIdx = 0;
+    return items.map(function(cert) {
+        let thumb;
+        if (cert.previewThumb || cert.preview) {
+            const idx = previewIdx++;
+            const thumbSrc = 'docs/' + (cert.previewThumb || cert.preview);
+            thumb = '<a href="#cert-lightbox" class="cert-thumb" onclick="openCertLightbox(' + idx + ')">' +
+                '<img src="' + thumbSrc + '" alt="' + cert.label + '" loading="lazy">' +
+                '<span class="cert-thumb-zoom"><i class="fa-solid fa-magnifying-glass-plus"></i></span></a>';
+        } else {
+            thumb = '<div class="cert-thumb cert-thumb-empty"><i class="fa-solid fa-certificate"></i></div>';
+        }
+        return '<div class="certificate-item">' + thumb +
+            '<div class="cert-info"><span class="cert-label">' + cert.label + '</span>' +
+            '<a href="docs/' + cert.file + '" target="_blank" class="cert-download">' +
+            '<i class="fa-solid fa-file-pdf"></i> PDF | ' + cert.size + '</a></div>' +
+            '</div>';
+    }).join('');
+}
+
+function openCertLightbox(index) {
+    if (!certImagePaths.length) return;
+    currentCertLightboxIndex = index;
+    updateCertLightbox();
+}
+
+function certLightboxNav(event, direction) {
+    event.preventDefault();
+    if (!certImagePaths.length) return;
+    let newIndex = currentCertLightboxIndex + direction;
+    if (newIndex < 0) newIndex = certImagePaths.length - 1;
+    if (newIndex >= certImagePaths.length) newIndex = 0;
+    currentCertLightboxIndex = newIndex;
+    updateCertLightbox();
+}
+
+function updateCertLightbox() {
+    const img = document.getElementById('certLightboxImg');
+    if (img) img.src = 'docs/' + certImagePaths[currentCertLightboxIndex];
+    const caption = document.getElementById('certLightboxCaption');
+    if (caption) caption.textContent = certLabels[currentCertLightboxIndex] || '';
+    const counter = document.getElementById('certLightboxCounter');
+    if (counter) counter.textContent = (currentCertLightboxIndex + 1) + ' / ' + certImagePaths.length;
 }
 
 function renderProductDocs() {
@@ -171,10 +230,15 @@ function renderProductCerts() {
 
     if (!items.length) {
         section.style.display = 'none';
+        certImagePaths = [];
+        certLabels = [];
         return;
     }
     section.style.display = '';
-    container.innerHTML = renderDocList(items);
+    const previewItems = items.filter(function(c) { return c.previewThumb || c.preview; });
+    certImagePaths = previewItems.map(function(c) { return c.preview || c.previewThumb; });
+    certLabels = previewItems.map(function(c) { return c.label; });
+    container.innerHTML = renderCertList(items);
 }
 
 function initProductDocs(code) {

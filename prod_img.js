@@ -172,19 +172,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-/* ===== Обработчик изменения хеша для открытия/закрытия лайтбокса ===== */
+/* ===== Обработчик изменения хеша для открытия/закрытия лайтбокса =====
+   Обобщено (было завязано только на #img-main): любой элемент с классом
+   .lightbox, на чей id указывает хеш, открывается тем же way — это даёт
+   работать и лайтбоксу галереи товара (#img-main), и лайтбоксу
+   сертификатов (#cert-lightbox, см. prod_common.js), и любым будущим. */
+function isLightboxHash() {
+    const id = window.location.hash.slice(1);
+    if (!id) return false;
+    const el = document.getElementById(id);
+    return !!(el && el.classList.contains('lightbox'));
+}
+
 window.addEventListener('hashchange', function() {
-    if (window.location.hash === '#img-main') {
-        toggleLightboxState(true);
-    } else {
-        toggleLightboxState(false);
-    }
+    toggleLightboxState(isLightboxHash());
 });
 
-/* ===== Обработчик клика по крестику и фону лайтбокса ===== */
+/* ===== Обработчик клика по крестику и фону лайтбокса (для всех .lightbox) ===== */
 document.addEventListener('DOMContentLoaded', function() {
-    const lightbox = document.getElementById('img-main');
-    if (lightbox) {
+    document.querySelectorAll('.lightbox').forEach(function(lightbox) {
         const closeBtn = lightbox.querySelector('.lightbox-close');
         if (closeBtn) {
             closeBtn.addEventListener('click', function(e) {
@@ -199,15 +205,13 @@ document.addEventListener('DOMContentLoaded', function() {
                 toggleLightboxState(false);
             }
         });
-    }
+    });
 });
 
 /* ===== Обработчик клавиши Escape для закрытия лайтбокса ===== */
 document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') {
-        if (window.location.hash === '#img-main') {
-            window.location.hash = '';
-            toggleLightboxState(false);
-        }
+    if (e.key === 'Escape' && isLightboxHash()) {
+        window.location.hash = '';
+        toggleLightboxState(false);
     }
 });
